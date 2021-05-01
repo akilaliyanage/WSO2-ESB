@@ -1,0 +1,1 @@
+Do not delete this folder if the Carbon server is running! Otherwise, it might cause issues for artifacts that come from CApps.

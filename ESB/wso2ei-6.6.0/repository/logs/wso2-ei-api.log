@@ -1,0 +1,12 @@
+TID: [-1234] [2021-05-01 13:43:38,983]  INFO {API_LOGGER.test-api} - Initializing API: test-api
+TID: [-1234] [2021-05-01 13:47:54,265]  INFO {API_LOGGER.test-api} - Initializing API: test-api
+TID: [-1234] [2021-05-01 13:55:24,723]  INFO {API_LOGGER.test-api} - Initializing API: test-api
+TID: [-1234] [2021-05-01 13:58:09,908]  INFO {API_LOGGER.test-api} - Initializing API: test-api
+TID: [-1234] [2021-05-01 14:04:25,286]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-01 14:10:12,024]  INFO {API_LOGGER.news} - Destroying API: news
+TID: [-1234] [2021-05-01 14:11:34,185]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-01 14:11:49,684]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-01 14:32:18,228]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-01 15:40:36,307]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-01 15:49:38,837]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-01 15:49:53,997]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI

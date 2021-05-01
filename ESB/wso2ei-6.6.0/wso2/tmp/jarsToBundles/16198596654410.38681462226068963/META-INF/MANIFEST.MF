@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: esapi_2.0.1
+Bundle-SymbolicName: esapi_2.0.1
+Bundle-Version: 1.0.0
+Export-Package: org.owasp.esapi,org.owasp.esapi.codecs,org.owasp.esapi.c
+ rypto,org.owasp.esapi.errors,org.owasp.esapi.filters,org.owasp.esapi.re
+ ference,org.owasp.esapi.reference.accesscontrol,org.owasp.esapi.referen
+ ce.accesscontrol.policyloader,org.owasp.esapi.reference.crypto,org.owas
+ p.esapi.reference.validation,org.owasp.esapi.tags,org.owasp.esapi.util,
+ org.owasp.esapi.waf.actions,org.owasp.esapi.waf.configuration,org.owasp
+ .esapi.waf,org.owasp.esapi.waf.internal,org.owasp.esapi.waf.rules
+Bundle-ClassPath: .,esapi-2.0.1.jar
+

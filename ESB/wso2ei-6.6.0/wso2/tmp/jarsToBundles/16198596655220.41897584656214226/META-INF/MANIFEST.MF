@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: sample_utils_6.6.0
+Bundle-SymbolicName: sample_utils_6.6.0
+Bundle-Version: 1.0.0
+Export-Package: org.wso2.ei.businessprocess.samples.util
+Bundle-ClassPath: .,sample-utils-6.6.0.jar
+

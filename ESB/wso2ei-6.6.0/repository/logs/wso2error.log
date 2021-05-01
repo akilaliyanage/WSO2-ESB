@@ -1,0 +1,221 @@
+TID: [-1234] [2021-05-01 12:43:04,575]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 12:43:04,575]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 12:43:04,576]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 12:43:04,577]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 12:43:04,577]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 12:43:04,578]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 12:43:04,578]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 12:43:04,579]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 12:43:04,580]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:34:52,656]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:34:52,658]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:34:52,662]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:34:52,663]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:34:52,665]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:34:52,666]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:34:52,668]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:34:52,669]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:34:52,670]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 13:42:40,835] ERROR {org.wso2.carbon.application.mgt.ApplicationAdmin} - No Carbon Application found of the name : DS_AssignmentCompositeExporter
+TID: [-1234] [2021-05-01 13:42:40,837] ERROR {org.wso2.carbon.application.mgt.ApplicationAdmin} - No Carbon Application found of the name : DS_AssignmentCompositeExporter
+TID: [-1234] [2021-05-01 13:42:40,839] ERROR {org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver} - No Carbon Application found of the name : DS_AssignmentCompositeExporter org.wso2.carbon.CarbonException: No Carbon Application found of the name : DS_AssignmentCompositeExporter
+	at org.wso2.carbon.application.mgt.ApplicationAdmin.handleException(ApplicationAdmin.java:568)
+	at org.wso2.carbon.application.mgt.ApplicationAdmin.deleteApplication(ApplicationAdmin.java:155)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.axis2.rpc.receivers.RPCUtil.invokeServiceClass(RPCUtil.java:212)
+	at org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver.invokeBusinessLogic(RPCInOnlyMessageReceiver.java:66)
+	at org.apache.axis2.receivers.AbstractMessageReceiver.receive(AbstractMessageReceiver.java:110)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.axis2.transport.http.HTTPTransportUtils.processHTTPPostRequest(HTTPTransportUtils.java:173)
+	at org.apache.axis2.transport.http.AxisServlet.doPost(AxisServlet.java:148)
+	at org.wso2.carbon.core.transports.CarbonServlet.doPost(CarbonServlet.java:238)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.owasp.csrfguard.CsrfGuardFilter.doFilter(CsrfGuardFilter.java:88)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.wso2.carbon.ui.filters.CSRFPreventionFilter.doFilter(CSRFPreventionFilter.java:88)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.wso2.carbon.ui.filters.CRLFPreventionFilter.doFilter(CRLFPreventionFilter.java:61)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.wso2.carbon.tomcat.ext.filter.CharacterSetFilter.doFilter(CharacterSetFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.continueInvocation(CompositeValve.java:99)
+	at org.wso2.carbon.tomcat.ext.valves.TomcatValveContainer.invokeValves(TomcatValveContainer.java:49)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:62)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:146)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:57)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+TID: [-1] [2021-05-01 13:55:43,172] ERROR {org.apache.synapse.transport.passthru.SourceHandler} - I/O error: An established connection was aborted by the software in your host machine java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at org.apache.http.impl.nio.reactor.SessionInputBufferImpl.fill(SessionInputBufferImpl.java:164)
+	at org.apache.http.impl.nio.codecs.AbstractMessageParser.fillBuffer(AbstractMessageParser.java:136)
+	at org.apache.synapse.transport.http.conn.LoggingNHttpServerConnection$LoggingNHttpMessageParser.fillBuffer(LoggingNHttpServerConnection.java:403)
+	at org.apache.http.impl.nio.DefaultNHttpServerConnection.consumeInput(DefaultNHttpServerConnection.java:261)
+	at org.apache.synapse.transport.http.conn.LoggingNHttpServerConnection.consumeInput(LoggingNHttpServerConnection.java:114)
+	at org.apache.synapse.transport.passthru.ServerIODispatch.onInputReady(ServerIODispatch.java:82)
+	at org.apache.synapse.transport.passthru.ServerIODispatch.onInputReady(ServerIODispatch.java:39)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:113)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:159)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:338)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:316)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:277)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:105)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:586)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+TID: [-1] [2021-05-01 13:58:18,541] ERROR {org.apache.synapse.transport.passthru.SourceHandler} - I/O error: An established connection was aborted by the software in your host machine java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at org.apache.http.impl.nio.reactor.SessionInputBufferImpl.fill(SessionInputBufferImpl.java:164)
+	at org.apache.http.impl.nio.codecs.AbstractMessageParser.fillBuffer(AbstractMessageParser.java:136)
+	at org.apache.synapse.transport.http.conn.LoggingNHttpServerConnection$LoggingNHttpMessageParser.fillBuffer(LoggingNHttpServerConnection.java:403)
+	at org.apache.http.impl.nio.DefaultNHttpServerConnection.consumeInput(DefaultNHttpServerConnection.java:261)
+	at org.apache.synapse.transport.http.conn.LoggingNHttpServerConnection.consumeInput(LoggingNHttpServerConnection.java:114)
+	at org.apache.synapse.transport.passthru.ServerIODispatch.onInputReady(ServerIODispatch.java:82)
+	at org.apache.synapse.transport.passthru.ServerIODispatch.onInputReady(ServerIODispatch.java:39)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:113)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:159)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:338)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:316)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:277)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:105)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:586)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+TID: [-1] [2021-05-01 14:04:34,240] ERROR {org.apache.synapse.transport.passthru.SourceHandler} - I/O error: An established connection was aborted by the software in your host machine java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at org.apache.http.impl.nio.reactor.SessionInputBufferImpl.fill(SessionInputBufferImpl.java:164)
+	at org.apache.http.impl.nio.codecs.AbstractMessageParser.fillBuffer(AbstractMessageParser.java:136)
+	at org.apache.synapse.transport.http.conn.LoggingNHttpServerConnection$LoggingNHttpMessageParser.fillBuffer(LoggingNHttpServerConnection.java:403)
+	at org.apache.http.impl.nio.DefaultNHttpServerConnection.consumeInput(DefaultNHttpServerConnection.java:261)
+	at org.apache.synapse.transport.http.conn.LoggingNHttpServerConnection.consumeInput(LoggingNHttpServerConnection.java:114)
+	at org.apache.synapse.transport.passthru.ServerIODispatch.onInputReady(ServerIODispatch.java:82)
+	at org.apache.synapse.transport.passthru.ServerIODispatch.onInputReady(ServerIODispatch.java:39)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:113)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:159)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:338)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:316)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:277)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:105)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:586)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+TID: [-1] [2021-05-01 14:10:12,463] ERROR {org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve} - Could not handle request: //carbon java.lang.NullPointerException
+	at org.wso2.carbon.tomcat.ext.internal.Utils.getAppNameFromRequest(Utils.java:101)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.initCarbonContext(CarbonContextCreatorValve.java:80)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:56)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+TID: [-1] [2021-05-01 14:10:12,862] ERROR {org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve} - Could not handle request: //carbon java.lang.NullPointerException
+	at org.wso2.carbon.tomcat.ext.internal.Utils.getAppNameFromRequest(Utils.java:101)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.initCarbonContext(CarbonContextCreatorValve.java:80)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:56)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+TID: [-1234] [2021-05-01 14:11:34,281]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:11:34,282]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:11:34,282]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:11:34,283]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:11:34,283]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:11:34,284]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:11:34,285]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:11:34,285]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:11:34,286]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:32:18,440]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:32:18,441]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:32:18,442]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:32:18,442]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:32:18,443]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:32:18,443]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:32:18,444]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:32:18,444]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 14:32:18,445]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:40:36,440]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:40:36,441]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:40:36,441]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:40:36,442]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:40:36,443]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:40:36,443]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:40:36,444]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:40:36,444]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:40:36,445]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:49:38,928]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:49:38,929]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:49:38,930]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:49:38,930]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:49:38,931]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:49:38,931]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:49:38,932]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:49:38,933]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid
+TID: [-1234] [2021-05-01 15:49:38,934]  WARN {org.apache.tomcat.util.net.SSLUtilBase} - jsseUtil.trustedCertNotValid

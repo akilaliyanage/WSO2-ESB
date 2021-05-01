@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eventPublisher name="MessageFlowConfigurationPublisher" statistics="disable" trace="disable" xmlns="http://wso2.org/carbon/eventpublisher">
+<eventPublisher name="MessageFlowConfigurationPublisher"
+  statistics="disable" trace="disable" xmlns="http://wso2.org/carbon/eventpublisher">
   <from streamName="org.wso2.esb.analytics.stream.ConfigEntry" version="1.0.0"/>
   <mapping customMapping="disable" type="wso2event"/>
   <to eventAdapterType="wso2event">
@@ -8,6 +9,6 @@
     <property name="publishingMode">blocking</property>
     <property name="publishTimeout">0</property>
     <property name="receiverURL">tcp://localhost:7612</property>
-    <property encrypted="false" name="password">admin</property>
+    <property encrypted="true" name="password">eyJjIjoiQUNVdS80ZDZkSTFxY083bzhoRDBBdUUvaVFlbmIrRGVvYytIOVE5b21ndDJjVW1DcUdFNk9McTdtWWpYTFdrZGdOT3hCWCtXdzJiekpIcmN5UEY4MFA4dFowa1E4QjNodm5WYjd0OXMxellQVW00Zm0yNXFmNVJTQWNMamczVE5XZ0VuNTJvMmxDbWdmZ2RoRHFpTks0Z00yN0NnSEdMcDQyZVpHMkRNWlB0UVdVNzhaL3BrdFJwQVpoM1VNZXJqMHdPUFJwSnZyRmt3RkVZbENnYUNVMGt1NXFNR1lqWjRnaUdobDh5VHI2SWh2YXlzaWQ1MUF0SnQ1ME1IWXZ6Qlk0MWh1cFpFQmNqSGpYR25wckdaUWd2MzZSc2xacFFGUjdvVU5jWmdVbzYrUEdHVDB2Y2RmVndlSWNkY041K2taOEVybm9VcWE0UE9rNmw2USs4d0dRXHUwMDNkXHUwMDNkIiwidCI6IlJTQS9FQ0IvT0FFUHdpdGhTSEExYW5kTUdGMVBhZGRpbmciLCJ0cCI6IjU3RkYzOEQ5NzY2NEM3OTJGRjg4MDExNzFGMDQxOTFERUQ4ODc3OEQiLCJ0cGQiOiJTSEEtMSJ9</property>
   </to>
 </eventPublisher>

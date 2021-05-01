@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: process_tools_6.6.0
+Bundle-SymbolicName: process_tools_6.6.0
+Bundle-Version: 1.0.0
+Export-Package: org.wso2.ei.businessprocess.utils.migration,org.wso2.ei.
+ businessprocess.utils.migration.db,org.wso2.ei.businessprocess.utils.mi
+ gration.deployment,org.wso2.ei.businessprocess.utils.migration.utils,or
+ g.wso2.ei.businessprocess.utils.processcleanup
+Bundle-ClassPath: .,process-tools-6.6.0.jar
+
