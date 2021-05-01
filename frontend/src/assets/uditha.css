@@ -1,0 +1,22 @@
+h2{
+    color: #61dafb;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    font-family: Century;
+}
+
+.signupForm{
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 400px;
+    height: 420px;
+    padding: 40px;
+    color: azure;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.8);
+    border-radius: 10px;
+}

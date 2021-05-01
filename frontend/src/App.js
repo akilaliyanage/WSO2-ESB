@@ -1,13 +1,15 @@
-import logo from './logo.svg';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
+import UserSignUp from "./components/UserSignUp";
 
 function App() {
   return (
       <Router>
     <div className="App">
 
-    <h1>Hi</h1>
+      <Route path = "/signup" exact component = {UserSignUp}/>
 
     </div>
       </Router>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D:/Year 03/Semester 01/Application Frameworks/UI_Manage/.idea/UI_Manage.iml" filepath="D:/Year 03/Semester 01/Application Frameworks/UI_Manage/.idea/UI_Manage.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/WSO2-ESB.iml" filepath="$PROJECT_DIR$/.idea/WSO2-ESB.iml" />
     </modules>
   </component>
