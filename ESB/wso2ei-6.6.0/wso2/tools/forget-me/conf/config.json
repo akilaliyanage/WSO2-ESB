@@ -1,0 +1,26 @@
+{
+  "processors" : [
+    "log-file"
+  ],
+  "directories": [
+    {
+      "dir": "log-config",
+      "type": "log-file",
+      "processor" : "log-file",
+      "log-file-path" : "repository/logs",
+      "log-file-name-regex" : "(audit.log|warn.log|wso2carbon.log)(.)*"
+    },
+    {
+      "dir": "sql",
+      "type": "rdbms",
+      "processor" : "rdbms"
+    }
+  ],
+  "extensions": [
+    {
+      "dir": "datasources",
+      "type": "datasource",
+      "processor" : "rdbms"
+    }
+  ]
+}

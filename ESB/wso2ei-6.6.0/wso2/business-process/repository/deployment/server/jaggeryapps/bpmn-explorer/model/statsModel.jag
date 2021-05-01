@@ -1,0 +1,58 @@
+<%/*<!--
+ ~ Copyright (c) 2016, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ ~
+ ~ Licensed under the Apache License, Version 2.0 (the "License");
+ ~ you may not use this file except in compliance with the License.
+ ~ You may obtain a copy of the License at
+ ~
+ ~      http://www.apache.org/licenses/LICENSE-2.0
+ ~
+ ~ Unless required by applicable law or agreed to in writing, software
+ ~ distributed under the License is distributed on an "AS IS" BASIS,
+ ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ ~ See the License for the specific language governing permissions and
+ ~ limitations under the License.
+ -->*/%>
+<%
+
+var headers = {"Authorization":"Basic " + auth};
+var   isProcessesDeployed = false;
+
+var countOfProcesses = get( httpUrl +"/bpmn/stats/processes/count" ,null, headers, "json" ).data;
+if(countOfProcesses == 0){
+    isProcessesDeployed = false;
+}
+else{
+    isProcessesDeployed =true;
+}
+var processInstanceCount = get( httpUrl +"/bpmn/stats/process-instances/count" ,null, headers, "json" ).data.data;
+
+var processChart = [];
+
+for(var i= 0; i < processInstanceCount.length; i++){
+    var processDefinitionId = processInstanceCount[i].processDefinitionId;
+    var processCount = processInstanceCount[i].instanceCount;
+    processChart.push([processDefinitionId, processCount]);
+}
+
+var processStatusCount = get( httpUrl +"/bpmn/stats/process-instances/state/all/count" ,null, headers, "json" ).data.data;
+var processStatusChart = [];
+for(var i= 0; i < processStatusCount.length; i++){
+    var status = processStatusCount[i].status;
+    var processCount = processStatusCount[i].count;
+    processStatusChart.push([status, processCount]);
+}
+
+var taskStatusCount = get( httpUrl +"/bpmn/stats/task-instances/status/all/count" ,null, headers, "json" ).data.data;
+var taskStatusChart = [];
+for(var i= 0; i < taskStatusCount.length; i++){
+    var status = taskStatusCount[i].status;
+    var processCount = taskStatusCount[i].count;
+    taskStatusChart.push([status, processCount]);
+}
+
+
+//Set current active view as stats view.
+//This is used to highlight current view which the user currently viewing in the navigation bar
+dashboardNavActive = 'class="active"';
+%>

@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+repositories/file\:_home_jenkins_workspace_products_product-ei_p2-profile_ei-profile_target_p2-repo/enabled=true
+repositories/file\:_home_jenkins_workspace_products_product-ei_p2-profile_ei-profile_target_p2-repo/isSystem=false
+repositories/file\:_home_jenkins_workspace_products_product-ei_p2-profile_ei-profile_target_p2-repo/name=ei-profile
+repositories/file\:_home_jenkins_workspace_products_product-ei_p2-profile_ei-profile_target_p2-repo/suffix=content.xml
+repositories/file\:_home_jenkins_workspace_products_product-ei_p2-profile_ei-profile_target_p2-repo/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/file\:_home_jenkins_workspace_products_product-ei_p2-profile_ei-profile_target_p2-repo/uri=file\:/home/jenkins/workspace/products/product-ei/p2-profile/ei-profile/target/p2-repo
+repositories/file\:_home_jenkins_workspace_products_product-ei_p2-profile_ei-profile_target_p2-repo/version=1.0.0

@@ -1,0 +1,47 @@
+{
+  "name": "EI Analytics Search Box",
+  "id": "EIAnalyticsSearchBox",
+  "thumbnailURL": "",
+  "configs": {
+    "pubsub": {
+      "types": [
+        "publisher"
+      ],
+      "publisherWidgetOutputs": [
+        "selectedComponent"
+      ]
+    },
+    "providerConfig": {
+      "configs": {
+        "type": "SiddhiStoreDataProvider",
+        "config": {
+          "siddhiApp": "@store(type = 'rdbms', datasource = 'EI_ANALYTICS') @PrimaryKey('componentId') @Index('componentType') define table ComponentNameTable (componentId string, componentName string, componentType string);",
+          "queryData": {
+            "query": "from ComponentNameTable on componentType=='{{paramComponentType}}' select componentName;"
+          },
+          "publishingInterval": 60
+        }
+      }
+    },
+    "options": [
+      {
+        "id": "header",
+        "title": "Header",
+        "type": {
+          "name": "BOOLEAN",
+          "possibleValues": [true, false]
+        },
+        "defaultValue": true
+      },
+      {
+        "id": "headerTitle",
+        "title": "Widget Display Name",
+        "type": {
+          "name": "TEXT",
+          "possibleValues": []
+        },
+        "defaultValue": "EI Analytics Search Box"
+      }
+    ]
+  }
+}
