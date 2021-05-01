@@ -10,3 +10,28 @@ TID: [-1234] [2021-05-01 14:32:18,228]  INFO {API_LOGGER.news} - Initializing AP
 TID: [-1234] [2021-05-01 15:40:36,307]  INFO {API_LOGGER.news} - Initializing API: news
 TID: [-1234] [2021-05-01 15:49:38,837]  INFO {API_LOGGER.news} - Initializing API: news
 TID: [-1234] [2021-05-01 15:49:53,997]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-01 16:45:18,955]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-01 16:45:19,009]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-01 16:50:08,807]  INFO {API_LOGGER.HealthcareAPI} - message = test
+TID: [-1234] [2021-05-01 17:19:34,438]  INFO {API_LOGGER.test} - Initializing API: test
+TID: [-1234] [2021-05-01 17:21:49,474]  INFO {API_LOGGER.test} - Initializing API: test
+TID: [-1234] [2021-05-01 17:22:34,510]  INFO {API_LOGGER.test} - Initializing API: test
+TID: [-1234] [2021-05-01 17:23:52,645]  INFO {API_LOGGER.HealthcareAPI} - message = test
+TID: [-1234] [2021-05-01 17:23:52,646]  INFO {API_LOGGER.HealthcareAPI} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-01 17:23:52,646]  WARN {API_LOGGER.HealthcareAPI} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-01 17:25:27,372]  INFO {API_LOGGER.HealthcareAPI} - message = test
+TID: [-1234] [2021-05-01 17:25:27,372]  INFO {API_LOGGER.HealthcareAPI} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-01 17:25:27,372]  WARN {API_LOGGER.HealthcareAPI} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-01 17:29:47,231]  INFO {API_LOGGER.HealthcareAPI} - message = test
+TID: [-1234] [2021-05-01 17:37:04,697]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-01 17:38:04,816]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-01 17:44:03,117]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-01 17:44:03,129]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-01 17:44:03,215]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-01 17:45:36,407]  INFO {API_LOGGER.test2} - msg = test msg
+TID: [-1234] [2021-05-01 17:47:03,302]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-01 17:47:16,167]  INFO {API_LOGGER.test2} - msg = test msg
+TID: [-1234] [2021-05-01 17:49:03,358]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-01 17:49:14,061]  INFO {API_LOGGER.test2} - msg = test msg
+TID: [-1234] [2021-05-01 17:50:33,418]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-01 17:50:39,210]  INFO {API_LOGGER.test2} - msg = test msg

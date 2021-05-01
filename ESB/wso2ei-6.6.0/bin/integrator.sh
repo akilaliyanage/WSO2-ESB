@@ -49,6 +49,7 @@ Darwin*) darwin=true
            fi
            if [ -z "$JAVA_HOME" ] ; then
              JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/${JAVA_VERSION}/Home
+
            fi
            ;;
 esac

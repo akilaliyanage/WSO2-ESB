@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="testCompositeExporter" version="1.0.0" type="carbon/application">
+        <dependency artifact="HealthcareAPI" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="test" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+    </artifact>
+</artifacts>

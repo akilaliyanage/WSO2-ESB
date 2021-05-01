@@ -775,3 +775,1249 @@ TID: [-1234] [] [2021-05-01 15:49:53,996]  INFO {org.apache.synapse.rest.API} - 
 TID: [-1234] [] [2021-05-01 15:49:53,999]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : HealthcareAPI was added to the Synapse configuration successfully - [ Deployed From Artifact Container: testCompositeExporter ] 
 TID: [-1234] [] [2021-05-01 15:49:54,000]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'HealthcareAPI' has been deployed from file : D:\Practicals\AF\ESB\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1619864393865testCompositeExporter_1.0.0.car\HealthcareAPI_1.0.0\HealthcareAPI-1.0.0.xml
 TID: [-1234] [] [2021-05-01 15:49:54,001]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : testCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 16:45:07,331]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-05-01 16:45:07,341]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Linux 5.4.0-72-generic, amd64
+TID: [-1234] [] [2021-05-01 16:45:07,341]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : /usr/lib/jvm/java-11-openjdk-amd64
+TID: [-1234] [] [2021-05-01 16:45:07,342]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 11.0.11
+TID: [-1234] [] [2021-05-01 16:45:07,342]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04,Ubuntu
+TID: [-1234] [] [2021-05-01 16:45:07,342]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0
+TID: [-1234] [] [2021-05-01 16:45:07,342]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp
+TID: [-1234] [] [2021-05-01 16:45:07,342]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : akila, en-US, Asia/Colombo
+TID: [-1] [] [2021-05-01 16:45:07,437]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-05-01 16:45:07,446]  INFO {org.wso2.carbon.dataservices.google.tokengen.servlet.internal.GoogleTokenGenDSComponent} - Activating GoogleTokengen DS component
+TID: [-1] [] [2021-05-01 16:45:07,558]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1234] [] [2021-05-01 16:45:09,268]  INFO {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService} - Configured Registry in 38ms
+TID: [-1234] [] [2021-05-01 16:45:09,321]  INFO {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent} - Registry Mode    : READ-WRITE
+TID: [-1234] [] [2021-05-01 16:45:10,467]  INFO {org.wso2.carbon.registry.indexing.solr.SolrClient} - Default Embedded Solr Server Initialized
+TID: [-1234] [] [2021-05-01 16:45:10,553]  INFO {org.wso2.carbon.user.core.internal.UserStoreMgtDSComponent} - Carbon UserStoreMgtDSComponent activated successfully.
+TID: [-1234] [] [2021-05-01 16:45:11,375]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2021-05-01 16:45:11,375]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2021-05-01 16:45:11,836]  INFO {org.apache.synapse.transport.vfs.VFSTransportSender} - VFS Sender started
+TID: [-1234] [] [2021-05-01 16:45:11,855]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} - Initializing Pass-through HTTP/S Sender...
+TID: [-1234] [] [2021-05-01 16:45:11,879]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} - Pass-through HTTP Sender started...
+TID: [-1234] [] [2021-05-01 16:45:11,880]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Initializing Pass-through HTTP/S Sender...
+TID: [-1234] [] [2021-05-01 16:45:11,887]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Pass-through HTTPS Sender started...
+TID: [-1234] [] [2021-05-01 16:45:11,910]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Initializing Pass-through HTTP/S Listener...
+TID: [-1234] [] [2021-05-01 16:45:11,924]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Initializing Pass-through HTTP/S Listener...
+TID: [-1234] [wso2carbon-sts] [2021-05-01 16:45:15,294]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: wso2carbon-sts {super-tenant}
+TID: [-1234] [] [2021-05-01 16:45:15,745]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Repository       : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/deployment/server/
+TID: [-1234] [] [2021-05-01 16:45:15,807]  INFO {org.wso2.carbon.core.multitenancy.eager.TenantLoadingConfig} - Using tenant lazy loading policy...
+TID: [-1234] [] [2021-05-01 16:45:15,816]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2021-05-01 16:45:15,920]  INFO {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS} - Successfully registered the Rule Config service
+TID: [-1234] [] [2021-05-01 16:45:16,285]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} - Starting ESB...
+TID: [-1234] [] [2021-05-01 16:45:16,312]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} - Initializing Apache Synapse...
+TID: [-1234] [] [2021-05-01 16:45:16,315]  INFO {org.apache.synapse.SynapseControllerFactory} - Using Synapse home : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/.
+TID: [-1234] [] [2021-05-01 16:45:16,316]  INFO {org.apache.synapse.SynapseControllerFactory} - Using synapse.xml location : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/././repository/deployment/server/synapse-configs/default
+TID: [-1234] [] [2021-05-01 16:45:16,316]  INFO {org.apache.synapse.SynapseControllerFactory} - Using server name : localhost
+TID: [-1234] [] [2021-05-01 16:45:16,319]  INFO {org.apache.synapse.SynapseControllerFactory} - The timeout handler will run every : 15s
+TID: [-1234] [] [2021-05-01 16:45:16,343]  INFO {org.apache.synapse.Axis2SynapseController} - Initializing Synapse at : Sat May 01 16:45:16 IST 2021
+TID: [-1234] [] [2021-05-01 16:45:16,351]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} - Loading the mediation configuration from the file system
+TID: [-1234] [] [2021-05-01 16:45:16,354]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} - Building synapse configuration from the synapse artifact repository at : ././repository/deployment/server/synapse-configs/default
+TID: [-1234] [] [2021-05-01 16:45:16,357]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} - Generating the Synapse configuration model by parsing the XML configuration
+TID: [-1234] [] [2021-05-01 16:45:16,487]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-01 16:45:16,491]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-01 16:45:16,491]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} - Loaded Synapse configuration from the artifact repository at : ././repository/deployment/server/synapse-configs/default
+TID: [-1234] [] [2021-05-01 16:45:16,492]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_HOST was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-01 16:45:16,492]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_IP was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-01 16:45:16,596]  INFO {org.apache.synapse.Axis2SynapseController} - Loading mediator extensions...
+TID: [-1234] [echo] [2021-05-01 16:45:16,620]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: echo {super-tenant}
+TID: [-1234] [Version] [2021-05-01 16:45:16,646]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: Version {super-tenant}
+TID: [-1234] [] [2021-05-01 16:45:16,651]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state :MessageFlowConfigurationPublisher.xml, Stream validation exception : Stream org.wso2.esb.analytics.stream.ConfigEntry:1.0.0 does not exist
+TID: [-1234] [] [2021-05-01 16:45:16,652]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state :MessageFlowStatisticsPublisher.xml, Stream validation exception : Stream org.wso2.esb.analytics.stream.FlowEntry:1.0.0 does not exist
+TID: [-1234] [] [2021-05-01 16:45:16,682]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowConfigurationPublisher.xml
+TID: [-1234] [] [2021-05-01 16:45:16,724]  INFO {org.wso2.carbon.event.stream.core.internal.EventJunction} - WSO2EventConsumer added to the junction. Stream:org.wso2.esb.analytics.stream.ConfigEntry:1.0.0
+TID: [-1234] [] [2021-05-01 16:45:16,726]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher configuration successfully deployed and in active state : MessageFlowConfigurationPublisher
+TID: [-1234] [] [2021-05-01 16:45:16,726]  INFO {org.wso2.carbon.event.stream.core.EventStreamDeployer} - Stream definition is deployed successfully  : org.wso2.esb.analytics.stream.ConfigEntry:1.0.0
+TID: [-1234] [] [2021-05-01 16:45:16,727]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowStatisticsPublisher.xml
+TID: [-1234] [] [2021-05-01 16:45:16,743]  INFO {org.wso2.carbon.event.stream.core.internal.EventJunction} - WSO2EventConsumer added to the junction. Stream:org.wso2.esb.analytics.stream.FlowEntry:1.0.0
+TID: [-1234] [] [2021-05-01 16:45:16,743]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher configuration successfully deployed and in active state : MessageFlowStatisticsPublisher
+TID: [-1234] [] [2021-05-01 16:45:16,744]  INFO {org.wso2.carbon.event.stream.core.EventStreamDeployer} - Stream definition is deployed successfully  : org.wso2.esb.analytics.stream.FlowEntry:1.0.0
+TID: [-1234] [odata] [2021-05-01 16:45:16,868]  INFO {org.wso2.carbon.webapp.mgt.TomcatGenericWebappsDeployer} - Deployed webapp: StandardEngine[Catalina].StandardHost[localhost].StandardContext[/odata].File[/home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/deployment/server/webapps/odata.war]
+TID: [-1234] [] [2021-05-01 16:45:16,870]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying the Synapse service...
+TID: [-1234] [] [2021-05-01 16:45:16,871]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying Proxy services...
+TID: [-1234] [] [2021-05-01 16:45:16,872]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying EventSources...
+TID: [-1234] [] [2021-05-01 16:45:16,913]  INFO {org.apache.synapse.ServerManager} - Server ready for processing...
+TID: [-1234] [] [2021-05-01 16:45:16,948]  INFO {org.wso2.carbon.das.messageflow.data.publisher.internal.MediationStatisticsComponent} - Global Message-Flow Statistic Reporting is Disabled
+TID: [-1234] [] [2021-05-01 16:45:18,042]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS_AssignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 16:45:18,954]  INFO {org.apache.synapse.rest.API} - Initializing API: news
+TID: [-1234] [] [2021-05-01 16:45:18,955]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : news was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS_AssignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 16:45:18,955]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'news' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619867718043DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml
+TID: [-1234] [] [2021-05-01 16:45:18,955]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS_AssignmentCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 16:45:18,956]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : testCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 16:45:19,007]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test was added to the Synapse configuration successfully - [ Deployed From Artifact Container: testCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 16:45:19,007]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619867718956testCompositeExporter_1.0.0.car/test_1.0.0/test-1.0.0.xml
+TID: [-1234] [] [2021-05-01 16:45:19,009]  INFO {org.apache.synapse.rest.API} - Initializing API: HealthcareAPI
+TID: [-1234] [] [2021-05-01 16:45:19,009]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : HealthcareAPI was added to the Synapse configuration successfully - [ Deployed From Artifact Container: testCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 16:45:19,009]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'HealthcareAPI' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619867718956testCompositeExporter_1.0.0.car/HealthcareAPI_1.0.0/HealthcareAPI-1.0.0.xml
+TID: [-1234] [] [2021-05-01 16:45:19,010]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : testCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 16:45:19,011]  INFO {org.apache.synapse.transport.vfs.VFSTransportListener} - VFS listener started
+TID: [-1234] [] [2021-05-01 16:45:19,012]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Starting Pass-through HTTP Listener...
+TID: [-1234] [] [2021-05-01 16:45:19,021]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Pass-through HTTP Listener started on 0.0.0.0:8280
+TID: [-1234] [] [2021-05-01 16:45:19,022]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Starting Pass-through HTTPS Listener...
+TID: [-1234] [] [2021-05-01 16:45:19,029]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Pass-through HTTPS Listener started on 0.0.0.0:8243
+TID: [-1234] [] [2021-05-01 16:45:19,277]  INFO {org.wso2.carbon.ntask.core.service.impl.TaskServiceImpl} - Task service starting in STANDALONE mode...
+TID: [-1234] [] [2021-05-01 16:45:19,289]  INFO {org.wso2.carbon.mediation.ntask.NTaskTaskManager} - Initialized task manager. Tenant [-1234]
+TID: [-1234] [] [2021-05-01 16:45:19,369]  INFO {org.wso2.carbon.core.init.JMXServerManager} - JMX Service URL  : service:jmx:rmi://localhost:11111/jndi/rmi://localhost:9999/jmxrmi
+TID: [-1234] [] [2021-05-01 16:45:19,370]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} - Server           :  WSO2 Enterprise Integrator-6.6.0
+TID: [-1234] [] [2021-05-01 16:45:19,371]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} - WSO2 Carbon started in 21 sec
+TID: [-1234] [] [2021-05-01 16:45:19,828]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} - Mgt Console URL  : https://172.18.0.1:9443/carbon/
+TID: [-1234] [] [2021-05-01 16:46:24,371]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 16:46:24,371+0530]
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 16:47:00,977]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 16:47:00,977+0530]
+TID: [-1234] [] [2021-05-01 16:49:02,772]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 16:49:02,772+0530]
+TID: [-1234] [] [2021-05-01 16:50:08,806]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = test
+TID: [-1234] [] [2021-05-01 16:50:08,813]  INFO {org.apache.synapse.core.axis2.TimeoutHandler} - This engine will expire all callbacks after GLOBAL_TIMEOUT: 120 seconds, irrespective of the timeout action, after the specified or optional timeout
+TID: [-1234] [] [2021-05-01 17:17:59,362]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:17:59,362+0530]
+TID: [-1234] [] [2021-05-01 17:18:45,371]  INFO {org.apache.synapse.endpoints.EndpointContext} - Manually switching off endpoint : test with address http://localhost:9090/healthcare/{uri.var.category}
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:19:32,971]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:19:32,971+0530]
+TID: [-1234] [] [2021-05-01 17:19:34,402]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:19:34,432]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:19:34,433]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619869774403DS-assignmnetCompositeExporter_1.0.0.car/test-endpoint_1.0.0/test-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:19:34,437]  INFO {org.apache.synapse.rest.API} - Initializing API: test
+TID: [-1234] [] [2021-05-01 17:19:34,438]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:19:34,439]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619869774403DS-assignmnetCompositeExporter_1.0.0.car/test_1.0.0/test-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:19:34,440]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:21:38,530]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:21:38,530+0530]
+TID: [-1234] [] [2021-05-01 17:21:49,459]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Undeploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0...
+TID: [-1234] [] [2021-05-01 17:21:49,465]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test was removed from the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:21:49,466]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test' has been undeployed
+TID: [-1234] [] [2021-05-01 17:21:49,466]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been undeployed
+TID: [-1234] [] [2021-05-01 17:21:49,467]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Undeployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 17:21:49,467]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:21:49,472]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:21:49,472]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619869909468DS-assignmnetCompositeExporter_1.0.0.car/test-endpoint_1.0.0/test-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:21:49,473]  INFO {org.apache.synapse.rest.API} - Initializing API: test
+TID: [-1234] [] [2021-05-01 17:21:49,474]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:21:49,474]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619869909468DS-assignmnetCompositeExporter_1.0.0.car/test_1.0.0/test-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:21:49,474]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:21:56,213]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:21:56,213+0530]
+TID: [-1234] [] [2021-05-01 17:22:04,478]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Undeploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0...
+TID: [-1234] [] [2021-05-01 17:22:04,489]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test was removed from the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:22:04,490]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test' has been undeployed
+TID: [-1234] [] [2021-05-01 17:22:04,491]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been undeployed
+TID: [-1234] [] [2021-05-01 17:22:04,494]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Undeployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:22:20,306]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:22:20,306+0530]
+TID: [-1234] [] [2021-05-01 17:22:34,500]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:22:34,508]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:22:34,509]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619869954501DS-assignmnetCompositeExporter_1.0.0.car/test-endpoint_1.0.0/test-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:22:34,510]  INFO {org.apache.synapse.rest.API} - Initializing API: test
+TID: [-1234] [] [2021-05-01 17:22:34,510]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:22:34,511]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619869954501DS-assignmnetCompositeExporter_1.0.0.car/test_1.0.0/test-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:22:34,511]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 17:23:52,643]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = test
+TID: [-1234] [] [2021-05-01 17:25:27,371]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = test
+TID: [-1234] [] [2021-05-01 17:29:42,627]  INFO {org.apache.synapse.endpoints.EndpointContext} - Manually activating endpoint : test with address http://localhost:9090/healthcare/{uri.var.category}
+TID: [-1234] [] [2021-05-01 17:29:47,230]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = test
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:32:44,594]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:32:44,594+0530]
+TID: [-1234] [] [2021-05-01 17:32:49,625]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Undeploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0...
+TID: [-1234] [] [2021-05-01 17:32:49,641]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test was removed from the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:32:49,642]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test' has been undeployed
+TID: [-1234] [] [2021-05-01 17:32:49,643]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been undeployed
+TID: [-1234] [] [2021-05-01 17:32:49,646]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Undeployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 17:35:45,948]  INFO {org.apache.synapse.endpoints.EndpointContext} - Manually switching off endpoint : test with address http://localhost:9090/healthcare/{uri.var.category}
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:37:02,992]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:37:02,992+0530]
+TID: [-1234] [] [2021-05-01 17:37:04,684]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:37:04,691]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:37:04,691]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test-endpoint_1.0.0/test-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:37:04,697]  INFO {org.apache.synapse.rest.API} - Initializing API: test2
+TID: [-1234] [] [2021-05-01 17:37:04,697] ERROR {org.apache.synapse.config.SynapseConfiguration} - URL context: /news is already registered with the API: news
+TID: [-1234] [] [2021-05-01 17:37:04,698] ERROR {org.wso2.carbon.rest.api.ApiDeployer} - API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed. org.apache.synapse.SynapseException: URL context: /news is already registered with the API: news
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [] [2021-05-01 17:37:04,706] ERROR {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - Deployment of the Synapse Artifact from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed! org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.synapse.SynapseException: URL context: /news is already registered with the API: news
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 22 more
+
+TID: [-1234] [] [2021-05-01 17:37:04,741]  INFO {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - The file has been backed up into : NO_BACKUP_ON_WORKER.INFO
+TID: [-1234] [] [2021-05-01 17:37:04,742] ERROR {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - Deployment of synapse artifact failed. Error reading /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed. org.apache.axis2.deployment.DeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:210)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	... 20 more
+Caused by: org.apache.synapse.SynapseException: URL context: /news is already registered with the API: news
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 22 more
+
+TID: [-1234] [] [2021-05-01 17:37:04,744] ERROR {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Error occurred while deploying Carbon Application org.apache.axis2.deployment.DeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:222)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.axis2.deployment.DeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:210)
+	... 20 more
+Caused by: org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870824684DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	... 20 more
+Caused by: org.apache.synapse.SynapseException: URL context: /news is already registered with the API: news
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 22 more
+
+TID: [-1234] [] [2021-05-01 17:37:04,779]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Reverting successfully deployed artifcats in this CApp : DS-assignmnetCompositeExporter_1.0.0
+TID: [-1234] [] [2021-05-01 17:37:04,782]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been undeployed
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:38:02,631]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:38:02,631+0530]
+TID: [-1234] [] [2021-05-01 17:38:04,793]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/deployment/server/carbonapps/DS-assignmnetCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-01 17:38:04,794]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:38:04,809]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:38:04,811]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test-endpoint_1.0.0/test-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:38:04,815]  INFO {org.apache.synapse.rest.API} - Initializing API: test2
+TID: [-1234] [] [2021-05-01 17:38:04,816] ERROR {org.apache.synapse.config.SynapseConfiguration} - URL context: /news is already registered with the API: news
+TID: [-1234] [] [2021-05-01 17:38:04,817] ERROR {org.wso2.carbon.rest.api.ApiDeployer} - API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed. org.apache.synapse.SynapseException: URL context: /news is already registered with the API: news
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+TID: [-1234] [] [2021-05-01 17:38:04,820] ERROR {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - Deployment of the Synapse Artifact from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed! org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.synapse.SynapseException: URL context: /news is already registered with the API: news
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 22 more
+
+TID: [-1234] [] [2021-05-01 17:38:04,825]  INFO {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - The file has been backed up into : NO_BACKUP_ON_WORKER.INFO
+TID: [-1234] [] [2021-05-01 17:38:04,826] ERROR {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - Deployment of synapse artifact failed. Error reading /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed. org.apache.axis2.deployment.DeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:210)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	... 20 more
+Caused by: org.apache.synapse.SynapseException: URL context: /news is already registered with the API: news
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 22 more
+
+TID: [-1234] [] [2021-05-01 17:38:04,830] ERROR {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Error occurred while deploying Carbon Application org.apache.axis2.deployment.DeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:222)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.axis2.deployment.DeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:210)
+	... 20 more
+Caused by: org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619870884795DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	... 20 more
+Caused by: org.apache.synapse.SynapseException: URL context: /news is already registered with the API: news
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 22 more
+
+TID: [-1234] [] [2021-05-01 17:38:04,832]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Reverting successfully deployed artifcats in this CApp : DS-assignmnetCompositeExporter_1.0.0
+TID: [-1234] [] [2021-05-01 17:38:04,835]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been undeployed
+TID: [-1234] [] [2021-05-01 17:38:28,530]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-05-01 17:38:28,534]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Linux 5.4.0-72-generic, amd64
+TID: [-1234] [] [2021-05-01 17:38:28,535]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : /usr/lib/jvm/java-11-openjdk-amd64
+TID: [-1234] [] [2021-05-01 17:38:28,535]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 11.0.11
+TID: [-1234] [] [2021-05-01 17:38:28,535]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04,Ubuntu
+TID: [-1234] [] [2021-05-01 17:38:28,535]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0
+TID: [-1234] [] [2021-05-01 17:38:28,535]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp
+TID: [-1234] [] [2021-05-01 17:38:28,535]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : akila, en-US, Asia/Colombo
+TID: [-1] [] [2021-05-01 17:38:28,647]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-05-01 17:38:28,656]  INFO {org.wso2.carbon.dataservices.google.tokengen.servlet.internal.GoogleTokenGenDSComponent} - Activating GoogleTokengen DS component
+TID: [-1] [] [2021-05-01 17:38:28,761]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1234] [] [2021-05-01 17:38:30,038] ERROR {org.wso2.carbon.user.core.util.DatabaseUtil} - Database Error - Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199] org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:739)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:671)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:162)
+	at org.wso2.carbon.user.core.common.DefaultRealm.populateProfileAndClaimMaps(DefaultRealm.java:444)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:126)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:264)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/database/WSO2CARBON_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 46 more
+
+TID: [-1234] [] [2021-05-01 17:38:30,044] ERROR {org.wso2.carbon.user.core.internal.Activator} - Cannot start User Manager Core bundle org.wso2.carbon.user.core.UserStoreException: Cannot initialize the realm.
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:274)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.wso2.carbon.user.core.UserStoreException: Database Error - Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:172)
+	at org.wso2.carbon.user.core.common.DefaultRealm.populateProfileAndClaimMaps(DefaultRealm.java:444)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:126)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:264)
+	... 22 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:739)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:671)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:162)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/database/WSO2CARBON_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 46 more
+
+TID: [-1234] [] [2021-05-01 17:39:06,732]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-05-01 17:39:06,736]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Linux 5.4.0-72-generic, amd64
+TID: [-1234] [] [2021-05-01 17:39:06,736]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : /usr/lib/jvm/java-11-openjdk-amd64
+TID: [-1234] [] [2021-05-01 17:39:06,736]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 11.0.11
+TID: [-1234] [] [2021-05-01 17:39:06,737]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04,Ubuntu
+TID: [-1234] [] [2021-05-01 17:39:06,737]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0
+TID: [-1234] [] [2021-05-01 17:39:06,737]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp
+TID: [-1234] [] [2021-05-01 17:39:06,737]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : akila, en-US, Asia/Colombo
+TID: [-1] [] [2021-05-01 17:39:06,837]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-05-01 17:39:06,850]  INFO {org.wso2.carbon.dataservices.google.tokengen.servlet.internal.GoogleTokenGenDSComponent} - Activating GoogleTokengen DS component
+TID: [-1] [] [2021-05-01 17:39:06,964]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1234] [] [2021-05-01 17:39:08,513] ERROR {org.wso2.carbon.user.core.util.DatabaseUtil} - Database Error - Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199] org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:739)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:671)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:162)
+	at org.wso2.carbon.user.core.common.DefaultRealm.populateProfileAndClaimMaps(DefaultRealm.java:444)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:126)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:264)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/database/WSO2CARBON_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 46 more
+
+TID: [-1234] [] [2021-05-01 17:39:08,522] ERROR {org.wso2.carbon.user.core.internal.Activator} - Cannot start User Manager Core bundle org.wso2.carbon.user.core.UserStoreException: Cannot initialize the realm.
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:274)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.wso2.carbon.user.core.UserStoreException: Database Error - Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:172)
+	at org.wso2.carbon.user.core.common.DefaultRealm.populateProfileAndClaimMaps(DefaultRealm.java:444)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:126)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:264)
+	... 22 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:739)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:671)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:162)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/database/WSO2CARBON_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 46 more
+
+TID: [-1234] [] [2021-05-01 17:40:06,399]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-05-01 17:40:06,403]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Linux 5.4.0-72-generic, amd64
+TID: [-1234] [] [2021-05-01 17:40:06,404]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : /usr/lib/jvm/java-11-openjdk-amd64
+TID: [-1234] [] [2021-05-01 17:40:06,404]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 11.0.11
+TID: [-1234] [] [2021-05-01 17:40:06,404]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04,Ubuntu
+TID: [-1234] [] [2021-05-01 17:40:06,404]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0
+TID: [-1234] [] [2021-05-01 17:40:06,404]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp
+TID: [-1234] [] [2021-05-01 17:40:06,404]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : akila, en-US, Asia/Colombo
+TID: [-1] [] [2021-05-01 17:40:06,517]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-05-01 17:40:06,528]  INFO {org.wso2.carbon.dataservices.google.tokengen.servlet.internal.GoogleTokenGenDSComponent} - Activating GoogleTokengen DS component
+TID: [-1] [] [2021-05-01 17:40:06,640]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1234] [] [2021-05-01 17:40:07,941] ERROR {org.wso2.carbon.user.core.util.DatabaseUtil} - Database Error - Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199] org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:739)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:671)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:162)
+	at org.wso2.carbon.user.core.common.DefaultRealm.populateProfileAndClaimMaps(DefaultRealm.java:444)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:126)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:264)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/database/WSO2CARBON_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 46 more
+
+TID: [-1234] [] [2021-05-01 17:40:07,947] ERROR {org.wso2.carbon.user.core.internal.Activator} - Cannot start User Manager Core bundle org.wso2.carbon.user.core.UserStoreException: Cannot initialize the realm.
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:274)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:102)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:115)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:72)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.wso2.carbon.user.core.UserStoreException: Database Error - Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:172)
+	at org.wso2.carbon.user.core.common.DefaultRealm.populateProfileAndClaimMaps(DefaultRealm.java:444)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:126)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:264)
+	... 22 more
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:193)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:173)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:739)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:671)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:162)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/database/WSO2CARBON_DB.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	... 46 more
+
+TID: [-1234] [] [2021-05-01 17:43:49,989]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-05-01 17:43:49,994]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Linux 5.4.0-72-generic, amd64
+TID: [-1234] [] [2021-05-01 17:43:49,994]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : /usr/lib/jvm/java-11-openjdk-amd64
+TID: [-1234] [] [2021-05-01 17:43:49,994]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 11.0.11
+TID: [-1234] [] [2021-05-01 17:43:49,995]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : OpenJDK 64-Bit Server VM 11.0.11+9-Ubuntu-0ubuntu2.20.04,Ubuntu
+TID: [-1234] [] [2021-05-01 17:43:49,995]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0
+TID: [-1234] [] [2021-05-01 17:43:49,995]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp
+TID: [-1234] [] [2021-05-01 17:43:49,995]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : akila, en-US, Asia/Colombo
+TID: [-1] [] [2021-05-01 17:43:50,128]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-05-01 17:43:50,142]  INFO {org.wso2.carbon.dataservices.google.tokengen.servlet.internal.GoogleTokenGenDSComponent} - Activating GoogleTokengen DS component
+TID: [-1] [] [2021-05-01 17:43:50,289]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1234] [] [2021-05-01 17:43:52,424]  INFO {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService} - Configured Registry in 34ms
+TID: [-1234] [] [2021-05-01 17:43:52,481]  INFO {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent} - Registry Mode    : READ-WRITE
+TID: [-1234] [] [2021-05-01 17:43:53,819]  INFO {org.wso2.carbon.registry.indexing.solr.SolrClient} - Default Embedded Solr Server Initialized
+TID: [-1234] [] [2021-05-01 17:43:53,941]  INFO {org.wso2.carbon.user.core.internal.UserStoreMgtDSComponent} - Carbon UserStoreMgtDSComponent activated successfully.
+TID: [-1234] [] [2021-05-01 17:43:54,869]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2021-05-01 17:43:54,870]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2021-05-01 17:43:55,503]  INFO {org.apache.synapse.transport.vfs.VFSTransportSender} - VFS Sender started
+TID: [-1234] [] [2021-05-01 17:43:55,524]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} - Initializing Pass-through HTTP/S Sender...
+TID: [-1234] [] [2021-05-01 17:43:55,560]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} - Pass-through HTTP Sender started...
+TID: [-1234] [] [2021-05-01 17:43:55,560]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Initializing Pass-through HTTP/S Sender...
+TID: [-1234] [] [2021-05-01 17:43:55,571]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Pass-through HTTPS Sender started...
+TID: [-1234] [] [2021-05-01 17:43:55,606]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Initializing Pass-through HTTP/S Listener...
+TID: [-1234] [] [2021-05-01 17:43:55,630]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Initializing Pass-through HTTP/S Listener...
+TID: [-1234] [wso2carbon-sts] [2021-05-01 17:43:59,353]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: wso2carbon-sts {super-tenant}
+TID: [-1234] [] [2021-05-01 17:43:59,812]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Repository       : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/deployment/server/
+TID: [-1234] [] [2021-05-01 17:43:59,883]  INFO {org.wso2.carbon.core.multitenancy.eager.TenantLoadingConfig} - Using tenant lazy loading policy...
+TID: [-1234] [] [2021-05-01 17:43:59,895]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2021-05-01 17:44:00,064]  INFO {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS} - Successfully registered the Rule Config service
+TID: [-1234] [] [2021-05-01 17:44:00,518]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} - Starting ESB...
+TID: [-1234] [] [2021-05-01 17:44:00,545]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} - Initializing Apache Synapse...
+TID: [-1234] [] [2021-05-01 17:44:00,549]  INFO {org.apache.synapse.SynapseControllerFactory} - Using Synapse home : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/.
+TID: [-1234] [] [2021-05-01 17:44:00,550]  INFO {org.apache.synapse.SynapseControllerFactory} - Using synapse.xml location : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/././repository/deployment/server/synapse-configs/default
+TID: [-1234] [] [2021-05-01 17:44:00,550]  INFO {org.apache.synapse.SynapseControllerFactory} - Using server name : localhost
+TID: [-1234] [] [2021-05-01 17:44:00,554]  INFO {org.apache.synapse.SynapseControllerFactory} - The timeout handler will run every : 15s
+TID: [-1234] [] [2021-05-01 17:44:00,577]  INFO {org.apache.synapse.Axis2SynapseController} - Initializing Synapse at : Sat May 01 17:44:00 IST 2021
+TID: [-1234] [] [2021-05-01 17:44:00,583]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} - Loading the mediation configuration from the file system
+TID: [-1234] [] [2021-05-01 17:44:00,586]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} - Building synapse configuration from the synapse artifact repository at : ././repository/deployment/server/synapse-configs/default
+TID: [-1234] [] [2021-05-01 17:44:00,590]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} - Generating the Synapse configuration model by parsing the XML configuration
+TID: [-1234] [] [2021-05-01 17:44:00,717]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-01 17:44:00,720]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-01 17:44:00,721]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} - Loaded Synapse configuration from the artifact repository at : ././repository/deployment/server/synapse-configs/default
+TID: [-1234] [] [2021-05-01 17:44:00,721]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_HOST was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-01 17:44:00,722]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_IP was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-01 17:44:00,799]  INFO {org.apache.synapse.Axis2SynapseController} - Loading mediator extensions...
+TID: [-1234] [echo] [2021-05-01 17:44:00,822]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: echo {super-tenant}
+TID: [-1234] [Version] [2021-05-01 17:44:00,848]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: Version {super-tenant}
+TID: [-1234] [] [2021-05-01 17:44:00,853]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state :MessageFlowConfigurationPublisher.xml, Stream validation exception : Stream org.wso2.esb.analytics.stream.ConfigEntry:1.0.0 does not exist
+TID: [-1234] [] [2021-05-01 17:44:00,854]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state :MessageFlowStatisticsPublisher.xml, Stream validation exception : Stream org.wso2.esb.analytics.stream.FlowEntry:1.0.0 does not exist
+TID: [-1234] [] [2021-05-01 17:44:00,887]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowConfigurationPublisher.xml
+TID: [-1234] [] [2021-05-01 17:44:00,938]  INFO {org.wso2.carbon.event.stream.core.internal.EventJunction} - WSO2EventConsumer added to the junction. Stream:org.wso2.esb.analytics.stream.ConfigEntry:1.0.0
+TID: [-1234] [] [2021-05-01 17:44:00,940]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher configuration successfully deployed and in active state : MessageFlowConfigurationPublisher
+TID: [-1234] [] [2021-05-01 17:44:00,940]  INFO {org.wso2.carbon.event.stream.core.EventStreamDeployer} - Stream definition is deployed successfully  : org.wso2.esb.analytics.stream.ConfigEntry:1.0.0
+TID: [-1234] [] [2021-05-01 17:44:00,942]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowStatisticsPublisher.xml
+TID: [-1234] [] [2021-05-01 17:44:00,961]  INFO {org.wso2.carbon.event.stream.core.internal.EventJunction} - WSO2EventConsumer added to the junction. Stream:org.wso2.esb.analytics.stream.FlowEntry:1.0.0
+TID: [-1234] [] [2021-05-01 17:44:00,962]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher configuration successfully deployed and in active state : MessageFlowStatisticsPublisher
+TID: [-1234] [] [2021-05-01 17:44:00,963]  INFO {org.wso2.carbon.event.stream.core.EventStreamDeployer} - Stream definition is deployed successfully  : org.wso2.esb.analytics.stream.FlowEntry:1.0.0
+TID: [-1234] [odata] [2021-05-01 17:44:01,122]  INFO {org.wso2.carbon.webapp.mgt.TomcatGenericWebappsDeployer} - Deployed webapp: StandardEngine[Catalina].StandardHost[localhost].StandardContext[/odata].File[/home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/repository/deployment/server/webapps/odata.war]
+TID: [-1234] [] [2021-05-01 17:44:01,124]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying the Synapse service...
+TID: [-1234] [] [2021-05-01 17:44:01,125]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying Proxy services...
+TID: [-1234] [] [2021-05-01 17:44:01,126]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying EventSources...
+TID: [-1234] [] [2021-05-01 17:44:01,176]  INFO {org.apache.synapse.ServerManager} - Server ready for processing...
+TID: [-1234] [] [2021-05-01 17:44:01,205]  INFO {org.wso2.carbon.das.messageflow.data.publisher.internal.MediationStatisticsComponent} - Global Message-Flow Statistic Reporting is Disabled
+TID: [-1234] [] [2021-05-01 17:44:02,421]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:44:03,111]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:44:03,111]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871242422DS-assignmnetCompositeExporter_1.0.0.car/test-endpoint_1.0.0/test-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:44:03,117]  INFO {org.apache.synapse.rest.API} - Initializing API: test2
+TID: [-1234] [] [2021-05-01 17:44:03,118]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test2 was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:44:03,118]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test2' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871242422DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:44:03,119]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 17:44:03,119]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS_AssignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:44:03,128]  INFO {org.apache.synapse.rest.API} - Initializing API: news
+TID: [-1234] [] [2021-05-01 17:44:03,129] ERROR {org.apache.synapse.config.SynapseConfiguration} - URL context: /news is already registered with the API: test2
+TID: [-1234] [] [2021-05-01 17:44:03,130] ERROR {org.wso2.carbon.rest.api.ApiDeployer} - API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : Failed. org.apache.synapse.SynapseException: URL context: /news is already registered with the API: test2
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:135)
+	at org.wso2.carbon.core.CarbonAxisConfigurator.deployServices(CarbonAxisConfigurator.java:568)
+	at org.wso2.carbon.core.internal.DeploymentServerStartupObserver.completingServerStartup(DeploymentServerStartupObserver.java:51)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.notifyBefore(CarbonCoreServiceComponent.java:258)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.completeInitialization(StartupFinalizerServiceComponent.java:166)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.serviceChanged(StartupFinalizerServiceComponent.java:323)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.registerThrottlingAgent(ThrottlingAgentServiceComponent.java:118)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.activate(ThrottlingAgentServiceComponent.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:529)
+	at org.wso2.carbon.core.init.CarbonServerManager.removePendingItem(CarbonServerManager.java:305)
+	at org.wso2.carbon.core.init.PreAxis2ConfigItemListener.bundleChanged(PreAxis2ConfigItemListener.java:118)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+TID: [-1234] [] [2021-05-01 17:44:03,139] ERROR {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - Deployment of the Synapse Artifact from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : Failed! org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:135)
+	at org.wso2.carbon.core.CarbonAxisConfigurator.deployServices(CarbonAxisConfigurator.java:568)
+	at org.wso2.carbon.core.internal.DeploymentServerStartupObserver.completingServerStartup(DeploymentServerStartupObserver.java:51)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.notifyBefore(CarbonCoreServiceComponent.java:258)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.completeInitialization(StartupFinalizerServiceComponent.java:166)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.serviceChanged(StartupFinalizerServiceComponent.java:323)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.registerThrottlingAgent(ThrottlingAgentServiceComponent.java:118)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.activate(ThrottlingAgentServiceComponent.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:529)
+	at org.wso2.carbon.core.init.CarbonServerManager.removePendingItem(CarbonServerManager.java:305)
+	at org.wso2.carbon.core.init.PreAxis2ConfigItemListener.bundleChanged(PreAxis2ConfigItemListener.java:118)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.apache.synapse.SynapseException: URL context: /news is already registered with the API: test2
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 56 more
+
+TID: [-1234] [] [2021-05-01 17:44:03,169]  INFO {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - The file has been backed up into : NO_BACKUP_ON_WORKER.INFO
+TID: [-1234] [] [2021-05-01 17:44:03,169] ERROR {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - Deployment of synapse artifact failed. Error reading /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : Failed. org.apache.axis2.deployment.DeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:210)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:135)
+	at org.wso2.carbon.core.CarbonAxisConfigurator.deployServices(CarbonAxisConfigurator.java:568)
+	at org.wso2.carbon.core.internal.DeploymentServerStartupObserver.completingServerStartup(DeploymentServerStartupObserver.java:51)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.notifyBefore(CarbonCoreServiceComponent.java:258)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.completeInitialization(StartupFinalizerServiceComponent.java:166)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.serviceChanged(StartupFinalizerServiceComponent.java:323)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.registerThrottlingAgent(ThrottlingAgentServiceComponent.java:118)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.activate(ThrottlingAgentServiceComponent.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:529)
+	at org.wso2.carbon.core.init.CarbonServerManager.removePendingItem(CarbonServerManager.java:305)
+	at org.wso2.carbon.core.init.PreAxis2ConfigItemListener.bundleChanged(PreAxis2ConfigItemListener.java:118)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	... 54 more
+Caused by: org.apache.synapse.SynapseException: URL context: /news is already registered with the API: test2
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 56 more
+
+TID: [-1234] [] [2021-05-01 17:44:03,172] ERROR {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Error occurred while deploying Carbon Application org.apache.axis2.deployment.DeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:222)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:135)
+	at org.wso2.carbon.core.CarbonAxisConfigurator.deployServices(CarbonAxisConfigurator.java:568)
+	at org.wso2.carbon.core.internal.DeploymentServerStartupObserver.completingServerStartup(DeploymentServerStartupObserver.java:51)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.notifyBefore(CarbonCoreServiceComponent.java:258)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.completeInitialization(StartupFinalizerServiceComponent.java:166)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.serviceChanged(StartupFinalizerServiceComponent.java:323)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.registerThrottlingAgent(ThrottlingAgentServiceComponent.java:118)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.activate(ThrottlingAgentServiceComponent.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:529)
+	at org.wso2.carbon.core.init.CarbonServerManager.removePendingItem(CarbonServerManager.java:305)
+	at org.wso2.carbon.core.init.PreAxis2ConfigItemListener.bundleChanged(PreAxis2ConfigItemListener.java:118)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.apache.axis2.deployment.DeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:210)
+	... 54 more
+Caused by: org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243120DS_AssignmentCompositeExporter_1.0.0.car/news_1.0.0/news-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	... 54 more
+Caused by: org.apache.synapse.SynapseException: URL context: /news is already registered with the API: test2
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:421)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 56 more
+
+TID: [-1234] [] [2021-05-01 17:44:03,201]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Reverting successfully deployed artifcats in this CApp : DS_AssignmentCompositeExporter_1.0.0
+TID: [-1234] [] [2021-05-01 17:44:03,205]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : testCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:44:03,212]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test was added to the Synapse configuration successfully - [ Deployed From Artifact Container: testCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:44:03,212]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243205testCompositeExporter_1.0.0.car/test_1.0.0/test-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:44:03,214]  INFO {org.apache.synapse.rest.API} - Initializing API: HealthcareAPI
+TID: [-1234] [] [2021-05-01 17:44:03,215]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : HealthcareAPI was added to the Synapse configuration successfully - [ Deployed From Artifact Container: testCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:44:03,215]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'HealthcareAPI' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871243205testCompositeExporter_1.0.0.car/HealthcareAPI_1.0.0/HealthcareAPI-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:44:03,216]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : testCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 17:44:03,218]  INFO {org.apache.synapse.transport.vfs.VFSTransportListener} - VFS listener started
+TID: [-1234] [] [2021-05-01 17:44:03,219]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Starting Pass-through HTTP Listener...
+TID: [-1234] [] [2021-05-01 17:44:03,233]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Pass-through HTTP Listener started on 0.0.0.0:8280
+TID: [-1234] [] [2021-05-01 17:44:03,234]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Starting Pass-through HTTPS Listener...
+TID: [-1234] [] [2021-05-01 17:44:03,242]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Pass-through HTTPS Listener started on 0.0.0.0:8243
+TID: [-1234] [] [2021-05-01 17:44:03,492]  INFO {org.wso2.carbon.ntask.core.service.impl.TaskServiceImpl} - Task service starting in STANDALONE mode...
+TID: [-1234] [] [2021-05-01 17:44:03,506]  INFO {org.wso2.carbon.mediation.ntask.NTaskTaskManager} - Initialized task manager. Tenant [-1234]
+TID: [-1234] [] [2021-05-01 17:44:03,594]  INFO {org.wso2.carbon.core.init.JMXServerManager} - JMX Service URL  : service:jmx:rmi://localhost:11111/jndi/rmi://localhost:9999/jmxrmi
+TID: [-1234] [] [2021-05-01 17:44:03,596]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} - Server           :  WSO2 Enterprise Integrator-6.6.0
+TID: [-1234] [] [2021-05-01 17:44:03,597]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} - WSO2 Carbon started in 22 sec
+TID: [-1234] [] [2021-05-01 17:44:04,290]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} - Mgt Console URL  : https://172.18.0.1:9443/carbon/
+TID: [-1234] [] [2021-05-01 17:44:20,756]  WARN {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-01 17:44:20,755+0530]
+TID: [-1234] [] [2021-05-01 17:44:33,469]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:44:33,469+0530]
+TID: [-1234] [] [2021-05-01 17:45:36,406]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - msg = test msg
+TID: [-1234] [] [2021-05-01 17:45:36,413]  INFO {org.apache.synapse.core.axis2.TimeoutHandler} - This engine will expire all callbacks after GLOBAL_TIMEOUT: 120 seconds, irrespective of the timeout action, after the specified or optional timeout
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:46:33,621]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:46:33,621+0530]
+TID: [-1234] [] [2021-05-01 17:46:48,262]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Undeploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0...
+TID: [-1234] [] [2021-05-01 17:46:48,276]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test2 was removed from the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:46:48,276]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test2' has been undeployed
+TID: [-1234] [] [2021-05-01 17:46:48,277]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been undeployed
+TID: [-1234] [] [2021-05-01 17:46:48,279]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Undeployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:47:00,688]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:47:00,687+0530]
+TID: [-1234] [] [2021-05-01 17:47:03,283]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:47:03,298]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:47:03,299]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871423284DS-assignmnetCompositeExporter_1.0.0.car/test-endpoint_1.0.0/test-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:47:03,302]  INFO {org.apache.synapse.rest.API} - Initializing API: test2
+TID: [-1234] [] [2021-05-01 17:47:03,303]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test2 was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:47:03,304]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test2' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871423284DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:47:03,305]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 17:47:16,165]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - msg = test msg
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:48:51,434]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:48:51,434+0530]
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:48:58,787]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:48:58,787+0530]
+TID: [-1234] [] [2021-05-01 17:49:03,332]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Undeploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0...
+TID: [-1234] [] [2021-05-01 17:49:03,341]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test2 was removed from the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:49:03,341]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test2' has been undeployed
+TID: [-1234] [] [2021-05-01 17:49:03,342]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been undeployed
+TID: [-1234] [] [2021-05-01 17:49:03,344]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Undeployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 17:49:03,345]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:49:03,356]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:49:03,356]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871543345DS-assignmnetCompositeExporter_1.0.0.car/test-endpoint_1.0.0/test-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:49:03,357]  INFO {org.apache.synapse.rest.API} - Initializing API: test2
+TID: [-1234] [] [2021-05-01 17:49:03,358]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test2 was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:49:03,358]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test2' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871543345DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:49:03,359]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 17:49:14,060]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - msg = test msg
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:50:09,178]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:50:09,177+0530]
+TID: [-1234] [] [2021-05-01 17:50:18,373]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Undeploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0...
+TID: [-1234] [] [2021-05-01 17:50:18,391]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test2 was removed from the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:50:18,393]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test2' has been undeployed
+TID: [-1234] [] [2021-05-01 17:50:18,395]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been undeployed
+TID: [-1234] [] [2021-05-01 17:50:18,399]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Undeployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [AuthenticationAdmin] [2021-05-01 17:50:22,705]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-01 17:50:22,705+0530]
+TID: [-1234] [] [2021-05-01 17:50:33,404]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-01 17:50:33,411]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : test-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:50:33,411]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'test-endpoint' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871633405DS-assignmnetCompositeExporter_1.0.0.car/test-endpoint_1.0.0/test-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:50:33,418]  INFO {org.apache.synapse.rest.API} - Initializing API: test2
+TID: [-1234] [] [2021-05-01 17:50:33,418]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - API : test2 was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmnetCompositeExporter ] 
+TID: [-1234] [] [2021-05-01 17:50:33,419]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'test2' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1619871633405DS-assignmnetCompositeExporter_1.0.0.car/test2_1.0.0/test2-1.0.0.xml
+TID: [-1234] [] [2021-05-01 17:50:33,419]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS-assignmnetCompositeExporter_1.0.0 {super-tenant}
+TID: [-1234] [] [2021-05-01 17:50:39,201]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - msg = test msg
