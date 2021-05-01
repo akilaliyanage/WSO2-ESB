@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import '../assets/uditha.css'
 import Radio from '@material-ui/core/Radio';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import axios from "axios";
 
 
 
@@ -10,11 +11,11 @@ function UserSignUp(){
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [selectedValue, setSelectedValue] = useState('');
+    const [role, setRole] = useState('');
 
 
     const handleChange = (event) => {
-        setSelectedValue(event.target.value);
+        setRole(event.target.value);
     };
 
     const onSubmit = (e) => {
@@ -23,7 +24,7 @@ function UserSignUp(){
             email,
             username,
             password,
-            selectedValue
+            role
         }
 
         console.log(user);
@@ -66,7 +67,7 @@ function UserSignUp(){
                     <div>
                         <FormControlLabel  control={
                             <Radio
-                                checked={selectedValue === 'Seller'}
+                                checked={role === 'Seller'}
                                 onChange={handleChange}
                                 value="Seller"
                                 name="radio-button-demo"
@@ -77,7 +78,7 @@ function UserSignUp(){
                         <FormControlLabel  control={
                             <Radio
 
-                                checked={selectedValue === 'Buyer'}
+                                checked={role === 'Buyer'}
                                 onChange={handleChange}
                                 value="Buyer"
                                 name="radio-button-demo"
