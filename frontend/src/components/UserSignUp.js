@@ -7,15 +7,28 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 function UserSignUp(){
 
-    const [username, setUsername] = useState('a');
-    const [email, setEmail] = useState('a');
-    const [password, setPassword] = useState('a');
-    const [selectedValue, setSelectedValue] = useState('a');
+    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [selectedValue, setSelectedValue] = useState('');
 
 
     const handleChange = (event) => {
         setSelectedValue(event.target.value);
     };
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        const user = {
+            email,
+            username,
+            password,
+            selectedValue
+        }
+
+        console.log(user);
+
+    }
 
     useEffect(() => {
         document.body.style.backgroundColor = "#282c34"
@@ -30,22 +43,24 @@ function UserSignUp(){
             <h2>Sign Up</h2>
 
             <div className="signupForm">
-                <form>
+                <form onSubmit={onSubmit}>
                     <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Email address</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                               placeholder="Enter email"/>
+                               placeholder="Enter email" onChange={(e) => {setEmail(e.target.value)}}/>
 
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Username</label>
-                        <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                        <input type="text" className="form-control" id="exampleInputPassword1"
+                               placeholder="Username"  onChange={(e) => {setUsername(e.target.value)}}/>
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Password</label>
-                        <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                        <input type="password" className="form-control" id="exampleInputPassword1"
+                               placeholder="Password"  onChange={(e) => {setPassword(e.target.value)}}/>
                     </div>
 
                     <div>
@@ -57,7 +72,7 @@ function UserSignUp(){
                                 name="radio-button-demo"
                                 inputProps={{ 'aria-label': 'A' }}
                             />
-                        } label="Buyer" />
+                        } label="Seller" />
 
                         <FormControlLabel  control={
                             <Radio
@@ -68,7 +83,7 @@ function UserSignUp(){
                                 name="radio-button-demo"
                                 inputProps={{ 'aria-label': 'A' }}
                             />
-                        } label="Seller" />
+                        } label="Buyer" />
                     </div>
 
 
