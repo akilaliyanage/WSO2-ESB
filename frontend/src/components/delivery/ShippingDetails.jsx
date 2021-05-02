@@ -12,8 +12,14 @@ import {
     TreeSelect,
     Switch,
     Descriptions,
-    Space 
+    Space ,
+    Row,
+    Col,
+    Checkbox,
+    notification
   } from 'antd';
+
+import { SmileOutlined } from '@ant-design/icons';
 
 const { TextArea } = Input;
 const { Option } = Select;
@@ -43,6 +49,15 @@ class ShippingDetails extends Component {
       onChange = (date, dateString) => {
         console.log(date, dateString);
       }
+
+      openNotification = () => {
+        notification.open({
+          message: 'Notification Title',
+          description:
+            'This is the content of the notification. This is the content of the notification. This is the content of the notification.',
+          icon: <SmileOutlined style={{ color: '#108ee9' }} />,
+        });
+      };
 
 
     render() { 
@@ -111,6 +126,16 @@ class ShippingDetails extends Component {
         </Form.Item>
         <Form.Item label="Special Delivery Comments (If any)">
         <TextArea rows={4} />
+        </Form.Item>
+        <Form.Item >
+        <Checkbox>
+          I have read the <a href="">agreement</a>
+        </Checkbox>
+        </Form.Item>
+        <Form.Item>
+        <Button type="primary" block size="large" onClick={this.openNotification}>
+                    Confirm and Save Shipping details
+            </Button>
         </Form.Item>
       </Form>
       </Descriptions>
