@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Table, Tag, Space, Descriptions, Card } from 'antd';
-import { Drawer, Button } from 'antd';
+import { Table, Tag, Space, Descriptions, Card,Select } from 'antd';
+import { Drawer, Button,  } from 'antd';
+const { Option } = Select;
 
 
   const data = [
@@ -46,6 +47,22 @@ class OrderTable extends Component {
       onClose = () => {
         this.setState({visible:false})
       };
+
+       onChange = (value) => {
+        console.log(`selected ${value}`);
+      }
+      
+     onBlur = () => {
+        console.log('blur');
+      }
+      
+      onFocus = () => {
+        console.log('focus');
+      }
+      
+      onSearch = (val) => {
+        console.log('search:', val);
+      }
     render() { 
         const columns = [
             {
@@ -90,7 +107,7 @@ class OrderTable extends Component {
               render: (text, record) => (
                 <Space size="middle">
                  <Button type="primary" onClick={() => this.showDrawer(record)}>
-                        Edit Delivery
+                        Change Status
                 </Button>
                   <a>Delete</a>
                 </Space>
@@ -103,15 +120,32 @@ class OrderTable extends Component {
                 <Table columns={columns} dataSource={data} />
 
                 <Drawer
-        title="Basic Drawer"
+        title="Change Status"
         placement="right"
         closable={false}
         onClose={this.onClose}
         visible={this.state.visible}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+          <Select
+    showSearch
+    style={{ width: 200 }}
+    placeholder="Select the current status"
+    optionFilterProp="children"
+    onChange={this.onChange}
+    onFocus={this.onFocus}
+    onBlur={this.onBlur}
+    onSearch={this.onSearch}
+    filterOption={(input, option) =>
+      option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+    }
+  >
+    <Option value="Processing">Processing</Option>
+    <Option value="Handed over to the Courier service">Handed over to the Courier service</Option>
+    <Option value="Ready to load">Ready to load</Option>
+    <Option value="Ready to dispatch">Ready to dispatch</Option>
+    <Option value="On the way">On the way</Option>
+    <Option value="Deliverd">Deliverd</Option>
+  </Select>
       </Drawer>
             </Card>
          );
