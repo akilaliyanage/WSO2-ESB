@@ -13,9 +13,17 @@ const { Header, Content, Footer, Sider } = Layout;
 class AdminTemplate extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+          selKey : '1'
+         }
     }
     render() { 
+      let component;
+      if(this.state.selKey == '1'){
+        component = <OrderTable/>
+      }else{
+        component = null
+      }
         return ( 
             <Layout>
             <Header className="header">
@@ -29,19 +37,20 @@ class AdminTemplate extends Component {
                 <Sider className="site-layout-background" width={200}>
                   <Menu
                     mode="inline"
-                    defaultSelectedKeys={['1']}
+                    defaultSelectedKeys={[this.state.selKey]}
                     defaultOpenKeys={['sub1']}
                     style={{ height: '100%' }}
                   >
-                     <Menu.Item key="1" icon={<CheckCircleTwoTone twoToneColor="#52c41a" />}>Current Deliveries</Menu.Item>
-                     <Menu.Item key="2" icon={<FilePptTwoTone />}>Past Deliveries</Menu.Item>
-                     <Menu.Item key="3" icon={<PushpinTwoTone twoToneColor="#ff5200" />}>Delivery Locations</Menu.Item>
+                     <Menu.Item key="1" icon={<CheckCircleTwoTone twoToneColor="#52c41a" />} onClick={()=>{this.setState({selKey:'1'})}}>Current Deliveries</Menu.Item>
+                     <Menu.Item key="2" icon={<FilePptTwoTone />} onClick={()=>{this.setState({selKey:'2'})}}>Past Deliveries</Menu.Item>
+                     <Menu.Item key="3" icon={<PushpinTwoTone twoToneColor="#ff5200" />} onClick={()=>{this.setState({selKey:'3'})}}>Delivery Locations</Menu.Item>
                   </Menu>
                 </Sider>
                 <Content style={{ padding: '0 24px', minHeight: 280 }}>
+                  
                   <Row>
                     <Col span={24}>
-                      <OrderTable/>
+                      {component}
                     </Col>
                   </Row>
                 </Content>
