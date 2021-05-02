@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import axios from "axios";
 import {useHistory} from 'react-router-dom';
-import '../assets/uditha.css'
+import '../../assets/uditha.css'
 
 
 
@@ -30,8 +30,8 @@ function Login(){
             if(response.data.status === "valid"){
                 let username = response.data.user.username;
                 let buyerID = JSON.stringify(response.data.user.id);
-                localStorage.setItem("user-id",buyerID);
-                localStorage.setItem("user-name",username);
+                localStorage.setItem("seller-id",buyerID);
+                localStorage.setItem("seller-name",username);
                 alert("logged in");
                 history.push("/")
 
@@ -58,8 +58,8 @@ function Login(){
             if(res.data.status === "valid"){
                 let username = res.data.user.username;
                 let sellerID = JSON.stringify(res.data.user.id);
-                localStorage.setItem("user-id",sellerID);
-                localStorage.setItem("user-name",username);
+                localStorage.setItem("buyer-id",sellerID);
+                localStorage.setItem("buyer-name",username);
                 alert("logged in");
                 history.push("/borrowedbooks")
 

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import '../assets/uditha.css'
+import '../../assets/uditha.css'
 import Radio from '@material-ui/core/Radio';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import axios from "axios";
@@ -15,6 +15,9 @@ function UserSignUp(){
     const [role, setRole] = useState('');
     const  history = useHistory();
 
+    const [selectedFile, setSelectedFile] = useState();
+    const [preview, setPreview] = useState();
+    const [avatar, setAvatar] = useState()
 
     const handleChange = (event) => {
         setRole(event.target.value);
@@ -26,7 +29,8 @@ function UserSignUp(){
             email,
             username,
             password,
-            role
+            role,
+            avatar
         }
 
         console.log(user);
@@ -47,7 +51,27 @@ function UserSignUp(){
 
     useEffect(() => {
         document.body.style.backgroundColor = "#282c34"
-    })
+        if (!selectedFile) {
+            setPreview(undefined)
+            return
+        }
+
+        const objectUrl = URL.createObjectURL(selectedFile)
+        setPreview(objectUrl)
+
+        return () => URL.revokeObjectURL(objectUrl)
+    }, [selectedFile])
+
+
+    const onSelectFile = e => {
+        if (!e.target.files || e.target.files.length === 0) {
+            setSelectedFile(undefined)
+            return
+        }
+
+        setSelectedFile(e.target.files[0])
+        setAvatar(e.target.files[0])
+    }
 
 
 
@@ -58,7 +82,21 @@ function UserSignUp(){
             <h2 style={{color:'#61dafb'}}>Sign Up</h2>
 
             <div className="signupForm">
+
+
                 <form onSubmit={onSubmit}>
+
+                    <div className="avatarPreview">
+                        {selectedFile &&  <img style={{borderRadius:'50%'}} src={preview} width="200" height="200"/> }
+                    </div>
+                    <div className="avatarInput">
+                        <div className="form-group">
+                            <input type="file" className="form-control-file" id="exampleFormControlFile1"
+                                   onChange={onSelectFile}/>
+                        </div>
+                    </div>
+
+                    <div className="formSection">
                     <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Email address</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -101,9 +139,10 @@ function UserSignUp(){
                         } label="Buyer" />
                     </div>
 
-
                     <button type="submit" className="btn btn-primary">Sign up</button>
+                    </div>
                 </form>
+
 
             </div>
         </div>

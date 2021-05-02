@@ -11,6 +11,20 @@ h2{
     position: absolute;
     top: 60%;
     left: 50%;
+    width: 800px;
+    height: 450px;
+    padding: 40px;
+    color: azure;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.8);
+    border-radius: 10px;
+}
+
+.formSection{
+    position: absolute;
+    top: 50%;
+    left: 72%;
     width: 400px;
     height: 420px;
     padding: 40px;
@@ -19,6 +33,17 @@ h2{
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.8);
     border-radius: 10px;
+}
+
+.avatarInput{
+    position: absolute;
+    top: 80%;
+    left: 18%;
+}
+.avatarPreview{
+    position: absolute;
+    top: 20%;
+    left: 12%;
 }
 
 .buyerLogin{
@@ -48,4 +73,63 @@ h2{
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.8);
     border-radius: 10px;
+}
+
+.addItem{
+    position: absolute;
+    left: 25%;
+    top: 80%;
+    width: 60%;
+}
+
+.myItems{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+
+.itemCount{
+
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    width: 20%;
+    height: 20%;
+    background-color: transparent;
+    color: azure;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0,0,0,.5);
+
+}
+
+.sellCount{
+    position: absolute;
+    left: 85%;
+    top: 60%;
+    width: 20%;
+    height: 20%;
+    background-color: transparent;
+    color: azure;
+    font-size: 1vw;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
+
+.Avatar{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+.SellerName{
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    color: lavender;
 }

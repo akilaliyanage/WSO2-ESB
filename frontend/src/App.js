@@ -2,9 +2,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import UserSignUp from "./components/UserSignUp";
+import UserSignUp from "./components/authentications/UserSignUp";
 import Template from './components/delivery/Template'
-import Login from "./components/Login";
+import Login from "./components/authentications/Login";
+import Dashboard from "./components/seller/DashBoard";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path = "/signup" exact component = {UserSignUp}/>
       <Route path = "/delivery" exact component = {Template}/>
       <Route path = "/login" exact component = {Login}/>
+      <Route path = "/seller" exact component = {Dashboard}/>
 
     </div>
       </Router>
