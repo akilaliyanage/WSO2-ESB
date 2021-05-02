@@ -10,6 +10,7 @@ import StorefrontIcon from '@material-ui/icons/Storefront';
 import Button from "@material-ui/core/Button";
 import {Avatar} from "@material-ui/core";
 import SellerNavBar from "./SellerNavBar";
+import AddItem from "./AddItem";
 //import SellerNavBar from "./SellerNavBar";
 
 const useStyles = makeStyles((theme) => ({
@@ -120,7 +121,7 @@ export default function Dashboard() {
                 </div>
 
                 <div className="addItem">
-                    <Button variant="contained" color="secondary" type="submit" endIcon={<StorefrontIcon>StorefrontIcon</StorefrontIcon>}>
+                    <Button variant="contained" color="secondary" type="submit" href="/add-item" endIcon={<StorefrontIcon>StorefrontIcon</StorefrontIcon>}>
                         Add Item
                     </Button>
                 </div>
