@@ -3,6 +3,7 @@ import '../assets/uditha.css'
 import Radio from '@material-ui/core/Radio';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import axios from "axios";
+import {useHistory} from 'react-router-dom';
 
 
 
@@ -12,6 +13,7 @@ function UserSignUp(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [role, setRole] = useState('');
+    const  history = useHistory();
 
 
     const handleChange = (event) => {
@@ -28,6 +30,18 @@ function UserSignUp(){
         }
 
         console.log(user);
+        const url ="";
+        axios.post(url,user).then((res) =>{
+            if(res.data.status === "success") {
+                history.push("login/");
+            }
+            else {
+                alert("oops! something went wrong");
+            }
+        }).catch((err) => {
+            alert(err);
+        })
+
 
     }
 
@@ -41,7 +55,7 @@ function UserSignUp(){
 
         <div>
 
-            <h2>Sign Up</h2>
+            <h2 style={{color:'#61dafb'}}>Sign Up</h2>
 
             <div className="signupForm">
                 <form onSubmit={onSubmit}>
