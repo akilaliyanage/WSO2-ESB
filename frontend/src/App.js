@@ -6,6 +6,7 @@ import UserSignUp from "./components/authentications/UserSignUp";
 import Template from './components/delivery/Template'
 import Login from "./components/authentications/Login";
 import Dashboard from "./components/seller/DashBoard";
+import AdminTemplate from './components/delivery/delivery_admin/AdminTemplate'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path = "/delivery" exact component = {Template}/>
       <Route path = "/login" exact component = {Login}/>
       <Route path = "/seller" exact component = {Dashboard}/>
+      <Route path = "/del-admin" exact component = {AdminTemplate}/>
 
     </div>
       </Router>
