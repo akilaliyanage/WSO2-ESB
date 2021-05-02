@@ -79,7 +79,7 @@ export default function Dashboard() {
             <div className={classes.root}>
 
                 <div className="myItems">
-                    <h3>My Items</h3>
+                    <h3 style={{color:'whitesmoke'}}>My Items</h3>
                     <GridList  spacing={10} cellHeight={180} className={classes.gridList}>
                         <GridListTile key="Subheader" cols={2} style={{height: 'auto'}}>
 
@@ -107,16 +107,16 @@ export default function Dashboard() {
                     <Avatar src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1412&q=80" style={{width:'150px',height:'150px'}} />
                 </div>
                 <div className="SellerName">
-                    <h5>John doe</h5>
+                    <h5 style={{color:'whitesmoke'}}>John doe</h5>
                 </div>
 
                 <div className="itemCount">
                     <br/>
-                    <h5>Total Items</h5>
+                    <h5 style={{color:'whitesmoke'}}>Total Items</h5>
                 </div>
                 <div className="sellCount">
                     <br/>
-                    <h5>Items Sold</h5>
+                    <h5 style={{color:'whitesmoke'}}>Items Sold</h5>
                 </div>
 
                 <div className="addItem">

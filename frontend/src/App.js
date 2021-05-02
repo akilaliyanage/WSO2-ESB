@@ -7,6 +7,8 @@ import Template from './components/delivery/Template'
 import Login from "./components/authentications/Login";
 import Dashboard from "./components/seller/DashBoard";
 import AdminTemplate from './components/delivery/delivery_admin/AdminTemplate'
+import AddItem from "./components/seller/AddItem";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
       <Route path = "/login" exact component = {Login}/>
       <Route path = "/seller" exact component = {Dashboard}/>
       <Route path = "/del-admin" exact component = {AdminTemplate}/>
+      <Route path = "/add-item" exact component = {AddItem}/>
 
     </div>
       </Router>

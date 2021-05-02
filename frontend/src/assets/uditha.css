@@ -78,7 +78,7 @@ h2{
 .addItem{
     position: absolute;
     left: 25%;
-    top: 80%;
+    top: 85%;
     width: 60%;
 }
 
@@ -92,7 +92,7 @@ h2{
 
     position: absolute;
     left: 60%;
-    top: 60%;
+    top: 65%;
     width: 20%;
     height: 20%;
     background-color: transparent;
@@ -109,7 +109,7 @@ h2{
 .sellCount{
     position: absolute;
     left: 85%;
-    top: 60%;
+    top: 65%;
     width: 20%;
     height: 20%;
     background-color: transparent;
@@ -124,12 +124,48 @@ h2{
 .Avatar{
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 25%;
 }
 
 .SellerName{
     position: absolute;
-    left: 60%;
-    top: 25%;
+    left: 65%;
+    top: 35%;
     color: lavender;
+}
+
+.preview{
+    position: absolute;
+    float: left;
+    left: -360px;
+    top: 100px;
+}
+
+.displayTitle{
+    position: relative;
+    left: 180px;
+    top: 50px;
+}
+
+.description{
+    position: relative;
+    left: 210px;
+    top: 50px;
+}
+
+textarea {
+    background-color: transparent;
+}
+
+.bookForm{
+    position: absolute;
+    top: 75px;
+    width: 600px;
+    color: whitesmoke;
+}
+.fileInput{
+    position: absolute;
+    float: left;
+    left: -420px;
+    top: 330px;
 }
