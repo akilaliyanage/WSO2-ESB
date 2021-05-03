@@ -35,7 +35,11 @@ class ShippingDetails extends Component {
           locType:'',
           date:'',
           comments:'',
-          agree:false
+          agree:false,
+          username:'Akila Liyanage',
+          userId:'12345',
+          itemCode:'123abc',
+          email:'mlakilaliyanage@gmail.com'
          }
     }
 
@@ -67,13 +71,45 @@ class ShippingDetails extends Component {
       openNotification = () => {
         if(this.state.agree){
 
+          const data = {
+            username : this.state.username,
+            userId : this.state.userId,
+            resName : this.state.name,
+            phone : this.state.phone,
+            delAdd : this.state.add,
+            city : this.state.city,
+            locType : this.state.locType,
+            date : this.state.date,
+            comments : this.state.comments,
+            itemCode : this.state.itemCode,
+            email : this.state.email
+          }
 
-
-          notification['success']({
-            message: 'Delivery Info saved successfully. You will get an email of confirmation.',
-            description:
-              'Seems like you have not agreed to out terms and condisions.',
+          fetch('http://localhost:9000/delivery', {
+            method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Success:', data);
+            notification['success']({
+              message: 'Delivery Info saved successfully. You will get an email of confirmation.'
+            });
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+            notification['error']({
+              message: 'Ooopz and error ocured!',
+              description:
+                error,
+            });
           });
+
+
+         
         }else{
           notification['error']({
             message: 'Ooopz and error ocured!',
@@ -145,7 +181,7 @@ class ShippingDetails extends Component {
                 </Select>
         </Form.Item>
         <Form.Item label="Location Type">
-        <Select defaultValue="lucy" style={{ width: "100%" }} onChange={this.locType}>
+        <Select style={{ width: "100%" }} onChange={this.locType} placeholder="Select Your Location Type">
       <Option value="jack">Jack</Option>
       <Option value="lucy">Lucy</Option>
       <Option value="disabled" disabled>
