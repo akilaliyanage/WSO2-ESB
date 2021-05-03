@@ -4,6 +4,8 @@ import "antd/dist/antd.css";
 import { Layout, Menu, Breadcrumb, Row, Col } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined, CheckCircleTwoTone, HistoryOutlined, FilePptTwoTone, PushpinTwoTone } from '@ant-design/icons';
 import OrderTable from './OrderTable';
+import PastOrders from './PastOrders';
+import Locations from './Locations';
 
 
 
@@ -21,8 +23,10 @@ class AdminTemplate extends Component {
       let component;
       if(this.state.selKey == '1'){
         component = <OrderTable/>
-      }else{
-        component = null
+      }else if(this.state.selKey == '2'){ 
+        component = <PastOrders/>
+      }else if(this.state.selKey == '3'){
+        component = <Locations/>
       }
         return ( 
             <Layout>
