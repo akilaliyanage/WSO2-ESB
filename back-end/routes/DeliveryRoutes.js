@@ -25,7 +25,8 @@ router.post('/',(req,res) =>{
         locType : req.body.locType,
         date: new Date(req.body.date),
         comments: req.body.comments,
-        itemCode:req.body.itemCode
+        itemCode:req.body.itemCode,
+        email:req.body.email
 
     })
 
