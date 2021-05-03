@@ -39,7 +39,8 @@ class ShippingDetails extends Component {
           username:'Akila Liyanage',
           userId:'12345',
           itemCode:'123abc',
-          email:'mlakilaliyanage@gmail.com'
+          email:'mlakilaliyanage@gmail.com',
+          status:'processing'
          }
     }
 
@@ -82,7 +83,8 @@ class ShippingDetails extends Component {
             date : this.state.date,
             comments : this.state.comments,
             itemCode : this.state.itemCode,
-            email : this.state.email
+            email : this.state.email,
+            status : this.state.status
           }
 
           fetch('http://localhost:9000/delivery', {

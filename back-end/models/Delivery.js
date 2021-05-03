@@ -45,6 +45,10 @@ const deliverySchema = new Schema({
     email:{
         type:String,
         required:true
+    },
+    status:{
+        type:String,
+        required:true
     }
 
 })

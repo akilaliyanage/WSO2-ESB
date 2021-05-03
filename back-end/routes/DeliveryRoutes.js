@@ -26,7 +26,8 @@ router.post('/',(req,res) =>{
         date: new Date(req.body.date),
         comments: req.body.comments,
         itemCode:req.body.itemCode,
-        email:req.body.email
+        email:req.body.email,
+        status:req.body.status
 
     })
 
