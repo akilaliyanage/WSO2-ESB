@@ -23,5 +23,8 @@ mongoose.connect(
     }
 )
 
+const userRouter = require('./routes/UserRoute.js');
+app.use("/user",userRouter);
+
 //server start
 app.listen(9000);
