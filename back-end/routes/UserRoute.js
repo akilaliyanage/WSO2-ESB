@@ -2,6 +2,7 @@ const router = require('express').Router();
 let Seller = require("../models/Seller");
 let Buyer = require("../models/Buyer");
 const multer = require("multer");
+const bcrypt = require("bcrypt");
 
 const storage = multer.diskStorage({
     destination:(req,file,callback) => {
@@ -14,43 +15,88 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage:storage});
 
-router.post("/signup",upload.single("picture"),(req,res) => {
+router.post("/signup",upload.single("picture"),async (req, res) => {
 
-    if (req.body.role === "seller"){
+    const salt = await bcrypt.genSalt();
+    const hashedPassword = await bcrypt.hash(req.body.password,salt);
 
-        const user = new Seller({
+    if (req.body.role === "seller") {
 
-            username : req.body.username,
-            email:  req.body.email,
-            password: req.body.password,
-            profileImg: req.file.originalname
-        });
+        const auth = Seller.findOne(req.body.email);
 
-        user.save().then(() => {
-            res.json({status:200})
-        }).catch((err) =>{
-            console.log(err);
-        })
+        if (auth) {
 
+            return res.status(400);
+        } else {
+
+
+            const user = new Seller({
+
+                username: req.body.username,
+                email: req.body.email,
+                hashedPassword: hashedPassword,
+                profileImg: req.file.originalname
+            });
+
+            user.save().then(() => {
+                res.json({status: 200})
+            }).catch((err) => {
+                console.log(err);
+            })
+        }
+
+    } else if (req.body.role === "buyer") {
+
+        const auth = Seller.findOne(req.body.email);
+
+        if (auth) {
+
+            return res.status(400);
+
+        } else {
+
+            const user = new Buyer({
+
+                username: req.body.username,
+                email: req.body.email,
+                hashedPassword: hashedPassword,
+                profileImg: req.file.originalname
+            });
+
+            user.save().then(() => {
+                res.json({status: 200})
+            }).catch((err) => {
+                console.log(err);
+            })
+
+        }
     }
 
-    else if (req.body.role === "buyer"){
 
-        const user = new Buyer({
+})
 
-            username :   req.body.username,
-            email:  req.body.email,
-            password: req.body.password,
-            profileImg: req.file.originalname
-        });
+router.post("/seller-login",async (req,res) =>{
 
-        user.save().then(() => {
-            res.json({status:200})
-        }).catch((err) =>{
-            console.log(err);
-        })
+    try {
+
+        const {username, password} = req.body;
+        const validUser = await Seller.findOne({username:username});
+
+        if(validUser && bcrypt.compareSync(password, validUser.hashedPassword)){
+
+            return res.status(200).json({Message:"user found!"})
+        }
+
+        else {
+            return  res.status(400);
+        }
 
     }
+    catch (err){
+
+        console.warn(err);
+    }
+
 
 
 })

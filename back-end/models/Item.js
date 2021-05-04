@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 const  Schema = mongoose.Schema;
 
 const itemScheema = new Schema({
+
+    sellerID:{
+        type: String,
+        required: true
+    },
     title:{
         type: String,
         required: true
