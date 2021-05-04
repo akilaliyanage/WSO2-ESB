@@ -6,12 +6,17 @@ const cors = require('cors')
 require('dotenv/config')
 
 //Import Routes
-const DeliveryRoutes = require('./routes/DeliveryRoutes')
+const DeliveryRoutes = require('./routes/DeliveryRoutes');
+const userRouter = require('./routes/UserRoute.js');
+const itemRouter = require('./routes/ItemRoute.js');
+
 
 //Middleware
 app.use(bodyParser.json())
 app.use(cors())
 app.use('/delivery',DeliveryRoutes)
+app.use("/user",userRouter);
+app.use("/item",itemRouter);
 
 
 
@@ -25,8 +30,6 @@ mongoose.connect(
     }
 )
 
-const userRouter = require('./routes/UserRoute.js');
-app.use("/user",userRouter);
 
 //server start
 app.listen(9000);
