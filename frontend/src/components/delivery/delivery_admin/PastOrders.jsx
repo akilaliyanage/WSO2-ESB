@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Table, Tag, Space, Descriptions, Card,Select, PageHeader } from 'antd';
 import { Drawer, Button,  } from 'antd';
 const { Option } = Select;
 
-
-  const data = [
+const data = [
     {
       key: '1',
       id: 'dcdcscs342d',
@@ -16,41 +15,13 @@ const { Option } = Select;
   ];
 
 
-class OrderTable extends Component {
+class PastOrders extends Component {
     constructor(props) {
         super(props);
-        this.state = { 
-            visible : false, 
-            setVisible : false,
-         }
+        this.state = {  }
     }
-
-
-    showDrawer = (record) => {
-        console.log(record)
-        this.setState({visible:true})
-      };
-
-      onClose = () => {
-        this.setState({visible:false})
-      };
-
-       onChange = (value) => {
-        console.log(`selected ${value}`);
-      }
-      
-     onBlur = () => {
-        console.log('blur');
-      }
-      
-      onFocus = () => {
-        console.log('focus');
-      }
-      
-      onSearch = (val) => {
-        console.log('search:', val);
-      }
     render() { 
+
         const columns = [
             {
               title: 'Delivery ID',
@@ -98,54 +69,28 @@ class OrderTable extends Component {
               key: 'action',
               render: (text, record) => (
                 <Space size="middle">
-                 <Button type="primary" onClick={() => this.showDrawer(record)}>
-                        Change Status
+                 <Button type="primary">
+                        Show Recipt
                 </Button>
-                  <a>Delete</a>
+                <Button type="danger">
+                        Delete
+                </Button>
                 </Space>
               ),
             },
           ]
+
         return ( 
             <Card>
-                         <PageHeader
+           <PageHeader
       ghost={false}
       onBack={() => window.history.back()}
       title="Past Deliveries"
     ></PageHeader>
-                <Table columns={columns} dataSource={data} />
-
-                <Drawer
-        title="Change Status"
-        placement="right"
-        closable={false}
-        onClose={this.onClose}
-        visible={this.state.visible}
-      >
-          <Select
-    showSearch
-    style={{ width: 200 }}
-    placeholder="Select the current status"
-    optionFilterProp="children"
-    onChange={this.onChange}
-    onFocus={this.onFocus}
-    onBlur={this.onBlur}
-    onSearch={this.onSearch}
-    filterOption={(input, option) =>
-      option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-    }
-  >
-    <Option value="Processing">Processing</Option>
-    <Option value="Handed over to the Courier service">Handed over to the Courier service</Option>
-    <Option value="Ready to load">Ready to load</Option>
-    <Option value="Ready to dispatch">Ready to dispatch</Option>
-    <Option value="On the way">On the way</Option>
-    <Option value="Deliverd">Deliverd</Option>
-  </Select>
-      </Drawer>
+            <Table columns={columns} dataSource={data} />
             </Card>
          );
     }
 }
  
-export default OrderTable;
+export default PastOrders;

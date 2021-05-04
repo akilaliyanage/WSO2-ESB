@@ -140,6 +140,12 @@ h2{
     left: -360px;
     top: 100px;
 }
+.oldPreview{
+    position: absolute;
+    float: left;
+    left: -360px;
+    top: 100px;
+}
 
 .displayTitle{
     position: relative;
@@ -151,10 +157,6 @@ h2{
     position: relative;
     left: 210px;
     top: 50px;
-}
-
-textarea {
-    background-color: transparent;
 }
 
 .bookForm{

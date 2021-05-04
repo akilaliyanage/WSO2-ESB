@@ -10,6 +10,8 @@ import AdminTemplate from './components/delivery/delivery_admin/AdminTemplate'
 import AddItem from "./components/seller/AddItem";
 import LandingPage from "./components/BuyerPages/LandingPage";
 import ProductsPage from "./components/BuyerPages/ProductsPage";
+import UpdateItem from "./components/seller/UpdateItem";
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
       <Route path = "/add-item" exact component = {AddItem}/>
       <Route path = "/" exact component = {LandingPage}/>
       <Route path = "/products" exact component = {ProductsPage}/>
+      <Route path = "/update-item" exact component = {UpdateItem}/>
 
     </div>
       </Router>
