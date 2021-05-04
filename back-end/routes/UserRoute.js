@@ -16,26 +16,25 @@ const upload = multer({storage:storage});
 
 router.post("/signup",upload.single("picture"),(req,res) => {
 
-
-    if (req.body.type === "seller"){
+    if (req.body.role === "seller"){
 
         const user = new Seller({
 
-            username :   req.body.username,
+            username : req.body.username,
             email:  req.body.email,
             password: req.body.password,
             profileImg: req.file.originalname
         });
 
         user.save().then(() => {
-            res.json("Success")
+            res.json({status:200})
         }).catch((err) =>{
             console.log(err);
         })
 
     }
 
-    else if (req.body.type === "buyer"){
+    else if (req.body.role === "buyer"){
 
         const user = new Buyer({
 
@@ -46,7 +45,7 @@ router.post("/signup",upload.single("picture"),(req,res) => {
         });
 
         user.save().then(() => {
-            res.json("Success")
+            res.json({status:200})
         }).catch((err) =>{
             console.log(err);
         })

@@ -17,34 +17,45 @@ function UserSignUp(){
 
     const [selectedFile, setSelectedFile] = useState();
     const [preview, setPreview] = useState();
-    const [avatar, setAvatar] = useState()
+    const [picture, setPicture] = useState()
 
     const handleChange = (event) => {
         setRole(event.target.value);
     };
 
-    const onSubmit = (e) => {
+     const onSubmit = (e) => {
+
         e.preventDefault();
+
         const user = {
-            email,
-            username,
-            password,
-            role,
-            avatar
+            username
         }
 
-        console.log(user);
-        const url ="";
-        axios.post(url,user).then((res) =>{
-            if(res.data.status === "success") {
-                history.push("login/");
-            }
-            else {
-                alert("oops! something went wrong");
-            }
+
+        const formData = new FormData();
+         formData.append('username', username);
+         formData.append('email', email);
+         formData.append('password', password);
+         formData.append('picture', picture);
+         formData.append('role', role);
+
+         console.log(formData);
+
+        axios.post("http://localhost:9000/user/signup", formData).then(() => {
+            alert("bla bla");
+
         }).catch((err) => {
             alert(err);
         })
+
+         const Employee = new FormData();
+         Employee.append('name',"name");
+         Employee.append('salary',"1000");
+         Employee.append('contact',"contact");
+         Employee.append('picture',"picture");
+
+
+
 
 
     }
@@ -70,7 +81,7 @@ function UserSignUp(){
         }
 
         setSelectedFile(e.target.files[0])
-        setAvatar(e.target.files[0])
+        setPicture(e.target.files[0])
     }
 
 
@@ -84,14 +95,14 @@ function UserSignUp(){
             <div className="signupForm">
 
 
-                <form onSubmit={onSubmit}>
+                <form onSubmit={onSubmit} encType="multipart/form-data">
 
                     <div className="avatarPreview">
-                        {selectedFile &&  <img style={{borderRadius:'50%'}} src={preview} width="200" height="200"/> }
+                        {selectedFile &&  <img style={{borderRadius:'50%'}} src={preview} width="200" height="200" alt="avatar"/> }
                     </div>
                     <div className="avatarInput">
                         <div className="form-group">
-                            <input type="file" className="form-control-file" id="exampleFormControlFile1"
+                            <input type="file" className="form-control-file" name="picture" id="exampleFormControlFile1"
                                    onChange={onSelectFile}/>
                         </div>
                     </div>
