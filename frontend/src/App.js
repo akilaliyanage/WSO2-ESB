@@ -26,7 +26,7 @@ function App() {
       <Route path = "/add-item" exact component = {AddItem}/>
       <Route path = "/" exact component = {LandingPage}/>
       <Route path = "/products" exact component = {ProductsPage}/>
-      <Route path = "/update-item" exact component = {UpdateItem}/>
+      <Route path = "/update-item/:itemID" exact component = {UpdateItem}/>
 
     </div>
       </Router>

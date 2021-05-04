@@ -5,7 +5,7 @@ const Seller = require("../models/Seller");
 
 const storage = multer.diskStorage({
     destination:(req,file,callback) => {
-        callback(null,"./public/media")
+        callback(null,"./uploads")
     },
     filename:(req,file,callback) => {
         callback(null,file.originalname);
@@ -40,7 +40,7 @@ router.post("/add",upload.single("image"),(req,res) => {
 router.route("/:sellerID").get((req,res) => {
 
     let ID = req.params.sellerID;
-    Item.find({price:25}).then((items) => {
+    Item.find({sellerID:ID}).then((items) => {
         res.json(items)
     }).catch((err) => {
         console.log(err)
@@ -53,7 +53,7 @@ router.route("/:sellerID/:itemID").get((req,res) => {
 
     let itemID = req.params.itemID;
 
-    Item.find({price:25}).then((items) => {
+    Item.find({_id:itemID}).then((items) => {
         res.json(items)
     }).catch((err) => {
         console.log(err)
@@ -82,7 +82,7 @@ router.put("/update/:itemID",upload.single("image"),async (req,res) => {
     }
     else {
         updatedItem = {
-            sellerID: req.body.sellerID,
+
             title : req.body.title,
             description:  req.body.description,
             itemCount: req.body.count,
@@ -93,19 +93,19 @@ router.put("/update/:itemID",upload.single("image"),async (req,res) => {
 
     const  updateValue = await  Item.findByIdAndUpdate(itemID,updatedItem).then(() => {
 
-        res.status(200).send({status:"Updated"})
+        res.json({status:200});
     }).catch((err) => {
         console.log(err)
     })
 
 })
 
-
-router.route("delete/:itemID").delete(async (req,res) =>{
+//delete an item
+router.route("/delete/:itemID").delete(async (req,res) =>{
 
     let itemID = req.params.itemID;
     await Item.findByIdAndDelete(itemID).then(() => {
-        res.status(200).send({status:"Deleted"})
+        res.json({status:200});
     }).catch((err) => {
         console.log(err);
 

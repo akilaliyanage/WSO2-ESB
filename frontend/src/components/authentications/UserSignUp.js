@@ -4,6 +4,7 @@ import Radio from '@material-ui/core/Radio';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import axios from "axios";
 import {useHistory} from 'react-router-dom';
+import '../../assets/uditha.css'
 
 
 
@@ -23,43 +24,6 @@ function UserSignUp(){
         setRole(event.target.value);
     };
 
-     const onSubmit = (e) => {
-
-        e.preventDefault();
-
-        const user = {
-            username
-        }
-
-
-        const formData = new FormData();
-         formData.append('username', username);
-         formData.append('email', email);
-         formData.append('password', password);
-         formData.append('picture', picture);
-         formData.append('role', role);
-
-         console.log(formData);
-
-        axios.post("http://localhost:9000/user/signup", formData).then(() => {
-            alert("bla bla");
-
-        }).catch((err) => {
-            alert(err);
-        })
-
-         const Employee = new FormData();
-         Employee.append('name',"name");
-         Employee.append('salary',"1000");
-         Employee.append('contact',"contact");
-         Employee.append('picture',"picture");
-
-
-
-
-
-    }
-
     useEffect(() => {
         document.body.style.backgroundColor = "#282c34"
         if (!selectedFile) {
@@ -71,7 +35,35 @@ function UserSignUp(){
         setPreview(objectUrl)
 
         return () => URL.revokeObjectURL(objectUrl)
-    }, [selectedFile])
+    }, [selectedFile]);
+
+     function sendData(e){
+
+        e.preventDefault();
+
+        const formData = new FormData();
+         formData.append('username', username);
+         formData.append('email', email);
+         formData.append('password', password);
+         formData.append('picture', picture);
+         formData.append('role', role);
+
+         console.log(formData);
+
+         const url = "http://localhost:9000/user/signup";
+          axios.post(url,formData).then((res) => {
+             if(res.data.status === 200) {
+                 history.push("/seller");
+             }
+             else {
+                 alert("oops! something went wrong");
+             }
+         }).catch((err) => {
+             alert(err);
+         })
+
+    }
+
 
 
     const onSelectFile = e => {
@@ -95,7 +87,7 @@ function UserSignUp(){
             <div className="signupForm">
 
 
-                <form onSubmit={onSubmit} encType="multipart/form-data">
+                <form onSubmit={sendData}>
 
                     <div className="avatarPreview">
                         {selectedFile &&  <img style={{borderRadius:'50%'}} src={preview} width="200" height="200" alt="avatar"/> }

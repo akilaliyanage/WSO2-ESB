@@ -17,24 +17,16 @@ const upload = multer({storage:storage});
 
 router.post("/signup",upload.single("picture"),async (req, res) => {
 
-    const salt = await bcrypt.genSalt();
-    const hashedPassword = await bcrypt.hash(req.body.password,salt);
 
     if (req.body.role === "seller") {
 
-        const auth = Seller.findOne(req.body.email);
-
-        if (auth) {
-
-            return res.status(400);
-        } else {
-
-
+            const salt = await bcrypt.genSalt();
+            const hash = await bcrypt.hash(req.body.password,salt);
             const user = new Seller({
 
                 username: req.body.username,
                 email: req.body.email,
-                hashedPassword: hashedPassword,
+                password: hash,
                 profileImg: req.file.originalname
             });
 
@@ -43,23 +35,18 @@ router.post("/signup",upload.single("picture"),async (req, res) => {
             }).catch((err) => {
                 console.log(err);
             })
-        }
+
 
     } else if (req.body.role === "buyer") {
 
-        const auth = Seller.findOne(req.body.email);
-
-        if (auth) {
-
-            return res.status(400);
-
-        } else {
+        const salt = await bcrypt.genSalt();
+        const hash = await bcrypt.hash(req.body.password,salt);
 
             const user = new Buyer({
 
                 username: req.body.username,
                 email: req.body.email,
-                hashedPassword: hashedPassword,
+                password: hash,
                 profileImg: req.file.originalname
             });
 
@@ -69,7 +56,7 @@ router.post("/signup",upload.single("picture"),async (req, res) => {
                 console.log(err);
             })
 
-        }
+
     }
 
 
@@ -79,26 +66,73 @@ router.post("/seller-login",async (req,res) =>{
 
     try {
 
-        const {username, password} = req.body;
-        const validUser = await Seller.findOne({username:username});
+        let username = req.body.username;
+        let password = req.body.password;
 
-        if(validUser && bcrypt.compareSync(password, validUser.hashedPassword)){
+        const user = await Seller.findOne({"username":username});
 
-            return res.status(200).json({Message:"user found!"})
+        if (user) {
+
+            const auth = await bcrypt.compare(password, user.password);
+            console.log(auth);
+
+            if (auth===false) {
+                res.json("invalid credentials!");
+
+            } else {
+                res.json({user,status:200});
+            }
+
         }
 
         else {
-            return  res.status(400);
+            return res.status(404).json("User Not Found!");
         }
 
     }
     catch (err){
 
-        console.warn(err);
+        console.log(err);
+    }
+
+})
+
+router.post("/buyer-login",async (req,res) =>{
+
+    try {
+
+        let username = req.body.username;
+        let password = req.body.password;
+
+        const user = await Buyer.findOne({"username":username});
+
+        if (user) {
+
+            const auth = await bcrypt.compare(password, user.password);
+            console.log(auth);
+
+            if (auth===false) {
+                res.json("invalid credentials!");
+
+            } else {
+                res.json({user,status:200});
+            }
+
+        }
+
+        else {
+            return res.status(404).json("User Not Found!");
+        }
+
+    }
+    catch (err){
+
+        console.log(err);
     }
 
 
 
 })
+
 
 module.exports = router;

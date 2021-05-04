@@ -12,9 +12,13 @@ const itemRouter = require('./routes/ItemRoute.js');
 
 
 //Middleware
-app.use(bodyParser.json())
-app.use(cors())
-app.use('/delivery',DeliveryRoutes)
+app.use(bodyParser.json());
+app.use(cors());
+app.use(express.static('uploads'));
+// app.use(express.static(path.join(__dirname, '../public/media')));
+// const buildPath = path.normalize(path.join(__dirname, '../public/media'));
+// app.use(express.static(buildPath));
+app.use('/delivery',DeliveryRoutes);
 app.use("/user",userRouter);
 app.use("/item",itemRouter);
 

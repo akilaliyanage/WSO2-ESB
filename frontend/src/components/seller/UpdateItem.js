@@ -19,38 +19,40 @@ const useStyles = makeStyles({
     },
 });
 
-const item = [
-    {
-        name:"watch",
-        description:"demo",
-        price:100,
-        count:28,
-        image:"https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80"
-    }
-]
 
+function UpdateItem(props){
 
-
-function UpdateItem(){
-
-    useEffect(() => {
-
-        document.body.style.backgroundColor = "#282c34"
-
-        setName("name");
-        setDescription("");
-        setPrice("");
-        setValue(40);
-
-    }, [])
+    const [item,setItem] = useState([]);
 
 
     const  history = useHistory();
     const [item_name, setName] = useState("");
     const [item_description, setDescription] = useState("");
-    const [count, setCount] = useState("");
+    const [count, setCount] = useState(60);
     const [price, setPrice] = useState("");
-    const [item_image, setImage] = useState("");
+    const [item_image, setImage] = useState();
+
+    useEffect(() => {
+        document.body.style.backgroundColor = "#282c34"
+
+            console.log(props.match.params.itemID);
+            axios.get("http://localhost:9000/item/10/"+props.match.params.itemID).then((res) => {
+
+                setItem(res.data);
+                setName(res.data[0].title);
+                setDescription(res.data[0].description);
+                setCount(res.data[0].itemCount);
+                setPrice(res.data[0].price);
+                console.log(res.data[0].price);
+                console.log(res.data);
+
+            }).catch((err) => {
+                console.log(err);
+            })
+
+
+    }, [])
+
 
     const classes = useStyles();
     const [value, setValue] = useState(count);
@@ -75,22 +77,19 @@ function UpdateItem(){
     function update(e) {
         e.preventDefault();
 
-        const newItem = {
+        const formData = new FormData();
+        formData.append("title",item_name);
+        formData.append("description",item_description);
+        formData.append("count",100);
+        formData.append("price",price);
+        formData.append("image",item_image);
 
-            item_name,
-            item_description,
-            value,
-            price,
-            item_image
+        console.log(price);
 
-        }
-
-        console.log(newItem);
-
-        const url = "";
-        axios.post(url,item).then((res) => {
-            if(res.data.status === "success") {
-                history.push("/");
+        const url = "http://localhost:9000/item/update/"+props.match.params.itemID;
+        axios.put(url,formData).then((res) => {
+            if(res.data.status === 200) {
+                history.push("/seller");
             }
             else {
                 alert("oops! something went wrong");
@@ -100,6 +99,20 @@ function UpdateItem(){
         })
 
 
+    }
+
+    function Delete(){
+        const url = "http://localhost:9000/item/delete/"+props.match.params.itemID;
+        axios.delete(url).then((res) => {
+            if(res.data.status === 200) {
+                history.push("/seller");
+            }
+            else {
+                alert("oops! something went wrong");
+            }
+        }).catch((err) => {
+            alert(err);
+        })
     }
 
 
@@ -145,7 +158,7 @@ function UpdateItem(){
                         <div className="form-group">
                             <label className="float-left">Title</label>
                             <input type="text" required="true" className="form-control" name="title" placeholder="Title"
-                                   defaultValue={item.name} onChange={(e) => {setName(e.target.value)}}/>
+                                   defaultValue={item.title} onChange={(e) => {setName(e.target.value)}}/>
                         </div>
 
                         <div className="form-group">
@@ -200,8 +213,9 @@ function UpdateItem(){
 
                         <div> <br/></div>
 
-                        <button type="submit" className="btn btn-primary">Add to Store</button>
+                        <button type="submit" className="btn btn-primary">Update</button>
                     </form>
+                    <button type="button" onClick={Delete} className="btn btn-danger">Delete</button>
                 </div>
 
                 <div className="oldPreview">

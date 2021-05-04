@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
@@ -11,6 +11,8 @@ import Button from "@material-ui/core/Button";
 import {Avatar} from "@material-ui/core";
 import SellerNavBar from "./SellerNavBar";
 import AddItem from "./AddItem";
+import axios from "axios";
+import {Link, useHistory} from "react-router-dom";
 //import SellerNavBar from "./SellerNavBar";
 
 const useStyles = makeStyles((theme) => ({
@@ -30,49 +32,29 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+export default function Dashboard(props) {
 
-const tileData = [
-    {
-        img: "https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80",
-        title: 'Golden watch',
-        author: '$10.00',
-    },
-    {
-        img: "https://images.unsplash.com/photo-1512034705137-dc51c5ed36f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1484&q=80",
-        title: 'Luminus Watch',
-        author: '$22.34',
-    },
-    {
-        img: "https://images.unsplash.com/photo-1541778480-fc1752bbc2a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1459&q=80",
-        title: 'Rose Gold Watch',
-        author: '$12.00',
-    },
-    {
-        img: "https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80",
-        title: 'White Watch',
-        author: '$14.50',
-    },
-    {
-        img: "https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80",
-        title: 'Golden watch',
-        author: '$10.00',
-    },
-    {
-        img: "https://images.unsplash.com/photo-1512034705137-dc51c5ed36f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1484&q=80",
-        title: 'Luminus Watch',
-        author: '$22.34',
-    }
-
-
-]
-
-export default function Dashboard() {
+    let username = (localStorage.getItem('seller-name'));
+    let userid = (localStorage.getItem('seller-id'));
+    const  history = useHistory();
 
     const classes = useStyles();
+    const [tileData,setTileData] = useState([]);
 
     useEffect(() => {
         document.body.style.backgroundColor = "#282c34"
-    })
+
+        if(username === null){
+            history.push("/login")
+        }
+
+        axios.get("http://localhost:9000/item/"+userid).then((res) => {
+            console.log(res.data);
+            setTileData(res.data);
+        }).catch((err) => {
+            console.log(err);
+        })
+    },[]);
 
     return (
         <div>
@@ -88,10 +70,12 @@ export default function Dashboard() {
 
                         {tileData.map((tile) => (
                             <GridListTile key={tile.img}>
-                                <img src={tile.img} alt={tile.title}/>
+                                <Link to ={`update-item/${tile._id}`}>
+                                <img src={"http://localhost:9000/"+tile.itemImage} width="240px" height="220px" alt={tile.title}/>
+                                </Link>
                                 <GridListTileBar
                                     title={tile.title}
-                                    subtitle={<span>price: {tile.author}</span>}
+                                    subtitle={<span>price: {tile.price}</span>}
                                     actionIcon={
                                         <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
                                             <InfoIcon/>

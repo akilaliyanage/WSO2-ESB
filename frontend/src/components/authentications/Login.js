@@ -17,23 +17,29 @@ function Login(){
         document.body.style.backgroundColor = "#282c34"
     })
 
-    function buyerLogin(e) {
+    function sellerLogin(e) {
         e.preventDefault();
-        const auth = {
+        const user = {
             username,
             password
         }
 
-        const  url = "";
-        axios.post(url,auth).then((response) =>{
+        const  url = "http://localhost:9000/user/seller-login";
+        axios.post(url,user).then((response) =>{
 
-            if(response.data.status === "valid"){
+            console.log(user);
+            if(response.data.status === 200){
+                console.log(response.data);
                 let username = response.data.user.username;
-                let buyerID = JSON.stringify(response.data.user.id);
-                localStorage.setItem("seller-id",buyerID);
+                let sellerID = JSON.stringify(response.data.user._id);
+
+                console.log(username);
+                console.log(sellerID);
+
+                localStorage.setItem("seller-id",sellerID);
                 localStorage.setItem("seller-name",username);
                 alert("logged in");
-                history.push("/")
+                history.push("/seller")
 
             }
             else {
@@ -46,22 +52,22 @@ function Login(){
 
 
 
-    function sellerLogin(e) {
+    function buyerLogin(e) {
         e.preventDefault();
         const auth = {
             username,
             password
         }
-        const  url = "";
+        const  url = "http://localhost:9000/user/buyer-login";
         axios.post(url,auth).then((res) =>{
 
-            if(res.data.status === "valid"){
+            if(res.data.status === 200){
                 let username = res.data.user.username;
-                let sellerID = JSON.stringify(res.data.user.id);
-                localStorage.setItem("buyer-id",sellerID);
+                let buyerID = JSON.stringify(res.data.user.id);
+                localStorage.setItem("buyer-id",buyerID);
                 localStorage.setItem("buyer-name",username);
                 alert("logged in");
-                history.push("/borrowedbooks")
+                history.push("/")
 
             }
             else {

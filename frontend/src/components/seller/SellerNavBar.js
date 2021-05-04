@@ -31,7 +31,11 @@ function SellerNavBar(){
                     </li>
 
                     <li className="nav-item active">
-                        <a className="nav-link" href="/">Logout</a>
+                        <a className="nav-link" onClick={logout}>Logout</a>
+                    </li>
+
+                    <li className="nav-item active">
+                        <a className="nav-link" >Welcome {username}</a>
                     </li>
 
                 </ul>
