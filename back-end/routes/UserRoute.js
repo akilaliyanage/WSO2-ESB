@@ -6,7 +6,7 @@ const bcrypt = require("bcrypt");
 
 const storage = multer.diskStorage({
     destination:(req,file,callback) => {
-        callback(null,"./public/media")
+        callback(null,"./uploads")
     },
     filename:(req,file,callback) => {
         callback(null,file.originalname);
@@ -17,8 +17,13 @@ const upload = multer({storage:storage});
 
 router.post("/signup",upload.single("picture"),async (req, res) => {
 
+    console.log(req.body.username);
+    console.log(req.body.password);
+    console.log(req.body.role);
+    console.log(req.body.email);
+    console.log(req.file);
 
-    if (req.body.role === "seller") {
+    if (req.body.role === "Seller") {
 
             const salt = await bcrypt.genSalt();
             const hash = await bcrypt.hash(req.body.password,salt);
@@ -37,7 +42,7 @@ router.post("/signup",upload.single("picture"),async (req, res) => {
             })
 
 
-    } else if (req.body.role === "buyer") {
+    } else if (req.body.role === "Buyer") {
 
         const salt = await bcrypt.genSalt();
         const hash = await bcrypt.hash(req.body.password,salt);
@@ -129,8 +134,16 @@ router.post("/buyer-login",async (req,res) =>{
 
         console.log(err);
     }
+})
 
+router.route("/:sellerID").get((req,res) => {
 
+    let ID = req.params.sellerID;
+    Seller.find({_id:ID}).then((seller) => {
+        res.json(seller);
+    }).catch((err) => {
+        console.log(err)
+    })
 
 })
 

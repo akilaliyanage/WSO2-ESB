@@ -36,12 +36,14 @@ router.post("/add",upload.single("image"),(req,res) => {
 
 })
 
-//getting seller items
+//getting seller's items
 router.route("/:sellerID").get((req,res) => {
 
     let ID = req.params.sellerID;
+    let count = Item.count({sellerID:ID});//get the total item count
     Item.find({sellerID:ID}).then((items) => {
-        res.json(items)
+        console.log(count);
+        res.json(items);
     }).catch((err) => {
         console.log(err)
     })

@@ -16,7 +16,7 @@ const sellerScheema = new Schema({
     },
     profileImg:{
         type: String,
-        required: true
+        required: false
     }
 
 })

@@ -36,6 +36,7 @@ export default function Dashboard(props) {
 
     let username = (localStorage.getItem('seller-name'));
     let userid = (localStorage.getItem('seller-id'));
+    let avatar = (localStorage.getItem('avatar'));
     const  history = useHistory();
 
     const classes = useStyles();
@@ -48,13 +49,17 @@ export default function Dashboard(props) {
             history.push("/login")
         }
 
+        //setAvatar(this.props.selectedValue);
+
         axios.get("http://localhost:9000/item/"+userid).then((res) => {
             console.log(res.data);
+            console.log(props);
             setTileData(res.data);
         }).catch((err) => {
             console.log(err);
         })
     },[]);
+
 
     return (
         <div>
@@ -89,19 +94,22 @@ export default function Dashboard(props) {
 
 
                 <div className="Avatar">
-                    <Avatar src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1412&q=80" style={{width:'150px',height:'150px'}} />
+                    <Avatar src={"http://localhost:9000/"+avatar} style={{width:'150px',height:'150px'}} />
                 </div>
                 <div className="SellerName">
-                    <h5 style={{color:'whitesmoke'}}>John doe</h5>
+                    <h5 style={{color:"whitesmoke","font-size":"30px"}}>{username} </h5>
+                    <h5 style={{color:"aqua","font-size":"10px"}}>Seller ID: {userid} </h5>
                 </div>
 
                 <div className="itemCount">
                     <br/>
                     <h5 style={{color:'whitesmoke'}}>Total Items</h5>
+                    <h3 style={{color:"yellow", "font-size":"30px"}}>120</h3>
                 </div>
                 <div className="sellCount">
                     <br/>
                     <h5 style={{color:'whitesmoke'}}>Items Sold</h5>
+                    <h3 style={{color:"green","font-size":"30px"}}>20</h3>
                 </div>
 
                 <div className="addItem">

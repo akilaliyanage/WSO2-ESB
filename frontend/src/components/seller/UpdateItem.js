@@ -219,7 +219,7 @@ function UpdateItem(props){
                 </div>
 
                 <div className="oldPreview">
-                    <img src={item.image} width="250" height="250"/>
+                    <img src={"http://localhost:9000/"+item.itemImage} width="250" height="250"/>
                 </div>
 
                 <div className="preview">
