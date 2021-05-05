@@ -11,6 +11,7 @@ import AddItem from "./components/seller/AddItem";
 import LandingPage from "./components/BuyerPages/LandingPage";
 import ProductsPage from "./components/BuyerPages/ProductsPage";
 import UpdateItem from "./components/seller/UpdateItem";
+import CardPayment from "./components/Payment/CardPayment";
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Route path = "/" exact component = {LandingPage}/>
       <Route path = "/products" exact component = {ProductsPage}/>
       <Route path = "/update-item/:itemID" exact component = {UpdateItem}/>
+      <Route path = "/CardPayment" exact component = {CardPayment}/>
 
     </div>
       </Router>
