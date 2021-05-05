@@ -158,7 +158,7 @@ function UpdateItem(props){
                     <form onSubmit={update}>
                         <div className="form-group">
                             <label className="float-left">Title</label>
-                            <input type="text" required="true" className="form-control" name="title" placeholder="Title"
+                            <input type="text" required="true" className="form-control form-control-lg mb-2" name="title" placeholder="Title"
                                    defaultValue={item.title} onChange={(e) => {setName(e.target.value)}}/>
                         </div>
 
@@ -169,12 +169,12 @@ function UpdateItem(props){
                         </div>
 
                         <div className="fileInput">
-                            <input type="file" className="form-control" name="cover" placeholder="Cover Image"  onChange={onSelectFile}/>
+                            <input type="file" className="form-control form-control-lg mb-2" name="cover" placeholder="Cover Image"  onChange={onSelectFile}/>
                         </div>
 
                         <div className="form-group">
                             <label className="float-left">Price</label>
-                            <input type="text" required="true" className="form-control" name="price" placeholder="Price"
+                            <input type="text" required="true" className="form-control form-control-lg mb-2" name="price" placeholder="Price"
                                    defaultValue={item.price} onChange={(e) => {setPrice(e.target.value)}}/>
                         </div>
 
@@ -214,9 +214,10 @@ function UpdateItem(props){
 
                         <div> <br/></div>
 
-                        <button type="submit" className="btn btn-primary">Update</button>
+                        <button type="submit" className="btn btn-primary" style={{width:"200px",height:"40px","font-size":"15px"}}>Update</button>
+                        <button type="button" onClick={Delete} className="btn btn-danger" style={{width:"200px",height:"40px","font-size":"15px",marginLeft:"10px"}}>Delete</button>
                     </form>
-                    <button type="button" onClick={Delete} className="btn btn-danger">Delete</button>
+
                 </div>
 
                 <div className="oldPreview">

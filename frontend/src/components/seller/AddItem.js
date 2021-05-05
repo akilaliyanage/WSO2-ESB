@@ -124,21 +124,21 @@ function AddItem(){
                     <form onSubmit={sendItem}>
                         <div className="form-group">
                             <label className="float-left">Title</label>
-                            <input type="text" required="true" className="form-control" name="title" placeholder="Title" onChange={(e) => {setName(e.target.value)}}/>
+                            <input type="text" required="true" className="form-control form-control-lg mb-2" name="title" placeholder="Title" onChange={(e) => {setName(e.target.value)}}/>
                         </div>
 
                         <div className="form-group">
                             <label className="float-left">Description</label>
-                            <textarea style={{height:'140px'}} maxLength="300" className="form-control" onChange={(e) =>{setDescription(e.target.value)}} />
+                            <textarea style={{height:'140px'}} required={true} maxLength="300" className="form-control" onChange={(e) =>{setDescription(e.target.value)}} />
                         </div>
 
                         <div className="fileInput">
-                            <input type="file" className="form-control" name="cover" placeholder="Cover Image"  onChange={onSelectFile}/>
+                            <input type="file" className="form-control form-control-lg mb-2" name="cover" placeholder="Cover Image"  onChange={onSelectFile}/>
                         </div>
 
                         <div className="form-group">
                             <label className="float-left">Price</label>
-                            <input type="text" required="true" className="form-control" name="price" placeholder="Price" onChange={(e) => {setPrice(e.target.value)}}/>
+                            <input type="text" required="true" className="form-control form-control-lg mb-2" name="price" placeholder="Price" onChange={(e) => {setPrice(e.target.value)}}/>
                         </div>
 
                         <div className={classes.root}>
@@ -177,7 +177,7 @@ function AddItem(){
 
                         <div> <br/></div>
 
-                        <button type="submit" className="btn btn-primary">Add to Store</button>
+                        <button type="submit" className="btn btn-primary" style={{width:"200px",height:"40px","font-size":"15px"}}>Add to Store</button>
                     </form>
                 </div>
 

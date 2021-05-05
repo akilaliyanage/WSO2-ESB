@@ -91,13 +91,13 @@ function Login(){
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Username</label>
-                        <input type="text" className="form-control" name="email" placeholder="Username" onChange={(e) =>{setUsername(e.target.value)}}/>
+                        <input type="text" className="form-control form-control-lg mb-2" name="email" placeholder="Username" onChange={(e) =>{setUsername(e.target.value)}}/>
                     </div>
 
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Password</label>
-                        <input type="password" className="form-control" name="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
+                        <input type="password" className="form-control form-control-lg mb-2" name="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
                     </div>
 
                     <button type="submit" className="btn btn-primary">Login</button>
@@ -112,13 +112,13 @@ function Login(){
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Username</label>
-                        <input type="text" className="form-control" name="name" placeholder="Username" onChange={(e) =>{setUsername(e.target.value)}}/>
+                        <input type="text" className="form-control form-control-lg mb-2" name="name" placeholder="Username" onChange={(e) =>{setUsername(e.target.value)}}/>
                     </div>
 
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Password</label>
-                        <input type="password" className="form-control" name="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
+                        <input type="password" className="form-control form-control-lg mb-2" name="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
                     </div>
 
                     <button type="submit" className="btn btn-primary">Login</button>

@@ -75,7 +75,8 @@ function UserSignUP(){
 
         <div>
 
-            <h2 style={{color:'#61dafb'}}>Sign Up</h2>
+            <h2  style={{color:"#61dafb", "font-size":"30px"}}>Sign Up</h2>
+
 
             <div className="signupForm">
 
@@ -92,23 +93,23 @@ function UserSignUP(){
                         </div>
                     </div>
 
-                    <div className="formSection">
-                        <div className="form-group">
+                    <div className="formSection" >
+                        <div className="form-group"  style={{marginTop:"60px"}}>
                             <label htmlFor="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            <input type="email" className="form-control form-control-lg mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
                                    placeholder="Enter email" onChange={(e) => {setEmail(e.target.value)}}/>
 
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Username</label>
-                            <input type="text" className="form-control" id="exampleInputPassword1"
+                            <input type="text" className="form-control form-control-lg mb-2" id="exampleInputPassword1"
                                    placeholder="Username"  onChange={(e) => {setUsername(e.target.value)}}/>
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Password</label>
-                            <input type="password" className="form-control" id="exampleInputPassword1"
+                            <input type="password" className="form-control form-control-lg mb-2" id="exampleInputPassword1"
                                    placeholder="Password"  onChange={(e) => {setPassword(e.target.value)}}/>
                         </div>
 
@@ -124,7 +125,7 @@ function UserSignUP(){
                             } label="Seller" />
 
                             <FormControlLabel  control={
-                                <Radio
+                                <Radio required={true}
 
                                     checked={role === 'Buyer'}
                                     onChange={handleChange}
@@ -135,7 +136,7 @@ function UserSignUP(){
                             } label="Buyer" />
                         </div>
 
-                        <button type="submit" className="btn btn-primary">Sign up</button>
+                        <button type="submit" style={{width:"200px",height:"40px","font-size":"15px"}} className="btn btn-primary">Sign up</button>
                     </div>
                 </form>
 
