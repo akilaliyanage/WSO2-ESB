@@ -33,13 +33,14 @@ function Login(){
                 let username = response.data.user.username;
                 let sellerID = JSON.stringify(response.data.user._id);
                 let avatar = response.data.user.profileImg;
+                let sellerEmail = response.data.user.email;
 
-                console.log(username);
-                console.log(sellerID);
 
                 localStorage.setItem("seller-id",sellerID);
                 localStorage.setItem("seller-name",username);
+                localStorage.setItem("seller-email",sellerEmail);
                 localStorage.setItem("avatar",avatar);
+
                 alert("logged in");
                 history.push("/seller")
 
