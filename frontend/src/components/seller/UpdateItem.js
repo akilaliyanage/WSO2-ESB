@@ -28,7 +28,7 @@ function UpdateItem(props){
     const  history = useHistory();
     const [item_name, setName] = useState("");
     const [item_description, setDescription] = useState("");
-    const [count, setCount] = useState(60);
+    const [count, setCount] = useState("");
     const [price, setPrice] = useState("");
     const [item_image, setImage] = useState();
 
@@ -41,9 +41,9 @@ function UpdateItem(props){
                 setItem(res.data);
                 setName(res.data[0].title);
                 setDescription(res.data[0].description);
-                setCount(res.data[0].itemCount);
+                setValue(res.data[0].itemCount);
                 setPrice(res.data[0].price);
-                console.log(res.data[0].price);
+                console.log(res.data[0].itemCount);
                 console.log(res.data);
 
             }).catch((err) => {
@@ -63,6 +63,7 @@ function UpdateItem(props){
 
     const handleInputChange = (event) => {
         setValue(event.target.value === '' ? '' : Number(event.target.value));
+
     };
 
     const handleBlur = () => {
@@ -80,7 +81,7 @@ function UpdateItem(props){
         const formData = new FormData();
         formData.append("title",item_name);
         formData.append("description",item_description);
-        formData.append("count",100);
+        formData.append("count",value);
         formData.append("price",price);
         formData.append("image",item_image);
 

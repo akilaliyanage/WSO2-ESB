@@ -74,7 +74,6 @@ router.put("/update/:itemID",upload.single("image"),async (req,res) => {
 
         updatedItem = {
 
-            sellerID: req.body.sellerID,
             title : req.body.title,
             description:  req.body.description,
             itemCount: req.body.count,

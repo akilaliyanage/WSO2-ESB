@@ -49,8 +49,6 @@ export default function Dashboard(props) {
             history.push("/login")
         }
 
-        //setAvatar(this.props.selectedValue);
-
         axios.get("http://localhost:9000/item/"+userid).then((res) => {
             console.log(res.data);
             console.log(props);
