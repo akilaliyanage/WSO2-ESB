@@ -96,20 +96,20 @@ function UserSignUP(){
                     <div className="formSection" >
                         <div className="form-group"  style={{marginTop:"60px"}}>
                             <label htmlFor="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control form-control-lg mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            <input type="email" required={true} className="form-control form-control-lg mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
                                    placeholder="Enter email" onChange={(e) => {setEmail(e.target.value)}}/>
 
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Username</label>
-                            <input type="text" className="form-control form-control-lg mb-2" id="exampleInputPassword1"
+                            <input type="text" required={true} className="form-control form-control-lg mb-2" id="exampleInputPassword1"
                                    placeholder="Username"  onChange={(e) => {setUsername(e.target.value)}}/>
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Password</label>
-                            <input type="password" className="form-control form-control-lg mb-2" id="exampleInputPassword1"
+                            <input type="password" required={true} className="form-control form-control-lg mb-2" id="exampleInputPassword1"
                                    placeholder="Password"  onChange={(e) => {setPassword(e.target.value)}}/>
                         </div>
 

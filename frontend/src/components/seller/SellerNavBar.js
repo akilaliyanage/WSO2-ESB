@@ -17,7 +17,7 @@ function SellerNavBar(){
 
     return(
         <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-            <a className="navbar-brand" href="#">Dashboard </a>
+            <a className="navbar-brand" href="/seller">Dashboard </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -27,7 +27,7 @@ function SellerNavBar(){
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="/seller">Home <span className="sr-only">(current)</span></a>
                     </li>
 
                     <li className="nav-item active">

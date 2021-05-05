@@ -32,7 +32,6 @@ function Login(){
                 console.log(response.data);
                 let username = response.data.user.username;
                 let sellerID = JSON.stringify(response.data.user._id);
-
                 let avatar = response.data.user.profileImg;
 
                 console.log(username);
@@ -65,10 +64,17 @@ function Login(){
         axios.post(url,auth).then((res) =>{
 
             if(res.data.status === 200){
+
+                let avatar = res.data.user.profileImg;
                 let username = res.data.user.username;
                 let buyerID = JSON.stringify(res.data.user.id);
+                let buyerEmail = res.data.user.email;
+
                 localStorage.setItem("buyer-id",buyerID);
                 localStorage.setItem("buyer-name",username);
+                localStorage.setItem("buyer-email",buyerEmail);
+                localStorage.setItem("avatar",avatar);
+                console.log(buyerEmail);
                 alert("logged in");
                 history.push("/")
 
