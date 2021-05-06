@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Header extends Component{
+class CustomHeader extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -9,8 +9,7 @@ class Header extends Component{
 
     render(){
         return(
-            <section class="header-top-section">
-                    <div class="container">
+                    <div div class = "container" >
                         <div class="row">
                             <div  class="col-md-6">
                                 <div class="header-top-content">
@@ -33,9 +32,8 @@ class Header extends Component{
                             </div>
                         </div>
                     </div>
-                </section>
 
         );}
 }
 
-export default Header;
+export default CustomHeader;
