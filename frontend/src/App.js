@@ -13,6 +13,7 @@ import ProductsPage from "./components/BuyerPages/ProductsPage";
 import UpdateItem from "./components/seller/UpdateItem";
 import Cart from "./components/BuyerPages/ShoppingCart";
 import CardPayment from "./components/Payment/CardPayment";
+import MobilePayment from "./components/Payment/MobilePayment";
 
 
 
@@ -33,6 +34,7 @@ function App() {
       <Route path = "/cart" exact component = {Cart}/>
       <Route path = "/update-item/:itemID" exact component = {UpdateItem}/>
       <Route path = "/CardPayment" exact component = {CardPayment}/>
+      <Route path = "/MobilePayment" exact component = {MobilePayment}/>
 
     </div>
       </Router>

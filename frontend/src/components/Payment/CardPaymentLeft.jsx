@@ -7,7 +7,7 @@ import { UserOutlined , DollarTwoTone , ShoppingCartOutlined , MailOutlined, Dol
 class CardPaymentLeft extends Component {
     render(){
         return(
-            <section gutter={[16, 24]} align="middle"  style={{ paddingTop: '30px' , verticalAlign:'middle' }} bordered>
+            <section gutter={[16, 24]} align="middle"  style={{ paddingTop: '100px' , verticalAlign:'middle' }} bordered>
                 <DollarTwoTone style={{ fontSize: '600%' , paddingBottom:20}} twoToneColor="#39C0ED" />
                 <Row gutter={[16, 24]} className="centerChild" type="flex" align="middle">
                     <Col span={16} offset={4}>
