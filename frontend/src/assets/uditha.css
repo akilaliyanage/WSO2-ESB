@@ -59,6 +59,7 @@ h2{
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.8);
     border-radius: 10px;
+    height: 50%;
 }
 
 .sellerLogin{
@@ -73,6 +74,7 @@ h2{
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.8);
     border-radius: 10px;
+    height: 50%;
 }
 
 .addItem{
@@ -85,7 +87,7 @@ h2{
 .myItems{
     position: absolute;
     left: 5%;
-    top: 15%;
+    top: 25%;
 }
 
 .itemCount{
@@ -137,13 +139,13 @@ h2{
 .preview{
     position: absolute;
     float: left;
-    left: -360px;
+    left: -400px;
     top: 100px;
 }
 .oldPreview{
     position: absolute;
     float: left;
-    left: -360px;
+    left: -400px;
     top: 100px;
 }
 

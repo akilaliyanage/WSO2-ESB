@@ -17,23 +17,32 @@ function Login(){
         document.body.style.backgroundColor = "#282c34"
     })
 
-    function buyerLogin(e) {
+    function sellerLogin(e) {
         e.preventDefault();
-        const auth = {
+        const user = {
             username,
             password
         }
 
-        const  url = "";
-        axios.post(url,auth).then((response) =>{
+        const  url = "http://localhost:9000/user/seller-login";
+        axios.post(url,user).then((response) =>{
 
-            if(response.data.status === "valid"){
+            console.log(user);
+            if(response.data.status === 200){
+                console.log(response.data);
                 let username = response.data.user.username;
-                let buyerID = JSON.stringify(response.data.user.id);
-                localStorage.setItem("seller-id",buyerID);
+                let sellerID = JSON.stringify(response.data.user._id);
+                let avatar = response.data.user.profileImg;
+                let sellerEmail = response.data.user.email;
+
+
+                localStorage.setItem("seller-id",sellerID);
                 localStorage.setItem("seller-name",username);
+                localStorage.setItem("seller-email",sellerEmail);
+                localStorage.setItem("avatar",avatar);
+
                 alert("logged in");
-                history.push("/")
+                history.push("/seller")
 
             }
             else {
@@ -46,22 +55,29 @@ function Login(){
 
 
 
-    function sellerLogin(e) {
+    function buyerLogin(e) {
         e.preventDefault();
         const auth = {
             username,
             password
         }
-        const  url = "";
+        const  url = "http://localhost:9000/user/buyer-login";
         axios.post(url,auth).then((res) =>{
 
-            if(res.data.status === "valid"){
+            if(res.data.status === 200){
+
+                let avatar = res.data.user.profileImg;
                 let username = res.data.user.username;
-                let sellerID = JSON.stringify(res.data.user.id);
-                localStorage.setItem("buyer-id",sellerID);
+                let buyerID = JSON.stringify(res.data.user.id);
+                let buyerEmail = res.data.user.email;
+
+                localStorage.setItem("buyer-id",buyerID);
                 localStorage.setItem("buyer-name",username);
+                localStorage.setItem("buyer-email",buyerEmail);
+                localStorage.setItem("avatar",avatar);
+                console.log(buyerEmail);
                 alert("logged in");
-                history.push("/borrowedbooks")
+                history.push("/")
 
             }
             else {
@@ -82,13 +98,13 @@ function Login(){
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Username</label>
-                        <input type="text" className="form-control" name="email" placeholder="Username" onChange={(e) =>{setUsername(e.target.value)}}/>
+                        <input type="text" className="form-control form-control-lg mb-2" name="email" placeholder="Username" onChange={(e) =>{setUsername(e.target.value)}}/>
                     </div>
 
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Password</label>
-                        <input type="password" className="form-control" name="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
+                        <input type="password" className="form-control form-control-lg mb-2" name="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
                     </div>
 
                     <button type="submit" className="btn btn-primary">Login</button>
@@ -103,13 +119,13 @@ function Login(){
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Username</label>
-                        <input type="text" className="form-control" name="name" placeholder="Username" onChange={(e) =>{setUsername(e.target.value)}}/>
+                        <input type="text" className="form-control form-control-lg mb-2" name="name" placeholder="Username" onChange={(e) =>{setUsername(e.target.value)}}/>
                     </div>
 
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Password</label>
-                        <input type="password" className="form-control" name="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
+                        <input type="password" className="form-control form-control-lg mb-2" name="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
                     </div>
 
                     <button type="submit" className="btn btn-primary">Login</button>

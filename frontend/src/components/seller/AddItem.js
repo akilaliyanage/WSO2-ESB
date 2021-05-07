@@ -21,7 +21,11 @@ const useStyles = makeStyles({
 
 function AddItem(){
 
+    let username = (localStorage.getItem('seller-name'));
+    let userid = (localStorage.getItem('seller-id'));
     const  history = useHistory();
+
+
     const [item_name, setName] = useState("");
     const [item_description, setDescription] = useState("");
     const [count, setCount] = useState("");
@@ -29,7 +33,7 @@ function AddItem(){
     const [item_image, setImage] = useState("");
 
     const classes = useStyles();
-    const [value, setValue] = React.useState(10);
+    const [value, setValue] = useState(count);
 
     const handleSliderChange = (event, newValue) => {
         setValue(newValue);
@@ -49,28 +53,27 @@ function AddItem(){
 
     useEffect(() => {
         document.body.style.backgroundColor = "#282c34"
+        if(username === null){
+            history.push("/login")
+        }
     })
 
 
     function sendItem(e) {
         e.preventDefault();
 
-        const item = {
+        const formData = new FormData();
+        formData.append("title",item_name);
+        formData.append("description",item_description);
+        formData.append("count",value);
+        formData.append("price",price);
+        formData.append("image",item_image);
+        formData.append("sellerID",userid);
 
-            item_name,
-            item_description,
-            value,
-            price,
-            item_image
-
-        }
-
-        console.log(item);
-
-        const url = "";
-        axios.post(url,item).then((res) => {
-            if(res.data.status === "success") {
-                history.push("/");
+        const url = "http://localhost:9000/item/add/";
+        axios.post(url,formData).then((res) => {
+            if(res.data.status === 200) {
+                history.push("/seller");
             }
             else {
                 alert("oops! something went wrong");
@@ -121,21 +124,21 @@ function AddItem(){
                     <form onSubmit={sendItem}>
                         <div className="form-group">
                             <label className="float-left">Title</label>
-                            <input type="text" required="true" className="form-control" name="title" placeholder="Title" onChange={(e) => {setName(e.target.value)}}/>
+                            <input type="text" required="true" className="form-control form-control-lg mb-2" name="title" placeholder="Title" onChange={(e) => {setName(e.target.value)}}/>
                         </div>
 
                         <div className="form-group">
                             <label className="float-left">Description</label>
-                            <textarea style={{height:'140px'}} maxLength="300" className="form-control" onChange={(e) =>{setDescription(e.target.value)}} />
+                            <textarea style={{height:'140px'}} required={true} maxLength="300" className="form-control" onChange={(e) =>{setDescription(e.target.value)}} />
                         </div>
 
                         <div className="fileInput">
-                            <input type="file" className="form-control" name="cover" placeholder="Cover Image"  onChange={onSelectFile}/>
+                            <input type="file" className="form-control form-control-lg mb-2" name="cover" placeholder="Cover Image"  onChange={onSelectFile}/>
                         </div>
 
                         <div className="form-group">
                             <label className="float-left">Price</label>
-                            <input type="text" required="true" className="form-control" name="price" placeholder="Price" onChange={(e) => {setPrice(e.target.value)}}/>
+                            <input type="text" required="true" className="form-control form-control-lg mb-2" name="price" placeholder="Price" onChange={(e) => {setPrice(e.target.value)}}/>
                         </div>
 
                         <div className={classes.root}>
@@ -161,7 +164,7 @@ function AddItem(){
                                         onChange={handleInputChange}
                                         onBlur={handleBlur}
                                         inputProps={{
-                                            step: 10,
+                                            step: 1,
                                             min: 1,
                                             max: 1000,
                                             type: 'number',
@@ -174,7 +177,7 @@ function AddItem(){
 
                         <div> <br/></div>
 
-                        <button type="submit" className="btn btn-primary">Add to Store</button>
+                        <button type="submit" className="btn btn-primary" style={{width:"200px",height:"40px","font-size":"15px"}}>Add to Store</button>
                     </form>
                 </div>
 

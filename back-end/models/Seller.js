@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const  Schema = mongoose.Schema;
 
-const buyerScheema = new Schema({
+const sellerScheema = new Schema({
     username:{
         type: String,
         required: true
@@ -21,5 +21,5 @@ const buyerScheema = new Schema({
 
 })
 
-const  Buyer = mongoose.model("Buyer",buyerScheema);
-module.exports = Buyer;
+const  Seller = mongoose.model("Seller",sellerScheema);
+module.exports = Seller;

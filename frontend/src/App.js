@@ -12,6 +12,8 @@ import LandingPage from "./components/BuyerPages/LandingPage";
 import ProductsPage from "./components/BuyerPages/ProductsPage";
 import UpdateItem from "./components/seller/UpdateItem";
 import Cart from "./components/BuyerPages/ShoppingCart";
+import CardPayment from "./components/Payment/CardPayment";
+
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
       <Route path = "/products" exact component = {ProductsPage}/>
       <Route path = "/update-item" exact component = {UpdateItem}/>
       <Route path = "/cart" exact component = {Cart}/>
+      <Route path = "/update-item/:itemID" exact component = {UpdateItem}/>
+      <Route path = "/CardPayment" exact component = {CardPayment}/>
 
     </div>
       </Router>
