@@ -22,7 +22,7 @@ class CardPayment extends Component {
                 <Content style={{backgroundColor:"#282c34"}}>
                     <Row>
                         <Col span={12}>
-                            <CardPaymentLeft/>
+                            <CardPaymentLeft isMobile='false'/>
                         </Col>
                         <Col span={12}>
                             <CardPaymentForm/>

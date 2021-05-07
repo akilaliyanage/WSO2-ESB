@@ -5,13 +5,28 @@ import { Row , Col , Space , Divider , List, Radio} from 'antd';
 import { UserOutlined , DollarTwoTone , ShoppingCartOutlined , MailOutlined, DollarOutlined , PercentageOutlined} from '@ant-design/icons';
 
 class CardPaymentLeft extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        }
+    }
     render(){
+
+        const renderTitle = () =>{
+            if(this.props.isMobile){
+                return <h1 className="lightText" style={{fontSize:35 , fontWeight:'bold'}}>Mobile Payment</h1>
+            }
+            else {
+                return <h1 className="lightText" style={{fontSize:35 , fontWeight:'bold'}}>PAY BY CARD</h1>
+            }
+        }
+
         return(
             <section gutter={[16, 24]} align="middle"  style={{ paddingTop: '100px' , verticalAlign:'middle' }} bordered>
                 <DollarTwoTone style={{ fontSize: '600%' , paddingBottom:20}} twoToneColor="#39C0ED" />
                 <Row gutter={[16, 24]} className="centerChild" type="flex" align="middle">
                     <Col span={16} offset={4}>
-                        <h1 className="lightText" style={{fontSize:35 , fontWeight:'bold'}}>PAY BY CARD</h1>
+                        {renderTitle() /* <h1 className="lightText" style={{fontSize:35 , fontWeight:'bold'}}>PAY BY CARD</h1> */}
                     </Col>
                 </Row>
                     
