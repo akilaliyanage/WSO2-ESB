@@ -24,6 +24,16 @@
 .lightText{
     color:white;
 }
+.grayText{
+    color:gray;
+    font-weight: bolder;
+}
+.centerParent{
+    line-height: 10px;
+}
+.centerParent .centerChild{
+    vertical-align:middle;
+}
 .header-section .navbar .navbar-brand b {
     color: #1abc9c;
 }

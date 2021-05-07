@@ -3,6 +3,7 @@ import 'antd/dist/antd.css';
 import {Layout , Row , Col} from 'antd';
 import CustomHeader from './Header';
 import CardPaymentForm from './CardPaymentForm';
+import CardPaymentLeft from "./CardPaymentLeft";
 
 const { Header, Content, Footer } = Layout;
 
@@ -21,7 +22,7 @@ class CardPayment extends Component {
                 <Content style={{backgroundColor:"#282c34"}}>
                     <Row>
                         <Col span={12}>
-                            
+                            <CardPaymentLeft/>
                         </Col>
                         <Col span={12}>
                             <CardPaymentForm/>
