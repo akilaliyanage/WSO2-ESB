@@ -20,7 +20,7 @@ export default class MenuBar extends Component {
                                     <ul class="nav nav-pills navbar-right">
                                         <li><a href="#">My Account</a></li>
                                         <li><a href="#">Wishlist</a></li>
-                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="/cart">Cart</a></li>
                                         <li><a href="#">Checkout</a></li>
                                         <li><a href="#"><i class="pe-7s-lock"></i>Login/Register</a></li>
                                     </ul>
@@ -54,7 +54,7 @@ export default class MenuBar extends Component {
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right cart-menu">
                                 <li><a href="#" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><span> Cart -$0&nbsp;</span> <span class="shoping-cart">0</span></a></li>
+                                <li><a href="/cart"><span> Cart </span> <span class="shoping-cart">0</span></a></li>
                             </ul>
                             </div>
                         </div>
