@@ -8,11 +8,14 @@ class CardPaymentForm extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            Ctype : '',
-            Name : '',
+            cardHolderName : '',
+            cardNo : '',
             CVC : '',
-            Exp : '',
-            C_No : ''
+            type : '',
+            expDate : '',
+            email : '',
+            phone : '',
+            OTP : ''
         }
     }
 
@@ -22,8 +25,57 @@ class CardPaymentForm extends Component{
       }
       setValueOnChangeRadio = (val) =>{
           console.log('radio checked', val.target.value);
-          this.setState({Ctype:val.target.value});
+          this.setState({type:val.target.value});
       }
+
+      checkValidity = (e) => {
+          e.preventDefault();
+        if(this.state.agree){
+
+          const CardDetails = {
+            cardHolderName : this.state.cardHolderName,
+            cardNo : this.state.cardNo,
+            CVC : this.state.CVC,
+            type : this.state.type,
+            expDate : this.state.expDate,
+            email : this.state.email,
+            phone : this.state.phone,
+          }
+
+          fetch('http://localhost:9000/cardPayment/'+ this.state.cardNo, {
+            method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(CardDetails),
+          })
+          .then(response => response.json())
+          .then(Resdata => {
+            console.log('Success:', Resdata);
+            notification['success']({
+              message: 'Card Details Found.'
+            });
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+            notification['error']({
+              message: 'Something Went Wrong , Please Try Again!!',
+              description:
+                error,
+            });
+          });
+
+
+         
+        }else{
+          notification['error']({
+            message: 'Ooopz and error ocured!',
+            description:
+              'Seems like you have not agreed to out terms and condisions.',
+          });
+        }
+       
+      };
 
     render(){
 
@@ -41,11 +93,11 @@ class CardPaymentForm extends Component{
                         <Divider style={{fontSize:25 , color:"#FFFFFF"}} orientation="left" >Payment Information</Divider>
                     </Col>
                 </Row>
-                <Form layout="vertical" >
+                <Form layout="vertical" onSubmit={checkValidity} >
 
                     <Row>
                        <Col className="gutter-row" span={20} offset={3}>
-                           <Form.Item label="Select Your Card Type" style={{color:"#FFFFFF"}} name="Ctype" onChange={this.setValueOnChangeRadio}>
+                           <Form.Item label="Select Your Card Type" style={{color:"#FFFFFF"}} name="type" onChange={this.setValueOnChangeRadio}>
                                 <Radio.Group defaultValue="VISA" size="large" buttonStyle="solid">
                                     <Radio.Button span={6} value="VISA"><i className="fab fa-cc-amex"></i> Visa</Radio.Button>
                                     <Radio.Button span={6} value="MASTER"><i className="fab fa-cc-mastercard"></i> Master Card</Radio.Button>
@@ -59,14 +111,14 @@ class CardPaymentForm extends Component{
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
                             <Form.Item required >
-                                <Input className="PaymentInputs" placeholder="Name On Card" name="Name" onChange={this.setValueOnChange} />
+                                <Input className="PaymentInputs" placeholder="Name On Card" name="cardHolderName" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
                             <Form.Item required>
-                                <Input className="PaymentInputs" placeholder="Credit Card Number" name="C_No" onChange={this.setValueOnChange} />
+                                <Input className="PaymentInputs" placeholder="Credit Card Number" name="cardNo" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>
@@ -74,7 +126,7 @@ class CardPaymentForm extends Component{
                     <Row>
                         <Col className="gutter-row" span={9} offset={3}>
                             <Form.Item required>
-                                <Input className="PaymentInputs" placeholder="MM/YY" name="Exp" onChange={this.setValueOnChange} />
+                                <Input className="PaymentInputs" placeholder="MM/YY" name="expDate" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                         <Col className="gutter-row" span={10} offset={1}>
@@ -110,7 +162,7 @@ class CardPaymentForm extends Component{
                     <Row>
                         <Col className="gutter-row" span={10} offset={8}>
                             <Form.Item required>
-                                <Input className="PaymentInputs" placeholder="OTP" name="C_No" onChange={this.setValueOnChange} />
+                                <Input className="PaymentInputs" placeholder="OTP" name="OTP" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>

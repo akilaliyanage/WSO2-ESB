@@ -13,6 +13,17 @@ router.get('/',async (req,res) =>{
     
 })
 
+router.route("/:cardNo").get((req,res) => {
+
+    let cNo = req.params.cardNo;
+    CardPaymentGateway.find({cardNo:cNo}).then((CardPaymentGateway) => {
+        res.json(CardPaymentGateway);
+    }).catch((error) => {
+        console.log(error)
+    })
+
+})
+
 router.post('/',(req,res) =>{
     const card = new CardPaymentGateway({
         cardHolderName: req.body.cardHolderName,

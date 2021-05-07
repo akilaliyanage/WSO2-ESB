@@ -8,11 +8,12 @@ class MobilePaymentForm extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            Ctype : '',
-            Name : '',
-            CVC : '',
+            CtaccHolderNameype : '',
+            mobileNo : '',
+            accNo : '',
             Exp : '',
-            C_No : '',
+            NIC : '',
+            email : '',
             isMobile:true,
             OTPSent: false,
             authenticated:false
@@ -23,11 +24,54 @@ class MobilePaymentForm extends Component{
           console.log('radio checked', val.target.value);
           this.setState({[val.target.name] :val.target.value});
       }
-      setValueOnChangeRadio = (val) =>{
-          console.log('radio checked', val.target.value);
-          this.setState({Ctype:val.target.value});
-      }
-      
+
+      checkValidity = (e) => {
+          e.preventDefault();
+        if(this.state.agree){
+
+          const CardDetails = {
+            accHolderName : this.state.accHolderName,
+            mobileNo : this.state.mobileNo,
+            accNo : this.state.accNo,
+            NIC : this.state.NIC,
+            email : this.state.email
+          }
+
+          fetch('http://localhost:9000/mobilePayment/'+ this.state.mobileNo, {
+            method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(CardDetails),
+          })
+          .then(response => response.json())
+          .then(Resdata => {
+            console.log('Success:', Resdata);
+            notification['success']({
+              message: 'Valid Account Found.'
+            });
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+            notification['error']({
+              message: 'Something Went Wrong , Please Try Again!!',
+              description:
+                error,
+            });
+          });
+
+
+         
+        }else{
+          notification['error']({
+            message: 'Ooopz and error ocured!',
+            description:
+              'Seems like you have not agreed to out terms and condisions.',
+          });
+        }
+       
+      };
+
 
     render(){
 
@@ -45,23 +89,29 @@ class MobilePaymentForm extends Component{
                         <Divider style={{fontSize:25 , color:"#FFFFFF"}} orientation="left" >Payment Information</Divider>
                     </Col>
                 </Row>
-                <Form layout="vertical" >
+                <Form layout="vertical" onSubmit={checkValidity} >
 
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
                             <Form.Item required >
-                                <Input className="PaymentInputs" placeholder="Mobile Number" name="Name" onChange={this.setValueOnChange} />
+                                <Input className="PaymentInputs" placeholder="Mobile Number" name="mobileNo" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
                             <Form.Item required>
-                                <Input className="PaymentInputs" placeholder="Mobile Account Number" name="C_No" onChange={this.setValueOnChange} />
+                                <Input className="PaymentInputs" placeholder="Mobile Account Number" name="accNo" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>
-                    
+                    <Row>
+                        <Col className="gutter-row" span={20} offset={3}>
+                            <Form.Item required>
+                                <Input className="PaymentInputs" placeholder="NIC" name="NIC" onChange={this.setValueOnChange} />
+                            </Form.Item>
+                        </Col>
+                    </Row>
                     
 
                     <Row className="commonSeperator">
@@ -84,7 +134,9 @@ class MobilePaymentForm extends Component{
                         </Col>
                         
                     </Row>
-                    {this.state.OTPSent && 
+                </Form>
+                
+                {this.state.OTPSent && 
                         <div>
                             <Row>
                                 <Col className="gutter-row" span={10} offset={8}>
@@ -103,9 +155,6 @@ class MobilePaymentForm extends Component{
                             </Row>
                         </div>
                     }
-                    
-                </Form>
-                
             </section>
 
             

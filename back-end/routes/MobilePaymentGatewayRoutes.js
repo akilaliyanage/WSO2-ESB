@@ -13,6 +13,17 @@ router.get('/',async (req,res) =>{
     
 })
 
+router.route("/:mobileNo").get((req,res) => {
+
+    let No = req.params.mobileNo;
+    MobilePaymentGateway.find({mobileNo:No}).then((MobilePaymentGateway) => {
+        res.json(MobilePaymentGateway);
+    }).catch((error) => {
+        console.log(error)
+    })
+
+})
+
 router.post('/',(req,res) =>{
     const entry = new MobilePaymentGateway({
         accHolderName: req.body.accHolderName,
