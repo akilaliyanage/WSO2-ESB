@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Timeline, Descriptions} from 'antd';
+import { Timeline, Descriptions, Statistic, Card} from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
+import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 
 class TimeLine extends Component {
     constructor(props) {
@@ -28,6 +29,14 @@ class TimeLine extends Component {
                     Technical testing 2015-09-01
                     </Timeline.Item>
                 </Timeline>
+
+          <Statistic
+            title="Your delivery fee is (Incl tax)"
+            value={800}
+            precision={2}
+            valueStyle={{ color: '#3f8600' }}
+            suffix="Rupees"
+          />
             </div>
          );
     }

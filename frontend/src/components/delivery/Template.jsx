@@ -7,6 +7,7 @@ import { SmileOutlined } from '@ant-design/icons';
 import ItemCard from './ItemCard';
 import ShippingDetails from './ShippingDetails';
 import TimeLine from './TimeLine';
+import CustomHeader from '../Payment/Header';
 
 const { Header, Content, Footer } = Layout;
 
@@ -59,12 +60,10 @@ class Template extends Component {
     render() { 
         return ( 
                 <Layout className="layout">
-    <Header>
-      <div className="logo" />
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-        <Menu.Item key="1">Home</Menu.Item>
-      </Menu>
+    <Header style = {{background: "#1abc9c"}}>
+      <CustomHeader style={{position:"sticky" , top:"0"}}/>
     </Header>
+
     <Content style={{ padding: '0 50px' }}>
 
     <MainHeader itemName="Test Item"/>

@@ -16,10 +16,12 @@ import {
     Row,
     Col,
     Checkbox,
-    notification
+    notification,
+    Statistic
   } from 'antd';
 
 import { SmileOutlined } from '@ant-design/icons';
+import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 
 const { TextArea } = Input;
 const { Option } = Select;
