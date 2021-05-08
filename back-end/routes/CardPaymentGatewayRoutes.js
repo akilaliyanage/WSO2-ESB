@@ -18,6 +18,7 @@ router.get('/',async (req,res) =>{
 router.route("/:cardNo").get((req,res) => {
 
     let cNo = req.params.cardNo;
+    
     CardPaymentGateway.find({cardNo:cNo})
     .then((CardPaymentGateway) => {
         OTPHelper.getOTP(req)

@@ -4,8 +4,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const randomizer = require('randomatic');
 
-
-
 let ConcrteteSession
 
 const generateOTP = (req) =>{
@@ -18,7 +16,7 @@ const generateOTP = (req) =>{
     console.log(OTP);
     console.log(ConcrteteSession.OTP);
 
-    return OTP;
+    return Promise.resolve(OTP);
 }
 
 module.exports.getOTP = generateOTP;
