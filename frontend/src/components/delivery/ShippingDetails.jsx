@@ -36,10 +36,10 @@ class ShippingDetails extends Component {
           date:'',
           comments:'',
           agree:false,
-          username:'Akila Liyanage',
-          userId:'12345',
+          username:localStorage.getItem('buyer-name'),
+          userId:localStorage.getItem('buyer-id'),
           itemCode:'123abc',
-          email:'mlakilaliyanage@gmail.com',
+          email:localStorage.getItem('buyer-email'),
           status:'processing'
          }
     }
