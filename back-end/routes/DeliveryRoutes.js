@@ -27,7 +27,7 @@ router.post('/',(req,res) =>{
         comments: req.body.comments,
         itemCode:req.body.itemCode,
         email:req.body.email,
-        status:req.body.status
+        status: [req.body.status]
 
     })
 
@@ -37,5 +37,29 @@ router.post('/',(req,res) =>{
         res.json(err)
     })
 })
+
+router.get('/pending',async (req,res) =>{
+    try{
+        const items = await DeliveryItem.find()
+        const array = [];
+        items.forEach(item => {
+            item.status[items.length - 1] !== 'Deliverd' ? array.push(item) : array.push()
+        });
+        res.json(array)
+    }catch(err){
+        res.json({message : err})
+    }
+    
+})
+
+router.patch('/:id',async (req,res) =>{
+    try{
+       const updatedPost =  await DeliveryItem.updateOne({_id:req.params.id}, {$set : {status : req.body.status}})
+       res.json(updatedPost)
+    }catch(err){
+        res.json(err)
+    }
+})
+
 
 module.exports = router;
