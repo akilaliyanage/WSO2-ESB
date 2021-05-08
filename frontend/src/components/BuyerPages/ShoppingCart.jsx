@@ -5,6 +5,21 @@ import Menu from './MenuBar'
 import Footer from './Footer'
 
 class ShoppingCart extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+                cart:[]
+        }
+    }
+
+    componentDidMount(){
+        console.log(window.localStorage.getItem("cartitems"))
+        this.setState({
+            cart:window.localStorage.getItem("cartitems")
+        })
+    }
+
     render() {
         return (
             <div>
@@ -32,18 +47,20 @@ class ShoppingCart extends Component {
                                         <th className="t-data">Quantity</th>
                                         <th className="t-data"></th>
                                     </tr>
-                                    <tr className="t-row">
-                                        <td className="t-data">Product 01</td>
-                                        <td className="t-data">$1.55</td>
-                                        <td className="t-data">02</td>
-                                        <td className="t-data"><a href="">Remove</a></td>
-                                    </tr>
-                                    <tr className="t-row">
-                                        <td className="t-data">Alfreds Futterkiste</td>
-                                        <td className="t-data">Maria Anders</td>
-                                        <td className="t-data">Germany</td>
-                                        <td className="t-data"><a href="">Remove</a></td>
-                                    </tr>
+
+
+                                    {/* {this.state.cart.map((cart) => {
+                                        return(
+                                            <tr className="t-row">
+                                                <td className="t-data">{cart.title}</td>
+                                                <td className="t-data">{cart.price}</td>
+                                                <td className="t-data">{cart.quantity}</td>
+                                                <td className="t-data"><a href="">Remove</a></td>
+                                            </tr>
+                                         );
+                                    })} */}
+
+
                                 </table>
 
                             </div>

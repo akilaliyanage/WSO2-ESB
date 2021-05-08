@@ -9,6 +9,7 @@ require('dotenv/config')
 const DeliveryRoutes = require('./routes/DeliveryRoutes');
 const userRouter = require('./routes/UserRoute.js');
 const itemRouter = require('./routes/ItemRoute.js');
+const cartRouter = require('./routes/CartRoutes.js');
 
 
 //Middleware
@@ -21,7 +22,10 @@ app.use(express.static('uploads'));
 app.use('/delivery',DeliveryRoutes);
 app.use("/user",userRouter);
 app.use("/item",itemRouter);
+app.use("/buyer",itemRouter);
 
+
+app.use(express.static('uploads'))
 
 
 
