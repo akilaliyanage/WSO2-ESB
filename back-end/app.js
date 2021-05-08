@@ -21,11 +21,19 @@ require('dotenv/config')
 const DeliveryRoutes = require('./routes/DeliveryRoutes');
 const userRouter = require('./routes/UserRoute.js');
 const itemRouter = require('./routes/ItemRoute.js');
+
+const cartRouter = require('./routes/CartRoutes.js');
+
 const cardPaymentGatewayRouter = require('./routes/CardPaymentGatewayRoutes');
 const mobilePaymentGatewayRouter = require('./routes/MobilePaymentGatewayRoutes');
 const PaymentRouter = require('./routes/PaymentRoutes');
 const locationsRouter = require('./routes/LocationRoutes');
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 2ae33870cdbb3726c60e52c42e8dc89fa3fae846
 //Middleware
 app.use(bodyParser.json());
 app.use(cors());
@@ -38,11 +46,17 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use('/delivery',DeliveryRoutes);
 app.use("/user",userRouter);
 app.use("/item",itemRouter);
+
+app.use("/buyer",itemRouter);
+
 app.use("/cardPayment",cardPaymentGatewayRouter);
 app.use("/mobilePayment",mobilePaymentGatewayRouter);
 app.use("/Payment",PaymentRouter);
 app.use("/locations",locationsRouter);
 
+
+
+app.use(express.static('uploads'))
 
 
 
