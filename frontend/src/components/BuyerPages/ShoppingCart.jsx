@@ -16,7 +16,7 @@ class ShoppingCart extends Component {
     componentDidMount(){
         console.log(window.localStorage.getItem("cartitems"))
         this.setState({
-            cart:window.localStorage.getItem("cartitems")
+            cart:JSON.parse(window.localStorage.getItem("cartitems"))
         })
     }
 
@@ -49,16 +49,16 @@ class ShoppingCart extends Component {
                                     </tr>
 
 
-                                    {/* {this.state.cart.map((cart) => {
+                                    {this.state.cart.map((cart) => {
                                         return(
                                             <tr className="t-row">
                                                 <td className="t-data">{cart.title}</td>
-                                                <td className="t-data">{cart.price}</td>
+                                                <td className="t-data">$ {cart.price}</td>
                                                 <td className="t-data">{cart.quantity}</td>
                                                 <td className="t-data"><a href="">Remove</a></td>
                                             </tr>
                                          );
-                                    })} */}
+                                    })}
 
 
                                 </table>

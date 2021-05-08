@@ -33,10 +33,19 @@ class ProductDisplay extends Component {
             cart:[...state.cart, obj]
         }))
         
-        window.localStorage.setItem("cartitems", this.state.cart)
+        // const cartItems = this.state.cart
+
+        // window.localStorage.setItem("cartitems", cartItems)
+        // console.log("test1"+window.localStorage.getItem("cartitems"))
     }
 
     alertHere = () => {
+
+        // const cartItems = this.state.cart
+
+        window.localStorage.setItem("cartitems",JSON.stringify(this.state.cart))
+        console.log("test1"+window.localStorage.getItem("cartitems"))
+
         console.log(this.state.cart)
     }
 
