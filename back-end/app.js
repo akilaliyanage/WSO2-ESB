@@ -2,7 +2,19 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const session = require('express-session');
 const cors = require('cors')
+
+//Session Creation
+app.use(session({ 
+    secret:'OTP-Secret',
+    resave: false,
+    saveUninitialized: true,
+    cookie:{secure:true , maxAge:10000}
+}))
+
+
+
 require('dotenv/config')
 
 //Import Routes
@@ -18,6 +30,8 @@ const PaymentRouter = require('./routes/PaymentRoutes');
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static('uploads'));
+
+app.use(bodyParser.urlencoded({extended:true}))
 // app.use(express.static(path.join(__dirname, '../public/media')));
 // const buildPath = path.normalize(path.join(__dirname, '../public/media'));
 // app.use(express.static(buildPath));
