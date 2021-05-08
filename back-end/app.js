@@ -29,11 +29,6 @@ const mobilePaymentGatewayRouter = require('./routes/MobilePaymentGatewayRoutes'
 const PaymentRouter = require('./routes/PaymentRoutes');
 const locationsRouter = require('./routes/LocationRoutes');
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 2ae33870cdbb3726c60e52c42e8dc89fa3fae846
 //Middleware
 app.use(bodyParser.json());
 app.use(cors());
