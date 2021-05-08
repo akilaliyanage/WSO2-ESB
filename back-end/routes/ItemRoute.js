@@ -76,6 +76,24 @@ router.route("/:sellerID/:itemID").get((req,res) => {
 
 })
 
+//get all items
+router.route("/").get((req,res) => {
+    Item.find().then(
+      (items) => {
+        res.status(200).json(items);
+      }
+    ).catch(
+      (error) => {
+        res.status(400).json({
+          error: error
+        });
+      }
+    );
+});
+
+
+
+
 
 //update item
 router.put("/update/:itemID",upload.single("image"),async (req,res) => {
