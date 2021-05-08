@@ -11,6 +11,7 @@ const userRouter = require('./routes/UserRoute.js');
 const itemRouter = require('./routes/ItemRoute.js');
 const cardPaymentGatewayRouter = require('./routes/CardPaymentGatewayRoutes');
 const mobilePaymentGatewayRouter = require('./routes/MobilePaymentGatewayRoutes');
+const PaymentRouter = require('./routes/PaymentRoutes');
 
 
 //Middleware
@@ -25,6 +26,7 @@ app.use("/user",userRouter);
 app.use("/item",itemRouter);
 app.use("/cardPayment",cardPaymentGatewayRouter);
 app.use("/mobilePayment",mobilePaymentGatewayRouter);
+app.use("/Payment",PaymentRouter);
 
 
 
