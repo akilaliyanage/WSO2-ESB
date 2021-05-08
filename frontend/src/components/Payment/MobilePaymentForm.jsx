@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "antd/dist/antd.css";
 import "../../assets/mahen.css";
-import { Row , Col , Button , Divider , Form, Input, Radio} from 'antd';
+import { Row , Col , Button , Divider , Form, Input, notification} from 'antd';
 import { CreditCardOutlined} from '@ant-design/icons';
 
 class MobilePaymentForm extends Component{
@@ -89,7 +89,7 @@ class MobilePaymentForm extends Component{
                         <Divider style={{fontSize:25 , color:"#FFFFFF"}} orientation="left" >Payment Information</Divider>
                     </Col>
                 </Row>
-                <Form layout="vertical" onSubmit={checkValidity} >
+                <Form layout="vertical" onSubmit={this.checkValidity} >
 
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
