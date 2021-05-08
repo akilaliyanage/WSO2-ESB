@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './assets/nethsara/css/style.css'
+import './assets/nethsara/css/cart.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
