@@ -1,0 +1,39 @@
+.payment-body{
+    background-color:#282c34;
+}
+.commonSeperator{
+    margin-top:5px;
+}
+.PaymentInputs{
+    height:8vh;
+    font-size:20px;
+    text-size-adjust: 100;
+}
+.mySuccessBtn{
+    height:8vh;
+    font-size:20px;
+    text-size-adjust: 100;
+    background-color:#1abc9c;
+}
+.mySuccessBtn:hover{
+    height:8vh;
+    font-size:20px;
+    text-size-adjust: 100;
+    background-color:#00d46e;
+}
+.lightText{
+    color:white;
+}
+.grayText{
+    color:gray;
+    font-weight: bolder;
+}
+.centerParent{
+    line-height: 10px;
+}
+.centerParent .centerChild{
+    vertical-align:middle;
+}
+.header-section .navbar .navbar-brand b {
+    color: #1abc9c;
+}

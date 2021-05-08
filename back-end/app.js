@@ -9,6 +9,8 @@ require('dotenv/config')
 const DeliveryRoutes = require('./routes/DeliveryRoutes');
 const userRouter = require('./routes/UserRoute.js');
 const itemRouter = require('./routes/ItemRoute.js');
+const cardPaymentGatewayRouter = require('./routes/CardPaymentGatewayRoutes');
+const mobilePaymentGatewayRouter = require('./routes/MobilePaymentGatewayRoutes');
 
 
 //Middleware
@@ -21,6 +23,8 @@ app.use(express.static('uploads'));
 app.use('/delivery',DeliveryRoutes);
 app.use("/user",userRouter);
 app.use("/item",itemRouter);
+app.use("/cardPayment",cardPaymentGatewayRouter);
+app.use("/mobilePayment",mobilePaymentGatewayRouter);
 
 
 
