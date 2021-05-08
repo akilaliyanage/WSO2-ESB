@@ -20,8 +20,9 @@ import {
     Statistic
   } from 'antd';
 
-import { SmileOutlined } from '@ant-design/icons';
+import { ItalicOutlined, SmileOutlined } from '@ant-design/icons';
 import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
+import config from '../../congig.json'
 
 const { TextArea } = Input;
 const { Option } = Select;
@@ -42,16 +43,25 @@ class ShippingDetails extends Component {
           userId:localStorage.getItem('buyer-id'),
           itemCode:'123abc',
           email:localStorage.getItem('buyer-email'),
-          status:'processing'
+          status:'processing',
+          locations : []
          }
     }
 
     onChange = (value) => {
+      //alert(value.location)
         this.setState({city:value})
+        //alert(value)
+        this.state.locations.map(item =>{
+          if(item.location === value){
+            return(window.localStorage.setItem('delCost',item.cost + ".00"))
+          }
+        })
+        
       }
       
-      onBlur = () => {
-        console.log('blur');
+      onBlur = (value) => {
+       // alert(value.target.value)
       }
       
       onFocus = () => {
@@ -72,6 +82,7 @@ class ShippingDetails extends Component {
       }
 
       openNotification = () => {
+
         if(this.state.agree){
 
           const data = {
@@ -89,7 +100,9 @@ class ShippingDetails extends Component {
             status : this.state.status
           }
 
-          fetch('http://localhost:9000/delivery', {
+          // alert(data.userId)
+
+          fetch(config.host + '/delivery', {
             method: 'POST', 
             headers: {
               'Content-Type': 'application/json',
@@ -132,6 +145,14 @@ class ShippingDetails extends Component {
         this.setState({agree : e.target.checked})
       }
 
+      componentDidMount(){
+        fetch(config.host + '/locations').then(res => res.json()).then(data =>{
+          this.setState({locations : data})
+        }).catch(err =>{
+          alert(err)
+        })
+      }
+
 
     render() { 
         return ( 
@@ -147,12 +168,6 @@ class ShippingDetails extends Component {
         
         
       >
-        <Form.Item label="Order Type"> 
-        <Radio.Group defaultValue="a" buttonStyle="solid">
-            <Radio.Button value="a">It's For me</Radio.Button>
-        <Radio.Button value="b">It's a Present</Radio.Button>
-        </Radio.Group>
-    </Form.Item>
         <Form.Item label="Recipient's Name">
           <Input name="name" onChange={this.handleChnage}/>
         </Form.Item>
@@ -173,25 +188,21 @@ class ShippingDetails extends Component {
             optionFilterProp="children"
             onChange={this.onChange}
             onFocus={this.onFocus}
-            onBlur={this.onBlur}
+            onBlur={() => this.props.greetHandler()}
             onSearch={this.onSearch}
             filterOption={(input, option) =>
             option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
             }
         >
-            <Option value="jack">Jack</Option>
-            <Option value="lucy">Lucy</Option>
-            <Option value="tom">Tom</Option>
+          {this.state.locations.map(item =>{
+            return(<Option key={item._id} value={item.location}>{item.location}</Option>)
+          })}
                 </Select>
         </Form.Item>
         <Form.Item label="Location Type">
         <Select style={{ width: "100%" }} onChange={this.locType} placeholder="Select Your Location Type">
-      <Option value="jack">Jack</Option>
-      <Option value="lucy">Lucy</Option>
-      <Option value="disabled" disabled>
-        Disabled
-      </Option>
-      <Option value="Yiminghe">yiminghe</Option>
+      <Option value="Home">Home</Option>
+      <Option value="Apartment">Apartment</Option>
     </Select>
         </Form.Item>
         <Form.Item label="Date to be Shipped">

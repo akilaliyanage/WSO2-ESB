@@ -16,7 +16,8 @@ class Template extends Component {
         super(props);
         this.state = { 
             setVisible:true,
-            setConfirmLoading:true
+            setConfirmLoading:true,
+            changeTimeline : 123
 
          }
     }
@@ -48,6 +49,10 @@ class Template extends Component {
         this.setState({setVisible:false})
       };
 
+      alert = () =>{
+        this.setState({changeTimeline :Math.random() })
+      }
+
       openNotification = () => {
         notification.open({
           message: 'Notification Title',
@@ -74,11 +79,11 @@ class Template extends Component {
           <ItemCard/>
       </Col>
       <Col span={8}>
-          <ShippingDetails/>
+          <ShippingDetails greetHandler={this.alert}/>
       </Col>
 
       <Col span={8}>
-          <TimeLine/>
+      <TimeLine trigger={this.state.changeTimeline}/>
       </Col>
     </Row>
       </div>
