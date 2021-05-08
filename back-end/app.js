@@ -24,7 +24,7 @@ const itemRouter = require('./routes/ItemRoute.js');
 const cardPaymentGatewayRouter = require('./routes/CardPaymentGatewayRoutes');
 const mobilePaymentGatewayRouter = require('./routes/MobilePaymentGatewayRoutes');
 const PaymentRouter = require('./routes/PaymentRoutes');
-
+const locationsRouter = require('./routes/LocationRoutes');
 
 //Middleware
 app.use(bodyParser.json());
@@ -40,7 +40,11 @@ app.use("/user",userRouter);
 app.use("/item",itemRouter);
 app.use("/cardPayment",cardPaymentGatewayRouter);
 app.use("/mobilePayment",mobilePaymentGatewayRouter);
+<<<<<<< HEAD
 app.use("/Payment",PaymentRouter);
+=======
+app.use("/locations",locationsRouter);
+>>>>>>> 1c2681b5b6be83dff1630ffff9aa15e23285c7b1
 
 
 
