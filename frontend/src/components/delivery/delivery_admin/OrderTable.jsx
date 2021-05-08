@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Table, Tag, Space, Descriptions, Card,Select, PageHeader } from 'antd';
 import { Drawer, Button,  } from 'antd';
+import config from '../../../congig.json'
 const { Option } = Select;
 
 
@@ -22,12 +23,17 @@ class OrderTable extends Component {
         this.state = { 
             visible : false, 
             setVisible : false,
+            data : [],
+            selItem : {},
+            chStat : ''
          }
     }
 
 
     showDrawer = (record) => {
         console.log(record)
+        this.setState({stat :record.status[record.status.length - 1]})
+        this.setState({selItem : record})
         this.setState({visible:true})
       };
 
@@ -37,6 +43,7 @@ class OrderTable extends Component {
 
        onChange = (value) => {
         console.log(`selected ${value}`);
+        this.setState({chStat : value})
       }
       
      onBlur = () => {
@@ -50,18 +57,54 @@ class OrderTable extends Component {
       onSearch = (val) => {
         console.log('search:', val);
       }
+
+      componentDidMount(){
+        fetch(config.host + '/delivery/pending').then(res => res.json()).then(data => {
+          this.setState({data : data})
+        }).catch(err =>{
+          alert(err)
+        })
+      }
+
+      updateStat = () =>{
+        var newStat = this.state.selItem.status;
+
+        newStat.push(this.state.chStat)
+        
+
+        const data = {
+          status : newStat
+        }
+
+        console.log("akila", data)
+        const url = config.host + "/delivery/" + this.state.selItem._id;
+        console.log(url)
+        fetch(url,{
+          method : 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        }).then(res => res.json()).then(data =>{
+          console.log(data)
+        }).catch(err =>{
+          alert(err)
+        })
+      }
+
+
     render() { 
         const columns = [
             {
               title: 'Delivery ID',
-              dataIndex: 'id',
-              key: 'id',
+              dataIndex: '_id',
+              key: '_id',
               render: text => <a>{text}</a>,
             },
             {
               title: 'Location',
-              dataIndex: 'loc',
-              key: 'loc',
+              dataIndex: 'city',
+              key: 'city',
             },
             {
               title: 'Shipped Date',
@@ -70,27 +113,17 @@ class OrderTable extends Component {
             },
             {
                 title: 'User',
-                dataIndex: 'user',
-                key: 'user',
+                dataIndex: 'username',
+                key: 'username',
             },
             {
               title: 'Current Status',
               key: 'status',
               dataIndex: 'status',
               render: tags => (
-                <>
-                  {tags.map(tag => {
-                    let color = tag.length > 5 ? 'geekblue' : 'green';
-                    if (tag === 'loser') {
-                      color = 'volcano';
-                    }
-                    return (
-                      <Tag color={color} key={tag}>
-                        {tag.toUpperCase()}
-                      </Tag>
-                    );
-                  })}
-                </>
+                <Tag color={"green"} key={tags[tags.length - 1]._id}>
+                {tags[tags.length - 1].toUpperCase()}
+              </Tag>
               ),
             },
             {
@@ -113,7 +146,7 @@ class OrderTable extends Component {
       onBack={() => window.history.back()}
       title="Past Deliveries"
     ></PageHeader>
-                <Table columns={columns} dataSource={data} />
+                <Table columns={columns} dataSource={this.state.data} />
 
                 <Drawer
         title="Change Status"
@@ -125,15 +158,17 @@ class OrderTable extends Component {
           <Select
     showSearch
     style={{ width: 200 }}
-    placeholder="Select the current status"
+    placeholder={this.state.stat}
     optionFilterProp="children"
     onChange={this.onChange}
     onFocus={this.onFocus}
     onBlur={this.onBlur}
     onSearch={this.onSearch}
+    defaultValue={this.state.stat}
     filterOption={(input, option) =>
       option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
     }
+
   >
     <Option value="Processing">Processing</Option>
     <Option value="Handed over to the Courier service">Handed over to the Courier service</Option>
@@ -142,6 +177,8 @@ class OrderTable extends Component {
     <Option value="On the way">On the way</Option>
     <Option value="Deliverd">Deliverd</Option>
   </Select>
+
+  <Button type="primary" block style={{marginTop:"20px"}} onClick={this.updateStat}>UPDATE</Button>
       </Drawer>
             </Card>
          );
