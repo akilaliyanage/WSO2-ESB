@@ -9,7 +9,13 @@ require('dotenv/config')
 const DeliveryRoutes = require('./routes/DeliveryRoutes');
 const userRouter = require('./routes/UserRoute.js');
 const itemRouter = require('./routes/ItemRoute.js');
+<<<<<<< HEAD
 const cartRouter = require('./routes/CartRoutes.js');
+=======
+const cardPaymentGatewayRouter = require('./routes/CardPaymentGatewayRoutes');
+const mobilePaymentGatewayRouter = require('./routes/MobilePaymentGatewayRoutes');
+const locationsRouter = require('./routes/LocationRoutes');
+>>>>>>> 43e8b62f1c6ae850a4234257616ec9228b1ebc6f
 
 
 //Middleware
@@ -22,7 +28,13 @@ app.use(express.static('uploads'));
 app.use('/delivery',DeliveryRoutes);
 app.use("/user",userRouter);
 app.use("/item",itemRouter);
+<<<<<<< HEAD
 app.use("/buyer",itemRouter);
+=======
+app.use("/cardPayment",cardPaymentGatewayRouter);
+app.use("/mobilePayment",mobilePaymentGatewayRouter);
+app.use("/locations",locationsRouter);
+>>>>>>> 43e8b62f1c6ae850a4234257616ec9228b1ebc6f
 
 
 app.use(express.static('uploads'))

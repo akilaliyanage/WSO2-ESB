@@ -68,7 +68,7 @@ function Login(){
 
                 let avatar = res.data.user.profileImg;
                 let username = res.data.user.username;
-                let buyerID = JSON.stringify(res.data.user.id);
+                let buyerID = JSON.stringify(res.data.user._id);
                 let buyerEmail = res.data.user.email;
 
                 localStorage.setItem("buyer-id",buyerID);

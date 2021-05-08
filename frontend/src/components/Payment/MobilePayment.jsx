@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import 'antd/dist/antd.css';
 import {Layout , Row , Col} from 'antd';
 import CustomHeader from './Header';
-import CardPaymentForm from './CardPaymentForm';
+import MobilePaymentForm from './MobilePaymentForm';
 import CardPaymentLeft from "./CardPaymentLeft";
 
 const { Header, Content, Footer } = Layout;
 
-class CardPayment extends Component {
+class MobilePayment extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -22,10 +22,10 @@ class CardPayment extends Component {
                 <Content style={{backgroundColor:"#282c34"}}>
                     <Row>
                         <Col span={12}>
-                            <CardPaymentLeft isMobile='false'/>
+                            <MobilePaymentForm/>
                         </Col>
                         <Col span={12}>
-                            <CardPaymentForm/>
+                            <CardPaymentLeft isMobile='true'/>
                         </Col>
                     </Row>
                 </Content>
@@ -35,4 +35,4 @@ class CardPayment extends Component {
     }
 }
 
-export default CardPayment;
+export default MobilePayment;

@@ -7,6 +7,7 @@ import { SmileOutlined } from '@ant-design/icons';
 import ItemCard from './ItemCard';
 import ShippingDetails from './ShippingDetails';
 import TimeLine from './TimeLine';
+import CustomHeader from '../Payment/Header';
 
 const { Header, Content, Footer } = Layout;
 
@@ -15,7 +16,8 @@ class Template extends Component {
         super(props);
         this.state = { 
             setVisible:true,
-            setConfirmLoading:true
+            setConfirmLoading:true,
+            changeTimeline : 123
 
          }
     }
@@ -47,6 +49,10 @@ class Template extends Component {
         this.setState({setVisible:false})
       };
 
+      alert = () =>{
+        this.setState({changeTimeline :Math.random() })
+      }
+
       openNotification = () => {
         notification.open({
           message: 'Notification Title',
@@ -59,12 +65,10 @@ class Template extends Component {
     render() { 
         return ( 
                 <Layout className="layout">
-    <Header>
-      <div className="logo" />
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-        <Menu.Item key="1">Home</Menu.Item>
-      </Menu>
+    <Header style = {{background: "#1abc9c"}}>
+      <CustomHeader style={{position:"sticky" , top:"0"}}/>
     </Header>
+
     <Content style={{ padding: '0 50px' }}>
 
     <MainHeader itemName="Test Item"/>
@@ -75,11 +79,11 @@ class Template extends Component {
           <ItemCard/>
       </Col>
       <Col span={8}>
-          <ShippingDetails/>
+          <ShippingDetails greetHandler={this.alert}/>
       </Col>
 
       <Col span={8}>
-          <TimeLine/>
+      <TimeLine trigger={this.state.changeTimeline}/>
       </Col>
     </Row>
       </div>
