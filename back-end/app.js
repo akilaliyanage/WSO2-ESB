@@ -40,11 +40,8 @@ app.use("/user",userRouter);
 app.use("/item",itemRouter);
 app.use("/cardPayment",cardPaymentGatewayRouter);
 app.use("/mobilePayment",mobilePaymentGatewayRouter);
-<<<<<<< HEAD
 app.use("/Payment",PaymentRouter);
-=======
 app.use("/locations",locationsRouter);
->>>>>>> 1c2681b5b6be83dff1630ffff9aa15e23285c7b1
 
 
 
