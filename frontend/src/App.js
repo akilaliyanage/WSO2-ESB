@@ -14,6 +14,7 @@ import UpdateItem from "./components/seller/UpdateItem";
 import Cart from "./components/BuyerPages/ShoppingCart";
 import CardPayment from "./components/Payment/CardPayment";
 import MobilePayment from "./components/Payment/MobilePayment";
+import DeliveryMethod from './components/delivery/DeliveryMethod'
 
 
 
@@ -35,6 +36,7 @@ function App() {
       <Route path = "/update-item/:itemID" exact component = {UpdateItem}/>
       <Route path = "/CardPayment" exact component = {CardPayment}/>
       <Route path = "/MobilePayment" exact component = {MobilePayment}/>
+      <Route path = "/del-method" exact component = {DeliveryMethod}/>
 
     </div>
       </Router>
