@@ -21,7 +21,7 @@ class MobilePayment extends Component {
                 </Header>
                 <Content style={{backgroundColor:"#282c34"}}>
                     <Row>
-                        <Col span={12}>
+                        <Col span={11}>
                             <MobilePaymentForm/>
                         </Col>
                         <Col span={12}>

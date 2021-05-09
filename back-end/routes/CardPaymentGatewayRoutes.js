@@ -15,14 +15,18 @@ router.get('/',async (req,res) =>{
     
 })
 
-router.route("/:cardNo").get((req,res) => {
+router.route("/:cardNo").post((req,res) => {
 
     let cNo = req.params.cardNo;
     
+    
     CardPaymentGateway.find({cardNo:cNo})
     .then((CardPaymentGateway) => {
-
-        if(req.params.cardNo == CardPaymentGateway.cardNo && req.params.cardHolderName == CardPaymentGateway.cardHolderName && req.params.CVC == CardPaymentGateway.CVC && req.params.expDate == CardPaymentGateway.expDate){
+        if(CardPaymentGateway.length != 1){
+            res.statusCode = 404;
+            res.json(CardPaymentGateway); 
+        }
+        else if(req.params.cardNo == CardPaymentGateway[0].cardNo && req.body.cardHolderName == CardPaymentGateway[0].cardHolderName && req.body.CVC == CardPaymentGateway[0].CVC && req.body.expDate == CardPaymentGateway[0].expDate){
             OTPHelper.getOTP(req)
             .then((otp) => {
                 EmailHelper('dhmmpthammita@gmail.com' , otp)
@@ -37,14 +41,13 @@ router.route("/:cardNo").get((req,res) => {
             })
             .catch((error) =>{
                 console.log(error)
-        })
+            })
         }
         else{
             console.log('Mismatch entries');
             res.statusCode = 404;
+            res.json(CardPaymentGateway); 
         }
-
-        
         
     }).catch((error) => {
         console.log(error)
