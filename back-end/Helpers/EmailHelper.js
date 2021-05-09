@@ -1,7 +1,6 @@
 const sgMail = require('@sendgrid/mail')
-const sendGridEmail_Api_Key = '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';
-
-sgMail.setApiKey(sendGridEmail_Api_Key)
+require('dotenv').config();
+sgMail.setApiKey(process.env.sendGridEmail_Api_Key);
 
 const sendMail = (toAddress , OTP) =>{
     let mailResponse = null;
@@ -17,15 +16,14 @@ const sendMail = (toAddress , OTP) =>{
     .then((res) => {
         console.log('Email Sent...');
         this.mailResponse = res;
-        return this.mailResponse;
+        return Promise.resolve(this.mailResponse) ;
     })
     .catch((err) => {
          console.log(err.message);
          this.mailResponse = err;
-         return this.mailResponse;
+         return Promise.resolve(this.mailResponse) ;
     });
-    
-    return this.mailResponse;
+    return Promise.resolve(this.mailResponse) ;
 }
 
 module.exports = sendMail;

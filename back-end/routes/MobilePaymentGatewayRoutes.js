@@ -1,7 +1,9 @@
 const express = require('express')
 const router = express.Router()
 
-const MobilePaymentGateway = require('../models/MobilePaymentGateway')
+const MobilePaymentGateway = require('../models/MobilePaymentGateway');
+const EmailHelper = require('../Helpers/EmailHelper');
+const OTPHelper = require('../Helpers/OTPHelper');
 
 router.get('/',async (req,res) =>{
     try{
@@ -16,7 +18,21 @@ router.get('/',async (req,res) =>{
 router.route("/:mobileNo").get((req,res) => {
 
     let No = req.params.mobileNo;
-    MobilePaymentGateway.find({mobileNo:No}).then((MobilePaymentGateway) => {
+    MobilePaymentGateway.find({mobileNo:No})
+    .then((MobilePaymentGateway) => {
+        OTPHelper.getOTP(req)
+        .then((otp) => {
+            EmailHelper('mahendra.parackramathammita@gmail.com' , otp)
+            .then((status) =>{
+                res.json(CardPaymentGateway) 
+            })
+            .catch((error) =>{
+                console.log(error)
+            })
+        })
+        .catch((error) =>{
+            console.log(error)
+        })
         res.json(MobilePaymentGateway);
     }).catch((error) => {
         console.log(error)
