@@ -14,4 +14,10 @@
     <artifact name="update-delivery" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/update-delivery.xml</file>
     </artifact>
+    <artifact name="states-endpoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/states-endpoint.xml</file>
+    </artifact>
+    <artifact name="cities-endpoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/cities-endpoint.xml</file>
+    </artifact>
 </artifacts>

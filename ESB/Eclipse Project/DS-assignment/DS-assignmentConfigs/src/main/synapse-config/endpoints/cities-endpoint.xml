@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<endpoint name="update-delivery" xmlns="http://ws.apache.org/ns/synapse">
-    <http method="patch" uri-template="http://localhost:9000/delivery/{uri.var.id}">
+<endpoint name="cities-endpoint" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="get" uri-template="https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json">
         <suspendOnFailure>
             <initialDuration>-1</initialDuration>
             <progressionFactor>1.0</progressionFactor>

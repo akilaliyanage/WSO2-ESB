@@ -9,9 +9,12 @@
   <name>DS-assignmentCompositeExporter</name>
   <description>DS-assignmentCompositeExporter</description>
   <properties>
+    <com.example.endpoint_._update-delivery>capp/EnterpriseServiceBus</com.example.endpoint_._update-delivery>
     <com.example.endpoint_._get-pending-orders>capp/EnterpriseServiceBus</com.example.endpoint_._get-pending-orders>
     <com.example.endpoint_._create_delivery>capp/EnterpriseServiceBus</com.example.endpoint_._create_delivery>
+    <com.example.endpoint_._states-endpoint>capp/EnterpriseServiceBus</com.example.endpoint_._states-endpoint>
     <com.example.endpoint_._delivery_endpoint>capp/EnterpriseServiceBus</com.example.endpoint_._delivery_endpoint>
+    <com.example.endpoint_._cities-endpoint>capp/EnterpriseServiceBus</com.example.endpoint_._cities-endpoint>
     <com.example.api_._delivery_API>capp/EnterpriseServiceBus</com.example.api_._delivery_API>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
   </properties>
@@ -19,6 +22,12 @@
     <dependency>
       <groupId>com.example.api</groupId>
       <artifactId>delivery_API</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>cities-endpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -37,6 +46,18 @@
     <dependency>
       <groupId>com.example.endpoint</groupId>
       <artifactId>get-pending-orders</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>states-endpoint</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>update-delivery</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

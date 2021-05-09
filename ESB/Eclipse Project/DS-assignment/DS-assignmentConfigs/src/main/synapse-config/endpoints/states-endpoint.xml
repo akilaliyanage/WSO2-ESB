@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<endpoint name="update-delivery" xmlns="http://ws.apache.org/ns/synapse">
-    <http method="patch" uri-template="http://localhost:9000/delivery/{uri.var.id}">
+<endpoint name="states-endpoint" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="get" uri-template="https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_titlecase.json">
         <suspendOnFailure>
             <initialDuration>-1</initialDuration>
             <progressionFactor>1.0</progressionFactor>

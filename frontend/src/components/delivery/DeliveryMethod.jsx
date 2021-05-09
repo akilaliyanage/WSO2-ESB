@@ -47,7 +47,15 @@ class DeliveryMethod extends Component {
     componentDidMount(){
       //get states
       console.log('calling states')
-      fetch(config.states).then(res => res.json()).then(data =>{
+      fetch(config.host + "/delivery/states",{
+        method : 'POST',
+        headers : {
+          'Content-Type': 'application/json',
+        },
+        body : JSON.stringify({
+          type : 'states'
+        })
+      }).then(res => res.json()).then(data =>{
         this.setState({states : data})
        // console.log(data)
       }).catch(err =>{
@@ -56,7 +64,15 @@ class DeliveryMethod extends Component {
 
       //cities
 
-      fetch(config.cities).then(res => res.json()).then(data => {
+      fetch(config.host + "/delivery/states",{
+        method : 'POST',
+        headers : {
+          'Content-Type': 'application/json',
+        },
+        body : JSON.stringify({
+          type : 'states'
+        })
+      }).then(res => res.json()).then(data => {
         //console.log("akilat ",this.state.states)
         this.setState({cities : data})
         console.log(data)
