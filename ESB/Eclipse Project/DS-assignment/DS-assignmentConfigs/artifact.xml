@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="delivery_endpoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/delivery_endpoint.xml</file>
+    </artifact>
+    <artifact name="delivery_API" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/delivery_API.xml</file>
+    </artifact>
+    <artifact name="create_delivery" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/create_delivery.xml</file>
+    </artifact>
+    <artifact name="get-pending-orders" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/get-pending-orders.xml</file>
+    </artifact>
+    <artifact name="update-delivery" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/update-delivery.xml</file>
+    </artifact>
+    <artifact name="states-endpoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/states-endpoint.xml</file>
+    </artifact>
+    <artifact name="cities-endpoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/cities-endpoint.xml</file>
+    </artifact>
+</artifacts>
