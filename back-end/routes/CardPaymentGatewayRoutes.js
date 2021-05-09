@@ -21,22 +21,34 @@ router.route("/:cardNo").get((req,res) => {
     
     CardPaymentGateway.find({cardNo:cNo})
     .then((CardPaymentGateway) => {
-        OTPHelper.getOTP(req)
-        .then((otp) => {
-            EmailHelper('dhmmpthammita@gmail.com' , otp)
-            .then((status) =>{
-                res.json(CardPaymentGateway) 
+
+        if(req.params.cardNo == CardPaymentGateway.cardNo && req.params.cardHolderName == CardPaymentGateway.cardHolderName && req.params.CVC == CardPaymentGateway.CVC && req.params.expDate == CardPaymentGateway.expDate){
+            OTPHelper.getOTP(req)
+            .then((otp) => {
+                EmailHelper('dhmmpthammita@gmail.com' , otp)
+                .then((status) =>{
+                    console.log('Card Matched');
+                    res.statusCode = 200;
+                    res.json(CardPaymentGateway) 
+                })
+                .catch((error) =>{
+                    console.log(error)
+                })
             })
             .catch((error) =>{
                 console.log(error)
-            })
         })
-        .catch((error) =>{
-            console.log(error)
-        })
+        }
+        else{
+            console.log('Mismatch entries');
+            res.statusCode = 404;
+        }
+
+        
         
     }).catch((error) => {
         console.log(error)
+        res.statusCode = 404;
     })
 
 })
