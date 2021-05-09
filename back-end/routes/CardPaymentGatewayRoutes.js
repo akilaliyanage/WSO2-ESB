@@ -2,6 +2,8 @@ const express = require('express')
 const router = express.Router()
 
 const CardPaymentGateway = require('../models/CardPaymentGateway')
+const EmailHelper = require('../Helpers/EmailHelper')
+const OTPHelper = require('../Helpers/OTPHelper')
 
 router.get('/',async (req,res) =>{
     try{
@@ -16,8 +18,23 @@ router.get('/',async (req,res) =>{
 router.route("/:cardNo").get((req,res) => {
 
     let cNo = req.params.cardNo;
-    CardPaymentGateway.find({cardNo:cNo}).then((CardPaymentGateway) => {
-        res.json(CardPaymentGateway);
+    
+    CardPaymentGateway.find({cardNo:cNo})
+    .then((CardPaymentGateway) => {
+        OTPHelper.getOTP(req)
+        .then((otp) => {
+            EmailHelper('mahendra.parackramathammita@gmail.com' , otp)
+            .then((status) =>{
+                res.json(CardPaymentGateway) 
+            })
+            .catch((error) =>{
+                console.log(error)
+            })
+        })
+        .catch((error) =>{
+            console.log(error)
+        })
+        
     }).catch((error) => {
         console.log(error)
     })

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 export default class MenuBar extends Component {
     render() {
@@ -18,9 +19,12 @@ export default class MenuBar extends Component {
                             <div  class="col-md-6">
                                 <div class="header-top-menu">
                                     <ul class="nav nav-pills navbar-right">
+                                        
                                         <li><a href="#">My Account</a></li>
                                         <li><a href="#">Wishlist</a></li>
-                                        <li><a href="/cart">Cart</a></li>
+                                        <Link to="/cart">
+                                            <li><a >Cart</a></li>
+                                        </Link>
                                         <li><a href="#">Checkout</a></li>
                                         <li><a href="#"><i class="pe-7s-lock"></i>Login/Register</a></li>
                                     </ul>
