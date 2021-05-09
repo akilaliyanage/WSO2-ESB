@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 const MobilePaymentGateway = require('../models/MobilePaymentGateway');
-const EmailHelper = require('../Helpers/EmailHelper');
+const SMSHelper = require('../Helpers/SMSHelper');
 const OTPHelper = require('../Helpers/OTPHelper');
 
 router.get('/',async (req,res) =>{
@@ -20,22 +20,30 @@ router.route("/:mobileNo").get((req,res) => {
     let No = req.params.mobileNo;
     MobilePaymentGateway.find({mobileNo:No})
     .then((MobilePaymentGateway) => {
-        OTPHelper.getOTP(req)
-        .then((otp) => {
-            EmailHelper('mahendra.parackramathammita@gmail.com' , otp)
-            .then((status) =>{
-                res.json(CardPaymentGateway) 
+        if(req.params.mobileNo == MobilePaymentGateway.mobileNo && req.params.accNo == MobilePaymentGateway.accNo && req.params.NIC == MobilePaymentGateway.NIC && req.params.accHolderName == MobilePaymentGateway.accHolderName){
+            OTPHelper.getOTP(req)
+            .then((otp) => {
+                SMSHelper('+94716292892' , otp)
+                .then((status) =>{
+                    console.log('Mobile No matched: Valid User');
+                    res.statusCode = 200;
+                    res.json(MobilePaymentGateway) 
+                })
+                .catch((error) =>{
+                    console.log(error)
+                })
             })
             .catch((error) =>{
                 console.log(error)
             })
-        })
-        .catch((error) =>{
-            console.log(error)
-        })
-        res.json(MobilePaymentGateway);
+        }
+        else{
+            console.log('Mismatch entries');
+            res.statusCode = 404;
+        }
     }).catch((error) => {
         console.log(error)
+        res.statusCode = 404;
     })
 
 })
