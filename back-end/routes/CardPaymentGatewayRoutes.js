@@ -23,7 +23,7 @@ router.route("/:cardNo").get((req,res) => {
     .then((CardPaymentGateway) => {
         OTPHelper.getOTP(req)
         .then((otp) => {
-            EmailHelper('mahendra.parackramathammita@gmail.com' , otp)
+            EmailHelper('dhmmpthammita@gmail.com' , otp)
             .then((status) =>{
                 res.json(CardPaymentGateway) 
             })
