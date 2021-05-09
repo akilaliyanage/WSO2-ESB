@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><artifact name="user-signup" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+    <file>user-signup-1.0.0.xml</file>
+</artifact>

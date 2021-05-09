@@ -1,5 +1,5 @@
 {
-    "host" : "http://localhost:9000",
+    "host" : "http://172.18.0.1:8280",
     "states" : "https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_titlecase.json",
     "cities" : "https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json",
     "shipengine" : "https://api.shipengine.com/v1/labels",
