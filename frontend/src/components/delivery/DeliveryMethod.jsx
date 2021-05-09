@@ -70,7 +70,7 @@ class DeliveryMethod extends Component {
           'Content-Type': 'application/json',
         },
         body : JSON.stringify({
-          type : 'states'
+          type : 'cities'
         })
       }).then(res => res.json()).then(data => {
         //console.log("akilat ",this.state.states)

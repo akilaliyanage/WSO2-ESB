@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/user" name="user_API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/signup">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="user signup api"/>
+            </log>
+            <send>
+                <endpoint key="user-signup"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/seller-login">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="seller login api"/>
+            </log>
+            <send>
+                <endpoint key="seller-login"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/buyer-login">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="buyer api endpoint hitted"/>
+            </log>
+            <send>
+                <endpoint key="buyer-login"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/get-seller/{uri.var.sellerID}">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="get single seller"/>
+            </log>
+            <send>
+                <endpoint key="get-single-seller"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
