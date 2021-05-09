@@ -1700,3 +1700,4 @@ TID: [-1234] [] [2021-05-09 16:32:27,727]  INFO {org.apache.synapse.deployers.AP
 TID: [-1234] [] [2021-05-09 16:32:27,727]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS-assignmentCompositeExporter_1.0.0 {super-tenant}
 TID: [-1234] [] [2021-05-09 16:32:34,918]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = case api logged
 TID: [-1234] [] [2021-05-09 16:32:34,919]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = logging into the cities api end point
+TID: [-1234] [] [2021-05-09 16:35:10,031]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-09 16:35:10,031+0530]
