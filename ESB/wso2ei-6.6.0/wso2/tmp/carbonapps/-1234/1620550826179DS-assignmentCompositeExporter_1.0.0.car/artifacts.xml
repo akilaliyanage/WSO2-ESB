@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="DS-assignmentCompositeExporter" version="1.0.0" type="carbon/application">
+        <dependency artifact="delivery_API" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="create_delivery" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="delivery_endpoint" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="get-pending-orders" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+    </artifact>
+</artifacts>

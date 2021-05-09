@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/delivery" name="delivery_API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/">
+        <inSequence>
+            <log description="delivery_api_log" level="custom">
+                <property name="message" value="logged into the delivery api"/>
+            </log>
+            <send>
+                <endpoint key="delivery_endpoint"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/">
+        <inSequence>
+            <log description="create-delivery" level="custom">
+                <property name="message" value="logged into the create-delivert api"/>
+            </log>
+            <send>
+                <endpoint key="create_delivery"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/pending">
+        <inSequence>
+            <log description="pending-delivery" level="custom">
+                <property name="message" value="logged into the delivery-pending api"/>
+            </log>
+            <send>
+                <endpoint key="get-pending-orders"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
