@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "antd/dist/antd.css";
 import "../../assets/mahen.css";
 import { Row , Col , Space , Divider , List, Radio} from 'antd';
-import { UserOutlined , DollarTwoTone , ShoppingCartOutlined , MailOutlined, DollarOutlined , PercentageOutlined} from '@ant-design/icons';
+import { UserOutlined , DollarTwoTone , ShoppingCartOutlined , MailOutlined, DollarOutlined , PercentageOutlined , InboxOutlined} from '@ant-design/icons';
 
 class CardPaymentLeft extends Component {
     constructor(props) {
@@ -50,6 +50,18 @@ class CardPaymentLeft extends Component {
                         <h4 className="grayText">Lorem ipsum dolor sit amet.</h4>
                     </Space>
                 </Row>
+                <Row justify="center" align='bottom'>
+                    <Space size='large'>
+                        <h4 className="lightText"><ShoppingCartOutlined style={{fontSize:'180%'}}/> Item/s Cost : </h4>
+                        <h4 className="grayText">$ 0.00</h4>
+                    </Space>
+                </Row> 
+                <Row justify="center" align='bottom'>
+                    <Space size='large'>
+                        <h4 className="lightText"><InboxOutlined style={{fontSize:'180%'}}/> Delivery Fee : </h4>
+                        <h4 className="grayText">$ 0.00</h4>
+                    </Space>
+                </Row> 
                 <Row justify="center" align='bottom'>
                     <Space size='large'>
                         <h4 className="lightText"><PercentageOutlined style={{fontSize:'180%'}}/> Discounts : </h4>

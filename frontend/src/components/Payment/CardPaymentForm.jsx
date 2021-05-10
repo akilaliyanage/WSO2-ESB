@@ -8,10 +8,14 @@ class CardPaymentForm extends Component{
     constructor(props) {
         super(props);
         this.state = {
+            showOTP_Visibility : true,
+            submitOTP_Visibility : false,
+            confirmPay_Visibility : false,
+            OTPInput_Visibility : false,
             cardHolderName : '',
             cardNo : '',
             CVC : '',
-            type : '',
+            type : 'Visa',
             expDate : '',
             email : '',
             phone : '',
@@ -20,7 +24,7 @@ class CardPaymentForm extends Component{
     }
 
       setValueOnChange = (val) =>{
-          console.log('radio checked', val.target.value);
+          console.log('field checked', val.target.value);
           this.setState({[val.target.name] :val.target.value});
       }
       setValueOnChangeRadio = (val) =>{
@@ -28,10 +32,9 @@ class CardPaymentForm extends Component{
           this.setState({type:val.target.value});
       }
 
-      checkValidity = (e) => {
-          e.preventDefault();
-        if(this.state.agree){
-
+      checkValidity = () => {
+          console.log('Validity method called');
+          
           const CardDetails = {
             cardHolderName : this.state.cardHolderName,
             cardNo : this.state.cardNo,
@@ -42,6 +45,9 @@ class CardPaymentForm extends Component{
             phone : this.state.phone,
           }
 
+          console.log('cardNO', this.state.cardNo);
+          console.log('cardNO', this.state.type);
+
           fetch('http://localhost:9000/cardPayment/'+ this.state.cardNo, {
             method: 'POST', 
             headers: {
@@ -49,13 +55,25 @@ class CardPaymentForm extends Component{
             },
             body: JSON.stringify(CardDetails),
           })
-          .then(response => response.json())
-          .then(Resdata => {
-            console.log('Success:', Resdata);
-            notification['success']({
-              message: 'Card Details Found.'
-            });
-          })
+          .then(response => { 
+              console.log('response is : ' + response.json())
+              if(response.status == 200){
+                notification['success']({
+                        message: 'We have Sent The OTP to your Email.',
+                        description: 'Check Email and submit your OTP.'
+                });
+                this.setState({submitOTP_Visibility : true});
+                this.setState({OTPInput_Visibility : true});
+                this.setState({showOTP_Visibility : false});
+              }
+              else{
+                  console.log(response.status)
+                   notification['error']({
+                        message: 'Invalid Card.',
+                        description: 'Please Check the card details and try again..'
+                });
+              }
+            })
           .catch((error) => {
             console.error('Error:', error);
             notification['error']({
@@ -64,20 +82,12 @@ class CardPaymentForm extends Component{
                 error,
             });
           });
-
-
-         
-        }else{
-          notification['error']({
-            message: 'Ooopz and error ocured!',
-            description:
-              'Seems like you have not agreed to out terms and condisions.',
-          });
-        }
        
       };
 
     render(){
+
+        const {showOTP_Visibility , submitOTP_Visibility , confirmPay_Visibility , OTPInput_Visibility} = this.state;
 
         return(
             <section align="vertical"  style={{ paddingTop: '30px' }} bordered>
@@ -93,7 +103,7 @@ class CardPaymentForm extends Component{
                         <Divider style={{fontSize:25 , color:"#FFFFFF"}} orientation="left" >Payment Information</Divider>
                     </Col>
                 </Row>
-                <Form layout="vertical" onSubmit={this.checkValidity} >
+                <Form layout="vertical" >
 
                     <Row>
                        <Col className="gutter-row" span={20} offset={3}>
@@ -148,10 +158,11 @@ class CardPaymentForm extends Component{
                         </Col>
                     </Row>
 
-                    <Row style={{paddingTop:40}}>
+                    <Row style={{paddingTop:40 , display:(showOTP_Visibility ? 'block' : 'none')}}>
                         <Col className="gutter-row" span={14} offset={6}>
                             <Form.Item>
-                                <Button className="mySuccessBtn" type="primary" block>Request OTP</Button>
+                                <Button className="mySuccessBtn" type="primary" onClick={this.checkValidity} block>Request OTP</Button>
+                                
                             </Form.Item>
                         </Col>
                         
@@ -159,7 +170,7 @@ class CardPaymentForm extends Component{
 
                     
                 </Form>
-                    <Row>
+                    <Row style={{paddingTop:40 , display:(OTPInput_Visibility ? 'block' : 'none') }} >
                         <Col className="gutter-row" span={10} offset={8}>
                             <Form.Item required>
                                 <Input className="PaymentInputs" placeholder="OTP" name="OTP" onChange={this.setValueOnChange} />
@@ -167,7 +178,16 @@ class CardPaymentForm extends Component{
                         </Col>
                     </Row>
 
-                    <Row style={{paddingTop:40}}>
+                    <Row style={{paddingTop:10 ,display:(submitOTP_Visibility ? 'block' : 'none') }}>
+                        <Col className="gutter-row" span={14} offset={6}>
+                            <Form.Item>
+                                <Button className="mySuccessBtn" type="primary" block>Submit OTP</Button>
+                            </Form.Item>
+                        </Col>
+                        
+                    </Row>
+
+                    <Row style={{paddingTop:40 , display:(confirmPay_Visibility ? 'block' : 'none') }}>
                         <Col className="gutter-row" span={14} offset={6}>
                             <Form.Item>
                                 <Button className="mySuccessBtn" type="primary" block>Confirm Payment</Button>

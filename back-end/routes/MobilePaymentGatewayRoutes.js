@@ -20,7 +20,7 @@ router.route("/:mobileNo").get((req,res) => {
     let No = req.params.mobileNo;
     MobilePaymentGateway.find({mobileNo:No})
     .then((MobilePaymentGateway) => {
-        if(req.params.mobileNo == MobilePaymentGateway.mobileNo && req.params.accNo == MobilePaymentGateway.accNo && req.params.NIC == MobilePaymentGateway.NIC && req.params.accHolderName == MobilePaymentGateway.accHolderName){
+        if(req.params.mobileNo == MobilePaymentGateway[0].mobileNo && req.body.accNo == MobilePaymentGateway[0].accNo && req.body.NIC == MobilePaymentGateway[0].NIC && req.body.accHolderName == MobilePaymentGateway[0].accHolderName){
             OTPHelper.getOTP(req)
             .then((otp) => {
                 SMSHelper('+94716292892' , otp)
