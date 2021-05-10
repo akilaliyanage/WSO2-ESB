@@ -177,3 +177,11 @@ TID: [-1234] [2021-05-09 18:33:01,173]  INFO {API_LOGGER.delivery_API} - Initial
 TID: [-1234] [2021-05-09 18:33:01,177]  INFO {API_LOGGER.user_API} - Initializing API: user_API
 TID: [-1234] [2021-05-09 18:34:06,170]  INFO {API_LOGGER.user_API} - message = get single seller
 TID: [-1234] [2021-05-09 18:34:39,891]  INFO {API_LOGGER.user_API} - message = get single seller
+TID: [-1234] [2021-05-10 01:15:34,524]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-10 01:15:34,734]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-10 01:15:34,736]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-10 01:15:34,740]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-10 01:15:34,847]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-10 01:15:34,848]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-10 01:15:34,848]  INFO {API_LOGGER.user_API} - Destroying API: user_API
+TID: [-1234] [2021-05-10 01:15:34,849]  INFO {API_LOGGER.test2} - Destroying API: test2
