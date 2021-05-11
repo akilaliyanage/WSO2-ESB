@@ -1,9 +1,14 @@
 const express = require('express')
+const session = require('express-session');
+//const bodyParser = require('body-parser');
+
 const router = express.Router()
 
 const CardPaymentGateway = require('../models/CardPaymentGateway')
 const EmailHelper = require('../Helpers/EmailHelper')
 const OTPHelper = require('../Helpers/OTPHelper')
+
+
 
 router.get('/',async (req,res) =>{
     try{
@@ -56,6 +61,33 @@ router.route("/:cardNo").post((req,res) => {
 
 })
 
+router.post('/checkOTP/confirmation', async (req,res) => {
+
+    try {
+        
+        console.log('Body OTP is :' , req.body.OTP);
+        let OTPSession;
+        OTPSession = req.session.OTP;
+
+        console.log('Session is :' , req.session.OTP);
+        
+        if(req.body.OTP == OTPSession){
+            console.log("OTP Matched.")
+            req.session.destroy();
+            res.statusCode = 200;
+            res.json(true);
+        }
+        else{
+            res.statusCode = 400;
+            res.json(false);
+        }
+        
+    } catch (error) {
+        console.log(error);
+    }
+    
+})
+
 router.post('/',(req,res) =>{
     const card = new CardPaymentGateway({
         cardHolderName: req.body.cardHolderName,
@@ -69,6 +101,7 @@ router.post('/',(req,res) =>{
     })
 
     card.save().then(data =>{
+        console.log('Data Saved');
         res.json(data)
     }).catch(err =>{
         res.json(err)
