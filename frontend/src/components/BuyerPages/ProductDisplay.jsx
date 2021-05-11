@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
-import { Button, Card } from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
+import {Link} from 'react-router-dom'
+import { Affix, Button,Badge } from 'antd';
+
+import { ClockCircleOutlined } from '@ant-design/icons';
+
 import CardImg from '../../assets/nethsara/images/map-bg.png'
 
 class ProductDisplay extends Component {
@@ -8,13 +13,16 @@ class ProductDisplay extends Component {
         super(props);
         this.state = {
             item:[],
-            cart:[]
+            cart:[],
+            total:0
 
         }
     }
 
     componentDidMount(){
         this.fetchItems();
+
+        
     }
 
     fetchItems = () =>{
@@ -24,29 +32,41 @@ class ProductDisplay extends Component {
     addToCart = (item) => {
 
         const obj = {
+            id:item._id,
+            sellerId: item.sellerID,
             title: item.title,
             price: item.price,
-            quantity: 1
+            // quantity: 1
         }
 
         this.setState(state => ({
             cart:[...state.cart, obj]
         }))
+        // console.log("tst001",this.state.cart)
         
-        // const cartItems = this.state.cart
+        this.state.total = this.state.total + item.price
+        console.log(this.state.total)
 
-        // window.localStorage.setItem("cartitems", cartItems)
-        // console.log("test1"+window.localStorage.getItem("cartitems"))
     }
 
     alertHere = () => {
 
-        // const cartItems = this.state.cart
-
+        //product save in the local storage 
         window.localStorage.setItem("cartitems",JSON.stringify(this.state.cart))
         console.log("test1"+window.localStorage.getItem("cartitems"))
+        // console.log(this.state.cart)
 
-        console.log(this.state.cart)
+        
+
+        //total price save in the local storage
+        window.localStorage.setItem("total",JSON.stringify(this.state.total))
+        console.log("test2"+window.localStorage.getItem("total"))
+        // const cartItems = this.state.cart
+
+        // window.localStorage.setItem("cartitems",JSON.stringify(this.state.cart))
+        // console.log("test1"+window.localStorage.getItem("cartitems"))
+
+        // console.log(this.state.cart)
     }
 
     saveToCart = () => {
@@ -57,6 +77,15 @@ class ProductDisplay extends Component {
     render() {
         return (
             <div>
+
+                <Link to="/cart">
+                    <Affix offsetTop={400} style={{ float: 'right', marginRight:"40px"}} onChange={(affixed) => console.log(affixed)}>
+                        <Button type="primary"><i class="pe-7s-cart"> Cart</i></Button>
+                        <Badge count={(this.state.cart.length)}>
+                            <a href="#" className="head-example" />
+                        </Badge>
+                    </Affix>
+                </Link>
 
                 <section class="featured-section">
                             <div class="container">
@@ -122,7 +151,8 @@ class ProductDisplay extends Component {
                                                 <Card.Text>
                                                     {item.description}
                                                 </Card.Text>
-                                                <Button variant="info" onClick={() => this.addToCart(item) } onBlur={this.saveToCart}><i class="pe-7s-cart">Add to Cart</i></Button>
+
+                                                <Button type="primary" onClick={() => this.addToCart(item) } onBlur={this.alertHere}><i class="pe-7s-cart"> Add to Cart</i></Button>
                                             </Card.Body>
                                         </Card>
 
@@ -132,8 +162,6 @@ class ProductDisplay extends Component {
 
                                     
                                 </div>
-
-                                <button onClick={this.alertHere()}>hicbe</button>
 
                                 
                             </div>

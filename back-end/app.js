@@ -46,6 +46,7 @@ app.use("/user",userRouter);
 app.use("/item",itemRouter);
 
 app.use("/buyer",itemRouter);
+app.use("/cart",cartRouter);
 
 app.use("/cardPayment",cardPaymentGatewayRouter);
 app.use("/mobilePayment",mobilePaymentGatewayRouter);
