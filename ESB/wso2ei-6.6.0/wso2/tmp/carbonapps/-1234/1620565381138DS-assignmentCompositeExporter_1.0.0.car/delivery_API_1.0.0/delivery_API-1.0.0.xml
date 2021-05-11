@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/delivery" name="delivery_API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/">
+        <inSequence>
+            <log description="delivery_api_log" level="custom">
+                <property name="message" value="logged into the delivery api"/>
+            </log>
+            <send>
+                <endpoint key="delivery_endpoint"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/">
+        <inSequence>
+            <log description="create-delivery" level="custom">
+                <property name="message" value="logged into the create-delivert api"/>
+            </log>
+            <send>
+                <endpoint key="create_delivery"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/pending">
+        <inSequence>
+            <log description="pending-delivery" level="custom">
+                <property name="message" value="logged into the delivery-pending api"/>
+            </log>
+            <send>
+                <endpoint key="get-pending-orders"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PATCH" uri-template="/{id}">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="patch api of delivert logged"/>
+            </log>
+            <send>
+                <endpoint key="update-delivery"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/states">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="case api logged"/>
+            </log>
+            <property expression="json-eval($.type)" name="Type" scope="default" type="STRING"/>
+            <switch source="get-property('Type')">
+                <case regex="states">
+                    <log level="custom">
+                        <property name="message" value="logging into the states endpoint"/>
+                    </log>
+                    <send>
+                        <endpoint key="states-endpoint"/>
+                    </send>
+                </case>
+                <case regex="cities">
+                    <log level="custom">
+                        <property name="message" value="logging into the cities api end point"/>
+                    </log>
+                    <send>
+                        <endpoint key="cities-endpoint"/>
+                    </send>
+                </case>
+                <default>
+                    <log level="custom">
+                        <property name="message" value="default case route"/>
+                    </log>
+                    <respond description="no matchings"/>
+                </default>
+            </switch>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
