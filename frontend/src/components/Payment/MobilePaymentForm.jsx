@@ -15,8 +15,13 @@ class MobilePaymentForm extends Component{
             NIC : '',
             email : '',
             isMobile:true,
-            OTPSent: false,
-            authenticated:false
+            showOTP_Visibility : true,
+            submitOTP_Visibility : false,
+            confirmPay_Visibility : false,
+            OTPInput_Visibility : false,
+            DisabledInputs: false,
+            OTP: '',
+            OTPToken : ''
         }
     }
 
@@ -44,13 +49,33 @@ class MobilePaymentForm extends Component{
             },
             body: JSON.stringify(CardDetails),
           })
-          .then(response => response.json())
-          .then(Resdata => {
-            console.log('Success:', Resdata);
-            notification['success']({
-              message: 'Valid Account Found.'
-            });
-          })
+          .then(response => {response.json()
+            .then(data => {
+                  console.log('data inside Div' , data)
+                  console.log('Token is: ' , data.Token)
+                  let AuthHeader = 'Token ' + data.Token;
+                  this.setState({OTPToken:AuthHeader});
+              })
+
+              if(response.status == 200){
+                notification['success']({
+                        message: 'We have Sent The OTP to your Phone As a SMS.',
+                        description: 'Check SMS and submit your OTP.'
+                });
+                this.setState({submitOTP_Visibility : true});
+                this.setState({OTPInput_Visibility : true});
+                this.setState({showOTP_Visibility : false});
+                this.setState({DisabledInputs : true});
+              }
+              else{
+                  console.log(response.status)
+                   notification['error']({
+                        message: 'Invalid Account Number.',
+                        description: 'Please Accont details and try again..'
+                });
+              }
+        
+        })
           .catch((error) => {
             console.error('Error:', error);
             notification['error']({
@@ -72,8 +97,58 @@ class MobilePaymentForm extends Component{
        
       };
 
+      checkOTP = () => {
+          console.log('OTP method called');
+          
+          const _InputOTP = {
+            OTP : this.state.OTP,
+            accHolderName : this.state.accHolderName,
+            mobileNo : this.state.mobileNo,
+            accNo : this.state.accNo,
+            NIC : this.state.NIC,
+            email : this.state.email
+          }
+          fetch('http://localhost:9000/mobilePayment/checkOTP/confirmation' , {
+            method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': this.state.OTPToken,
+            },
+            body: JSON.stringify(_InputOTP),
+          })
+          .then(response => { 
+              console.log('response is : ' + response.json())
+              if(response.status == 200){
+                notification['success']({
+                        message: 'OTP Matched.!!',
+                        description: 'Please Confirm Your Payment.'
+                });
+                this.setState({submitOTP_Visibility : false});
+                this.setState({OTPInput_Visibility : false});
+                this.setState({confirmPay_Visibility : true});
+              }
+              else{
+                  console.log(response.status)
+                   notification['error']({
+                        message: 'Invalid Card.',
+                        description: 'Please Check the card details and try again..'
+                });
+              }
+            })
+          .catch((error) => {
+            console.error('Error:', error);
+            notification['error']({
+              message: 'Something Went Wrong , Please Try Again!!',
+              description: error,
+            });
+          });
+       
+      };
+
 
     render(){
+
+        const {showOTP_Visibility , submitOTP_Visibility , confirmPay_Visibility , OTPInput_Visibility , DisabledInputs} = this.state;
 
         return(
             <section align="vertical"  style={{ paddingTop: '30px' }} bordered>
@@ -94,21 +169,21 @@ class MobilePaymentForm extends Component{
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
                             <Form.Item required >
-                                <Input className="PaymentInputs" placeholder="Mobile Number" name="mobileNo" onChange={this.setValueOnChange} />
+                                <Input className="PaymentInputs" disabled={this.state.DisabledInputs} placeholder="Mobile Number" name="mobileNo" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
                             <Form.Item required>
-                                <Input className="PaymentInputs" placeholder="Mobile Account Number" name="accNo" onChange={this.setValueOnChange} />
+                                <Input className="PaymentInputs" disabled={this.state.DisabledInputs} placeholder="Mobile Account Number" name="accNo" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
                             <Form.Item required>
-                                <Input className="PaymentInputs" placeholder="NIC" name="NIC" onChange={this.setValueOnChange} />
+                                <Input className="PaymentInputs" disabled={this.state.DisabledInputs} placeholder="NIC" name="NIC" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>
@@ -126,7 +201,7 @@ class MobilePaymentForm extends Component{
                         </Col>
                     </Row>
 
-                    <Row style={{paddingTop:40}}>
+                    <Row style={{paddingTop:40 , display:(showOTP_Visibility ? 'block' : 'none')}}>
                         <Col className="gutter-row" span={14} offset={6}>
                             <Form.Item>
                                 <Button className="mySuccessBtn" type="primary" block>Request OTP</Button>
@@ -136,9 +211,8 @@ class MobilePaymentForm extends Component{
                     </Row>
                 </Form>
                 
-                {this.state.OTPSent && 
                         <div>
-                            <Row>
+                            <Row style={{paddingTop:40 , display:(OTPInput_Visibility ? 'block' : 'none') }}>
                                 <Col className="gutter-row" span={10} offset={8}>
                                     <Form.Item required>
                                         <Input className="PaymentInputs" placeholder="OTP" name="C_No" onChange={this.setValueOnChange} />
@@ -146,7 +220,15 @@ class MobilePaymentForm extends Component{
                                 </Col>
                             </Row>
 
-                            <Row style={{paddingTop:40}}>
+                            <Row style={{paddingTop:10 ,display:(submitOTP_Visibility ? 'block' : 'none') }}>
+                                <Col className="gutter-row" span={14} offset={6}>
+                                    <Form.Item>
+                                        <Button className="mySuccessBtn" type="primary" onClick={this.checkOTP} block>Submit OTP</Button>
+                                    </Form.Item>
+                                </Col>
+                            </Row>
+
+                            <Row style={{paddingTop:40 , display:(confirmPay_Visibility ? 'block' : 'none') }}>
                                 <Col className="gutter-row" span={14} offset={6}>
                                     <Form.Item>
                                         <Button className="mySuccessBtn" type="primary" block>Confirm Payment</Button>
@@ -154,7 +236,6 @@ class MobilePaymentForm extends Component{
                                 </Col>
                             </Row>
                         </div>
-                    }
             </section>
 
             
