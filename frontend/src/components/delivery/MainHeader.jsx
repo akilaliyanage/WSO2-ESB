@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { PageHeader } from 'antd';
+import {Link} from 'react-router-dom'
 class MainHeader extends Component {
     constructor(props) {
         super(props);
@@ -9,7 +10,11 @@ class MainHeader extends Component {
         return ( 
             <PageHeader
     className="site-page-header"
-    onBack={() => null}
+    onBack={() => {
+        return(
+            <Link to="/del-method"></Link>
+        )
+    }}
     title="Delivery Page"
     subTitle={this.props.itemName}
   />

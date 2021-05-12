@@ -1,7 +1,4 @@
 const express = require('express');
-const session = require('express-session');
-const bodyParser = require('body-parser');
-const app = express();
 const randomizer = require('randomatic');
 
 let ConcrteteSession
@@ -9,12 +6,10 @@ let ConcrteteSession
 const generateOTP = (req) =>{
 
     var OTP = randomizer('0' , 5);
-    ConcrteteSession = req.session;
-    ConcrteteSession.OTP = OTP;
-    console.log(ConcrteteSession);
-    
-    console.log(OTP);
-    console.log(ConcrteteSession.OTP);
+    req.session.OTP = OTP;
+    req.session.save();
+
+    console.log("OTP session is",  req.session.OTP);
 
     return Promise.resolve(OTP);
 }

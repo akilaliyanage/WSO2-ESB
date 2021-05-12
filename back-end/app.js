@@ -3,17 +3,8 @@ const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const session = require('express-session');
+const cookieParser = require('cookie-parser');
 const cors = require('cors')
-
-//Session Creation
-app.use(session({ 
-    secret:'OTP-Secret',
-    resave: false,
-    saveUninitialized: true,
-    cookie:{secure:true , maxAge:10000}
-}))
-
-
 
 require('dotenv/config')
 
@@ -39,6 +30,17 @@ app.use(bodyParser.urlencoded({extended:true}))
 // app.use(express.static(path.join(__dirname, '../public/media')));
 // const buildPath = path.normalize(path.join(__dirname, '../public/media'));
 // app.use(express.static(buildPath));
+
+//Session Creation - Session Middleware
+app.use(cookieParser());
+app.use(session({ 
+    secret:'OTP-Secret',
+    resave: false,
+    saveUninitialized: true,
+    cookie:{secure:false , maxAge:600000}
+}));
+
+
 app.use('/delivery',DeliveryRoutes);
 app.use("/user",userRouter);
 app.use("/item",itemRouter);
