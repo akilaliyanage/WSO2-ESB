@@ -61,6 +61,9 @@ function UserSignUP(){
             if(res.data.status === 200) {
                 history.push("/login");
             }
+            else if(res.data.status === 500){
+                alert("User Already exists!")
+            }
             else {
                 alert("oops! something went wrong");
             }

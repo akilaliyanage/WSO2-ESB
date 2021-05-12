@@ -75,7 +75,7 @@ function Login(){
                 localStorage.setItem("buyer-name",username);
                 localStorage.setItem("buyer-email",buyerEmail);
                 localStorage.setItem("avatar",avatar);
-                console.log(buyerEmail);
+                console.log(buyerID);
                 alert("logged in");
                 history.push("/")
 
