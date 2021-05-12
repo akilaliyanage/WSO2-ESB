@@ -1,6 +1,5 @@
 const express = require('express')
-const session = require('express-session');
-//const bodyParser = require('body-parser');
+const jwt = require('jsonwebtoken');
 
 const router = express.Router()
 
@@ -23,28 +22,34 @@ router.get('/',async (req,res) =>{
 router.route("/:cardNo").post((req,res) => {
 
     let cNo = req.params.cardNo;
-    
+    console.log('inside Post');
     
     CardPaymentGateway.find({cardNo:cNo})
     .then((CardPaymentGateway) => {
         if(CardPaymentGateway.length != 1){
+            console.log('inside 1st If');
             res.statusCode = 404;
-            res.json(CardPaymentGateway); 
+            res.send();
         }
         else if(req.params.cardNo == CardPaymentGateway[0].cardNo && req.body.cardHolderName == CardPaymentGateway[0].cardHolderName && req.body.CVC == CardPaymentGateway[0].CVC && req.body.expDate == CardPaymentGateway[0].expDate){
+            console.log('inside 2nd If');
             OTPHelper.getOTP(req)
             .then((otp) => {
                 EmailHelper('dhmmpthammita@gmail.com' , otp)
                 .then((status) =>{
                     console.log('Card Matched');
+                    const cardNo = req.params.cardNo;
+                    const OTPToken = jwt.sign(otp , cardNo);
                     res.statusCode = 200;
-                    res.json(CardPaymentGateway) 
+                    res.json({CardPaymentGateway:CardPaymentGateway , Token: OTPToken}) ;
                 })
                 .catch((error) =>{
+                    console.log('2nd If failed');
                     console.log(error)
                 })
             })
             .catch((error) =>{
+                console.log('1st If failed');
                 console.log(error)
             })
         }
@@ -61,19 +66,15 @@ router.route("/:cardNo").post((req,res) => {
 
 })
 
-router.post('/checkOTP/confirmation', async (req,res) => {
+router.post('/checkOTP/confirmation', authToken ,(req,res) => {
 
     try {
-        
         console.log('Body OTP is :' , req.body.OTP);
-        let OTPSession;
-        OTPSession = req.session.OTP;
-
-        console.log('Session is :' , req.session.OTP);
         
-        if(req.body.OTP == OTPSession){
-            console.log("OTP Matched.")
-            req.session.destroy();
+        if(req.body.OTP == req.OTP){
+            console.log("OTP Matched.");
+            console.log('req.OTP is :' , req.OTP);
+            console.log('req.body.OTP is :' , req.body.OTP);
             res.statusCode = 200;
             res.json(true);
         }
@@ -88,7 +89,7 @@ router.post('/checkOTP/confirmation', async (req,res) => {
     
 })
 
-router.post('/',(req,res) =>{
+router.post('/',  (req,res) =>{
     const card = new CardPaymentGateway({
         cardHolderName: req.body.cardHolderName,
         cardNo: req.body.cardNo,
@@ -108,5 +109,19 @@ router.post('/',(req,res) =>{
         console.log(err)
     })
 })
+
+function authToken(req , res , next){
+    console.log('called auth')
+    const authHeader = req.headers['authorization']
+    const token = authHeader && authHeader.split(' ')[1]
+    if(token == null) return res.sendStatus(403)
+
+    jwt.verify(token , '2342230178054578' , (err , OTP) => {
+        if(err) return res.sendStatus(403)
+        console.log('OTP :', OTP )
+        req.OTP = OTP
+        next()
+    })
+}
 
 module.exports = router;

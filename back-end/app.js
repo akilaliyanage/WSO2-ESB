@@ -19,26 +19,21 @@ const cardPaymentGatewayRouter = require('./routes/CardPaymentGatewayRoutes');
 const mobilePaymentGatewayRouter = require('./routes/MobilePaymentGatewayRoutes');
 const PaymentRouter = require('./routes/PaymentRoutes');
 const locationsRouter = require('./routes/LocationRoutes');
+const { config } = require('dotenv');
 
 
 //Middleware
 app.use(bodyParser.json());
+app.use(cookieParser('sec'));
+
 app.use(cors());
 app.use(express.static('uploads'));
+
 
 app.use(bodyParser.urlencoded({extended:true}))
 // app.use(express.static(path.join(__dirname, '../public/media')));
 // const buildPath = path.normalize(path.join(__dirname, '../public/media'));
 // app.use(express.static(buildPath));
-
-//Session Creation - Session Middleware
-app.use(cookieParser());
-app.use(session({ 
-    secret:'OTP-Secret',
-    resave: false,
-    saveUninitialized: true,
-    cookie:{secure:false , maxAge:600000}
-}));
 
 
 app.use('/delivery',DeliveryRoutes);

@@ -12,6 +12,7 @@ class CardPaymentForm extends Component{
             submitOTP_Visibility : false,
             confirmPay_Visibility : false,
             OTPInput_Visibility : false,
+            DisabledInputs: false,
             cardHolderName : '',
             cardNo : '',
             CVC : '',
@@ -19,7 +20,8 @@ class CardPaymentForm extends Component{
             expDate : '',
             email : '',
             phone : '',
-            OTP : ''
+            OTP : '',
+            OTPToken : ''
         }
     }
 
@@ -56,7 +58,14 @@ class CardPaymentForm extends Component{
             body: JSON.stringify(CardDetails),
           })
           .then(response => { 
-              console.log('response is : ' + response.json())
+              //console.log('response is : ' + response.json())
+              response.json().then(data2 => {
+                  console.log('data inside Div' , data2)
+                  console.log('Token is: ' , data2.Token)
+                  let AuthHeader = 'Token ' + data2.Token;
+                  this.setState({OTPToken:AuthHeader});
+                  //console.log(data2.CardPaymentGateway[0].cardNo)
+              })
               if(response.status == 200){
                 notification['success']({
                         message: 'We have Sent The OTP to your Email.',
@@ -65,6 +74,7 @@ class CardPaymentForm extends Component{
                 this.setState({submitOTP_Visibility : true});
                 this.setState({OTPInput_Visibility : true});
                 this.setState({showOTP_Visibility : false});
+                this.setState({DisabledInputs : true});
               }
               else{
                   console.log(response.status)
@@ -85,9 +95,56 @@ class CardPaymentForm extends Component{
        
       };
 
+      checkOTP = () => {
+          console.log('OTP method called');
+          
+          const _InputOTP = {
+            OTP : this.state.OTP,
+            cardNo : this.state.cardNo,
+            CVC : this.state.CVC,
+            type : this.state.type,
+            expDate : this.state.expDate
+          }
+          fetch('http://localhost:9000/cardPayment/checkOTP/confirmation' , {
+            method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': this.state.OTPToken,
+            },
+            body: JSON.stringify(_InputOTP),
+          })
+          .then(response => { 
+              console.log('response is : ' + response.json())
+              if(response.status == 200){
+                notification['success']({
+                        message: 'OTP Matched.!!',
+                        description: 'Please Confirm Your Payment.'
+                });
+                this.setState({submitOTP_Visibility : false});
+                this.setState({OTPInput_Visibility : false});
+                this.setState({confirmPay_Visibility : true});
+              }
+              else{
+                  console.log(response.status)
+                   notification['error']({
+                        message: 'Invalid Card.',
+                        description: 'Please Check the card details and try again..'
+                });
+              }
+            })
+          .catch((error) => {
+            console.error('Error:', error);
+            notification['error']({
+              message: 'Something Went Wrong , Please Try Again!!',
+              description: error,
+            });
+          });
+       
+      };
+
     render(){
 
-        const {showOTP_Visibility , submitOTP_Visibility , confirmPay_Visibility , OTPInput_Visibility} = this.state;
+        const {showOTP_Visibility , submitOTP_Visibility , confirmPay_Visibility , OTPInput_Visibility , DisabledInputs} = this.state;
 
         return(
             <section align="vertical"  style={{ paddingTop: '30px' }} bordered>
@@ -121,14 +178,14 @@ class CardPaymentForm extends Component{
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
                             <Form.Item required >
-                                <Input className="PaymentInputs" placeholder="Name On Card" name="cardHolderName" onChange={this.setValueOnChange} />
+                                <Input disabled={this.state.DisabledInputs} className="PaymentInputs" placeholder="Name On Card" name="cardHolderName" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>
                     <Row>
                         <Col className="gutter-row" span={20} offset={3}>
                             <Form.Item required>
-                                <Input className="PaymentInputs" placeholder="Credit Card Number" name="cardNo" onChange={this.setValueOnChange} />
+                                <Input disabled={this.state.DisabledInputs} className="PaymentInputs" placeholder="Credit Card Number" name="cardNo" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                     </Row>
@@ -136,12 +193,12 @@ class CardPaymentForm extends Component{
                     <Row>
                         <Col className="gutter-row" span={9} offset={3}>
                             <Form.Item required>
-                                <Input className="PaymentInputs" placeholder="MM/YY" name="expDate" onChange={this.setValueOnChange} />
+                                <Input disabled={this.state.DisabledInputs} className="PaymentInputs" placeholder="MM/YY" name="expDate" onChange={this.setValueOnChange} />
                             </Form.Item>
                         </Col>
                         <Col className="gutter-row" span={10} offset={1}>
                             <Form.Item required>
-                                <Input className="PaymentInputs" placeholder="CVC" name="CVC"  onChange={this.setValueOnChange}/>
+                                <Input disabled={this.state.DisabledInputs} className="PaymentInputs" placeholder="CVC" name="CVC"  onChange={this.setValueOnChange}/>
                             </Form.Item>
                         </Col>
                     </Row>
@@ -181,7 +238,7 @@ class CardPaymentForm extends Component{
                     <Row style={{paddingTop:10 ,display:(submitOTP_Visibility ? 'block' : 'none') }}>
                         <Col className="gutter-row" span={14} offset={6}>
                             <Form.Item>
-                                <Button className="mySuccessBtn" type="primary" block>Submit OTP</Button>
+                                <Button className="mySuccessBtn" type="primary" onClick={this.checkOTP} block>Submit OTP</Button>
                             </Form.Item>
                         </Col>
                         
@@ -190,7 +247,7 @@ class CardPaymentForm extends Component{
                     <Row style={{paddingTop:40 , display:(confirmPay_Visibility ? 'block' : 'none') }}>
                         <Col className="gutter-row" span={14} offset={6}>
                             <Form.Item>
-                                <Button className="mySuccessBtn" type="primary" block>Confirm Payment</Button>
+                                <Button className="mySuccessBtn" type="primary"  block>Confirm Payment</Button>
                             </Form.Item>
                         </Col>
                         
