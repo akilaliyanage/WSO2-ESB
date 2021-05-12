@@ -15,19 +15,20 @@ router.get('/',async (req,res) =>{
     
 }),
 
+//saving cart details in the database
 router.post('/',async (req,res) =>{
 
-        
-        const items2 = new cartItems({
+    const items2 = new cartItems({
 
-            items: req.body.items,
-            total: req.body.total,
-            buyerId:req.body.buyerId
+        items: req.body.items,
+        total: req.body.total,
+        buyerId:req.body.buyerId
             
-        });
+    });
 
-        const response = items2.save().then(data =>{res.json(items2)}).catch((err) => {res.json(err)})
-        console.log(items2)
+    // const response = 
+    items2.save().then(data =>{res.json(items2)}).catch((err) => {res.json(err)})
+    console.log(items2)
 
 })
 
