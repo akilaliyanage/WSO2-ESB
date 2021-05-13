@@ -42,6 +42,7 @@ export default function Dashboard(props) {
     const classes = useStyles();
     const [tileData,setTileData] = useState([]);
     const [count,setCount] = useState();
+    const [qty,setQty] = useState();
 
     useEffect(() => {
         document.body.style.backgroundColor = "#282c34"
@@ -52,6 +53,7 @@ export default function Dashboard(props) {
 
         axios.get("http://localhost:9000/item/"+userid).then((res) => {
             setCount(res.data.c);
+            setQty(res.data.qty);
             setTileData(res.data.items);
         }).catch((err) => {
             console.log(err);
@@ -106,8 +108,8 @@ export default function Dashboard(props) {
                 </div>
                 <div className="sellCount">
                     <br/>
-                    <h5 style={{color:'whitesmoke'}}>Items Sold</h5>
-                    <h3 style={{color:"limegreen","font-size":"30px"}}>20</h3>
+                    <h5 style={{color:'whitesmoke'}}>Quantity</h5>
+                    <h3 style={{color:"limegreen","font-size":"30px"}}>{qty}</h3>
                 </div>
 
                 <div className="addItem">
