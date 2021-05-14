@@ -34,6 +34,10 @@ router.post('/',(req,res) =>{
         type: req.body.type
         
     })
+    console.log('type : ' , req.body.type);
+    console.log('userId : ' , req.body.userId);
+    console.log('cardNo : ' , req.body.cardNo);
+    console.log('Ammount : ' , req.body.Ammount);
 
     transaction.save().then(data =>{
         res.json(data)

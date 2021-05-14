@@ -1,12 +1,14 @@
-const express = require('express')
+const express = require('express');
 const jwt = require('jsonwebtoken');
+const fetch = require('node-fetch');
+require('dotenv').config();
+const TokenPrifix = process.env.OTP_TOKEN_PREFIX;
+const TokenSuffix = process.env.OTP_TOKEN_SUFFIX;
+const router = express.Router();
 
-const router = express.Router()
-
-const CardPaymentGateway = require('../models/CardPaymentGateway')
-const EmailHelper = require('../Helpers/EmailHelper')
-const OTPHelper = require('../Helpers/OTPHelper')
-const authToken = require('../Helpers/TokenMiddlewareHelper')
+const CardPaymentGateway = require('../models/CardPaymentGateway');
+const OTPHelper = require('../Helpers/OTPHelper');
+const authToken = require('../Helpers/TokenMiddlewareHelper');
 
 
 
@@ -35,17 +37,60 @@ router.route("/:cardNo").post((req,res) => {
             
             OTPHelper.getOTP(req)
             .then((otp) => {
-                EmailHelper(req.body.email , otp)
-                .then((status) =>{
-                    console.log('Card Matched');
-                    const cardNo = req.params.cardNo;
-                    const OTPToken = jwt.sign(otp , cardNo);
-                    res.statusCode = 200;
-                    res.json({CardPaymentGateway:CardPaymentGateway , Token: OTPToken}) ;
+                const cardNo = req.params.cardNo;
+                let OTPKey = TokenPrifix + cardNo + req.body.CVC + TokenSuffix;
+                //Create a JWT(JSON Web Token) for the OTP. Therefor OTP will send in an encrypted formt
+                // to the client/Email service or the SMS service.
+                const OTPToken = jwt.sign(otp , OTPKey);
+
+                const EmailServiceAPI = 'http://localhost:9001';
+                const ApiBody = {data:CardPaymentGateway , message : "Use Your OTP " , type : "OTP" }
+                const ApiHeaders = {'Content-Type': 'application/json' , 'Authorization': "OTPToken " + OTPToken,}
+            
+                const ApiOptions = {
+                    "method": "POST",
+                    "headers": ApiHeaders,
+                    "body": JSON.stringify(ApiBody)
+                }
+                fetch(EmailServiceAPI , ApiOptions)
+                .then(EmailRes => {
+                    if(EmailRes.status == 200){
+                        EmailRes.json()
+                        .then(Emaailresult => {
+                            console.log(Emaailresult)
+                            console.log('Email Sent');
+                            res.statusCode = 200;
+                            res.json({CardPaymentGateway:CardPaymentGateway , Token: OTPToken}) ;
+                            res.send();
+                        })
+                        .catch(e => console.log('json Erroe : ' , e))
+                    }
+                    else{
+                        console.log("Email Service Error (Email Service)");
+                        res.statusCode = 400;
+                        res.send();
+                    }
+                    
                 })
-                .catch((error) =>{
-                    console.log(error)
+                .catch(err => {
+                    console.log("Email Service Error (3Rd party) : " , err);
+                    res.statusCode = 400;
+                    res.send();
                 })
+                // EmailHelper(CardPaymentGateway[0].email , otp)
+                // .then((status) =>{
+                //     console.log('Card Matched');
+                //     const cardNo = req.params.cardNo;
+
+                //     //Create a JWT(JSON Web Token) for the OTP. Therefor OTP will send in an encrypted formt
+                //     // to the client/Email service or the SMS service.
+                //     const OTPToken = jwt.sign(otp , cardNo);
+                //     res.statusCode = 200;
+                //     res.json({CardPaymentGateway:CardPaymentGateway , Token: OTPToken}) ;
+                // })
+                // .catch((error) =>{
+                //     console.log(error)
+                // })
             })
             .catch((error) =>{
                 console.log(error)

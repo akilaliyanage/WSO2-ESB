@@ -21,7 +21,14 @@ class CardPaymentForm extends Component{
             email : '',
             phone : '',
             OTP : '',
-            OTPToken : ''
+            OTPToken : '',
+
+            itemCost: '',
+            deliveryCost : '',
+            buyerName: '',
+            buyerID : '' , 
+            fullAmmount : '',
+            city : ''
         }
     }
 
@@ -142,6 +149,76 @@ class CardPaymentForm extends Component{
        
       };
 
+      makePayment = () => {
+          console.log('Payment method called');
+          
+          const _InputOTP = {
+            orderId:"ord01",
+            userId : this.state.buyerID,
+            Ammount : this.state.fullAmmount,
+            cardNo : this.state.cardNo,
+            accNo : "",
+            type : this.state.type
+          }
+          fetch('http://localhost:9000/Payment' , {
+            method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(_InputOTP),
+          })
+          .then(response => { 
+              console.log('response is : ' + response.json())
+              if(response.status == 200){
+                notification['success']({
+                        message: 'Payment Succeeded.!!',
+                });
+                this.setState({submitOTP_Visibility : false});
+                this.setState({OTPInput_Visibility : false});
+                this.setState({confirmPay_Visibility : false});
+              }
+              else{
+                  console.log(response.status)
+                   notification['error']({
+                        message: 'Something Went Wrong , Please Try Again!!',
+                        description: 'Please Check the card details and try again..'
+                });
+              }
+            })
+          .catch((error) => {
+            console.error('Error:', error);
+            notification['error']({
+              message: 'Something Went Wrong , Please Try Again!!',
+              description: error,
+            });
+          });
+       
+      };
+      
+      componentDidMount(){
+        console.log('cartitems : ' , window.localStorage.getItem("cartitems"))
+        console.log('Seller Id : ' , window.localStorage.getItem("cartitems")[0]["sellerId"])
+        console.log('total item cost: ' , window.localStorage.getItem("total"))
+        console.log('delCost : ' , window.localStorage.getItem("delCost"))
+        console.log('buyer-name : ' , window.localStorage.getItem("buyer-name"))
+        console.log('buyer-id : ' , window.localStorage.getItem("buyer-id"))
+        console.log('City : ' , window.localStorage.getItem("city"))
+        
+        var iCost = JSON.parse(window.localStorage.getItem("total"));
+        var dCost = JSON.parse(window.localStorage.getItem("delCost"));
+        console.log('dCost : ' , dCost)
+        var finalAmmount = parseFloat(iCost) + parseFloat(this.state.deliveryCost)
+
+        this.setState({
+            itemCost: JSON.parse(window.localStorage.getItem("total")),
+            deliveryCost : JSON.parse(window.localStorage.getItem("delCost")),
+            buyerName: window.localStorage.getItem("buyer-name"),
+            buyerID : JSON.parse(window.localStorage.getItem("buyer-id")) , 
+            city : JSON.parse(window.localStorage.getItem("city")) , 
+            fullAmmount : finalAmmount
+        })
+    }
+
     render(){
 
         const {showOTP_Visibility , submitOTP_Visibility , confirmPay_Visibility , OTPInput_Visibility , DisabledInputs} = this.state;
@@ -247,7 +324,7 @@ class CardPaymentForm extends Component{
                     <Row style={{paddingTop:40 , display:(confirmPay_Visibility ? 'block' : 'none') }}>
                         <Col className="gutter-row" span={14} offset={6}>
                             <Form.Item>
-                                <Button className="mySuccessBtn" type="primary"  block>Confirm Payment</Button>
+                                <Button className="mySuccessBtn" type="primary" onClick={this.makePayment}  block>Confirm Payment</Button>
                             </Form.Item>
                         </Col>
                         

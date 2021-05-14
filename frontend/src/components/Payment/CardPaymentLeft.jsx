@@ -8,7 +8,36 @@ class CardPaymentLeft extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            itemCost: '',
+            deliveryCost : '200',
+            buyerName: '',
+            buyerID : '' , 
+            fullAmmount : '',
+            city : ''
         }
+    }
+
+    componentDidMount(){
+        console.log('cartitems : ' , window.localStorage.getItem("cartitems"))
+        console.log('SellerID : ' , window.localStorage.getItem("cartitems")[0]["sellerId"])
+        console.log('total : ' , window.localStorage.getItem("total"))
+        console.log('delCost : ' , window.localStorage.getItem("delCost"))
+        console.log('buyer-name : ' , window.localStorage.getItem("buyer-name"))
+        console.log('buyer-id : ' , window.localStorage.getItem("buyer-id"))
+        console.log('city : ' , window.localStorage.getItem("city"))
+        var iCost = JSON.parse(window.localStorage.getItem("total"));
+        var dCost = JSON.parse(window.localStorage.getItem("delCost"));
+        console.log('dCost : ' , dCost)
+        var finalAmmount = parseFloat(iCost) + parseFloat(this.state.deliveryCost)
+        this.setState({
+            itemCost: JSON.parse(window.localStorage.getItem("total")),
+            //deliveryCost : JSON.parse(window.localStorage.getItem("delCost")),
+            buyerName: window.localStorage.getItem("buyer-name"),
+            buyerID : JSON.parse(window.localStorage.getItem("buyer-id")) , 
+            city : JSON.parse(window.localStorage.getItem("city")) , 
+            fullAmmount : finalAmmount
+        })
+        // console.log(this.state.total)
     }
     render(){
 
@@ -41,25 +70,25 @@ class CardPaymentLeft extends Component {
                 <Row justify="center" align='bottom'>
                     <Space size='large'>
                         <h4 className="lightText"><UserOutlined style={{fontSize:'180%'}}/> Customer Name : </h4>
-                        <h4 className="grayText">Lorem, ipsum.</h4>
+                        <h4 className="grayText">{this.state.buyerName}</h4>
                     </Space>
                 </Row>
                 <Row justify="center" align='bottom'>
                     <Space size='large'>
                         <h4 className="lightText"><MailOutlined style={{fontSize:'180%'}}/> Delivery Address : </h4>
-                        <h4 className="grayText">Lorem ipsum dolor sit amet.</h4>
+                        <h4 className="grayText">{this.state.city}</h4>
                     </Space>
                 </Row>
                 <Row justify="center" align='bottom'>
                     <Space size='large'>
                         <h4 className="lightText"><ShoppingCartOutlined style={{fontSize:'180%'}}/> Item/s Cost : </h4>
-                        <h4 className="grayText">$ 0.00</h4>
+                        <h4 className="grayText">$ {this.state.itemCost}</h4>
                     </Space>
                 </Row> 
                 <Row justify="center" align='bottom'>
                     <Space size='large'>
                         <h4 className="lightText"><InboxOutlined style={{fontSize:'180%'}}/> Delivery Fee : </h4>
-                        <h4 className="grayText">$ 0.00</h4>
+                        <h4 className="grayText">$ {this.state.deliveryCost}</h4>
                     </Space>
                 </Row> 
                 <Row justify="center" align='bottom'>
@@ -71,7 +100,7 @@ class CardPaymentLeft extends Component {
                 <Row justify="center" align='bottom'>
                     <Space size='large'>
                         <h4 className="lightText"><DollarOutlined style={{fontSize:'180%'}}/> Total Payment : </h4>
-                        <h4 className="grayText">$ 26.99</h4>
+                        <h4 className="grayText">$ {this.state.fullAmmount}</h4>
                     </Space>
                 </Row>           
                 

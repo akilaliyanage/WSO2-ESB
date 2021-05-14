@@ -20,7 +20,7 @@ const sendMail = (toAddress , OTP) =>{
         return Promise.resolve(this.mailResponse) ;
     })
     .catch((err) => {
-         console.log(err.message);
+         console.log('Email Error : ' , err.message);
          this.mailResponse = err;
          return Promise.resolve(this.mailResponse) ;
     });
