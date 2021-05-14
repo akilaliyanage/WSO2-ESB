@@ -44,14 +44,20 @@ router.route("/:sellerID").get((req,res) => {
 
     Item.find({sellerID:ID}).then((items) => {
 
-        Item.countDocuments({sellerID:ID}, function(err, c) {
-            console.log('Count is ' + c);
-            let itemCount = c;
-            return c;
-        }).then((c) => {
+       Item.aggregate([
+            { $match: { sellerID:ID } },
+            { $group: { _id: null, amount: { $sum: "$itemCount" } } }
+        ]).then((result) => {
+           Item.countDocuments({sellerID:ID}, function(err, c) {
+               return c;
+           }).then((c) => {
+               const qty = result[0].amount;
+               res.json({items,c,qty});
+               console.log(qty);
+           })
+       })
 
-            res.json({items,c});
-        })
+
 
 
 
