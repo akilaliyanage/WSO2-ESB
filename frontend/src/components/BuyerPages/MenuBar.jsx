@@ -20,13 +20,10 @@ export default class MenuBar extends Component {
                                 <div class="header-top-menu">
                                     <ul class="nav nav-pills navbar-right">
                                         
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Wishlist</a></li>
-                                        <Link to="/cart">
-                                            <li><a >Cart</a></li>
-                                        </Link>
-                                        <li><a href="#">Checkout</a></li>
-                                        <li><a href="#"><i class="pe-7s-lock"></i>Login/Register</a></li>
+                                        <li><a>My Account</a></li>
+                                        <li><a ><Link to="/cart">Cart</Link></a></li>
+                                        <li><a>Checkout</a></li>
+                                        <li><a><i class="pe-7s-lock"></i>Login/Register</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,14 +48,14 @@ export default class MenuBar extends Component {
                             
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav ml-5">
-                                    <li class="active"><a href="/">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="/products">Shop US</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li class="active"><a href="/"><Link to="/">HOME</Link></a></li>
+                                    <li><a ><Link to="">About Us</Link></a></li>
+                                    <li><a ><Link to="/products">Shop US</Link></a></li>
+                                    <li><a ><Link to="">Contact Us</Link></a></li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right cart-menu">
                                 <li><a href="#" class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="/cart"><span> Cart </span> <span class="shoping-cart">0</span></a></li>
+                                <li><a ><span><Link to="/cart">Cart</Link></span> <span class="shoping-cart">0</span></a></li>
                             </ul>
                             </div>
                         </div>

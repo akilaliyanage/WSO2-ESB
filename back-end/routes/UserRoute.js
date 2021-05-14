@@ -17,16 +17,19 @@ const upload = multer({storage:storage});
 
 router.post("/signup",upload.single("picture"),async (req, res) => {
 
-    console.log(req.body.username);
-    console.log(req.body.password);
-    console.log(req.body.role);
-    console.log(req.body.email);
-    console.log(req.file);
 
     if (req.body.role === "Seller") {
 
+        const auth = await Seller.findOne({"email":req.body.email});
+
+        if(auth){
+            res.json({status: 500})
+        }
+
+        else {
+
             const salt = await bcrypt.genSalt();
-            const hash = await bcrypt.hash(req.body.password,salt);
+            const hash = await bcrypt.hash(req.body.password, salt);
             const user = new Seller({
 
                 username: req.body.username,
@@ -41,11 +44,21 @@ router.post("/signup",upload.single("picture"),async (req, res) => {
                 console.log(err);
             })
 
+        }
+
 
     } else if (req.body.role === "Buyer") {
 
-        const salt = await bcrypt.genSalt();
-        const hash = await bcrypt.hash(req.body.password,salt);
+        const auth = await Buyer.findOne({"email":req.body.email});
+
+        if(auth){
+            res.json({status: 500})
+        }
+
+        else {
+
+            const salt = await bcrypt.genSalt();
+            const hash = await bcrypt.hash(req.body.password, salt);
 
             const user = new Buyer({
 
@@ -60,6 +73,8 @@ router.post("/signup",upload.single("picture"),async (req, res) => {
             }).catch((err) => {
                 console.log(err);
             })
+
+        }
 
 
     }

@@ -185,3 +185,16 @@ TID: [-1234] [2021-05-10 01:15:34,847]  INFO {API_LOGGER.HealthcareAPI} - Destro
 TID: [-1234] [2021-05-10 01:15:34,848]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
 TID: [-1234] [2021-05-10 01:15:34,848]  INFO {API_LOGGER.user_API} - Destroying API: user_API
 TID: [-1234] [2021-05-10 01:15:34,849]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-10 19:20:52,466]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-10 19:20:52,473]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-10 19:20:52,491]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-10 19:20:52,501]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-10 19:20:52,592]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-10 19:22:35,935]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-10 19:22:35,935]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-10 19:22:35,964]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-10 19:22:35,964]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-10 21:36:28,143]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-10 21:36:28,144]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-10 21:36:28,153]  INFO {API_LOGGER.user_API} - Destroying API: user_API
+TID: [-1234] [2021-05-10 21:36:28,154]  INFO {API_LOGGER.test2} - Destroying API: test2

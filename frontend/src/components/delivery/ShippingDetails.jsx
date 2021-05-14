@@ -51,6 +51,7 @@ class ShippingDetails extends Component {
     onChange = (value) => {
       //alert(value.location)
         this.setState({city:value})
+        window.localStorage.setItem('city',this.state.city)
         //alert(value)
         this.state.locations.map(item =>{
           if(item.location === value){
