@@ -32,8 +32,6 @@ class MobilePaymentForm extends Component{
 
       checkValidity = (e) => {
           e.preventDefault();
-        if(this.state.agree){
-
           const CardDetails = {
             accHolderName : this.state.accHolderName,
             mobileNo : this.state.mobileNo,
@@ -84,16 +82,6 @@ class MobilePaymentForm extends Component{
                 error,
             });
           });
-
-
-         
-        }else{
-          notification['error']({
-            message: 'Ooopz and error ocured!',
-            description:
-              'Seems like you have not agreed to out terms and condisions.',
-          });
-        }
        
       };
 
