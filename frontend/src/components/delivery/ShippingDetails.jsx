@@ -48,9 +48,9 @@ class ShippingDetails extends Component {
          }
     }
 
-    onChange = (value) => {
+      onChange = (value) => {
       //alert(value.location)
-        this.setState({city:value})
+        this.setState({ city:value})
         //alert(value)
         this.state.locations.map(item =>{
           if(item.location === value){

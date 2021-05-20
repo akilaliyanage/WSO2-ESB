@@ -5,7 +5,7 @@ import { Affix, Button,Badge } from 'antd';
 
 import { ClockCircleOutlined } from '@ant-design/icons';
 
-import CardImg from '../../assets/nethsara/images/map-bg.png'
+import CardImg from '../../assets/nethsara/images/Mens.jpg'
 
 class ProductDisplay extends Component {
 
@@ -14,15 +14,15 @@ class ProductDisplay extends Component {
         this.state = {
             item:[],
             cart:[],
-            total:0
+            total:0,
+            buyer:localStorage.getItem('buyer-id')
+            
 
         }
     }
 
     componentDidMount(){
-        this.fetchItems();
-
-        
+        this.fetchItems(); 
     }
 
     fetchItems = () =>{
@@ -39,6 +39,8 @@ class ProductDisplay extends Component {
             // quantity: 1
         }
 
+        console.log("ID",this.state.buyer)
+
         this.setState(state => ({
             cart:[...state.cart, obj]
         }))
@@ -53,25 +55,13 @@ class ProductDisplay extends Component {
 
         //product save in the local storage 
         window.localStorage.setItem("cartitems",JSON.stringify(this.state.cart))
-        console.log("test1"+window.localStorage.getItem("cartitems"))
+        // console.log("test1"+window.localStorage.getItem("cartitems"))
         // console.log(this.state.cart)
-
-        
 
         //total price save in the local storage
         window.localStorage.setItem("total",JSON.stringify(this.state.total))
-        console.log("test2"+window.localStorage.getItem("total"))
+        // console.log("test2"+window.localStorage.getItem("total"))
         // const cartItems = this.state.cart
-
-        // window.localStorage.setItem("cartitems",JSON.stringify(this.state.cart))
-        // console.log("test1"+window.localStorage.getItem("cartitems"))
-
-        // console.log(this.state.cart)
-    }
-
-    saveToCart = () => {
-        // console.log(this.state.cart)
-        // window.localStorage.setItem("cartitems", this.state.cart)
     }
 
     render() {
@@ -79,7 +69,7 @@ class ProductDisplay extends Component {
             <div>
 
                 <Link to="/cart">
-                    <Affix offsetTop={400} style={{ float: 'right', marginRight:"40px"}} onChange={(affixed) => console.log(affixed)}>
+                    <Affix offsetTop={400} style={{ float: 'right', marginRight:"30px"}} onChange={(affixed) => console.log(affixed)}>
                         <Button type="primary"><i class="pe-7s-cart"> Cart</i></Button>
                         <Badge count={(this.state.cart.length)}>
                             <a href="#" className="head-example" />
@@ -100,10 +90,10 @@ class ProductDisplay extends Component {
                                     <div class="col-md-12">
                                         <div class="filter-menu">
                                             <ul class="button-group sort-button-group">
-                                                <a href=""><li class="button " data-category="all">KIDS WEAR</li></a>
-                                                <a href=""><li class="button" data-category="cat-1">WOMANS WEAR</li></a>
-                                                <a href="" ><li class="button " data-category="cat-2">MENS WEAR</li></a>
-                                                <a href=""><li class="button" data-category="cat-3">SPORTS WEAR</li></a>
+                                                <a ><li class="button " data-category="all">KIDS WEAR</li></a>
+                                                <a ><li class="button" data-category="cat-1">WOMANS WEAR</li></a>
+                                                <a ><li class="button " data-category="cat-2">MENS WEAR</li></a>
+                                                <a ><li class="button" data-category="cat-3">SPORTS WEAR</li></a>
                                             </ul>
                                         </div>
                                     </div>
@@ -117,30 +107,10 @@ class ProductDisplay extends Component {
                                     {this.state.item.map((item) => {
                                         return(
                                         <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
-                                            {/* <div class="product-item">
-                                                <img src="images/product1.png" class="img-responsive" width="255" height="322" alt=""/>
-                                                <div class="sell-meta">
-                                                    <a href="#" class="new-item">New</a>
-                                                    <a href="#" class="sell-item">Sell</a>
-                                                </div>
-                                                <div class="product-hover">
-                                                    <div class="product-meta">
-                                                        <a href="#"><i class="pe-7s-like"></i></a>
-                                                        <a href="#"><i class="pe-7s-shuffle"></i></a>
-                                                        <a href="#"><i class="pe-7s-clock"></i></a>
-                                                        <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
-                                                    </div>
-                                                </div>
-                                                <div class="product-title">
-                                                    <a href="#">
-                                                        <h3>{item.title}</h3>
-                                                        <span>{item.price}</span>
-                                                    </a>
-                                                </div>
-                                            </div> */}
+                                            
 
-                                        <Card className="shadow p-3 mb-5 bg-white rounded" style={{ width: '25rem',height: '35rem' }}>
-                                            <Card.Img variant="top" src={CardImg} />
+                                        <Card className="shadow p-3 mb-5 bg-white rounded" style={{ width: '25rem', height:'40rem'}}>
+                                            <Card.Img variant="top" src={"http://localhost:9000/"+item.itemImage} />
                                             <Card.Body>
                                                 <Card.Title>
                                                     <h3>{item.title}</h3>
