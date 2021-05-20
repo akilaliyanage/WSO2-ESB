@@ -17,10 +17,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.post('/', authToken , (req , res) => {
     //Configuring the message to be sent
     let message = null;
-    let toNumber = req.body.data[0].mobileNo;
+    
 
     switch(req.body.type){
         case "OTP":
+                let toNumber = req.body.data[0].mobileNo;
                 client.messages.create({
                     body: req.body.message + ' : ' + req.OTP,
                     to: toNumber,
@@ -44,15 +45,15 @@ app.post('/', authToken , (req , res) => {
             break;
         case "PAYMENT":
                 client.messages.create({
-                    body: 'Payment Made '  + req.body.message + ' : ' + req.OTP,
-                    to: toNumber,
+                    body: 'Lorem E-Shop - Payment Confirmation  \n'  + req.body.message ,
+                    to: req.body.toNumber,
                     from: senderNO,
                 })
                 .then((message) => {
                     console.log('SMS Sent...');
                     console.log(message);
                     this.smsResponse = message;
-                    res.statusCode = 400;
+                    res.statusCode = 200;
                     res.json({status : true , TWResponse : this.smsResponse});
                     res.send();
                 })

@@ -133,6 +133,54 @@ class MobilePaymentForm extends Component{
        
       };
 
+      makePayment = () => {
+          console.log('Payment method called');
+          
+          const _InputOTP = {
+            orderId:"ORD_M_4587",
+            userId : this.state.buyerID,
+            Ammount : this.state.fullAmmount,
+            cardNo : this.state.cardNo,
+            accNo : "",
+            type : this.state.type,
+            isMobile : this.state.isMobile,
+            mobileNo : this.state.mobileNo,
+          }
+          fetch('http://localhost:9000/Payment' , {
+            method: 'POST', 
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(_InputOTP),
+          })
+          .then(response => { 
+              console.log('response is : ' + response.json())
+              if(response.status == 200){
+                notification['success']({
+                        message: 'Payment Succeeded.!!',
+                });
+                this.setState({submitOTP_Visibility : false});
+                this.setState({OTPInput_Visibility : false});
+                this.setState({confirmPay_Visibility : false});
+              }
+              else{
+                  console.log(response.status)
+                   notification['error']({
+                        message: 'Something Went Wrong , Please Try Again!!',
+                        description: 'Please Check the card details and try again..'
+                });
+              }
+            })
+          .catch((error) => {
+            console.error('Error:', error);
+            notification['error']({
+              message: 'Something Went Wrong , Please Try Again!!',
+              description: error,
+            });
+          });
+       
+      };
+
 
     render(){
 

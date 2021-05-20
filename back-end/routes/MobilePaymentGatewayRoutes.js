@@ -9,7 +9,7 @@ const TokenSuffix = process.env.OTP_TOKEN_SUFFIX;
 
 const MobilePaymentGateway = require('../models/MobilePaymentGateway');
 const OTPHelper = require('../Helpers/OTPHelper')
-const authToken = require('../Helpers/TokenMiddlewareHelper')
+const authToken = require('../Helpers/TokenMiddlewareHelper_SMS')
 
 router.get('/',async (req,res) =>{
     try{

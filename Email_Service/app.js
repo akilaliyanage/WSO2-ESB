@@ -18,18 +18,18 @@ app.post('/', authToken , (req , res) => {
             message = {
                 to: req.body.data[0].email,
                 from: 'mahendra.testprojects@gmail.com',
-                subject: 'OTP From Lorem-E-Shop',
+                subject: 'Lorem-E-Shop - OTP',
                 text: 'Your OTP For Payment is : ' + req.OTP,
                 html: '<h1>'+ req.body.message +' : '+ req.OTP +'  </h1>'
             }
             break;
         case "PAYMENT":
             message = {
-                to: req.body.data[0].email,
+                to: req.body.toAddress,
                 from: 'mahendra.testprojects@gmail.com',
-                subject: 'OTP From Lorem-E-Shop',
-                text: 'Payment Made : ' + req.OTP,
-                html: '<h1> Payment Made '+ req.body.message +' : '+ req.OTP +'  </h1>'
+                subject: 'Lorem-E-Shop - Payment Confirmation',
+                text: 'Payment Made to Lorem-E-Shop : Order No : ' + req.body.orderId + ' , Ammount :  '  + req.body.Ammount,
+                html: '<div><h1> Payment Confirmation for order '+req.body.orderId+'</h1><h3>'+ req.body.message +'</h3> <h2> Ammount = $'+ req.body.Ammount +'</h2> </div>'
             }
             break;
         default:

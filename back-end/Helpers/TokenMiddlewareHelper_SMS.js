@@ -13,7 +13,7 @@ function authToken(req , res , next){
     const token = authHeader && authHeader.split(' ')[1]
     if(token == null) return res.sendStatus(403)
     console.log('Passes')
-    let OTPKey = TokenPrifix + req.body.data[0].mobileNo + req.body.data[0].accNo + TokenSuffix;
+    let OTPKey = TokenPrifix + req.body.mobileNo + req.body.accNo + TokenSuffix;
     //Decrypt the token with using the given key.
     jwt.verify(token , OTPKey , (err , OTP) => {
         if(err) return res.sendStatus(403)

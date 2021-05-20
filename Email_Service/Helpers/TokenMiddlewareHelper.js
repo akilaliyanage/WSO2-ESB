@@ -6,23 +6,28 @@ const TokenSuffix = process.env.OTP_TOKEN_SUFFIX;
 //This function will us as an middleware to decrypt and autherize the JWT.
 function authToken(req , res , next){
     console.log('called auth');
-
-    //retrieve the token from headred and filter it by remobving unnecessary texts.
-    const authHeader = req.headers['authorization']
-    const token = authHeader && authHeader.split(' ')[1]
-    if(token == null) return res.sendStatus(403)
-    console.log('Passes')
-    let OTPKey = TokenPrifix + req.body.data[0].cardNo + req.body.data[0].CVC + TokenSuffix;
-    //Decrypt the token with using the given key.
-    jwt.verify(token , OTPKey , (err , OTP) => {
-        if(err) {
-            console.log('OTP Auth error : ' , err);
-            return res.sendStatus(403);
-        }
-        console.log('Encrypted OTP :', OTP )
-        req.OTP = OTP
-        next()
-    })
+    if(req.body.type == "PAYMENT"){
+        next();
+    }
+    else{
+        //retrieve the token from headred and filter it by remobving unnecessary texts.
+        const authHeader = req.headers['authorization']
+        const token = authHeader && authHeader.split(' ')[1]
+        if(token == null) return res.sendStatus(403)
+        console.log('Passes')
+        let OTPKey = TokenPrifix + req.body.data[0].cardNo + req.body.data[0].CVC + TokenSuffix;
+        //Decrypt the token with using the given key.
+        jwt.verify(token , OTPKey , (err , OTP) => {
+            if(err) {
+                console.log('OTP Auth error : ' , err);
+                return res.sendStatus(403);
+            }
+            console.log('Encrypted OTP :', OTP )
+            req.OTP = OTP
+            next()
+        })
+    }
+    
 }
 
 module.exports = authToken;
