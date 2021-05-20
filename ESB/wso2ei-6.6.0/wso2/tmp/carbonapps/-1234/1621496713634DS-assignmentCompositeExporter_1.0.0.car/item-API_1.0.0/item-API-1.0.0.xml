@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/item" name="item-API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/{uri.var.sellerID}">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="in the item api"/>
+            </log>
+            <send>
+                <endpoint key="item-search"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/{uri.var.sellerID}/{uri.var.itemID}">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="in the item api"/>
+            </log>
+            <send>
+                <endpoint key="seller_item_search"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/update/{uri.var.itemID}">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="in the update item api"/>
+            </log>
+            <send>
+                <endpoint key="update_item"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="DELETE" uri-template="/delete/{uri.var.itemID}">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="delete_item"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/add">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="ietm_add"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

@@ -9,24 +9,44 @@
   <name>DS-assignmentCompositeExporter</name>
   <description>DS-assignmentCompositeExporter</description>
   <properties>
+    <com.example.endpoint_._get-pending-orders>capp/EnterpriseServiceBus</com.example.endpoint_._get-pending-orders>
+    <com.example.endpoint_._get-single-seller>capp/EnterpriseServiceBus</com.example.endpoint_._get-single-seller>
+    <com.example.endpoint_._seller_item_search>capp/EnterpriseServiceBus</com.example.endpoint_._seller_item_search>
     <com.example.endpoint_._user-signup>capp/EnterpriseServiceBus</com.example.endpoint_._user-signup>
+    <com.example.endpoint_._ietm_add>capp/EnterpriseServiceBus</com.example.endpoint_._ietm_add>
+    <com.example.endpoint_._update-delivery>capp/EnterpriseServiceBus</com.example.endpoint_._update-delivery>
+    <com.example.api_._item-API>capp/EnterpriseServiceBus</com.example.api_._item-API>
+    <com.example.endpoint_._item-search>capp/EnterpriseServiceBus</com.example.endpoint_._item-search>
+    <com.example.api_._user_API>capp/EnterpriseServiceBus</com.example.api_._user_API>
+    <com.example.api_._delivery_API>capp/EnterpriseServiceBus</com.example.api_._delivery_API>
+    <com.example.endpoint_._states-endpoint>capp/EnterpriseServiceBus</com.example.endpoint_._states-endpoint>
+    <com.example.endpoint_._delivery_endpoint>capp/EnterpriseServiceBus</com.example.endpoint_._delivery_endpoint>
+    <com.example.endpoint_._delete_item>capp/EnterpriseServiceBus</com.example.endpoint_._delete_item>
+    <com.example.endpoint_._location_endpoints>capp/EnterpriseServiceBus</com.example.endpoint_._location_endpoints>
     <com.example.endpoint_._buyer-login>capp/EnterpriseServiceBus</com.example.endpoint_._buyer-login>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
-    <com.example.endpoint_._states-endpoint>capp/EnterpriseServiceBus</com.example.endpoint_._states-endpoint>
-    <com.example.endpoint_._get-single-seller>capp/EnterpriseServiceBus</com.example.endpoint_._get-single-seller>
-    <com.example.endpoint_._cities-endpoint>capp/EnterpriseServiceBus</com.example.endpoint_._cities-endpoint>
-    <com.example.endpoint_._get-pending-orders>capp/EnterpriseServiceBus</com.example.endpoint_._get-pending-orders>
-    <com.example.endpoint_._seller-login>capp/EnterpriseServiceBus</com.example.endpoint_._seller-login>
-    <com.example.api_._delivery_API>capp/EnterpriseServiceBus</com.example.api_._delivery_API>
-    <com.example.endpoint_._delivery_endpoint>capp/EnterpriseServiceBus</com.example.endpoint_._delivery_endpoint>
     <com.example.endpoint_._create_delivery>capp/EnterpriseServiceBus</com.example.endpoint_._create_delivery>
-    <com.example.endpoint_._update-delivery>capp/EnterpriseServiceBus</com.example.endpoint_._update-delivery>
-    <com.example.api_._user_API>capp/EnterpriseServiceBus</com.example.api_._user_API>
+    <com.example.endpoint_._cities-endpoint>capp/EnterpriseServiceBus</com.example.endpoint_._cities-endpoint>
+    <com.example.api_._location_API>capp/EnterpriseServiceBus</com.example.api_._location_API>
+    <com.example.endpoint_._update_item>capp/EnterpriseServiceBus</com.example.endpoint_._update_item>
+    <com.example.endpoint_._seller-login>capp/EnterpriseServiceBus</com.example.endpoint_._seller-login>
   </properties>
   <dependencies>
     <dependency>
       <groupId>com.example.api</groupId>
       <artifactId>delivery_API</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.api</groupId>
+      <artifactId>item-API</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.api</groupId>
+      <artifactId>location_API</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -56,6 +76,12 @@
     </dependency>
     <dependency>
       <groupId>com.example.endpoint</groupId>
+      <artifactId>delete_item</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
       <artifactId>delivery_endpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
@@ -74,7 +100,31 @@
     </dependency>
     <dependency>
       <groupId>com.example.endpoint</groupId>
+      <artifactId>ietm_add</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>item-search</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>location_endpoints</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
       <artifactId>seller-login</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>seller_item_search</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -87,6 +137,12 @@
     <dependency>
       <groupId>com.example.endpoint</groupId>
       <artifactId>update-delivery</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>update_item</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>

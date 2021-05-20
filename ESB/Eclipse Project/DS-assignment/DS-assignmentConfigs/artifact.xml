@@ -35,4 +35,28 @@
     <artifact name="get-single-seller" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/get-single-seller.xml</file>
     </artifact>
+    <artifact name="location_endpoints" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/location_endpoints.xml</file>
+    </artifact>
+    <artifact name="location_API" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/location_API.xml</file>
+    </artifact>
+    <artifact name="item-search" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/item-search.xml</file>
+    </artifact>
+    <artifact name="item-API" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/item-API.xml</file>
+    </artifact>
+    <artifact name="seller_item_search" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/seller_item_search.xml</file>
+    </artifact>
+    <artifact name="update_item" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/update_item.xml</file>
+    </artifact>
+    <artifact name="delete_item" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/delete_item.xml</file>
+    </artifact>
+    <artifact name="ietm_add" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ietm_add.xml</file>
+    </artifact>
 </artifacts>
