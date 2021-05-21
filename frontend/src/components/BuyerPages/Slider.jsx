@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 import SlideImg from '../../assets/nethsara/images/slider.jpg'
 
 export default class Slider extends Component {
@@ -20,7 +21,7 @@ export default class Slider extends Component {
                                     <h2>DRESSES <b>&</b> JEANS</h2>
                                     <h3>FROM OUR FAMOUS BRANDS SALE</h3>
                                     <br/>
-                                    <a href="#">Buy Now</a>
+                                    <Link to="/products" className="mt-5">Shop US</Link>
                                 </div>
                             </div>
                             <div class="item">

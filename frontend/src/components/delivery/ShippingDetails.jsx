@@ -48,7 +48,7 @@ class ShippingDetails extends Component {
          }
     }
 
-    onChange = (value) => {
+      onChange = (value) => {
       //alert(value.location)
         this.setState({city:value})
         window.localStorage.setItem('city',this.state.city)

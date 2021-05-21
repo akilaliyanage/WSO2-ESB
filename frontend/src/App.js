@@ -15,6 +15,7 @@ import Cart from "./components/BuyerPages/ShoppingCart";
 import CardPayment from "./components/Payment/CardPayment";
 import MobilePayment from "./components/Payment/MobilePayment";
 import DeliveryMethod from './components/delivery/DeliveryMethod'
+import Contact from './components/BuyerPages/ContactUs'
 
 
 
@@ -37,6 +38,7 @@ function App() {
       <Route path = "/CardPayment" exact component = {CardPayment}/>
       <Route path = "/MobilePayment" exact component = {MobilePayment}/>
       <Route path = "/del-method" exact component = {DeliveryMethod}/>
+      <Route path = "/contact" exact component = {Contact}/>
 
     </div>
       </Router>

@@ -23,11 +23,15 @@ router.post('/',async (req,res) =>{
         items: req.body.items,
         total: req.body.total,
         buyerId:req.body.buyerId
-            
+
     });
 
     // const response = 
-    items2.save().then(data =>{res.json(items2)}).catch((err) => {res.json(err)})
+    items2.save(function(err,room) {
+        console.log(room.id);
+        res.json(room)
+     })
+    // items2.save().then(data =>{res.send(data)}).catch((err) => {res.json(err)})
     console.log(items2)
 
 })

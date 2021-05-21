@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 
 import Menu from './MenuBar'
 import Footer from './Footer'
@@ -19,17 +20,14 @@ class ShoppingCart extends Component {
 
 
     componentDidMount(){
-        console.log(window.localStorage.getItem("cartitems"))
-        console.log(window.localStorage.getItem("total"))
-
+        // console.log(window.localStorage.getItem("cartitems"))
+        // console.log(window.localStorage.getItem("total"))
 
         this.setState({
 
             cart:JSON.parse(window.localStorage.getItem("cartitems")),
             total:JSON.parse(window.localStorage.getItem("total"))
         })
-
-        // console.log(this.state.total)
     }
 
     saveToDatabase = () =>{
@@ -39,7 +37,7 @@ class ShoppingCart extends Component {
         
         let ids=[]
         this.state.cart.map((cart) => {
-            console.log("cartis",cart.id)
+            // console.log("cartis",cart.id)
             ids.push(cart.id)
         })
 
@@ -50,9 +48,9 @@ class ShoppingCart extends Component {
         };
         fetch('http://localhost:9000/cart', requestOptions)
             .then((response) => {
-                console.log(response)
+                console.log(response.json());
             })
-            
+  
     }
 
     render() {
@@ -60,9 +58,7 @@ class ShoppingCart extends Component {
             <div>
 
                 <Menu/>
-
                 
-
                 <div className="new-section">
 
                     
@@ -82,18 +78,18 @@ class ShoppingCart extends Component {
                                         <th className="t-data">Product</th>
                                         <th className="t-data">Price</th>
                                         {/* <th className="t-data">Quantity</th> */}
-                                        <th className="t-data"></th>
+                                        {/* <th className="t-data"></th> */}
                                     </tr>
 
 
                                     {this.state.cart.map((cart) => {
                                         return(
                                             <tr className="t-row">
-                                                <td className="t-data">{cart.title}</td>
+                                                <td className="t-data"><b>{cart.title}</b></td>
                                                 <td className="t-data">$ {cart.price}</td>
                                                 {/* {(this.state.total = this.state.total + cart.price)} */}
                                                 {/* <td className="t-data">{cart.quantity}</td> */}
-                                                <td className="t-data"><a>Remove</a></td>
+                                                {/* <td className="t-data"><a>Remove</a></td> */}
                                             </tr>
                                             
                                          );
@@ -118,7 +114,7 @@ class ShoppingCart extends Component {
                                     </tr>
                                 </table>
 
-                                <Button onClick={this.saveToDatabase} className="mt-2 text-center" variant="warning">Arrange the Delivery</Button>
+                                <Link to=""><Button onClick={this.saveToDatabase} className="mt-2 text-center" variant="warning">Arrange the Delivery</Button></Link>
 
                             </div>
                         </div>
