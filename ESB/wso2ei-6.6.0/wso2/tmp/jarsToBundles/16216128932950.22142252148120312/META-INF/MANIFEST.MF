@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: javax.jms_api_2.0.1
+Bundle-SymbolicName: javax.jms_api_2.0.1
+Bundle-Version: 1.0.0
+Export-Package: javax.jms
+Bundle-ClassPath: .,javax.jms-api-2.0.1.jar
+

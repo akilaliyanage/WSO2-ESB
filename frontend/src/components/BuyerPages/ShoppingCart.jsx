@@ -46,7 +46,7 @@ class ShoppingCart extends Component {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ items: ids , total:this.state.total, buyerId:this.state.buyer})
         };
-        fetch('http://localhost:9000/cart', requestOptions)
+        fetch('http://localhost:9000/cart/save', requestOptions)
             .then((response) => {
                 console.log(response.json());
             })
@@ -114,7 +114,7 @@ class ShoppingCart extends Component {
                                     </tr>
                                 </table>
 
-                                <Link to=""><Button onClick={this.saveToDatabase} className="mt-2 text-center" variant="warning">Arrange the Delivery</Button></Link>
+                                <Link to="/delivery"><Button onClick={this.saveToDatabase} className="mt-2 text-center" variant="warning">Arrange the Delivery</Button></Link>
 
                             </div>
                         </div>

@@ -1,0 +1,969 @@
+TID: [-1234] [] [2021-05-20 21:27:44,608]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-05-20 21:27:44,881]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Windows 10 10.0, amd64
+TID: [-1234] [] [2021-05-20 21:27:44,882]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : C:\Program Files\Java\jdk-15.0.2
+TID: [-1234] [] [2021-05-20 21:27:44,884]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 15.0.2
+TID: [-1234] [] [2021-05-20 21:27:44,885]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : Java HotSpot(TM) 64-Bit Server VM 15.0.2+7-27,Oracle Corporation
+TID: [-1234] [] [2021-05-20 21:27:44,886]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..
+TID: [-1234] [] [2021-05-20 21:27:44,886]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\wso2\tmp
+TID: [-1234] [] [2021-05-20 21:27:44,887]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : Nethsara Liyanage, en-US, Asia/Colombo
+TID: [-1] [] [2021-05-20 21:27:45,333]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-05-20 21:27:45,971]  INFO {org.wso2.carbon.dataservices.google.tokengen.servlet.internal.GoogleTokenGenDSComponent} - Activating GoogleTokengen DS component
+TID: [-1] [] [2021-05-20 21:27:46,925]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1] [] [2021-05-20 21:27:47,601] ERROR {org.wso2.carbon.feature.mgt.core} - [SCR] Error while trying to bind reference Reference[name = provisioning.agent.provider, interface = org.eclipse.equinox.p2.core.IProvisioningAgentProvider, policy = dynamic, cardinality = 1..1, target = null, bind = setProvisioningAgentProvider, unbind = unsetProvisioningAgentProvider]
+	Details:
+	Problematic reference = Reference[name = provisioning.agent.provider, interface = org.eclipse.equinox.p2.core.IProvisioningAgentProvider, policy = dynamic, cardinality = 1..1, target = null, bind = setProvisioningAgentProvider, unbind = unsetProvisioningAgentProvider]
+	of service component = component.manager.core.service.comp
+	component implementation class = org.wso2.carbon.feature.mgt.core.internal.ComponentMgtCoreServiceComponent
+	located in bundle with symbolic name = org.wso2.carbon.feature.mgt.core
+	bundle location = reference:file:../plugins/org.wso2.carbon.feature.mgt.core_4.5.3.jar java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.internal.ds.model.ComponentReference.bind(ComponentReference.java:376)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.bindReference(ServiceComponentProp.java:430)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.bind(ServiceComponentProp.java:218)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:343)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.buildNewlySatisfied(Resolver.java:473)
+	at org.eclipse.equinox.internal.ds.Resolver.enableComponents(Resolver.java:217)
+	at org.eclipse.equinox.internal.ds.SCRManager.performWork(SCRManager.java:816)
+	at org.eclipse.equinox.internal.ds.SCRManager$QueuedJob.dispatch(SCRManager.java:783)
+	at org.eclipse.equinox.internal.ds.WorkThread.run(WorkThread.java:89)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/core/runtime/IRegistryChangeListener
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:278)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:716)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:639)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:607)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:587)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:566)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:474)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.equinox.internal.p2.engine.Engine.<init>(Engine.java:29)
+	at org.eclipse.equinox.internal.p2.engine.EngineComponent.createService(EngineComponent.java:30)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:72)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.<init>(SimplePlanner.java:290)
+	at org.eclipse.equinox.internal.p2.director.PlannerComponent.createService(PlannerComponent.java:22)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:72)
+	at org.wso2.carbon.feature.mgt.core.internal.ServiceHolder.setProvisioningAgentProvider(ServiceHolder.java:140)
+	at org.wso2.carbon.feature.mgt.core.internal.ComponentMgtCoreServiceComponent.setProvisioningAgentProvider(ComponentMgtCoreServiceComponent.java:47)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.equinox.registry (169).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:474)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.core.internal.content.Activator.start(Activator.java:48)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.core.internal.registry.osgi.Activator.start() of bundle org.eclipse.equinox.registry.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 27 more
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at org.eclipse.osgi.storagemanager.StorageManager.updateTable(StorageManager.java:526)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:723)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.setFileManager(ExtensionRegistry.java:109)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.checkCache(ExtensionRegistry.java:888)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:673)
+	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:58)
+	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:137)
+	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:56)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	... 34 more
+
+TID: [-1234] [] [2021-05-20 21:28:02,078]  INFO {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService} - Configured Registry in 35ms
+TID: [-1234] [] [2021-05-20 21:28:02,130]  INFO {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent} - Registry Mode    : READ-WRITE
+TID: [-1234] [] [2021-05-20 21:28:16,156]  INFO {org.wso2.carbon.registry.indexing.solr.SolrClient} - Default Embedded Solr Server Initialized
+TID: [-1234] [] [2021-05-20 21:28:16,491]  INFO {org.wso2.carbon.user.core.internal.UserStoreMgtDSComponent} - Carbon UserStoreMgtDSComponent activated successfully.
+TID: [-1234] [] [2021-05-20 21:28:17,838]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2021-05-20 21:28:17,839]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2021-05-20 21:28:18,652]  INFO {org.apache.synapse.transport.vfs.VFSTransportSender} - VFS Sender started
+TID: [-1234] [] [2021-05-20 21:28:18,714]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} - Initializing Pass-through HTTP/S Sender...
+TID: [-1234] [] [2021-05-20 21:28:18,780]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} - Pass-through HTTP Sender started...
+TID: [-1234] [] [2021-05-20 21:28:18,781]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Initializing Pass-through HTTP/S Sender...
+TID: [-1234] [] [2021-05-20 21:28:18,792]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Pass-through HTTPS Sender started...
+TID: [-1234] [] [2021-05-20 21:28:18,828]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Initializing Pass-through HTTP/S Listener...
+TID: [-1234] [] [2021-05-20 21:28:18,861]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Initializing Pass-through HTTP/S Listener...
+TID: [-1234] [wso2carbon-sts] [2021-05-20 21:28:23,602]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: wso2carbon-sts {super-tenant}
+TID: [-1234] [] [2021-05-20 21:28:24,103]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Repository       : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\../repository/deployment/server/
+TID: [-1234] [] [2021-05-20 21:28:24,185]  INFO {org.wso2.carbon.core.multitenancy.eager.TenantLoadingConfig} - Using tenant lazy loading policy...
+TID: [-1234] [] [2021-05-20 21:28:24,197]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2021-05-20 21:28:24,304]  INFO {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS} - Successfully registered the Rule Config service
+TID: [-1234] [] [2021-05-20 21:28:24,901]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} - Starting ESB...
+TID: [-1234] [] [2021-05-20 21:28:24,937]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} - Initializing Apache Synapse...
+TID: [-1234] [] [2021-05-20 21:28:24,941]  INFO {org.apache.synapse.SynapseControllerFactory} - Using Synapse home : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\.
+TID: [-1234] [] [2021-05-20 21:28:24,942]  INFO {org.apache.synapse.SynapseControllerFactory} - Using synapse.xml location : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\.\.\repository\deployment\server\synapse-configs\default
+TID: [-1234] [] [2021-05-20 21:28:24,942]  INFO {org.apache.synapse.SynapseControllerFactory} - Using server name : localhost
+TID: [-1234] [] [2021-05-20 21:28:24,961]  INFO {org.apache.synapse.SynapseControllerFactory} - The timeout handler will run every : 15s
+TID: [-1234] [] [2021-05-20 21:28:24,991]  INFO {org.apache.synapse.Axis2SynapseController} - Initializing Synapse at : Thu May 20 21:28:24 IST 2021
+TID: [-1234] [] [2021-05-20 21:28:24,996]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} - Loading the mediation configuration from the file system
+TID: [-1234] [] [2021-05-20 21:28:24,998]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} - Building synapse configuration from the synapse artifact repository at : .\.\repository/deployment/server/synapse-configs\default
+TID: [-1234] [] [2021-05-20 21:28:25,035]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} - Generating the Synapse configuration model by parsing the XML configuration
+TID: [-1234] [] [2021-05-20 21:28:25,191]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-20 21:28:25,200]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-20 21:28:25,202]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} - Loaded Synapse configuration from the artifact repository at : .\.\repository/deployment/server/synapse-configs\default
+TID: [-1234] [] [2021-05-20 21:28:25,203]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_HOST was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-20 21:28:25,204]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_IP was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-20 21:28:25,276]  INFO {org.apache.synapse.Axis2SynapseController} - Loading mediator extensions...
+TID: [-1234] [echo] [2021-05-20 21:28:25,309]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: echo {super-tenant}
+TID: [-1234] [Version] [2021-05-20 21:28:25,339]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: Version {super-tenant}
+TID: [-1234] [] [2021-05-20 21:28:25,417]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state :MessageFlowConfigurationPublisher.xml, Stream validation exception : Stream org.wso2.esb.analytics.stream.ConfigEntry:1.0.0 does not exist
+TID: [-1234] [] [2021-05-20 21:28:25,420]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state :MessageFlowStatisticsPublisher.xml, Stream validation exception : Stream org.wso2.esb.analytics.stream.FlowEntry:1.0.0 does not exist
+TID: [-1234] [] [2021-05-20 21:28:25,495]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowConfigurationPublisher.xml
+TID: [-1234] [] [2021-05-20 21:28:25,730]  INFO {org.wso2.carbon.event.stream.core.internal.EventJunction} - WSO2EventConsumer added to the junction. Stream:org.wso2.esb.analytics.stream.ConfigEntry:1.0.0
+TID: [-1234] [] [2021-05-20 21:28:25,738]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher configuration successfully deployed and in active state : MessageFlowConfigurationPublisher
+TID: [-1234] [] [2021-05-20 21:28:25,739]  INFO {org.wso2.carbon.event.stream.core.EventStreamDeployer} - Stream definition is deployed successfully  : org.wso2.esb.analytics.stream.ConfigEntry:1.0.0
+TID: [-1234] [] [2021-05-20 21:28:25,741]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowStatisticsPublisher.xml
+TID: [-1234] [] [2021-05-20 21:28:25,753]  INFO {org.wso2.carbon.event.stream.core.internal.EventJunction} - WSO2EventConsumer added to the junction. Stream:org.wso2.esb.analytics.stream.FlowEntry:1.0.0
+TID: [-1234] [] [2021-05-20 21:28:25,754]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher configuration successfully deployed and in active state : MessageFlowStatisticsPublisher
+TID: [-1234] [] [2021-05-20 21:28:25,756]  INFO {org.wso2.carbon.event.stream.core.EventStreamDeployer} - Stream definition is deployed successfully  : org.wso2.esb.analytics.stream.FlowEntry:1.0.0
+TID: [-1234] [odata] [2021-05-20 21:28:27,931]  INFO {org.wso2.carbon.webapp.mgt.TomcatGenericWebappsDeployer} - Deployed webapp: StandardEngine[Catalina].StandardHost[localhost].StandardContext[/odata].File[D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\webapps\odata.war]
+TID: [-1234] [] [2021-05-20 21:28:27,934]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying the Synapse service...
+TID: [-1234] [] [2021-05-20 21:28:27,935]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying Proxy services...
+TID: [-1234] [] [2021-05-20 21:28:27,937]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying EventSources...
+TID: [-1234] [] [2021-05-20 21:28:27,973]  INFO {org.apache.synapse.ServerManager} - Server ready for processing...
+TID: [-1234] [] [2021-05-20 21:28:27,996]  INFO {org.wso2.carbon.das.messageflow.data.publisher.internal.MediationStatisticsComponent} - Global Message-Flow Statistic Reporting is Disabled
+TID: [-1234] [] [2021-05-20 21:28:30,418]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 21:28:30,565] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:135)
+	at org.wso2.carbon.core.CarbonAxisConfigurator.deployServices(CarbonAxisConfigurator.java:568)
+	at org.wso2.carbon.core.internal.DeploymentServerStartupObserver.completingServerStartup(DeploymentServerStartupObserver.java:51)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.notifyBefore(CarbonCoreServiceComponent.java:258)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.completeInitialization(StartupFinalizerServiceComponent.java:166)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.serviceChanged(StartupFinalizerServiceComponent.java:323)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.registerThrottlingAgent(ThrottlingAgentServiceComponent.java:118)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.activate(ThrottlingAgentServiceComponent.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:529)
+	at org.wso2.carbon.core.init.CarbonServerManager.removePendingItem(CarbonServerManager.java:305)
+	at org.wso2.carbon.core.init.PreAxis2ConfigItemListener.bundleChanged(PreAxis2ConfigItemListener.java:118)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+TID: [-1234] [] [2021-05-20 21:28:30,571]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 21:28:30,628] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmnetCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:135)
+	at org.wso2.carbon.core.CarbonAxisConfigurator.deployServices(CarbonAxisConfigurator.java:568)
+	at org.wso2.carbon.core.internal.DeploymentServerStartupObserver.completingServerStartup(DeploymentServerStartupObserver.java:51)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.notifyBefore(CarbonCoreServiceComponent.java:258)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.completeInitialization(StartupFinalizerServiceComponent.java:166)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.serviceChanged(StartupFinalizerServiceComponent.java:323)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.registerThrottlingAgent(ThrottlingAgentServiceComponent.java:118)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.activate(ThrottlingAgentServiceComponent.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:529)
+	at org.wso2.carbon.core.init.CarbonServerManager.removePendingItem(CarbonServerManager.java:305)
+	at org.wso2.carbon.core.init.PreAxis2ConfigItemListener.bundleChanged(PreAxis2ConfigItemListener.java:118)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+TID: [-1234] [] [2021-05-20 21:28:30,632]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS_AssignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 21:28:30,650] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS_AssignmentCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:135)
+	at org.wso2.carbon.core.CarbonAxisConfigurator.deployServices(CarbonAxisConfigurator.java:568)
+	at org.wso2.carbon.core.internal.DeploymentServerStartupObserver.completingServerStartup(DeploymentServerStartupObserver.java:51)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.notifyBefore(CarbonCoreServiceComponent.java:258)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.completeInitialization(StartupFinalizerServiceComponent.java:166)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.serviceChanged(StartupFinalizerServiceComponent.java:323)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.registerThrottlingAgent(ThrottlingAgentServiceComponent.java:118)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.activate(ThrottlingAgentServiceComponent.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:529)
+	at org.wso2.carbon.core.init.CarbonServerManager.removePendingItem(CarbonServerManager.java:305)
+	at org.wso2.carbon.core.init.PreAxis2ConfigItemListener.bundleChanged(PreAxis2ConfigItemListener.java:118)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+TID: [-1234] [] [2021-05-20 21:28:30,654]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : testCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 21:28:30,671] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\testCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:135)
+	at org.wso2.carbon.core.CarbonAxisConfigurator.deployServices(CarbonAxisConfigurator.java:568)
+	at org.wso2.carbon.core.internal.DeploymentServerStartupObserver.completingServerStartup(DeploymentServerStartupObserver.java:51)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.notifyBefore(CarbonCoreServiceComponent.java:258)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.completeInitialization(StartupFinalizerServiceComponent.java:166)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.serviceChanged(StartupFinalizerServiceComponent.java:323)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.registerThrottlingAgent(ThrottlingAgentServiceComponent.java:118)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.activate(ThrottlingAgentServiceComponent.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:529)
+	at org.wso2.carbon.core.init.CarbonServerManager.removePendingItem(CarbonServerManager.java:305)
+	at org.wso2.carbon.core.init.PreAxis2ConfigItemListener.bundleChanged(PreAxis2ConfigItemListener.java:118)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+TID: [-1234] [] [2021-05-20 21:28:30,675]  INFO {org.apache.synapse.transport.vfs.VFSTransportListener} - VFS listener started
+TID: [-1234] [] [2021-05-20 21:28:30,676]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Starting Pass-through HTTP Listener...
+TID: [-1234] [] [2021-05-20 21:28:30,694]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Pass-through HTTP Listener started on 0:0:0:0:0:0:0:0:8280
+TID: [-1234] [] [2021-05-20 21:28:30,695]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Starting Pass-through HTTPS Listener...
+TID: [-1234] [] [2021-05-20 21:28:30,725]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Pass-through HTTPS Listener started on 0:0:0:0:0:0:0:0:8243
+TID: [-1234] [] [2021-05-20 21:28:31,019]  INFO {org.wso2.carbon.ntask.core.service.impl.TaskServiceImpl} - Task service starting in STANDALONE mode...
+TID: [-1234] [] [2021-05-20 21:28:31,031]  INFO {org.wso2.carbon.mediation.ntask.NTaskTaskManager} - Initialized task manager. Tenant [-1234]
+TID: [-1234] [] [2021-05-20 21:28:31,155]  INFO {org.wso2.carbon.core.init.JMXServerManager} - JMX Service URL  : service:jmx:rmi://localhost:11111/jndi/rmi://localhost:9999/jmxrmi
+TID: [-1234] [] [2021-05-20 21:28:31,157]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} - Server           :  WSO2 Enterprise Integrator-6.6.0
+TID: [-1234] [] [2021-05-20 21:28:31,158]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} - WSO2 Carbon started in 101 sec
+TID: [-1234] [] [2021-05-20 21:28:31,720]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} - Mgt Console URL  : https://192.168.1.101:9443/carbon/
+TID: [-1234] [] [2021-05-20 21:47:02,226]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-20 21:47:02,226+0530]
+TID: [-1234] [] [2021-05-20 21:50:01,733]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-20 21:50:01,735]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 21:50:01,896] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+TID: [-1234] [] [2021-05-20 21:51:31,988]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-20 21:51:31,991]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 21:51:32,114] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+TID: [-1234] [] [2021-05-20 21:55:02,255]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-20 21:55:02,256]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 21:55:02,499] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+TID: [-1234] [] [2021-05-20 21:56:47,545]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0 (1).car...
+TID: [-1234] [] [2021-05-20 21:56:47,675] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0 (1).car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+TID: [-1234] [] [2021-05-20 22:05:02,905]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS_AssignmentCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-20 22:05:02,908]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0 (1).car
+TID: [-1234] [] [2021-05-20 22:05:02,912]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmnetCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-20 22:05:02,926]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-20 22:05:02,928]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\testCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-20 22:05:17,954]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 22:05:18,064] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+TID: [-1234] [] [2021-05-20 22:05:30,582]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Shutdown hook triggered....
+TID: [-1234] [] [2021-05-20 22:05:30,584]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Gracefully shutting down WSO2 Enterprise Integrator...
+TID: [-1234] [] [2021-05-20 22:05:30,637]  INFO {org.wso2.carbon.core.ServerManagement} - Starting to switch to maintenance mode...
+TID: [-1234] [] [2021-05-20 22:05:30,638]  INFO {org.apache.synapse.transport.vfs.VFSTransportListener} - VFS Listener Shutdown
+TID: [-1234] [] [2021-05-20 22:05:30,639]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Stopping Pass-through HTTP Listener..
+TID: [-1234] [] [2021-05-20 22:05:30,639]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Shutting down IO Reactor bind for port 8280
+TID: [-1] [] [2021-05-20 22:05:30,642]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - HTTP-Listener I/O dispatcher Listener shutdown.
+TID: [-1234] [] [2021-05-20 22:05:30,643]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Stopping Pass-through HTTPS Listener..
+TID: [-1234] [] [2021-05-20 22:05:30,644]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Shutting down IO Reactor bind for port 8243
+TID: [-1] [] [2021-05-20 22:05:30,648]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - HTTPS-Listener I/O dispatcher Listener shutdown.
+TID: [-1234] [] [2021-05-20 22:05:30,649]  INFO {org.wso2.carbon.core.ServerManagement} - Stopped all transport listeners
+TID: [-1234] [] [2021-05-20 22:05:30,649]  INFO {org.wso2.carbon.core.ServerManagement} - Waiting for request service completion...
+TID: [-1234] [] [2021-05-20 22:05:30,657]  INFO {org.wso2.carbon.core.ServerManagement} - All requests have been served.
+TID: [-1234] [] [2021-05-20 22:05:30,658]  INFO {org.wso2.carbon.core.ServerManagement} - Waiting for deployment completion...
+TID: [-1234] [odata] [2021-05-20 22:05:30,863]  INFO {org.wso2.carbon.webapp.mgt.WebApplication} - Unloaded webapp: StandardEngine[Catalina].StandardHost[localhost].StandardContext[/odata]
+TID: [-1234] [odata] [2021-05-20 22:05:30,863]  INFO {org.wso2.carbon.core.ServerManagement} - All deployment tasks have been completed.
+TID: [-1234] [odata] [2021-05-20 22:05:30,868]  INFO {org.wso2.carbon.core.ServerManagement} - Waiting for server task completion...
+TID: [-1234] [odata] [2021-05-20 22:05:30,878]  INFO {org.wso2.carbon.core.ServerManagement} - All server tasks have been completed.
+TID: [-1234] [odata] [2021-05-20 22:05:30,881]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Shutting down WSO2 Enterprise Integrator...
+TID: [-1234] [odata] [2021-05-20 22:05:30,884]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Shutting down OSGi framework...
+TID: [-1234] [] [2021-05-20 22:05:30,984]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Stopping CarbonServerManager...
+TID: [-1234] [] [2021-05-20 22:05:30,986]  INFO {org.apache.synapse.transport.vfs.VFSTransportSender} - VFS Sender Shutdown
+TID: [-1] [] [2021-05-20 22:05:30,991]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} - HTTP Sender shutdown
+TID: [-1] [] [2021-05-20 22:05:30,994]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - HTTPS Sender shutdown
+TID: [-1234] [] [2021-05-20 22:05:30,997]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Destroying PassThroughHttpListener
+TID: [-1234] [] [2021-05-20 22:05:31,010]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Destroying PassThroughHttpListener
+TID: [-1234] [odata] [2021-05-20 22:05:31,084]  INFO {org.apache.synapse.Axis2SynapseController} - Undeploying the Synapse service...
+TID: [-1234] [odata] [2021-05-20 22:05:31,085]  INFO {org.apache.synapse.Axis2SynapseController} - Undeploying Proxy services...
+TID: [-1234] [odata] [2021-05-20 22:05:31,088]  INFO {org.apache.synapse.Axis2SynapseController} - Undeploying EventSources...
+TID: [-1234] [odata] [2021-05-20 22:05:31,136]  INFO {org.apache.synapse.task.SynapseTaskManager} - Shutting down the task manager
+TID: [-1234] [odata] [2021-05-20 22:05:31,229]  INFO {org.wso2.carbon.tomcat.ext.internal.CarbonTomcatServiceComponent} - Stopping the carbon web-app registered under : /
+TID: [-1234] [odata] [2021-05-20 22:05:31,410]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowStatisticsPublisher.xml
+TID: [-1234] [odata] [2021-05-20 22:05:31,442]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state : MessageFlowStatisticsPublisher.xml, waiting for Output Event Adapter dependency : wso2event
+TID: [-1234] [odata] [2021-05-20 22:05:31,442]  INFO {org.wso2.carbon.event.publisher.core.internal.CarbonEventPublisherService} - Event publisher : MessageFlowStatisticsPublisher  is in inactive state because dependency could not be found : wso2event
+TID: [-1234] [odata] [2021-05-20 22:05:31,443]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowConfigurationPublisher.xml
+TID: [-1234] [odata] [2021-05-20 22:05:31,448]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state : MessageFlowConfigurationPublisher.xml, waiting for Output Event Adapter dependency : wso2event
+TID: [-1234] [odata] [2021-05-20 22:05:31,453]  INFO {org.wso2.carbon.event.publisher.core.internal.CarbonEventPublisherService} - Event publisher : MessageFlowConfigurationPublisher  is in inactive state because dependency could not be found : wso2event
+TID: [-1234] [odata] [2021-05-20 22:05:31,478]  INFO {org.wso2.carbon.dataservices.google.tokengen.servlet.internal.GoogleTokenGenDSComponent} - Deactivating Google Tokengen DS component
+TID: [-1234] [] [2021-05-20 22:05:32,047]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Shutdown complete 
+TID: [-1234] [] [2021-05-20 22:05:32,047]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Halting JVM 
+TID: [-1234] [] [2021-05-20 22:06:03,898]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Starting WSO2 Carbon...
+TID: [-1234] [] [2021-05-20 22:06:03,923]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Operating System : Windows 10 10.0, amd64
+TID: [-1234] [] [2021-05-20 22:06:03,925]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Home        : C:\Program Files\Java\jdk-15.0.2
+TID: [-1234] [] [2021-05-20 22:06:03,932]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Version     : 15.0.2
+TID: [-1234] [] [2021-05-20 22:06:03,934]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java VM          : Java HotSpot(TM) 64-Bit Server VM 15.0.2+7-27,Oracle Corporation
+TID: [-1234] [] [2021-05-20 22:06:03,936]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Carbon Home      : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..
+TID: [-1234] [] [2021-05-20 22:06:03,936]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - Java Temp Dir    : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\wso2\tmp
+TID: [-1234] [] [2021-05-20 22:06:03,949]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} - User             : Nethsara Liyanage, en-US, Asia/Colombo
+TID: [-1] [] [2021-05-20 22:06:04,166]  INFO {org.wso2.carbon.crypto.provider.internal.DefaultCryptoProviderComponent} - 'CryptoService.Secret' property has not been set. 'org.wso2.carbon.crypto.provider.SymmetricKeyInternalCryptoProvider' won't be registered as an internal crypto provider. Please set the secret if the provider needs to be registered.
+TID: [-1] [] [2021-05-20 22:06:04,196]  INFO {org.wso2.carbon.dataservices.google.tokengen.servlet.internal.GoogleTokenGenDSComponent} - Activating GoogleTokengen DS component
+TID: [-1] [] [2021-05-20 22:06:04,411]  INFO {org.wso2.carbon.event.output.adapter.kafka.internal.ds.KafkaEventAdapterServiceDS} - Successfully deployed the Kafka output event adaptor service
+TID: [-1] [] [2021-05-20 22:06:04,585] ERROR {org.wso2.carbon.feature.mgt.core} - [SCR] Error while trying to bind reference Reference[name = provisioning.agent.provider, interface = org.eclipse.equinox.p2.core.IProvisioningAgentProvider, policy = dynamic, cardinality = 1..1, target = null, bind = setProvisioningAgentProvider, unbind = unsetProvisioningAgentProvider]
+	Details:
+	Problematic reference = Reference[name = provisioning.agent.provider, interface = org.eclipse.equinox.p2.core.IProvisioningAgentProvider, policy = dynamic, cardinality = 1..1, target = null, bind = setProvisioningAgentProvider, unbind = unsetProvisioningAgentProvider]
+	of service component = component.manager.core.service.comp
+	component implementation class = org.wso2.carbon.feature.mgt.core.internal.ComponentMgtCoreServiceComponent
+	located in bundle with symbolic name = org.wso2.carbon.feature.mgt.core
+	bundle location = reference:file:../plugins/org.wso2.carbon.feature.mgt.core_4.5.3.jar java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.internal.ds.model.ComponentReference.bind(ComponentReference.java:376)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.bindReference(ServiceComponentProp.java:430)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.bind(ServiceComponentProp.java:218)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:343)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.buildNewlySatisfied(Resolver.java:473)
+	at org.eclipse.equinox.internal.ds.Resolver.enableComponents(Resolver.java:217)
+	at org.eclipse.equinox.internal.ds.SCRManager.performWork(SCRManager.java:816)
+	at org.eclipse.equinox.internal.ds.SCRManager$QueuedJob.dispatch(SCRManager.java:783)
+	at org.eclipse.equinox.internal.ds.WorkThread.run(WorkThread.java:89)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.NoClassDefFoundError: org/eclipse/core/runtime/IRegistryChangeListener
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:278)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:716)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:639)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:607)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:587)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:566)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:474)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.equinox.internal.p2.engine.Engine.<init>(Engine.java:29)
+	at org.eclipse.equinox.internal.p2.engine.EngineComponent.createService(EngineComponent.java:30)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:72)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.<init>(SimplePlanner.java:290)
+	at org.eclipse.equinox.internal.p2.director.PlannerComponent.createService(PlannerComponent.java:22)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:72)
+	at org.wso2.carbon.feature.mgt.core.internal.ServiceHolder.setProvisioningAgentProvider(ServiceHolder.java:140)
+	at org.wso2.carbon.feature.mgt.core.internal.ComponentMgtCoreServiceComponent.setProvisioningAgentProvider(ComponentMgtCoreServiceComponent.java:47)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.equinox.registry (169).
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:126)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:474)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.eclipse.core.internal.content.Activator.start(Activator.java:48)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$1.run(ModuleContainer.java:1820)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1813)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1770)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1735)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.core.internal.registry.osgi.Activator.start() of bundle org.eclipse.equinox.registry.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:863)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:598)
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	... 27 more
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at org.eclipse.osgi.storagemanager.StorageManager.updateTable(StorageManager.java:526)
+	at org.eclipse.osgi.storagemanager.StorageManager.open(StorageManager.java:723)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.setFileManager(ExtensionRegistry.java:109)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.checkCache(ExtensionRegistry.java:888)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.<init>(ExtensionRegistry.java:673)
+	at org.eclipse.core.runtime.RegistryFactory.createRegistry(RegistryFactory.java:58)
+	at org.eclipse.core.internal.registry.osgi.Activator.startRegistry(Activator.java:137)
+	at org.eclipse.core.internal.registry.osgi.Activator.start(Activator.java:56)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	... 34 more
+
+TID: [-1234] [] [2021-05-20 22:06:09,381]  INFO {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService} - Configured Registry in 133ms
+TID: [-1234] [] [2021-05-20 22:06:09,675]  INFO {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent} - Registry Mode    : READ-WRITE
+TID: [-1234] [] [2021-05-20 22:06:30,234]  INFO {org.wso2.carbon.registry.indexing.solr.SolrClient} - Default Embedded Solr Server Initialized
+TID: [-1234] [] [2021-05-20 22:06:30,610]  INFO {org.wso2.carbon.user.core.internal.UserStoreMgtDSComponent} - Carbon UserStoreMgtDSComponent activated successfully.
+TID: [-1234] [] [2021-05-20 22:06:32,143]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2021-05-20 22:06:32,148]  INFO {org.wso2.carbon.identity.user.store.configuration.deployer.UserStoreConfigurationDeployer} - User Store Configuration Deployer initiated.
+TID: [-1234] [] [2021-05-20 22:06:33,086]  INFO {org.apache.synapse.transport.vfs.VFSTransportSender} - VFS Sender started
+TID: [-1234] [] [2021-05-20 22:06:33,123]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} - Initializing Pass-through HTTP/S Sender...
+TID: [-1234] [] [2021-05-20 22:06:33,212]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} - Pass-through HTTP Sender started...
+TID: [-1234] [] [2021-05-20 22:06:33,213]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Initializing Pass-through HTTP/S Sender...
+TID: [-1234] [] [2021-05-20 22:06:33,230]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} - Pass-through HTTPS Sender started...
+TID: [-1234] [] [2021-05-20 22:06:33,292]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Initializing Pass-through HTTP/S Listener...
+TID: [-1234] [] [2021-05-20 22:06:33,329]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Initializing Pass-through HTTP/S Listener...
+TID: [-1234] [wso2carbon-sts] [2021-05-20 22:06:38,680]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: wso2carbon-sts {super-tenant}
+TID: [-1234] [] [2021-05-20 22:06:39,281]  INFO {org.wso2.carbon.core.init.CarbonServerManager} - Repository       : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\../repository/deployment/server/
+TID: [-1234] [] [2021-05-20 22:06:39,416]  INFO {org.wso2.carbon.core.multitenancy.eager.TenantLoadingConfig} - Using tenant lazy loading policy...
+TID: [-1234] [] [2021-05-20 22:06:39,448]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} - Permission cache updated for tenant -1234
+TID: [-1234] [] [2021-05-20 22:06:39,640]  INFO {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS} - Successfully registered the Rule Config service
+TID: [-1234] [] [2021-05-20 22:06:40,246]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} - Starting ESB...
+TID: [-1234] [] [2021-05-20 22:06:40,276]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} - Initializing Apache Synapse...
+TID: [-1234] [] [2021-05-20 22:06:40,280]  INFO {org.apache.synapse.SynapseControllerFactory} - Using Synapse home : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\.
+TID: [-1234] [] [2021-05-20 22:06:40,282]  INFO {org.apache.synapse.SynapseControllerFactory} - Using synapse.xml location : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\.\.\repository\deployment\server\synapse-configs\default
+TID: [-1234] [] [2021-05-20 22:06:40,282]  INFO {org.apache.synapse.SynapseControllerFactory} - Using server name : localhost
+TID: [-1234] [] [2021-05-20 22:06:40,302]  INFO {org.apache.synapse.SynapseControllerFactory} - The timeout handler will run every : 15s
+TID: [-1234] [] [2021-05-20 22:06:40,358]  INFO {org.apache.synapse.Axis2SynapseController} - Initializing Synapse at : Thu May 20 22:06:40 IST 2021
+TID: [-1234] [] [2021-05-20 22:06:40,373]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} - Loading the mediation configuration from the file system
+TID: [-1234] [] [2021-05-20 22:06:40,376]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} - Building synapse configuration from the synapse artifact repository at : .\.\repository/deployment/server/synapse-configs\default
+TID: [-1234] [] [2021-05-20 22:06:40,382]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} - Generating the Synapse configuration model by parsing the XML configuration
+TID: [-1234] [] [2021-05-20 22:06:40,620]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : fault was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-20 22:06:40,652]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Sequence : main was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-20 22:06:40,655]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} - Loaded Synapse configuration from the artifact repository at : .\.\repository/deployment/server/synapse-configs\default
+TID: [-1234] [] [2021-05-20 22:06:40,663]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_HOST was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-20 22:06:40,670]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Local entry : SERVER_IP was added to the Synapse configuration successfully
+TID: [-1234] [] [2021-05-20 22:06:40,797]  INFO {org.apache.synapse.Axis2SynapseController} - Loading mediator extensions...
+TID: [-1234] [echo] [2021-05-20 22:06:40,844]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: echo {super-tenant}
+TID: [-1234] [Version] [2021-05-20 22:06:40,894]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} - Deploying Axis2 service: Version {super-tenant}
+TID: [-1234] [] [2021-05-20 22:06:40,900]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state :MessageFlowConfigurationPublisher.xml, Stream validation exception : Stream org.wso2.esb.analytics.stream.ConfigEntry:1.0.0 does not exist
+TID: [-1234] [] [2021-05-20 22:06:40,903]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher deployment held back and in inactive state :MessageFlowStatisticsPublisher.xml, Stream validation exception : Stream org.wso2.esb.analytics.stream.FlowEntry:1.0.0 does not exist
+TID: [-1234] [] [2021-05-20 22:06:40,959]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowConfigurationPublisher.xml
+TID: [-1234] [] [2021-05-20 22:06:41,249]  INFO {org.wso2.carbon.event.stream.core.internal.EventJunction} - WSO2EventConsumer added to the junction. Stream:org.wso2.esb.analytics.stream.ConfigEntry:1.0.0
+TID: [-1234] [] [2021-05-20 22:06:41,253]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher configuration successfully deployed and in active state : MessageFlowConfigurationPublisher
+TID: [-1234] [] [2021-05-20 22:06:41,254]  INFO {org.wso2.carbon.event.stream.core.EventStreamDeployer} - Stream definition is deployed successfully  : org.wso2.esb.analytics.stream.ConfigEntry:1.0.0
+TID: [-1234] [] [2021-05-20 22:06:41,262]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher undeployed successfully : MessageFlowStatisticsPublisher.xml
+TID: [-1234] [] [2021-05-20 22:06:41,282]  INFO {org.wso2.carbon.event.stream.core.internal.EventJunction} - WSO2EventConsumer added to the junction. Stream:org.wso2.esb.analytics.stream.FlowEntry:1.0.0
+TID: [-1234] [] [2021-05-20 22:06:41,283]  INFO {org.wso2.carbon.event.publisher.core.EventPublisherDeployer} - Event Publisher configuration successfully deployed and in active state : MessageFlowStatisticsPublisher
+TID: [-1234] [] [2021-05-20 22:06:41,291]  INFO {org.wso2.carbon.event.stream.core.EventStreamDeployer} - Stream definition is deployed successfully  : org.wso2.esb.analytics.stream.FlowEntry:1.0.0
+TID: [-1234] [odata] [2021-05-20 22:06:41,688]  INFO {org.wso2.carbon.webapp.mgt.TomcatGenericWebappsDeployer} - Deployed webapp: StandardEngine[Catalina].StandardHost[localhost].StandardContext[/odata].File[D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\webapps\odata.war]
+TID: [-1234] [] [2021-05-20 22:06:41,692]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying the Synapse service...
+TID: [-1234] [] [2021-05-20 22:06:41,693]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying Proxy services...
+TID: [-1234] [] [2021-05-20 22:06:41,695]  INFO {org.apache.synapse.Axis2SynapseController} - Deploying EventSources...
+TID: [-1234] [] [2021-05-20 22:06:41,780]  INFO {org.apache.synapse.ServerManager} - Server ready for processing...
+TID: [-1234] [] [2021-05-20 22:06:41,817]  INFO {org.wso2.carbon.das.messageflow.data.publisher.internal.MediationStatisticsComponent} - Global Message-Flow Statistic Reporting is Disabled
+TID: [-1234] [] [2021-05-20 22:06:43,688]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 22:06:43,863] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:135)
+	at org.wso2.carbon.core.CarbonAxisConfigurator.deployServices(CarbonAxisConfigurator.java:568)
+	at org.wso2.carbon.core.internal.DeploymentServerStartupObserver.completingServerStartup(DeploymentServerStartupObserver.java:51)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.notifyBefore(CarbonCoreServiceComponent.java:258)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.completeInitialization(StartupFinalizerServiceComponent.java:166)
+	at org.wso2.carbon.core.internal.StartupFinalizerServiceComponent.serviceChanged(StartupFinalizerServiceComponent.java:323)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.registerThrottlingAgent(ThrottlingAgentServiceComponent.java:118)
+	at org.wso2.carbon.throttling.agent.internal.ThrottlingAgentServiceComponent.activate(ThrottlingAgentServiceComponent.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:345)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:866)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:804)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:228)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:529)
+	at org.wso2.carbon.core.init.CarbonServerManager.removePendingItem(CarbonServerManager.java:305)
+	at org.wso2.carbon.core.init.PreAxis2ConfigItemListener.bundleChanged(PreAxis2ConfigItemListener.java:118)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+TID: [-1234] [] [2021-05-20 22:06:43,882]  INFO {org.apache.synapse.transport.vfs.VFSTransportListener} - VFS listener started
+TID: [-1234] [] [2021-05-20 22:06:43,890]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} - Starting Pass-through HTTP Listener...
+TID: [-1234] [] [2021-05-20 22:06:43,924]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Pass-through HTTP Listener started on 0:0:0:0:0:0:0:0:8280
+TID: [-1234] [] [2021-05-20 22:06:43,928]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} - Starting Pass-through HTTPS Listener...
+TID: [-1234] [] [2021-05-20 22:06:43,994]  INFO {org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager} - Pass-through HTTPS Listener started on 0:0:0:0:0:0:0:0:8243
+TID: [-1234] [] [2021-05-20 22:06:44,358]  INFO {org.wso2.carbon.ntask.core.service.impl.TaskServiceImpl} - Task service starting in STANDALONE mode...
+TID: [-1234] [] [2021-05-20 22:06:44,375]  INFO {org.wso2.carbon.mediation.ntask.NTaskTaskManager} - Initialized task manager. Tenant [-1234]
+TID: [-1234] [] [2021-05-20 22:06:44,499]  INFO {org.wso2.carbon.core.init.JMXServerManager} - JMX Service URL  : service:jmx:rmi://localhost:11111/jndi/rmi://localhost:9999/jmxrmi
+TID: [-1234] [] [2021-05-20 22:06:44,502]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} - Server           :  WSO2 Enterprise Integrator-6.6.0
+TID: [-1234] [] [2021-05-20 22:06:44,516]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} - WSO2 Carbon started in 61 sec
+TID: [-1234] [] [2021-05-20 22:06:45,130]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} - Mgt Console URL  : https://192.168.1.101:9443/carbon/
+TID: [-1234] [] [2021-05-20 22:07:12,003]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-20 22:07:12,003+0530]
+TID: [-1234] [] [2021-05-20 22:09:43,977]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-20 22:09:43,979]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0 (1).car...
+TID: [-1234] [] [2021-05-20 22:09:44,221] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0 (1).car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+TID: [-1234] [] [2021-05-20 22:09:44,224]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 22:09:44,364] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+TID: [-1234] [] [2021-05-20 22:09:44,367]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmnetCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 22:09:44,412] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS-assignmnetCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+TID: [-1234] [] [2021-05-20 22:09:44,417]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS_AssignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 22:09:44,450] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\DS_AssignmentCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+TID: [-1234] [] [2021-05-20 22:09:44,452]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : testCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-20 22:09:44,475] ERROR {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Error while deploying carbon application D:\Year 03 Sem 01\DS\Project\WSO2-ESB\ESB\wso2ei-6.6.0\bin\..\repository\deployment\server\carbonapps\testCompositeExporter_1.0.0.car java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.p2.engine.IProfile.query(org.eclipse.equinox.p2.query.IQuery, org.eclipse.core.runtime.IProgressMonitor)" because the return value of "org.wso2.carbon.feature.mgt.core.util.ProvisioningUtils.getProfile()" is null
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.areAllFeaturesInstalled(AppDeployerUtils.java:610)
+	at org.wso2.carbon.application.deployer.AppDeployerUtils.buildAcceptanceList(AppDeployerUtils.java:635)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.isAccepted(DefaultAppDeployer.java:211)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployRecursively(DefaultAppDeployer.java:149)
+	at org.wso2.carbon.application.deployer.handler.DefaultAppDeployer.deployArtifacts(DefaultAppDeployer.java:66)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+

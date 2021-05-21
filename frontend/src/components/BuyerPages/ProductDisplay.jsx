@@ -105,26 +105,27 @@ class ProductDisplay extends Component {
                                 <div class="row featured isotope">
 
                                     {this.state.item.map((item) => {
+                                        
                                         return(
                                         <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
                                             
 
-                                        <Card className="shadow p-3 mb-5 bg-white rounded" style={{ width: '25rem', height:'40rem'}}>
-                                            <Card.Img variant="top" src={"http://localhost:9000/"+item.itemImage} />
-                                            <Card.Body>
-                                                <Card.Title>
-                                                    <h3>{item.title}</h3>
-                                                </Card.Title>
-                                                <Card.Title>
-                                                    <h5 style={{ color:'#FF0000' }}>$ {item.price}</h5>
-                                                </Card.Title>
-                                                <Card.Text>
-                                                    {item.description}
-                                                </Card.Text>
+                                            <Card className="shadow p-3 mb-5 bg-white rounded" style={{ width: '25rem', height:'45rem'}}>
+                                                <Card.Img variant="top" src={"http://localhost:9000/"+item.itemImage} />
+                                                <Card.Body>
+                                                    <Card.Title>
+                                                        <h3>{item.title}</h3>
+                                                    </Card.Title>
+                                                    <Card.Title>
+                                                        <h5 style={{ color:'#FF0000' }}>$ {item.price}</h5>
+                                                    </Card.Title>
+                                                    <Card.Text>
+                                                        {item.description}
+                                                    </Card.Text>
 
-                                                <Button type="primary" onClick={() => this.addToCart(item) } onBlur={this.alertHere}><i class="pe-7s-cart"> Add to Cart</i></Button>
-                                            </Card.Body>
-                                        </Card>
+                                                    <Button type="primary" onClick={() => this.addToCart(item) } onBlur={this.alertHere}><i class="pe-7s-cart"> Add to Cart</i></Button>
+                                                </Card.Body>
+                                            </Card>
 
                                         </div>
                                         );

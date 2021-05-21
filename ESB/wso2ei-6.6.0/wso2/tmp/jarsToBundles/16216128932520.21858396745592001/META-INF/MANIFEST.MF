@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: java_property_utils_1.9.1
+Bundle-SymbolicName: java_property_utils_1.9.1
+Bundle-Version: 1.0.0
+Export-Package: com.thetransactioncompany.util
+Bundle-ClassPath: .,java-property-utils-1.9.1.jar
+

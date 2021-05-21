@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: org.wso2.securevault_1.1.3
+Bundle-SymbolicName: org.wso2.securevault_1.1.3
+Bundle-Version: 1.0.0
+Export-Package: org.wso2.securevault,org.wso2.securevault.commons,org.ws
+ o2.securevault.definition,org.wso2.securevault.keystore,org.wso2.secure
+ vault.secret,org.wso2.securevault.secret.handler,org.wso2.securevault.s
+ ecret.mbean,org.wso2.securevault.secret.repository,org.wso2.securevault
+ .tool
+Bundle-ClassPath: .,org.wso2.securevault-1.1.3.jar
+

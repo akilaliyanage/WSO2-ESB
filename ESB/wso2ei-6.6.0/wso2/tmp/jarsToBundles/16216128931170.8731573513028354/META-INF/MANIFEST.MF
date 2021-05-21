@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: bpmn_sample_jars_6.6.0
+Bundle-SymbolicName: bpmn_sample_jars_6.6.0
+Bundle-Version: 1.0.0
+Export-Package: org.wso2.ei.businessprocess.samples.bpmn.datatypes.xml,o
+ rg.wso2.ei.businessprocess.samples.bpmn.datatypes.json,calculator
+Bundle-ClassPath: .,bpmn-sample-jars-6.6.0.jar
+

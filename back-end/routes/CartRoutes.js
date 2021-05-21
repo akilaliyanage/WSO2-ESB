@@ -16,7 +16,7 @@ router.get('/',async (req,res) =>{
 }),
 
 //saving cart details in the database
-router.post('/',async (req,res) =>{
+router.post('/save',async (req,res) =>{
 
     const items2 = new cartItems({
 

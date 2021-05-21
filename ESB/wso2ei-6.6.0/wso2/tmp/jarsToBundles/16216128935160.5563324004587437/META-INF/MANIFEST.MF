@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: Saxon_HE_9.5.1_8
+Bundle-SymbolicName: Saxon_HE_9.5.1_8
+Bundle-Version: 1.0.0
+Export-Package: net.sf.saxon,net.sf.saxon.dom,net.sf.saxon.event,net.sf.
+ saxon.evpull,net.sf.saxon.expr,net.sf.saxon.expr.flwor,net.sf.saxon.exp
+ r.instruct,net.sf.saxon.expr.number,net.sf.saxon.expr.parser,net.sf.sax
+ on.expr.sort,net.sf.saxon.functions,net.sf.saxon.java,net.sf.saxon.lib,
+ net.sf.saxon.om,net.sf.saxon.pattern,net.sf.saxon.pull,net.sf.saxon.que
+ ry,net.sf.saxon.regex,net.sf.saxon.s9api,net.sf.saxon.serialize,net.sf.
+ saxon.serialize.charcode,net.sf.saxon.serialize.codenorm,net.sf.saxon.s
+ tax,net.sf.saxon.style,net.sf.saxon.sxpath,net.sf.saxon.trace,net.sf.sa
+ xon.trans,net.sf.saxon.tree,net.sf.saxon.tree.iter,net.sf.saxon.tree.li
+ nked,net.sf.saxon.tree.tiny,net.sf.saxon.tree.util,net.sf.saxon.tree.wr
+ apper,net.sf.saxon.type,net.sf.saxon.value,net.sf.saxon.xpath,net.sf.sa
+ xon.z
+Bundle-ClassPath: .,Saxon-HE-9.5.1-8.jar
+
