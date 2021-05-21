@@ -7,8 +7,9 @@ require('dotenv').config();
 const TokenPrifix = process.env.OTP_TOKEN_PREFIX;
 const TokenSuffix = process.env.OTP_TOKEN_SUFFIX;
 
+const MobilePaymentGateway = require('../models/MobilePaymentGateway');
 const OTPHelper = require('../Helpers/OTPHelper')
-const authToken = require('../Helpers/TokenMiddlewareHelper')
+const authToken = require('../Helpers/TokenMiddlewareHelper_SMS')
 
 router.get('/',async (req,res) =>{
     try{
@@ -33,7 +34,7 @@ router.route("/:mobileNo").get((req,res) => {
         else if(req.params.mobileNo == MobilePaymentGateway[0].mobileNo && req.body.accNo == MobilePaymentGateway[0].accNo && req.body.NIC == MobilePaymentGateway[0].NIC && req.body.accHolderName == MobilePaymentGateway[0].accHolderName){
             OTPHelper.getOTP(req)
             .then((otp) => {
-                const mobileNo = req.params.cardNo;
+                const mobileNo = req.params.mobileNo;
                 let OTPKey = TokenPrifix + mobileNo + req.body.accNo + TokenSuffix;
                 //Create a JWT(JSON Web Token) for the OTP. Therefor OTP will send in an encrypted formt
                 // to the client/Email service or the SMS service.

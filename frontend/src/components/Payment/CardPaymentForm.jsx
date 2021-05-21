@@ -13,6 +13,7 @@ class CardPaymentForm extends Component{
             confirmPay_Visibility : false,
             OTPInput_Visibility : false,
             DisabledInputs: false,
+            isMobile:false,
             cardHolderName : '',
             cardNo : '',
             CVC : '',
@@ -153,12 +154,14 @@ class CardPaymentForm extends Component{
           console.log('Payment method called');
           
           const _InputOTP = {
-            orderId:"ord01",
+            orderId:"ORD_C_4548",
             userId : this.state.buyerID,
             Ammount : this.state.fullAmmount,
             cardNo : this.state.cardNo,
             accNo : "",
-            type : this.state.type
+            type : this.state.type,
+            isMobile : this.state.isMobile,
+            email : this.state.email,
           }
           fetch('http://localhost:9000/Payment' , {
             method: 'POST', 

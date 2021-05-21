@@ -17,9 +17,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.post('/', authToken , (req , res) => {
     //Configuring the message to be sent
     let message = null;
+    
 
     switch(req.body.type){
         case "OTP":
+                let toNumber = req.body.data[0].mobileNo;
                 client.messages.create({
                     body: req.body.message + ' : ' + req.OTP,
                     to: toNumber,
@@ -28,27 +30,40 @@ app.post('/', authToken , (req , res) => {
                 .then((message) => {
                     console.log('SMS Sent...');
                     console.log(message);
-                    return Promise.resolve(message)
+                    this.smsResponse = message;
+                    res.statusCode = 200;
+                    res.json({status : true , TWResponse : this.smsResponse});
+                    res.send();
                 })
                 .catch((error) => {
                     console.log('SMS Error : ' , error);
-                    return Promise.reject(error);
+                    this.smsResponse = error;
+                    res.statusCode = 400;
+                    res.json({status : true , TWResponse : this.smsResponse});
+                    res.send();
                 })
             break;
         case "PAYMENT":
                 client.messages.create({
-                    body: 'Payment Made '  + req.body.message + ' : ' + req.OTP,
-                    to: toNumber,
+                    body: 'Lorem E-Shop - Payment Confirmation  \n'  + req.body.message ,
+                    to: req.body.toNumber,
                     from: senderNO,
                 })
                 .then((message) => {
                     console.log('SMS Sent...');
                     console.log(message);
-                    return Promise.resolve(message)
+                    this.smsResponse = message;
+                    res.statusCode = 200;
+                    res.json({status : true , TWResponse : this.smsResponse});
+                    res.send();
                 })
                 .catch((error) => {
                     console.log('SMS Error : ' , error);
-                    return Promise.reject(error);
+                    console.log('SMS Error : ' , error);
+                    this.smsResponse = error;
+                    res.statusCode = 400;
+                    res.json({status : true , TWResponse : this.smsResponse});
+                    res.send();
                 })
             break;
         default:
@@ -60,22 +75,22 @@ app.post('/', authToken , (req , res) => {
     }
 
     
-    //Send email using Sendgrid 3rd party Email Library.
-    sgMail.send(message)
-    .then((response) => {
-        console.log('Email Sent...');
-        this.mailResponse = response;
-        res.statusCode = 200;
-        res.json({status : true , SGResponse : this.mailResponse});
-        res.send();
-    })
-    .catch((err) => {
-         console.log('SMS Error : ' , err.message);
-         this.mailResponse = err;
-         res.statusCode = 400;
-         res.json({status : true , SGResponse : this.mailResponse});
-         res.send();
-    });
+    //Send SMS using Twilio 3rd party SMS Library.
+    // sgMail.send(message)
+    // .then((response) => {
+    //     console.log('SMS Sent...');
+    //     this.mailResponse = response;
+    //     res.statusCode = 200;
+    //     res.json({status : true , SGResponse : this.mailResponse});
+    //     res.send();
+    // })
+    // .catch((err) => {
+    //      console.log('SMS Error : ' , err.message);
+    //      this.mailResponse = err;
+    //      res.statusCode = 400;
+    //      res.json({status : true , SGResponse : this.mailResponse});
+    //      res.send();
+    // });
 })
 
 console.log("SMS Service Started...")
