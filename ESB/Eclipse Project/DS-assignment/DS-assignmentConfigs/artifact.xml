@@ -59,4 +59,7 @@
     <artifact name="ietm_add" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/ietm_add.xml</file>
     </artifact>
+    <artifact name="create_location" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/create_location.xml</file>
+    </artifact>
 </artifacts>

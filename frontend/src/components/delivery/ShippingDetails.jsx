@@ -135,6 +135,8 @@ class ShippingDetails extends Component {
               'Seems like you have not agreed to out terms and condisions.',
           });
         }
+
+        window.location.replace("http://localhost:3000/CardPayment");
        
       };
 
