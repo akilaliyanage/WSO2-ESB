@@ -3,3 +3,5 @@ TID: [-1234] [2021-05-21 09:09:46,880]  INFO {AUDIT_LOG} - 'admin@carbon.super [
 TID: [-1234] [2021-05-21 09:09:46,880]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-21 09:09:19,385+0530]
 TID: [-1234] [2021-05-21 09:17:49,752]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-21 09:17:49,749+0530]
 TID: [-1234] [2021-05-21 09:19:57,664]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-21 09:19:57,662+0530]
+TID: [-1234] [2021-05-21 21:37:06,595]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-21 21:37:06,593+0530]
+TID: [-1234] [2021-05-21 21:37:11,030]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-21 21:37:11,028+0530]
