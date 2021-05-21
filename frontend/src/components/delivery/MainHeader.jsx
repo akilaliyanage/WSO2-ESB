@@ -12,7 +12,7 @@ class MainHeader extends Component {
     className="site-page-header"
     onBack={() => {
         return(
-            <Link to="/del-method"></Link>
+           this.props.history.push('del-method')
         )
     }}
     title="Delivery Page"

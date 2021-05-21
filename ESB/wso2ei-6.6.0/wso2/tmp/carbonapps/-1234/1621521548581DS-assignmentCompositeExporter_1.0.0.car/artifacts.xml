@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="DS-assignmentCompositeExporter" version="1.0.0" type="carbon/application">
+        <dependency artifact="delivery_API" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="item-API" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="location_API" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="user_API" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="buyer-login" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="cities-endpoint" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="create_delivery" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="create_location" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="delete_item" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="delivery_endpoint" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="get-pending-orders" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="get-single-seller" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="ietm_add" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="item-search" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="location_endpoints" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="seller-login" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="seller_item_search" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="states-endpoint" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="update-delivery" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="update_item" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+        <dependency artifact="user-signup" version="1.0.0" include="true" serverRole="EnterpriseServiceBus"/>
+    </artifact>
+</artifacts>

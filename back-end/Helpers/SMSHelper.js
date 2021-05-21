@@ -20,7 +20,7 @@ const sendSMS = (toNumber , OTP) => {
          return Promise.resolve(message)
     })
     .catch((error) => {
-        console.log(error);
+        console.log('SMS Error : ' , error);
         return Promise.reject(error);
     })
 }

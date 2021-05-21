@@ -177,3 +177,189 @@ TID: [-1234] [2021-05-09 18:33:01,173]  INFO {API_LOGGER.delivery_API} - Initial
 TID: [-1234] [2021-05-09 18:33:01,177]  INFO {API_LOGGER.user_API} - Initializing API: user_API
 TID: [-1234] [2021-05-09 18:34:06,170]  INFO {API_LOGGER.user_API} - message = get single seller
 TID: [-1234] [2021-05-09 18:34:39,891]  INFO {API_LOGGER.user_API} - message = get single seller
+TID: [-1234] [2021-05-10 01:15:34,524]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-10 01:15:34,734]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-10 01:15:34,736]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-10 01:15:34,740]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-10 01:15:34,847]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-10 01:15:34,848]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-10 01:15:34,848]  INFO {API_LOGGER.user_API} - Destroying API: user_API
+TID: [-1234] [2021-05-10 01:15:34,849]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-10 19:20:52,466]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-10 19:20:52,473]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-10 19:20:52,491]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-10 19:20:52,501]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-10 19:20:52,592]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-10 19:22:35,935]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-10 19:22:35,935]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-10 19:22:35,964]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-10 19:22:35,964]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-10 21:36:28,143]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-10 21:36:28,144]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-10 21:36:28,153]  INFO {API_LOGGER.user_API} - Destroying API: user_API
+TID: [-1234] [2021-05-10 21:36:28,154]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-14 19:33:31,229]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-14 19:33:31,245]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-14 19:33:31,270]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-14 19:33:31,283]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-14 19:33:31,417]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-14 19:36:53,928]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery-pending api
+TID: [-1234] [2021-05-14 19:36:59,176]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-14 19:36:59,176]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-14 19:36:59,217]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-14 19:36:59,217]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-14 19:42:31,689]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-14 19:42:31,696]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-14 19:42:31,702]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-14 19:42:50,091]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-14 21:09:49,128]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-14 21:09:49,130]  INFO {API_LOGGER.location_API} - Destroying API: location_API
+TID: [-1234] [2021-05-14 21:09:49,132]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-14 21:09:49,142]  INFO {API_LOGGER.user_API} - Destroying API: user_API
+TID: [-1234] [2021-05-14 21:09:49,143]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-16 19:53:49,123]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-16 19:53:49,130]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-16 19:53:49,140]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-16 19:53:49,161]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-16 19:53:49,175]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-16 19:53:49,310]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-16 20:08:33,185]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-16 20:08:43,150]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-16 20:08:43,151]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-16 20:08:43,186]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-16 20:08:43,186]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-16 20:08:53,872]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-16 20:48:23,643]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-16 20:48:23,645]  INFO {API_LOGGER.location_API} - Destroying API: location_API
+TID: [-1234] [2021-05-16 20:48:23,647]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-16 20:48:23,653]  INFO {API_LOGGER.user_API} - Destroying API: user_API
+TID: [-1234] [2021-05-16 20:48:23,654]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-19 13:05:29,724]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-19 13:05:29,729]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-19 13:05:29,739]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-19 13:05:29,753]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-19 13:05:29,765]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-19 13:05:29,908]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-19 21:17:21,987]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-19 21:17:21,988]  INFO {API_LOGGER.location_API} - Destroying API: location_API
+TID: [-1234] [2021-05-19 21:17:21,988]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-19 21:17:21,989]  INFO {API_LOGGER.user_API} - Destroying API: user_API
+TID: [-1234] [2021-05-19 21:17:21,990]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-20 12:15:13,724]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-20 12:15:13,729]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-20 12:15:13,739]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-20 12:15:13,754]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-20 12:15:13,764]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-20 12:15:13,867]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-20 12:16:05,317]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-20 12:16:05,318]  INFO {API_LOGGER.location_API} - Destroying API: location_API
+TID: [-1234] [2021-05-20 12:16:05,319]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-20 12:16:05,323]  INFO {API_LOGGER.user_API} - Destroying API: user_API
+TID: [-1234] [2021-05-20 12:16:05,323]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-20 12:17:27,812]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-20 12:17:27,815]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-20 12:17:27,821]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-20 12:17:27,832]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-20 12:17:27,840]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-20 12:17:27,933]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-20 13:15:13,720]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-20 13:15:13,726]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-20 13:15:13,728]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-20 13:15:13,732]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-20 19:39:56,535]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-20 19:39:56,537]  INFO {API_LOGGER.location_API} - Destroying API: location_API
+TID: [-1234] [2021-05-20 19:39:56,538]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-20 19:39:56,539]  INFO {API_LOGGER.user_API} - Destroying API: user_API
+TID: [-1234] [2021-05-20 19:39:56,540]  INFO {API_LOGGER.item-API} - Destroying API: item-API
+TID: [-1234] [2021-05-20 19:39:56,541]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-20 19:58:23,126]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-20 19:58:23,142]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-20 19:58:23,147]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-20 19:58:23,153]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-20 19:58:23,185]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-20 19:58:23,207]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-20 19:58:23,390]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-20 20:03:56,699]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery-pending api
+TID: [-1234] [2021-05-20 20:03:59,399]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 20:04:53,103]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery-pending api
+TID: [-1234] [2021-05-20 20:05:08,253]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 20:09:08,670]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-20 20:09:08,675]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-20 20:09:08,679]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-20 20:09:08,684]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-20 20:09:26,231]  INFO {API_LOGGER.location_API} - To: /locations, MessageID: urn:uuid:985020ec-5c08-4c0d-971b-3e8a9de444c1, Direction: request
+TID: [-1234] [2021-05-20 20:09:26,595]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 20:10:17,262]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery-pending api
+TID: [-1234] [2021-05-20 20:10:23,172]  INFO {API_LOGGER.delivery_API} - message = patch api of delivert logged
+TID: [-1234] [2021-05-20 20:10:55,176]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery-pending api
+TID: [-1234] [2021-05-20 20:10:59,111]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 20:11:03,136]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery-pending api
+TID: [-1234] [2021-05-20 20:11:08,995]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 20:11:31,215]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 20:11:31,229]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 20:11:31,233]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 20:11:31,240]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 20:13:11,786]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 20:13:15,450]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 20:13:15,450]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 20:13:15,451]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 20:13:15,452]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 20:13:37,031]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:07:49,101]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:09:11,658]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:10:02,159]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:12:07,645]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:16:53,639]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:19:56,195]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:20:39,139]  INFO {API_LOGGER.delivery_API} - message = logged into the create-delivert api
+TID: [-1234] [2021-05-20 21:25:29,946]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:28:57,643]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:28:57,643]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:28:57,644]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 21:28:57,644]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 21:29:06,139]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:29:36,313]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:29:49,999]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:29:50,439]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:29:50,755]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:29:51,071]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:29:51,433]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:30:14,852]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:33:20,757]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:33:20,758]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:33:20,758]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 21:33:20,759]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 21:33:31,269]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:33:31,269]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:33:31,270]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 21:33:31,270]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 21:34:29,045]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:34:29,045]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:34:29,046]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 21:34:29,046]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 21:34:50,956]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:36:12,098]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:36:17,724]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:36:17,724]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:36:17,725]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 21:36:17,725]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 21:36:22,698]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:36:22,698]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:36:22,699]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 21:36:22,727]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 21:36:24,194]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-20 21:36:33,841]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:36:33,843]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:36:33,844]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 21:36:33,846]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 21:36:38,757]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:36:38,758]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-20 21:36:38,758]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-20 21:36:38,759]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-20 22:00:09,323]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-20 22:58:22,257]  INFO {API_LOGGER.HealthcareAPI} - Destroying API: HealthcareAPI
+TID: [-1234] [2021-05-20 22:58:22,258]  INFO {API_LOGGER.location_API} - Destroying API: location_API
+TID: [-1234] [2021-05-20 22:58:22,259]  INFO {API_LOGGER.delivery_API} - Destroying API: delivery_API
+TID: [-1234] [2021-05-20 22:58:22,262]  INFO {API_LOGGER.test2} - Destroying API: test2
+TID: [-1234] [2021-05-20 22:58:22,262]  INFO {API_LOGGER.item-API} - Destroying API: item-API
+TID: [-1234] [2021-05-20 22:58:22,262]  INFO {API_LOGGER.user_API} - Destroying API: user_API

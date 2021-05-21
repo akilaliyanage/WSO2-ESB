@@ -13,6 +13,7 @@ import img1 from '../../assets/imgs/delivery-man-with-face-mask-delivering-order
 import img2 from '../../assets/imgs/courier-delivering-order-customer-door-man-getting-parcel-box-package-flat-vector-illustration-postman-shipping-service_74855-8309.jpg'
 import {Link} from 'react-router-dom'
 import { Modal ,Descriptions, Form, Input,Select,DatePicker } from 'antd';
+import {withRouter} from 'react-router-dom';
 import config from '../../congig.json'
 
 const { TextArea } = Input;
@@ -168,6 +169,9 @@ class DeliveryMethod extends Component {
     })
 
     console.log(data)
+
+    this.props.history.push('/payment')
+    //window.location.replace("http://localhost:3000/CardPayment")
   }
 
     onBlur = (value) => {

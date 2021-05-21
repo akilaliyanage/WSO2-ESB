@@ -6,10 +6,11 @@ let ConcrteteSession
 const generateOTP = (req) =>{
 
     var OTP = randomizer('0' , 5);
-    req.session.OTP = OTP;
-    req.session.save();
+    // req.session.OTP = OTP;
+    // req.session.save();
 
-    console.log("OTP session is",  req.session.OTP);
+    // console.log("OTP session is",  req.session.OTP);
+    console.log("OTP is : ",  OTP);
 
     return Promise.resolve(OTP);
 }
