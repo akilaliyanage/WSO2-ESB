@@ -709,3 +709,14 @@ TID: [-1234] [2021-05-22 20:30:54,731]  INFO {API_LOGGER.item-API} - message = i
 TID: [-1234] [2021-05-22 20:37:07,509]  INFO {API_LOGGER.item-API} - message = in the item api
 TID: [-1234] [2021-05-22 20:51:22,046]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
 TID: [-1234] [2021-05-22 20:52:10,426]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 21:11:03,039]  INFO {API_LOGGER.item-API} - message = in the item api
+TID: [-1234] [2021-05-22 21:11:14,129]  INFO {API_LOGGER.item-API} - message = in the item api
+TID: [-1234] [2021-05-22 21:11:21,441]  INFO {API_LOGGER.item-API} - message = in the item api
+TID: [-1234] [2021-05-22 21:11:27,479]  INFO {API_LOGGER.item-API} - message = in the item api
+TID: [-1234] [2021-05-22 21:16:12,726]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 21:16:12,728]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 21:16:12,730]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 21:16:12,732]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 21:16:12,735]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 21:16:12,737]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 21:16:12,739]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
