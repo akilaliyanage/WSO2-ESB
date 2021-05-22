@@ -12,6 +12,7 @@ require('dotenv/config')
 const DeliveryRoutes = require('./routes/DeliveryRoutes');
 const userRouter = require('./routes/UserRoute.js');
 const itemRouter = require('./routes/ItemRoute.js');
+const buyerRouter = require('./routes/BuyerRoute.js');
 
 const cartRouter = require('./routes/CartRoutes.js');
 
@@ -40,7 +41,7 @@ app.use('/delivery',DeliveryRoutes);
 app.use("/user",userRouter);
 app.use("/item",itemRouter);
 
-app.use("/buyer",itemRouter);
+app.use("/buyer",buyerRouter);
 app.use("/cart",cartRouter);
 
 app.use("/cardPayment",cardPaymentGatewayRouter);
