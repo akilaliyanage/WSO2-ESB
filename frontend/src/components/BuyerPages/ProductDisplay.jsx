@@ -108,7 +108,7 @@ class ProductDisplay extends Component {
                                             
 
                                         <Card className="shadow p-3 mb-5 bg-white rounded" style={{ width: '25rem', height:'40rem'}}>
-                                            <Card.Img variant="top" src={"http://localhost:9000/"+item.itemImage} />
+                                            <Card.Img variant="top" src={"http://172.18.0.1:8280/images/"+item.itemImage} />
                                             <Card.Body>
                                                 <Card.Title>
                                                     <h3>{item.title}</h3>

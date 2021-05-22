@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <endpoint name="ietm_add" xmlns="http://ws.apache.org/ns/synapse">
-    <http method="post" uri-template="http://localhost:9000/item/{uri.var.add}">
+    <http method="post" uri-template="http://localhost:9000/item/add">
         <suspendOnFailure>
             <initialDuration>-1</initialDuration>
             <progressionFactor>1.0</progressionFactor>

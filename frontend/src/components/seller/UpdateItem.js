@@ -38,7 +38,7 @@ function UpdateItem(props){
         document.body.style.backgroundColor = "#282c34"
 
             console.log(props.match.params.itemID);
-            axios.get("http://192.168.8.166:8280/item/"+userid+"/"+props.match.params.itemID).then((res) => {
+            axios.get("http://172.18.0.1:8280/item/"+userid+"/"+props.match.params.itemID).then((res) => {
 
                 setItem(res.data);
                 setName(res.data[0].title);
@@ -89,7 +89,7 @@ function UpdateItem(props){
 
         console.log(price);
 
-        const url = "http://192.168.8.166:8280/item/update/"+props.match.params.itemID;
+        const url = "http://172.18.0.1:8280/item/update/"+props.match.params.itemID;
         axios.put(url,formData).then((res) => {
             if(res.data.status === 200) {
                 history.push("/seller");
@@ -223,7 +223,7 @@ function UpdateItem(props){
                 </div>
 
                 <div className="oldPreview">
-                    <img src={"http://192.168.8.166:8280/images/"+item.itemImage} width="250" height="250"/>
+                    <img src={"http://172.18.0.1:8280/images/"+item.itemImage} width="250" height="250"/>
                 </div>
 
                 <div className="preview">
