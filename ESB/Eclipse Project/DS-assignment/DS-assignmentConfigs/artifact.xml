@@ -92,4 +92,16 @@
     <artifact name="image" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/image.xml</file>
     </artifact>
+    <artifact name="buyer_API" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/buyer_API.xml</file>
+    </artifact>
+    <artifact name="buyer_endpoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/buyer_endpoint.xml</file>
+    </artifact>
+    <artifact name="cart-save" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/cart-save.xml</file>
+    </artifact>
+    <artifact name="searh-item" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/searh-item.xml</file>
+    </artifact>
 </artifacts>
