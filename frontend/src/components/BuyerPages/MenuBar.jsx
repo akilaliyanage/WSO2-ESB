@@ -87,7 +87,7 @@ export default class MenuBar extends Component {
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right cart-menu">
                                 <li><a onClick={this.visible} class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                <li><a ><span><Link to="/cart">Cart</Link></span> <span class="shoping-cart">{(this.state.cart.length)}</span></a></li>
+                                <li><a ><span><Link to="/cart">Cart</Link></span></a></li>
                             </ul>
                             </div>
                         </div>
