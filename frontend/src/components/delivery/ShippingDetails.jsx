@@ -103,6 +103,8 @@ class ShippingDetails extends Component {
 
           // alert(data.userId)
 
+          window.localStorage.setItem("del_location",this.state.add)
+
           fetch(config.host + '/delivery', {
             method: 'POST', 
             headers: {

@@ -26,7 +26,7 @@ class ProductDisplay extends Component {
     }
 
     fetchItems = () =>{
-        fetch("http://localhost:9000/buyer").then(res => res.json()).then(data => this.setState({item:data})).catch(err => console.log(err))
+        fetch("http://172.18.0.1:8280/buyer").then(res => res.json()).then(data => this.setState({item:data})).catch(err => console.log(err))
     }
 
     addToCart = (item) => {
@@ -98,8 +98,6 @@ class ProductDisplay extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                
-
                                 <h1 class="mt-5">Category Name Goes Here</h1>
 
                                 <div class="row featured isotope">
@@ -129,14 +127,9 @@ class ProductDisplay extends Component {
                                         </div>
                                         );
                                     })}
-
-                                    
                                 </div>
-
-                                
                             </div>
                         </section>
-                
             </div>
         )
     }

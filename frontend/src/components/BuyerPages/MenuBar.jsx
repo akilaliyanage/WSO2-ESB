@@ -133,19 +133,7 @@ export default class MenuBar extends Component {
                                 </Card.Body>
                             </Card>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 cat-3 featured-items isotope-item">
-                            <Card className="shadow p-3 mb-5 bg-white rounded">
-                                <Card.Img variant="top" src={CardImg} />
-                                <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
-                                    </Card.Text>
-                                    <Button type="primary" >Go somewhere</Button>
-                                </Card.Body>
-                            </Card>
-                        </div>
+                    
                     </div>
                 </Modal>
             </div>

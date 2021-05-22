@@ -477,3 +477,4 @@ TID: [-1234] [2021-05-22 20:15:19,974]  INFO {API_LOGGER.delivery_API} - message
 TID: [-1234] [2021-05-22 20:25:38,327]  INFO {API_LOGGER.location_API} - message = logged into the locations api
 TID: [-1234] [2021-05-22 20:26:17,538]  INFO {API_LOGGER.delivery_API} - message = logged into the create-delivert api
 TID: [-1234] [2021-05-22 20:50:40,917]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 20:54:12,307]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API

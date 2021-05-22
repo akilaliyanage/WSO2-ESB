@@ -5477,3 +5477,230 @@ TID: [-1234] [] [2021-05-22 20:50:41,495]  INFO {org.apache.synapse.deployers.En
 TID: [-1234] [] [2021-05-22 20:50:41,496]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'update-delivery' has been undeployed
 TID: [-1234] [] [2021-05-22 20:50:41,497]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'update_item' has been undeployed
 TID: [-1234] [] [2021-05-22 20:50:41,499]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'user-signup' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:11,725]  INFO {org.wso2.carbon.application.deployer.CappAxis2Deployer} - Undeploying Faulty Carbon Application On : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\repository\deployment\server\carbonapps\DS-assignmentCompositeExporter_1.0.0.car
+TID: [-1234] [] [2021-05-22 20:54:11,726]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Deploying Carbon Application : DS-assignmentCompositeExporter_1.0.0.car...
+TID: [-1234] [] [2021-05-22 20:54:12,109]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : buyer-login was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,110]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'buyer-login' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\buyer-login_1.0.0\buyer-login-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,160]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : buyer_endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,161]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'buyer_endpoint' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\buyer_endpoint_1.0.0\buyer_endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,178]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : card_payment was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,179]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'card_payment' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\card_payment_1.0.0\card_payment-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,194]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : cart-save was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,194]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'cart-save' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\cart-save_1.0.0\cart-save-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,200]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : chec_otp_card was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,202]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'chec_otp_card' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\chec_otp_card_1.0.0\chec_otp_card-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,205]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : check_otp was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,205]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'check_otp' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\check_otp_1.0.0\check_otp-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,208]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : cities-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,209]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'cities-endpoint' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\cities-endpoint_1.0.0\cities-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,215]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : create_delivery was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,218]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'create_delivery' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\create_delivery_1.0.0\create_delivery-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,221]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : create_location was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,221]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'create_location' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\create_location_1.0.0\create_location-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,223]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : delete_item was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,224]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'delete_item' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delete_item_1.0.0\delete_item-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,226]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : delivery_endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,227]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'delivery_endpoint' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_endpoint_1.0.0\delivery_endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,230]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : email_service was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,232]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'email_service' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\email_service_1.0.0\email_service-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,237]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : get-pending-orders was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,238]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'get-pending-orders' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\get-pending-orders_1.0.0\get-pending-orders-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,240]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : get-single-seller was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,240]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'get-single-seller' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\get-single-seller_1.0.0\get-single-seller-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,243]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : ietm_add was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,244]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'ietm_add' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\ietm_add_1.0.0\ietm_add-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,247]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : image was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,250]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'image' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\image_1.0.0\image-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,254]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : item-search was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,254]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'item-search' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\item-search_1.0.0\item-search-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,256]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : location_endpoints was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,257]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'location_endpoints' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\location_endpoints_1.0.0\location_endpoints-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,259]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : make_payment was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,260]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'make_payment' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\make_payment_1.0.0\make_payment-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,264]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : message_service was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,266]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'message_service' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\message_service_1.0.0\message_service-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,276]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : mobile_paymnt was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,277]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'mobile_paymnt' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\mobile_paymnt_1.0.0\mobile_paymnt-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,286]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : searh-item was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,286]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'searh-item' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\searh-item_1.0.0\searh-item-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,288]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : seller-login was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,288]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'seller-login' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\seller-login_1.0.0\seller-login-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,290]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : seller_item_search was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,290]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'seller_item_search' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\seller_item_search_1.0.0\seller_item_search-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,291]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : states-endpoint was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,292]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'states-endpoint' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\states-endpoint_1.0.0\states-endpoint-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,293]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : update-delivery was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,293]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'update-delivery' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\update-delivery_1.0.0\update-delivery-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,295]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : update_item was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,295]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'update_item' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\update_item_1.0.0\update_item-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,298]  INFO {org.wso2.carbon.mediation.dependency.mgt.DependencyTracker} - Endpoint : user-signup was added to the Synapse configuration successfully - [ Deployed From Artifact Container: DS-assignmentCompositeExporter ] 
+TID: [-1234] [] [2021-05-22 20:54:12,299]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'user-signup' has been deployed from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\user-signup_1.0.0\user-signup-1.0.0.xml
+TID: [-1234] [] [2021-05-22 20:54:12,306]  INFO {org.apache.synapse.rest.API} - Initializing API: delivery_API
+TID: [-1234] [] [2021-05-22 20:54:12,307] ERROR {org.apache.synapse.config.SynapseConfiguration} - Duplicate resource definition by the name: delivery_API
+TID: [-1234] [] [2021-05-22 20:54:12,307] ERROR {org.wso2.carbon.rest.api.ApiDeployer} - API deployment from the file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : Failed. org.apache.synapse.SynapseException: Duplicate resource definition by the name: delivery_API
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:433)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+TID: [-1234] [] [2021-05-22 20:54:12,308] ERROR {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - Deployment of the Synapse Artifact from file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : Failed! org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.synapse.SynapseException: Duplicate resource definition by the name: delivery_API
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:433)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 23 more
+
+TID: [-1234] [] [2021-05-22 20:54:12,308]  INFO {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - The file has been backed up into : NO_BACKUP_ON_WORKER.INFO
+TID: [-1234] [] [2021-05-22 20:54:12,308] ERROR {org.apache.synapse.deployers.AbstractSynapseArtifactDeployer} - Deployment of synapse artifact failed. Error reading D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : API deployment from the file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : Failed. org.apache.axis2.deployment.DeploymentException: API deployment from the file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:210)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	... 21 more
+Caused by: org.apache.synapse.SynapseException: Duplicate resource definition by the name: delivery_API
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:433)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 23 more
+
+TID: [-1234] [] [2021-05-22 20:54:12,309] ERROR {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Error occurred while deploying Carbon Application org.apache.axis2.deployment.DeploymentException: API deployment from the file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:222)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifactType(SynapseAppDeployer.java:1099)
+	at org.wso2.carbon.application.deployer.synapse.SynapseAppDeployer.deployArtifacts(SynapseAppDeployer.java:114)
+	at org.wso2.carbon.application.deployer.internal.ApplicationManager.deployCarbonApp(ApplicationManager.java:272)
+	at org.wso2.carbon.application.deployer.CappAxis2Deployer.deploy(CappAxis2Deployer.java:72)
+	at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136)
+	at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:807)
+	at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144)
+	at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:377)
+	at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:254)
+	at org.apache.axis2.deployment.RepositoryListener.startListener(RepositoryListener.java:371)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.checkRepository(SchedulerTask.java:59)
+	at org.apache.axis2.deployment.scheduler.SchedulerTask.run(SchedulerTask.java:67)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.runAxisDeployment(CarbonDeploymentSchedulerTask.java:93)
+	at org.wso2.carbon.core.deployment.CarbonDeploymentSchedulerTask.run(CarbonDeploymentSchedulerTask.java:138)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.axis2.deployment.DeploymentException: API deployment from the file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:210)
+	... 21 more
+Caused by: org.apache.synapse.deployers.SynapseArtifactDeploymentException: API deployment from the file : D:\Educational\Sliit\2021\1st Sem\Software Engineering\Distributed Systems - SE3020 [2021FEB]\Assignment 2\WSO2_ESB_New\WSO2-ESB-master\ESB\wso2ei-6.6.0\tmp\carbonapps\-1234\1621697051726DS-assignmentCompositeExporter_1.0.0.car\delivery_API_1.0.0\delivery_API-1.0.0.xml : Failed.
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.handleSynapseArtifactDeploymentError(AbstractSynapseArtifactDeployer.java:483)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:71)
+	at org.wso2.carbon.rest.api.ApiDeployer.deploySynapseArtifact(ApiDeployer.java:34)
+	at org.apache.synapse.deployers.AbstractSynapseArtifactDeployer.deploy(AbstractSynapseArtifactDeployer.java:200)
+	... 21 more
+Caused by: org.apache.synapse.SynapseException: Duplicate resource definition by the name: delivery_API
+	at org.apache.synapse.config.SynapseConfiguration.handleException(SynapseConfiguration.java:1667)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:433)
+	at org.apache.synapse.config.SynapseConfiguration.addAPI(SynapseConfiguration.java:414)
+	at org.apache.synapse.deployers.APIDeployer.deploySynapseArtifact(APIDeployer.java:59)
+	... 23 more
+
+TID: [-1234] [] [2021-05-22 20:54:12,310]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Reverting successfully deployed artifcats in this CApp : DS-assignmentCompositeExporter_1.0.0
+TID: [-1234] [] [2021-05-22 20:54:12,312]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'buyer-login' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,316]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'buyer_endpoint' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,317]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'card_payment' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,319]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'cart-save' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,320]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'chec_otp_card' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,321]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'check_otp' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,322]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'cities-endpoint' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,322]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'create_delivery' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,323]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'create_location' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,324]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'delete_item' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,325]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'delivery_endpoint' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,325]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'email_service' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,326]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'get-pending-orders' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,327]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'get-single-seller' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,327]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'ietm_add' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,328]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'image' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,328]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'item-search' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,329]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'location_endpoints' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,331]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'make_payment' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,333]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'message_service' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,334]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'mobile_paymnt' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,335]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'searh-item' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,336]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'seller-login' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,336]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'seller_item_search' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,337]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'states-endpoint' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,337]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'update-delivery' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,338]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'update_item' has been undeployed
+TID: [-1234] [] [2021-05-22 20:54:12,338]  INFO {org.apache.synapse.deployers.EndpointDeployer} - Endpoint named 'user-signup' has been undeployed
