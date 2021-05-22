@@ -96,7 +96,7 @@ class ShippingDetails extends Component {
             locType : this.state.locType,
             date : this.state.date,
             comments : this.state.comments,
-            itemCode : this.state.itemCode,
+            delCost : window.localStorage.getItem('delCost'),
             email : this.state.email,
             status : this.state.status
           }
@@ -118,6 +118,8 @@ class ShippingDetails extends Component {
             notification['success']({
               message: 'Delivery Info saved successfully. You will get an email of confirmation.'
             });
+          }).then(()=>{
+            window.location.replace("http://localhost:3000/CardPayment");
           })
           .catch((error) => {
             console.error('Error:', error);
@@ -138,7 +140,7 @@ class ShippingDetails extends Component {
           });
         }
 
-        window.location.replace("http://localhost:3000/CardPayment");
+        
        
       };
 

@@ -38,7 +38,7 @@ const deliverySchema = new Schema({
         type:String,
         required:true
     },
-    itemCode:{
+    delCost:{
         type:String,
         required:true
     },

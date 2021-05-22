@@ -27,7 +27,7 @@ router.post('/',(req,res) =>{
         locType : req.body.locType,
         date: new Date(req.body.date),
         comments: req.body.comments,
-        itemCode:req.body.itemCode,
+        delCost:req.body.delCost,
         email:req.body.email,
         status: [req.body.status]
 
@@ -51,7 +51,7 @@ router.post('/',(req,res) =>{
         from: process.env.EMAIL,
         to: item.email,
         subject: 'Delivery reciept',
-        text: 'Your order has ben places successfull on' + item.date +' Thank you for using our service.'
+        text: 'Your order has ben places successfull on ' + item.date +'. TH total cost is Rs.' + item.delCost +'. Thank you for using our service.'
       };
       
       transporter.sendMail(mailOptions, function(error, info){
