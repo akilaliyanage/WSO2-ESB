@@ -98,8 +98,6 @@ class ProductDisplay extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                
-
                                 <h1 class="mt-5">Category Name Goes Here</h1>
 
                                 <div class="row featured isotope">
@@ -129,14 +127,9 @@ class ProductDisplay extends Component {
                                         </div>
                                         );
                                     })}
-
-                                    
                                 </div>
-
-                                
                             </div>
                         </section>
-                
             </div>
         )
     }

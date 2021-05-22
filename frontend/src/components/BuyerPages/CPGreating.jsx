@@ -27,18 +27,6 @@ export default class Partners extends Component {
                                     </div>
                                     
                                 </div>
-
-                                {/* <ol class="carousel-indicators review-controlar">
-                                    <li data-target="#feedback" data-slide-to="0" class="active">
-                                        <img src="images/member1.png" width="320" height="439" alt=""/>
-                                    </li>
-                                    <li data-target="#feedback" data-slide-to="1">
-                                        <img src="images/member2.png" width="320" height="439" alt=""/>
-                                    </li>
-                                    <li data-target="#feedback" data-slide-to="2">
-                                        <img src="images/member3.png" width="320" height="439" alt=""/>
-                                    </li>
-                                </ol> */}
                             </div>
                         </div>
                     </div>
