@@ -3,3 +3,8 @@ TID: [-1234] [2021-05-09 17:34:37,159]  INFO {SERVICE_LOGGER.__SynapseService} -
 TID: [-1234] [2021-05-14 19:35:08,096]  INFO {SERVICE_LOGGER.__SynapseService} - main sequence executed for call to non-existent = /locations
 TID: [-1234] [2021-05-14 19:36:37,502]  INFO {SERVICE_LOGGER.__SynapseService} - main sequence executed for call to non-existent = /locations
 TID: [-1234] [2021-05-14 19:37:14,956]  INFO {SERVICE_LOGGER.__SynapseService} - main sequence executed for call to non-existent = /locations
+TID: [-1234] [2021-05-22 19:29:48,699]  INFO {SERVICE_LOGGER.__SynapseService} - main sequence executed for call to non-existent = /states
+TID: [-1234] [2021-05-22 19:29:54,576]  INFO {SERVICE_LOGGER.__SynapseService} - main sequence executed for call to non-existent = /states/states
+TID: [-1234] [2021-05-22 19:30:00,669]  INFO {SERVICE_LOGGER.__SynapseService} - main sequence executed for call to non-existent = /states/cities
+TID: [-1234] [2021-05-22 19:46:16,241]  INFO {SERVICE_LOGGER.__SynapseService} - main sequence executed for call to non-existent = /buyer
+TID: [-1234] [2021-05-22 19:46:19,684]  INFO {SERVICE_LOGGER.__SynapseService} - main sequence executed for call to non-existent = /buyer/test

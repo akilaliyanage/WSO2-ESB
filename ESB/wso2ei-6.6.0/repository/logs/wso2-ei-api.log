@@ -439,3 +439,269 @@ TID: [-1234] [2021-05-22 18:25:26,649]  INFO {API_LOGGER.user_API} - Initializin
 TID: [-1234] [2021-05-22 18:25:26,681]  INFO {API_LOGGER.test2} - Initializing API: test2
 TID: [-1234] [2021-05-22 18:25:26,703]  INFO {API_LOGGER.news} - Initializing API: news
 TID: [-1234] [2021-05-22 18:25:26,922]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-22 18:51:06,017]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-22 18:51:06,017]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-22 18:51:06,060]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-22 18:51:06,060]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-22 18:51:09,330]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-22 18:51:11,961]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-22 18:51:11,961]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-22 18:51:11,965]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-22 18:51:11,965]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-22 18:51:13,433]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-22 18:51:15,695]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-22 18:51:15,696]  INFO {API_LOGGER.delivery_API} - message = case api logged
+TID: [-1234] [2021-05-22 18:51:15,698]  INFO {API_LOGGER.delivery_API} - message = logging into the cities api end point
+TID: [-1234] [2021-05-22 18:51:15,709]  INFO {API_LOGGER.delivery_API} - message = logging into the states endpoint
+TID: [-1234] [2021-05-22 18:51:29,769]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-22 18:58:58,037]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 18:58:58,069]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 18:58:58,079]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 18:58:58,090]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 18:58:58,099]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 18:58:58,111]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 18:58:58,117]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 18:59:51,598]  INFO {API_LOGGER.buyer_API} - To: /buyer, MessageID: urn:uuid:2ba4115b-329f-46a1-8fd0-ff951feeeba8, Direction: request
+TID: [-1234] [2021-05-22 18:59:51,766]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 18:59:51,767]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 18:59:51,771]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 18:59:51,772]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:02:08,897]  INFO {API_LOGGER.buyer_API} - To: /buyer, MessageID: urn:uuid:463e4ff4-654e-4596-a12e-0dd16a316cd5, Direction: request
+TID: [-1234] [2021-05-22 19:02:08,924]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:02:08,925]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:02:08,927]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:02:08,927]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:02:46,718]  INFO {API_LOGGER.buyer_API} - To: /buyer/, MessageID: urn:uuid:2280c716-ada9-417b-9321-b32ac4c1fad4, Direction: request
+TID: [-1234] [2021-05-22 19:02:46,762]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:02:46,763]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:02:46,766]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:02:46,766]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:03:28,401]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:03:28,409]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:03:28,432]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:03:28,444]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:03:28,451]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:03:28,467]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:03:28,480]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:04:44,547]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:04:44,591]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:04:44,592]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:04:44,594]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:04:44,594]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:06:53,614]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:06:53,658]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:06:53,669]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:06:53,678]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:06:53,686]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:06:53,698]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:06:53,710]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:06:53,752]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-22 19:06:53,776]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-22 19:06:53,998]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
+TID: [-1234] [2021-05-22 19:07:34,612]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:07:34,682]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:07:34,683]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:07:34,685]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:07:34,686]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:07:35,752]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:07:35,753]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:07:35,753]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:08:12,700]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:08:12,741]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:08:12,742]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:08:12,746]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:08:12,746]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:09:09,519]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:09:09,530]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:09:09,533]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:09:09,542]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:09:09,547]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:09:09,555]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:09:09,563]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:09:28,875]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:09:28,927]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:09:28,928]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:09:28,932]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:09:28,932]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:16:47,666]  INFO {API_LOGGER.buyer_API} - To: /buyer/saveCart, MessageID: urn:uuid:695ae6b8-ed14-4ab6-85b3-8197ce1ea28e, Direction: request
+TID: [-1234] [2021-05-22 19:16:47,676]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:16:47,676]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:16:47,677]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:16:47,677]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:19:48,698]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery api
+TID: [-1234] [2021-05-22 19:20:09,345]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:20:09,391]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:20:09,392]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:20:09,396]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:20:09,396]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:23:09,517]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:23:09,538]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:23:09,538]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:23:09,539]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:23:09,539]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:23:55,060]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:23:55,068]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:23:55,071]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:23:55,076]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:23:55,080]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:23:55,086]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:23:55,089]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:24:25,668]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:24:25,698]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:24:25,698]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:24:25,700]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:24:25,700]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:25:26,569]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:25:26,581]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:25:26,582]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:25:26,583]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:25:26,583]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:25:37,062]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:25:37,062]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:25:37,062]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:26:08,109]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:26:08,122]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:26:08,122]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:26:08,123]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:26:08,123]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:26:55,301]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:26:55,307]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:26:55,310]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:26:55,313]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:26:55,316]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:26:55,320]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:26:55,324]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:27:01,124]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:27:01,132]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:27:01,133]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:27:01,133]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:27:01,133]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:27:25,834]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:27:25,834]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:27:25,835]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:27:28,384]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:27:28,385]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:27:28,385]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:28:10,545]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:28:10,549]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:28:10,551]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:28:10,554]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:28:10,556]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:28:10,560]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:28:10,563]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:28:18,753]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:28:18,772]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:28:18,772]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:28:18,774]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:28:18,774]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:28:27,413]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:28:27,413]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:28:27,413]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:28:35,046]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:28:35,049]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:28:35,050]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:28:36,439]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:28:36,439]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:28:36,440]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:28:55,704]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:28:55,717]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:28:55,719]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:28:55,721]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:28:55,724]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:28:55,727]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:28:55,731]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:29:01,760]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:29:01,808]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:29:01,809]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:29:01,811]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:29:01,811]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:29:06,058]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:29:06,058]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:29:06,058]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:29:08,836]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:29:08,836]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:29:08,836]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:29:10,731]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:29:10,731]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:29:10,731]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:29:23,333]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:29:23,333]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:29:23,333]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:29:39,170]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery api
+TID: [-1234] [2021-05-22 19:30:35,431]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:30:35,442]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:30:35,442]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:30:35,443]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:30:35,443]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:31:38,238]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:31:38,251]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:31:38,251]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:31:38,252]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:31:38,252]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:31:43,830]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:31:43,830]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:31:43,830]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:31:57,811]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:31:57,811]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:31:57,811]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:32:01,928]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:32:01,929]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:32:01,929]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:35:55,017]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:35:55,034]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:35:55,034]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:35:55,036]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:35:55,036]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:36:17,941]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:36:17,941]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:36:17,941]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:36:43,811]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-22 19:36:49,526]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery-pending api
+TID: [-1234] [2021-05-22 19:37:23,283]  INFO {API_LOGGER.location_API} - message = logged into the locations api
+TID: [-1234] [2021-05-22 19:37:30,036]  INFO {API_LOGGER.delivery_API} - message = logged into the delivery-pending api
+TID: [-1234] [2021-05-22 19:47:11,096]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:47:11,097]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:47:11,100]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:47:11,101]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:47:11,104]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:47:11,117]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:47:11,122]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:47:20,407]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:47:20,419]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:47:20,420]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:47:20,421]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:47:20,421]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:49:56,294]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:49:56,297]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:49:56,300]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:49:56,303]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:49:56,307]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:49:56,310]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:49:56,314]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:50:20,586]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:50:20,625]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:50:20,626]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:50:20,628]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:50:20,628]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:51:52,340]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:51:52,348]  WARN {API_LOGGER.buyer_API} - Executing fault handler due to exception encountered
+TID: [-1234] [2021-05-22 19:51:52,348]  WARN {API_LOGGER.buyer_API} - ERROR_CODE : 0 ERROR_MESSAGE : Unexpected error during sending message out
+TID: [-1234] [2021-05-22 19:51:52,349]  INFO {API_LOGGER.buyer_API} - FaultHandler executing impl: org.apache.synapse.mediators.MediatorFaultHandler
+TID: [-1234] [2021-05-22 19:51:52,349]  WARN {API_LOGGER.buyer_API} - Executing fault sequence mediator : org.apache.synapse.mediators.base.SequenceMediator
+TID: [-1234] [2021-05-22 19:54:11,473]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:54:11,475]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:54:11,478]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:54:11,480]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:54:11,484]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:54:11,487]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:54:11,490]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:54:27,302]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:54:59,495]  INFO {API_LOGGER.buyer_API} - message = buer endpoint
+TID: [-1234] [2021-05-22 19:55:56,671]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 19:55:56,672]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 19:55:56,674]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 19:55:56,676]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 19:55:56,679]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 19:55:56,680]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 19:55:56,682]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 19:56:06,348]  INFO {API_LOGGER.buyer_API} - To: /buyer/saveCart, MessageID: urn:uuid:9f8dea1c-df07-4a51-868f-63c8f3d82023, Direction: request
