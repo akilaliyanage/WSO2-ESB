@@ -29,7 +29,8 @@ class CardPaymentForm extends Component{
             buyerName: '',
             buyerID : '' , 
             fullAmmount : '',
-            city : ''
+            city : '',
+            cart_id : ''
         }
     }
 
@@ -200,7 +201,7 @@ class CardPaymentForm extends Component{
       
       componentDidMount(){
         console.log('cartitems : ' , window.localStorage.getItem("cartitems"))
-        console.log('Seller Id : ' , window.localStorage.getItem("cartitems")[0]["sellerId"])
+        //console.log('Seller Id : ' , window.localStorage.getItem("cartitems")[0]["sellerId"])
         console.log('total item cost: ' , window.localStorage.getItem("total"))
         console.log('delCost : ' , window.localStorage.getItem("delCost"))
         console.log('buyer-name : ' , window.localStorage.getItem("buyer-name"))
@@ -217,8 +218,8 @@ class CardPaymentForm extends Component{
             deliveryCost : JSON.parse(window.localStorage.getItem("delCost")),
             buyerName: window.localStorage.getItem("buyer-name"),
             buyerID : JSON.parse(window.localStorage.getItem("buyer-id")) , 
-            city : JSON.parse(window.localStorage.getItem("city")) , 
-            fullAmmount : finalAmmount
+            city : window.localStorage.getItem("city"), 
+            fullAmmount : (parseInt(window.localStorage.getItem("delCost")) + parseInt(window.localStorage.getItem("total"))).toFixed(2)
         })
     }
 
@@ -284,14 +285,14 @@ class CardPaymentForm extends Component{
                     </Row>
 
                     <Row className="commonSeperator">
-                        <Col className="gutter-row" span={8} offset={2}>
+                        <Col className="gutter-row" span={7} offset={2}>
                             <h2 className="lightText">Total Payment</h2>
                         </Col>
                         <Col className="gutter-row" span={5} offset={2}>
                             <hr className="lightText" style={{marginTop:20 , background:"#FFFFFF"}}></hr>
                         </Col>
                         <Col className="gutter-row" span={4} >
-                            <h2 className="lightText">$26.25</h2>
+                            <h2 className="lightText">${this.state.fullAmmount}</h2>
                         </Col>
                     </Row>
 

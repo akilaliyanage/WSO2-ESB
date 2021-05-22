@@ -5,6 +5,7 @@ TID: [-1234] [2021-05-22 13:52:39,361]  INFO {AUDIT_LOG} - 'admin@carbon.super [
 TID: [-1234] [2021-05-22 14:19:01,658]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 14:19:01,656+0530]
 TID: [-1234] [2021-05-22 14:19:08,550]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 14:19:08,549+0530]
 TID: [-1234] [2021-05-22 14:19:37,842]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 14:19:37,841+0530]
+<<<<<<< HEAD
 TID: [-1234] [2021-05-22 17:36:55,288]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 17:36:55,287+0530]
 TID: [-1234] [2021-05-22 18:58:26,540]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 18:58:26,533+0530]
 TID: [-1234] [2021-05-22 18:58:45,252]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 18:58:45,250+0530]
@@ -35,3 +36,27 @@ TID: [-1234] [2021-05-22 20:14:22,768]  INFO {AUDIT_LOG} - 'admin@carbon.super [
 TID: [-1234] [2021-05-22 20:30:28,867]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:30:28,867+0530]
 TID: [-1234] [2021-05-22 21:15:51,873]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 21:15:51,873+0530]
 TID: [-1234] [2021-05-22 21:15:58,833]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 21:15:58,832+0530]
+=======
+TID: [-1234] [2021-05-22 17:10:53,033]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 17:10:53,031+0530]
+TID: [-1234] [2021-05-22 17:10:53,151]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 17:10:53,149+0530]
+TID: [-1234] [2021-05-22 17:13:16,297]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 17:13:16,296+0530]
+TID: [-1234] [2021-05-22 17:14:59,144]  WARN {AUDIT_LOG} - Initiator=wso2.system.user Action=Authentication Target=admin Data=null Outcome=Failure Error={"Error Message":"Un-expected error while authenticating","Error Code":"31001"}
+TID: [-1234] [2021-05-22 17:14:59,147]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 17:14:59,144+0530]
+TID: [-1234] [2021-05-22 17:15:10,973]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 17:15:10,972+0530]
+TID: [-1234] [2021-05-22 17:35:41,850]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 17:35:41,469+0530]
+TID: [-1234] [2021-05-22 17:36:00,674]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 17:36:00,673+0530]
+TID: [-1234] [2021-05-22 18:06:32,610]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 18:06:32,564+0530]
+TID: [-1234] [2021-05-22 18:06:57,986]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 18:06:57,985+0530]
+TID: [-1234] [2021-05-22 18:11:34,396]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 18:11:34,393+0530]
+TID: [-1234] [2021-05-22 18:12:19,063]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 18:12:19,062+0530]
+TID: [-1234] [2021-05-22 18:35:02,453]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 18:35:02,451+0530]
+TID: [-1234] [2021-05-22 18:35:02,534]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 18:35:02,533+0530]
+TID: [-1234] [2021-05-22 18:36:28,586]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 18:36:28,585+0530]
+TID: [-1234] [2021-05-22 19:06:51,529]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 19:06:50,399+0530]
+TID: [-1234] [2021-05-22 19:17:11,374]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:17:11,372+0530]
+TID: [-1234] [2021-05-22 20:12:43,750]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 20:12:43,749+0530]
+TID: [-1234] [2021-05-22 20:13:57,242]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:13:57,241+0530]
+TID: [-1234] [2021-05-22 20:14:24,306]  WARN {AUDIT_LOG} - Initiator=wso2.system.user Action=Authentication Target=admin Data=null Outcome=Failure Error={"Error Message":"Un-expected error while authenticating","Error Code":"31001"}
+TID: [-1234] [2021-05-22 20:14:24,307]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 20:14:24,306+0530]
+TID: [-1234] [2021-05-22 20:14:36,298]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:14:36,296+0530]
+>>>>>>> d4605384caa8097866a4064498bfaa61ec5f8eb5

@@ -9,7 +9,7 @@ class CardPaymentLeft extends Component {
         super(props);
         this.state = {
             itemCost: '',
-            deliveryCost : '200',
+            deliveryCost : '',
             buyerName: '',
             buyerID : '' , 
             fullAmmount : '',
@@ -19,7 +19,7 @@ class CardPaymentLeft extends Component {
 
     componentDidMount(){
         console.log('cartitems : ' , window.localStorage.getItem("cartitems"))
-        console.log('SellerID : ' , window.localStorage.getItem("cartitems")[0]["sellerId"])
+        //console.log('SellerID : ' , window.localStorage.getItem("cartitems")[0]["sellerId"])
         console.log('total : ' , window.localStorage.getItem("total"))
         console.log('delCost : ' , window.localStorage.getItem("delCost"))
         console.log('buyer-name : ' , window.localStorage.getItem("buyer-name"))
@@ -28,14 +28,13 @@ class CardPaymentLeft extends Component {
         var iCost = JSON.parse(window.localStorage.getItem("total"));
         var dCost = JSON.parse(window.localStorage.getItem("delCost"));
         console.log('dCost : ' , dCost)
-        var finalAmmount = parseFloat(iCost) + parseFloat(this.state.deliveryCost)
         this.setState({
-            itemCost: JSON.parse(window.localStorage.getItem("total")),
-            //deliveryCost : JSON.parse(window.localStorage.getItem("delCost")),
+            itemCost: parseInt(window.localStorage.getItem("total")).toFixed(2),
+            deliveryCost : parseInt(window.localStorage.getItem("delCost")).toFixed(2),
             buyerName: window.localStorage.getItem("buyer-name"),
             buyerID : JSON.parse(window.localStorage.getItem("buyer-id")) , 
-            city : JSON.parse(window.localStorage.getItem("city")) , 
-            fullAmmount : finalAmmount
+            //city : JSON.parse(window.localStorage.getItem("city")) , 
+            fullAmmount : (parseInt(window.localStorage.getItem("delCost")) + parseInt(window.localStorage.getItem("total"))).toFixed(2)
         })
         // console.log(this.state.total)
     }
