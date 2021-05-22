@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api context="/item" name="item-API" xmlns="http://ws.apache.org/ns/synapse">
-    <resource methods="GET" uri-template="/{uri.var.sellerID}">
+    <resource methods="GET" uri-template="/{uri.var.sellerId}">
         <inSequence>
             <log level="custom">
                 <property name="message" value="in the item api"/>

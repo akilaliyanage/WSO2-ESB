@@ -5,6 +5,38 @@ TID: [-1234] [2021-05-22 13:52:39,361]  INFO {AUDIT_LOG} - 'admin@carbon.super [
 TID: [-1234] [2021-05-22 14:19:01,658]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 14:19:01,656+0530]
 TID: [-1234] [2021-05-22 14:19:08,550]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 14:19:08,549+0530]
 TID: [-1234] [2021-05-22 14:19:37,842]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 14:19:37,841+0530]
+<<<<<<< HEAD
+TID: [-1234] [2021-05-22 17:36:55,288]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 17:36:55,287+0530]
+TID: [-1234] [2021-05-22 18:58:26,540]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 18:58:26,533+0530]
+TID: [-1234] [2021-05-22 18:58:45,252]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 18:58:45,250+0530]
+TID: [-1234] [2021-05-22 18:59:12,685]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 18:59:12,684+0530]
+TID: [-1234] [2021-05-22 19:03:14,035]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:03:14,034+0530]
+TID: [-1234] [2021-05-22 19:03:27,716]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:03:27,715+0530]
+TID: [-1234] [2021-05-22 19:08:57,903]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:08:57,900+0530]
+TID: [-1234] [2021-05-22 19:09:02,722]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:09:02,720+0530]
+TID: [-1234] [2021-05-22 19:13:42,134]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:13:42,132+0530]
+TID: [-1234] [2021-05-22 19:23:45,826]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:23:45,823+0530]
+TID: [-1234] [2021-05-22 19:23:51,593]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:23:51,593+0530]
+TID: [-1234] [2021-05-22 19:26:41,874]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:26:41,873+0530]
+TID: [-1234] [2021-05-22 19:26:46,593]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:26:46,592+0530]
+TID: [-1234] [2021-05-22 19:27:54,147]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:27:54,147+0530]
+TID: [-1234] [2021-05-22 19:27:59,616]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:27:59,616+0530]
+TID: [-1234] [2021-05-22 19:28:47,190]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:28:47,190+0530]
+TID: [-1234] [2021-05-22 19:28:52,600]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:28:52,600+0530]
+TID: [-1234] [2021-05-22 19:40:37,435]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:40:37,435+0530]
+TID: [-1234] [2021-05-22 19:47:01,217]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:47:01,217+0530]
+TID: [-1234] [2021-05-22 19:49:33,119]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:49:33,118+0530]
+TID: [-1234] [2021-05-22 19:49:49,567]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:49:49,567+0530]
+TID: [-1234] [2021-05-22 19:50:16,131]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:50:16,128+0530]
+TID: [-1234] [2021-05-22 19:53:57,008]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:53:57,008+0530]
+TID: [-1234] [2021-05-22 19:54:02,120]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:54:02,119+0530]
+TID: [-1234] [2021-05-22 19:55:44,341]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:55:44,340+0530]
+TID: [-1234] [2021-05-22 19:55:49,923]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 19:55:49,922+0530]
+TID: [-1234] [2021-05-22 20:14:22,768]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:14:22,767+0530]
+TID: [-1234] [2021-05-22 20:30:28,867]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:30:28,867+0530]
+TID: [-1234] [2021-05-22 21:15:51,873]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 21:15:51,873+0530]
+TID: [-1234] [2021-05-22 21:15:58,833]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 21:15:58,832+0530]
+=======
 TID: [-1234] [2021-05-22 17:10:53,033]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 17:10:53,031+0530]
 TID: [-1234] [2021-05-22 17:10:53,151]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 17:10:53,149+0530]
 TID: [-1234] [2021-05-22 17:13:16,297]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 17:13:16,296+0530]
@@ -27,4 +59,8 @@ TID: [-1234] [2021-05-22 20:13:57,242]  INFO {AUDIT_LOG} - 'admin@carbon.super [
 TID: [-1234] [2021-05-22 20:14:24,306]  WARN {AUDIT_LOG} - Initiator=wso2.system.user Action=Authentication Target=admin Data=null Outcome=Failure Error={"Error Message":"Un-expected error while authenticating","Error Code":"31001"}
 TID: [-1234] [2021-05-22 20:14:24,307]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 20:14:24,306+0530]
 TID: [-1234] [2021-05-22 20:14:36,298]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:14:36,296+0530]
+<<<<<<< HEAD
 TID: [-1234] [2021-05-22 21:55:32,467]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 21:55:32,465+0530]
+=======
+>>>>>>> d4605384caa8097866a4064498bfaa61ec5f8eb5
+>>>>>>> 4777e68304388007ff32c583368aa138e8e7c8cb
