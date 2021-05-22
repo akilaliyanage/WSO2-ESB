@@ -118,8 +118,11 @@ class ShippingDetails extends Component {
             notification['success']({
               message: 'Delivery Info saved successfully. You will get an email of confirmation.'
             });
-          }).then(()=>{
-            window.location.replace("http://localhost:3000/CardPayment");
+
+            setTimeout(function(){
+              //console.log("I am the third log after 5 seconds");
+              window.location.replace("http://localhost:3000/CardPayment");
+          },5000);
           })
           .catch((error) => {
             console.error('Error:', error);
