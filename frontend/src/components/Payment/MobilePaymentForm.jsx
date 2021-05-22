@@ -146,11 +146,11 @@ class MobilePaymentForm extends Component{
           console.log('Payment method called');
           
           const _InputOTP = {
-            orderId:"ORD_M_4587",
+            orderId:window.localStorage.getItem("cart_id"),
             userId : this.state.buyerID,
             Ammount : this.state.fullAmmount,
             cardNo : this.state.cardNo,
-            accNo : "",
+            accNo :this.state.accNo,
             type : this.state.type,
             isMobile : this.state.isMobile,
             mobileNo : this.state.mobileNo,

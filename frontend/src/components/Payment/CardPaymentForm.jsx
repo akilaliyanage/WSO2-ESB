@@ -157,7 +157,7 @@ class CardPaymentForm extends Component{
           console.log('Payment method called');
           
           const _InputOTP = {
-            orderId:"ORD_C_4548",
+            orderId:window.localStorage.getItem("cart_id"),
             userId : this.state.buyerID,
             Ammount : this.state.fullAmmount,
             cardNo : this.state.cardNo,
