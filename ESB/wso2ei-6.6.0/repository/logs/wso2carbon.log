@@ -6084,3 +6084,7 @@ TID: [-1234] [] [2021-05-22 19:55:56,682]  INFO {org.wso2.carbon.mediation.depen
 TID: [-1234] [] [2021-05-22 19:55:56,682]  INFO {org.apache.synapse.deployers.APIDeployer} - API named 'buyer_API' has been deployed from file : /home/akila/Work/tutorials/WSO2-ESB/ESB/wso2ei-6.6.0/wso2/tmp/carbonapps/-1234/1621693556578DS-assignmentCompositeExporter_1.0.0.car/buyer_API_1.0.0/buyer_API-1.0.0.xml
 TID: [-1234] [] [2021-05-22 19:55:56,682]  INFO {org.wso2.carbon.application.deployer.internal.ApplicationManager} - Successfully Deployed Carbon Application : DS-assignmentCompositeExporter_1.0.0 {super-tenant}
 TID: [-1234] [] [2021-05-22 19:56:06,348]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - To: /buyer/saveCart, MessageID: urn:uuid:9f8dea1c-df07-4a51-868f-63c8f3d82023, Direction: request
+TID: [-1234] [] [2021-05-22 20:14:22,767]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:14:22,767+0530]
+TID: [-1234] [] [2021-05-22 20:30:28,867]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:30:28,867+0530]
+TID: [-1234] [] [2021-05-22 20:30:54,731]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = in the item api
+TID: [-1234] [] [2021-05-22 20:37:07,509]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = in the item api

@@ -705,3 +705,5 @@ TID: [-1234] [2021-05-22 19:55:56,679]  INFO {API_LOGGER.payment_API} - Initiali
 TID: [-1234] [2021-05-22 19:55:56,680]  INFO {API_LOGGER.user_API} - Initializing API: user_API
 TID: [-1234] [2021-05-22 19:55:56,682]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
 TID: [-1234] [2021-05-22 19:56:06,348]  INFO {API_LOGGER.buyer_API} - To: /buyer/saveCart, MessageID: urn:uuid:9f8dea1c-df07-4a51-868f-63c8f3d82023, Direction: request
+TID: [-1234] [2021-05-22 20:30:54,731]  INFO {API_LOGGER.item-API} - message = in the item api
+TID: [-1234] [2021-05-22 20:37:07,509]  INFO {API_LOGGER.item-API} - message = in the item api
