@@ -27,12 +27,16 @@ router.post('/',async (req,res) =>{
     });
 
     // const response = 
-    items2.save(function(err,room) {
-        console.log(room.id);
-        res.json(room)
+    items2.save(function(err,cart) {
+        console.log(cart);
+
+        const id = {
+            id : cart['_id']
+        }
+        console.log(id)
+        res.json(JSON.stringify(cart['_id']))
      })
     // items2.save().then(data =>{res.send(data)}).catch((err) => {res.json(err)})
-    console.log(items2)
 
 })
 

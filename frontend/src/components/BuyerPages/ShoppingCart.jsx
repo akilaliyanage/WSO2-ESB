@@ -46,10 +46,11 @@ class ShoppingCart extends Component {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ items: ids , total:this.state.total, buyerId:this.state.buyer})
         };
-        fetch('http://localhost:9000/cart', requestOptions)
-            .then((response) => {
-                console.log(response.json());
-            })
+        fetch('http://localhost:9000/cart', requestOptions).then(data => data.json()).then(res => {
+            console.log(res)
+
+            window.localStorage.setItem('cart_id',res)
+        })
   
     }
 
