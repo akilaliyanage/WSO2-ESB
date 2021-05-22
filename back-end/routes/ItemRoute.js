@@ -57,10 +57,6 @@ router.route("/:sellerID").get((req,res) => {
            })
        })
 
-
-
-
-
     }).catch((err) => {
         console.log(err)
     })
@@ -96,9 +92,6 @@ router.route("/").get((req,res) => {
       }
     );
 });
-
-
-
 
 
 //update item

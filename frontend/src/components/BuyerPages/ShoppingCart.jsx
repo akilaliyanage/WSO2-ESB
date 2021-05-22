@@ -16,12 +16,7 @@ class ShoppingCart extends Component {
                 buyer:localStorage.getItem('buyer-id')
         }
     }
-
-
-
     componentDidMount(){
-        // console.log(window.localStorage.getItem("cartitems"))
-        // console.log(window.localStorage.getItem("total"))
 
         this.setState({
 
@@ -31,13 +26,9 @@ class ShoppingCart extends Component {
     }
 
     saveToDatabase = () =>{
-
-        // console.log(this.state.cart)
-        // console.log(this.state.total)
         
         let ids=[]
         this.state.cart.map((cart) => {
-            // console.log("cartis",cart.id)
             ids.push(cart.id)
         })
 
@@ -57,46 +48,31 @@ class ShoppingCart extends Component {
     render() {
         return (
             <div>
-
                 <Menu/>
-                
                 <div className="new-section">
-
-                    
                     <div class="col-md-11 mb-5">
                         <div class="titie-section wow fadeInDown animated ">
                             <h1>Shopping Cart</h1>
                         </div>
                     </div>
-
                     <div className="container mt-5">
                         <div className="row mt-5">
                             <div className="col-md-9 wow fadeInLeft animated">
-                                
-
+                        
                                 <table id="customers">
                                     <tr className="t-row">
                                         <th className="t-data">Product</th>
                                         <th className="t-data">Price</th>
-                                        {/* <th className="t-data">Quantity</th> */}
-                                        {/* <th className="t-data"></th> */}
                                     </tr>
-
-
                                     {this.state.cart.map((cart) => {
                                         return(
                                             <tr className="t-row">
                                                 <td className="t-data"><b>{cart.title}</b></td>
                                                 <td className="t-data">$ {cart.price}</td>
-                                                {/* {(this.state.total = this.state.total + cart.price)} */}
-                                                {/* <td className="t-data">{cart.quantity}</td> */}
-                                                {/* <td className="t-data"><a>Remove</a></td> */}
                                             </tr>
                                             
                                          );
                                     })}
-
-
                                 </table>
 
                             </div>
@@ -121,10 +97,7 @@ class ShoppingCart extends Component {
                         </div>
                     </div>
                 </div>
-
-
-                <Footer/>
-                
+                <Footer/>                
             </div>
         )
     }
