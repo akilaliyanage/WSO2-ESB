@@ -31,7 +31,7 @@ function Login(){
             if(response.data.status === 200){
                 console.log(response.data);
                 let username = response.data.user.username;
-                let sellerID = JSON.stringify(response.data.user._id);
+                let sellerID = response.data.user._id;
                 let avatar = response.data.user.profileImg;
                 let sellerEmail = response.data.user.email;
 
@@ -61,7 +61,7 @@ function Login(){
             username,
             password
         }
-        const  url = "http://localhost:9000/user/buyer-login";
+        const  url = "http://192.168.8.166:8280/user/buyer-login";
         axios.post(url,auth).then((res) =>{
 
             if(res.data.status === 200){

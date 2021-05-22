@@ -70,7 +70,7 @@ function AddItem(){
         formData.append("image",item_image);
         formData.append("sellerID",userid);
 
-        const url = "http://localhost:9000/item/add/";
+        const url = "http://192.168.8.166:8280/item/add/";
         axios.post(url,formData).then((res) => {
             if(res.data.status === 200) {
                 history.push("/seller");

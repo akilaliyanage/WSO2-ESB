@@ -56,7 +56,7 @@ function UserSignUP(){
         formData.append('role', role);
 
 
-        const url = "http://localhost:9000/user/signup";
+        const url = "http://192.168.8.166:8280/user/signup";
         axios.post(url,formData).then((res) => {
             if(res.data.status === 200) {
                 history.push("/login");
