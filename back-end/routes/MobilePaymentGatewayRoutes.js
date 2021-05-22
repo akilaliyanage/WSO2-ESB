@@ -40,7 +40,7 @@ router.route("/:mobileNo").get((req,res) => {
                 // to the client/Email service or the SMS service.
                 const OTPToken = jwt.sign(otp , OTPKey);
 
-                const SMSServiceAPI = 'http://localhost:9002';
+                const SMSServiceAPI = 'http://172.18.0.1:8280/payment/sms';
                 const ApiBody = {data:MobilePaymentGateway , message : "Use Your OTP " , type : "OTP" }
                 const ApiHeaders = {'Content-Type': 'application/json' , 'Authorization': "OTPToken " + OTPToken,}
 

@@ -3,7 +3,7 @@ import "antd/dist/antd.css";
 import "../../assets/mahen.css";
 import { Row , Col , Button , Divider , Form, Input, Radio , notification} from 'antd';
 import { MobileOutlined , CreditCardOutlined } from '@ant-design/icons';
-import  { Redirect } from 'react-router-dom'
+import  { Redirect, Link } from 'react-router-dom'
 
 class CardPaymentForm extends Component{
     constructor(props) {
@@ -61,7 +61,7 @@ class CardPaymentForm extends Component{
           console.log('cardNO', this.state.cardNo);
           console.log('cardNO', this.state.type);
 
-          fetch('http://localhost:9000/cardPayment/'+ this.state.cardNo, {
+          fetch('http://172.18.0.1:8280/payment/cardPayment/'+ this.state.cardNo, {
             method: 'POST', 
             headers: {
               'Content-Type': 'application/json',
@@ -116,7 +116,7 @@ class CardPaymentForm extends Component{
             type : this.state.type,
             expDate : this.state.expDate
           }
-          fetch('http://localhost:9000/cardPayment/checkOTP/confirmation' , {
+          fetch('	http://172.18.0.1:8280/payment/card/authOtp' , {
             method: 'POST', 
             headers: {
               'Content-Type': 'application/json',
@@ -166,7 +166,7 @@ class CardPaymentForm extends Component{
             isMobile : this.state.isMobile,
             email : this.state.email,
           }
-          fetch('http://localhost:9000/Payment' , {
+          fetch('http://172.18.0.1:8280/payment' , {
             method: 'POST', 
             headers: {
               'Content-Type': 'application/json',

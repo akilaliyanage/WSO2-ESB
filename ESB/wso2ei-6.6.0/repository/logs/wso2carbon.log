@@ -1,2 +1,12 @@
 TID: [-1234] [] [2021-05-23 00:04:04,781]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = in the item api
 TID: [-1234] [] [2021-05-23 00:04:09,974]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = in the item api
+TID: [-1234] [] [2021-05-23 00:15:39,638]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = in the item api
+TID: [-1] [] [2021-05-23 00:15:39,651]  WARN {org.apache.synapse.transport.passthru.ConnectCallback} - Connection refused or failed for : localhost/127.0.0.1:9000
+TID: [-1234] [] [2021-05-23 00:15:39,653]  WARN {org.apache.synapse.endpoints.EndpointContext} - Endpoint : seller_item_search with address http://localhost:9000/item/{uri.var.sellerID}/{uri.var.itemID} will be marked SUSPENDED as it failed
+TID: [-1234] [] [2021-05-23 00:15:39,655]  WARN {org.apache.synapse.endpoints.EndpointContext} - Suspending endpoint : seller_item_search with address http://localhost:9000/item/{uri.var.sellerID}/{uri.var.itemID} - current suspend duration is : 30000ms - Next retry after : Sun May 23 00:16:09 IST 2021
+TID: [-1] [] [2021-05-23 00:18:39,801]  INFO {org.apache.synapse.transport.passthru.SourceHandler} - Writer null when calling informWriterError
+TID: [-1] [] [2021-05-23 00:18:39,803]  WARN {org.apache.synapse.transport.passthru.SourceHandler} - Connection time out after request is read: http-incoming-108 Socket Timeout : 180000 Remote Address : /192.168.1.13:47652
+TID: [-1234] [] [2021-05-23 00:44:58,095]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = in the item api
+TID: [-1] [] [2021-05-23 00:44:58,098]  WARN {org.apache.synapse.transport.passthru.ConnectCallback} - Connection refused or failed for : localhost/127.0.0.1:9000
+TID: [-1234] [] [2021-05-23 00:44:58,100]  WARN {org.apache.synapse.endpoints.EndpointContext} - Endpoint : seller_item_search with address http://localhost:9000/item/{uri.var.sellerID}/{uri.var.itemID} will be marked SUSPENDED as it failed
+TID: [-1234] [] [2021-05-23 00:44:58,102]  WARN {org.apache.synapse.endpoints.EndpointContext} - Suspending endpoint : seller_item_search with address http://localhost:9000/item/{uri.var.sellerID}/{uri.var.itemID} - last suspend duration was : 30000ms and current suspend duration is : 30000ms - Next retry after : Sun May 23 00:45:28 IST 2021

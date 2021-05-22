@@ -105,7 +105,7 @@ function UpdateItem(props){
     }
 
     function Delete(){
-        const url = "http://localhost:9000/item/delete/"+props.match.params.itemID;
+        const url = "http://172.18.0.1:8280/item/delete"+props.match.params.itemID;
         axios.delete(url).then((res) => {
             if(res.data.status === 200) {
                 history.push("/seller");

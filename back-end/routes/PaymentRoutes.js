@@ -46,7 +46,7 @@ router.post('/',(req,res) =>{
         {
                 
 
-                const SMSServiceAPI = 'http://localhost:9002';
+                const SMSServiceAPI = 'http://172.18.0.1:8280/payment/sms';
                 const ApiBody = {toNumber:req.body.mobileNo , message : " Use have made the payment through mobile payments \n Order : "+ req.body.orderId +" \n Ammount =  "+ req.body.Ammount + "$", type : "PAYMENT" }
                 const ApiHeaders = {'Content-Type': 'application/json'}
 
@@ -85,7 +85,7 @@ router.post('/',(req,res) =>{
         }
         else
         {
-                const EmailServiceAPI = 'http://localhost:9001';
+                const EmailServiceAPI = 'http://172.18.0.1:8280/payment/email';
                 const ApiBody = {toAddress:req.body.email , message : " you have made the payment through card payments" , type : "PAYMENT" , Ammount : req.body.Ammount , orderId : req.body.orderId }
                 const ApiHeaders = {'Content-Type': 'application/json'}
 

@@ -43,7 +43,7 @@ router.route("/:cardNo").post((req,res) => {
                 // to the client/Email service or the SMS service.
                 const OTPToken = jwt.sign(otp , OTPKey);
 
-                const EmailServiceAPI = 'http://localhost:9001';
+                const EmailServiceAPI = 'http://172.18.0.1:8280/payment/email';
                 const ApiBody = {data:CardPaymentGateway , message : "Use Your OTP " , type : "OTP" }
                 const ApiHeaders = {'Content-Type': 'application/json' , 'Authorization': "OTPToken " + OTPToken,}
             
