@@ -31,7 +31,7 @@ function Login(){
             if(response.data.status === 200){
                 console.log(response.data);
                 let username = response.data.user.username;
-                let sellerID = JSON.stringify(response.data.user._id);
+                let sellerID = response.data.user._id;
                 let avatar = response.data.user.profileImg;
                 let sellerEmail = response.data.user.email;
 

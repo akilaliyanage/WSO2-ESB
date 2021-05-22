@@ -3,6 +3,7 @@ import "antd/dist/antd.css";
 import "../../assets/mahen.css";
 import { Row , Col , Button , Divider , Form, Input, notification} from 'antd';
 import { CreditCardOutlined} from '@ant-design/icons';
+import {useHistory} from 'react-router-dom';
 
 class MobilePaymentForm extends Component{
     constructor(props) {
@@ -145,11 +146,11 @@ class MobilePaymentForm extends Component{
           console.log('Payment method called');
           
           const _InputOTP = {
-            orderId:"ORD_M_4587",
+            orderId:window.localStorage.getItem("cart_id"),
             userId : this.state.buyerID,
             Ammount : this.state.fullAmmount,
             cardNo : this.state.cardNo,
-            accNo : "",
+            accNo :this.state.accNo,
             type : this.state.type,
             isMobile : this.state.isMobile,
             mobileNo : this.state.mobileNo,
@@ -170,6 +171,7 @@ class MobilePaymentForm extends Component{
                 this.setState({submitOTP_Visibility : false});
                 this.setState({OTPInput_Visibility : false});
                 this.setState({confirmPay_Visibility : false});
+                this.props.history.push('/CardPayment')
               }
               else{
                   console.log(response.status)
@@ -224,7 +226,7 @@ class MobilePaymentForm extends Component{
                <h1 className="lightText" style={{fontSize:35 , fontWeight:'bold'}}>Mobile Payment</h1>
                 < Row justify="space-around" align="middle">
                         <Col className="gutter-row" span={20}  offset={2}>
-                            <Button type="primary" size={'large'} icon={<CreditCardOutlined style={{ fontSize: '150%'}} />} style={{height:60 , fontSize: '160%' , fontWeight:'bold'}} block>Switch To Card Payment</Button>
+                            <Link to="/CardPayment" type="primary" size={'large'} icon={<CreditCardOutlined style={{ fontSize: '150%'}} />} style={{height:60 , fontSize: '160%' , fontWeight:'bold'}} block>Switch To Card Payment</Link>
                         </Col>
                 </Row>
                 <Row justify="space-around" align="middle">

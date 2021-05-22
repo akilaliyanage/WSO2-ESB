@@ -3,6 +3,7 @@ import "antd/dist/antd.css";
 import "../../assets/mahen.css";
 import { Row , Col , Button , Divider , Form, Input, Radio , notification} from 'antd';
 import { MobileOutlined , CreditCardOutlined } from '@ant-design/icons';
+import  { Redirect } from 'react-router-dom'
 
 class CardPaymentForm extends Component{
     constructor(props) {
@@ -32,6 +33,7 @@ class CardPaymentForm extends Component{
             city : '',
             cart_id : ''
         }
+        //const  history = useHistory();
     }
 
       setValueOnChange = (val) =>{
@@ -155,7 +157,7 @@ class CardPaymentForm extends Component{
           console.log('Payment method called');
           
           const _InputOTP = {
-            orderId:"ORD_C_4548",
+            orderId:window.localStorage.getItem("cart_id"),
             userId : this.state.buyerID,
             Ammount : this.state.fullAmmount,
             cardNo : this.state.cardNo,
@@ -180,6 +182,7 @@ class CardPaymentForm extends Component{
                 this.setState({submitOTP_Visibility : false});
                 this.setState({OTPInput_Visibility : false});
                 this.setState({confirmPay_Visibility : false});
+                this.props.history.push('/MobilePayment');
               }
               else{
                   console.log(response.status)
@@ -233,7 +236,7 @@ class CardPaymentForm extends Component{
                <h1 className="lightText" style={{fontSize:35 , fontWeight:'bold'}}>PAY BY CARD</h1>
                 < Row justify="space-around" align="middle">
                         <Col className="gutter-row" span={20}  offset={2}>
-                            <Button type="primary" size={'large'} icon={<MobileOutlined style={{ fontSize: '150%'}} />} style={{height:60 , fontSize: '160%' , fontWeight:'bold'}} block>Switch To Mobile Payment</Button>
+                            <Link to="/MobilePayment" type="primary" size={'large'} icon={<MobileOutlined style={{ fontSize: '150%'}} />} style={{height:60 , fontSize: '160%' , fontWeight:'bold'}} block>Switch To Mobile Payment</Link>
                         </Col>
                 </Row>
                 <Row justify="space-around" align="middle">
