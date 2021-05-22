@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><artifact name="mobile_paymnt" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+    <file>mobile_paymnt-1.0.0.xml</file>
+</artifact>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="buyer_endpoint" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="get" uri-template="http://localhost:9000/buyer">
+        <suspendOnFailure>
+            <errorCodes>500</errorCodes>
+            <initialDuration>-1</initialDuration>
+            <progressionFactor>1.0</progressionFactor>
+        </suspendOnFailure>
+        <markForSuspension>
+            <retriesBeforeSuspension>100</retriesBeforeSuspension>
+        </markForSuspension>
+    </http>
+</endpoint>

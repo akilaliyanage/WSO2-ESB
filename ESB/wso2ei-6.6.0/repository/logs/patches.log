@@ -102,3 +102,9 @@
 [2021-05-22 20:10:40,446]  FINE {org.wso2.carbon.server.util.PatchUtils processPatches} - No new patch or service pack detected, server will start without applying patches   
 [2021-05-22 20:10:40,447]  FINE {org.wso2.carbon.server.util.PatchUtils checkMD5Checksum} - Patch verification started  
 [2021-05-22 20:10:40,448]  FINE {org.wso2.carbon.server.util.PatchUtils checkMD5Checksum} - Patch verification successfully completed  
+[2021-05-22 21:53:35,742]  WARNING {org.wso2.carbon.server.extensions.DropinsBundleDeployer addNewBundleInfoLines} - Ignoring the deployment of bundle: ..\..\..\dropins\cors_filter_2.4_1.0.0.jar, because it is already available in the system: ../../../dropins/cors_filter_2.4_1.0.0.jar. Bundle-SymbolicName and Bundle-Version headers are identical   
+[2021-05-22 21:53:35,794]  WARNING {org.wso2.carbon.server.extensions.DropinsBundleDeployer addNewBundleInfoLines} - Ignoring the deployment of bundle: ..\..\..\dropins\java_property_utils_1.9.1_1.0.0.jar, because it is already available in the system: ../../../dropins/java_property_utils_1.9.1_1.0.0.jar. Bundle-SymbolicName and Bundle-Version headers are identical   
+[2021-05-22 21:53:35,812]  FINE {org.wso2.carbon.server.util.PatchUtils processPatches} - Checking for patch changes ...  
+[2021-05-22 21:53:35,813]  FINE {org.wso2.carbon.server.util.PatchUtils processPatches} - No new patch or service pack detected, server will start without applying patches   
+[2021-05-22 21:53:35,813]  FINE {org.wso2.carbon.server.util.PatchUtils checkMD5Checksum} - Patch verification started  
+[2021-05-22 21:53:35,814]  FINE {org.wso2.carbon.server.util.PatchUtils checkMD5Checksum} - Patch verification successfully completed  

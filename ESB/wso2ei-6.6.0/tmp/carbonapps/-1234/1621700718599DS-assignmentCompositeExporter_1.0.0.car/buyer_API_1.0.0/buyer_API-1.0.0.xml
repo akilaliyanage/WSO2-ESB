@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/buyer" name="buyer_API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="buer endpoint"/>
+            </log>
+            <send>
+                <endpoint key="buyer_endpoint"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/saveCart">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="cart-save"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST GET" protocol="https" uri-template="/search/{key}">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="searh-item"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

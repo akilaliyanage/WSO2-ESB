@@ -206,7 +206,7 @@ class CardPaymentForm extends Component{
         console.log('delCost : ' , window.localStorage.getItem("delCost"))
         console.log('buyer-name : ' , window.localStorage.getItem("buyer-name"))
         console.log('buyer-id : ' , window.localStorage.getItem("buyer-id"))
-        console.log('City : ' , window.localStorage.getItem("city"))
+        console.log('City : ' , window.localStorage.getItem("del_location"))
         
         var iCost = JSON.parse(window.localStorage.getItem("total"));
         var dCost = JSON.parse(window.localStorage.getItem("delCost"));

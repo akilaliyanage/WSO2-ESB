@@ -59,4 +59,8 @@ TID: [-1234] [2021-05-22 20:13:57,242]  INFO {AUDIT_LOG} - 'admin@carbon.super [
 TID: [-1234] [2021-05-22 20:14:24,306]  WARN {AUDIT_LOG} - Initiator=wso2.system.user Action=Authentication Target=admin Data=null Outcome=Failure Error={"Error Message":"Un-expected error while authenticating","Error Code":"31001"}
 TID: [-1234] [2021-05-22 20:14:24,307]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 20:14:24,306+0530]
 TID: [-1234] [2021-05-22 20:14:36,298]  INFO {AUDIT_LOG} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:14:36,296+0530]
+<<<<<<< HEAD
+TID: [-1234] [2021-05-22 21:55:32,467]  WARN {AUDIT_LOG} - Login failed. Unauthorized login attempt 'admin[-1234]' at [2021-05-22 21:55:32,465+0530]
+=======
 >>>>>>> d4605384caa8097866a4064498bfaa61ec5f8eb5
+>>>>>>> 4777e68304388007ff32c583368aa138e8e7c8cb

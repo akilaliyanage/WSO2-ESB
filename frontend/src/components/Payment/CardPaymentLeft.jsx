@@ -24,7 +24,7 @@ class CardPaymentLeft extends Component {
         console.log('delCost : ' , window.localStorage.getItem("delCost"))
         console.log('buyer-name : ' , window.localStorage.getItem("buyer-name"))
         console.log('buyer-id : ' , window.localStorage.getItem("buyer-id"))
-        console.log('city : ' , window.localStorage.getItem("city"))
+        console.log('city : ' , window.localStorage.getItem("del_location"))
         var iCost = JSON.parse(window.localStorage.getItem("total"));
         var dCost = JSON.parse(window.localStorage.getItem("delCost"));
         console.log('dCost : ' , dCost)
@@ -33,7 +33,7 @@ class CardPaymentLeft extends Component {
             deliveryCost : parseInt(window.localStorage.getItem("delCost")).toFixed(2),
             buyerName: window.localStorage.getItem("buyer-name"),
             buyerID : JSON.parse(window.localStorage.getItem("buyer-id")) , 
-            //city : JSON.parse(window.localStorage.getItem("city")) , 
+            city : window.localStorage.getItem("del_location") , 
             fullAmmount : (parseInt(window.localStorage.getItem("delCost")) + parseInt(window.localStorage.getItem("total"))).toFixed(2)
         })
         // console.log(this.state.total)
