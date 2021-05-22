@@ -6088,3 +6088,5 @@ TID: [-1234] [] [2021-05-22 20:14:22,767]  INFO {org.wso2.carbon.core.services.u
 TID: [-1234] [] [2021-05-22 20:30:28,867]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} - 'admin@carbon.super [-1234]' logged in at [2021-05-22 20:30:28,867+0530]
 TID: [-1234] [] [2021-05-22 20:30:54,731]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = in the item api
 TID: [-1234] [] [2021-05-22 20:37:07,509]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = in the item api
+TID: [-1234] [] [2021-05-22 20:51:22,045]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = buer endpoint
+TID: [-1234] [] [2021-05-22 20:52:10,426]  INFO {org.apache.synapse.mediators.builtin.LogMediator} - message = buer endpoint
