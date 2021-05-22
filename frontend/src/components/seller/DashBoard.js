@@ -51,7 +51,7 @@ export default function Dashboard(props) {
             history.push("/login")
         }
 
-        axios.get("http://localhost:9000/item/"+userid).then((res) => {
+        axios.get("http://192.168.8.166:8280/item/"+userid).then((res) => {
             setCount(res.data.c);
             setQty(res.data.qty);
             setTileData(res.data.items);
@@ -76,7 +76,7 @@ export default function Dashboard(props) {
                         {tileData.map((tile) => (
                             <GridListTile key={tile.img}>
                                 <Link to ={`update-item/${tile._id}`}>
-                                <img src={"http://localhost:9000/"+tile.itemImage} width="240px" height="220px" alt={tile.title}/>
+                                <img src={"http://192.168.8.166:8280/images/"+tile.itemImage} width="240px" height="220px" alt={tile.title}/>
                                 </Link>
                                 <GridListTileBar
                                     title={tile.title}
@@ -94,7 +94,7 @@ export default function Dashboard(props) {
 
 
                 <div className="Avatar">
-                    <Avatar src={"http://localhost:9000/"+avatar} style={{width:'150px',height:'150px'}} />
+                    <Avatar src={"http://192.168.8.166:8280/images/"+avatar} style={{width:'150px',height:'150px'}} />
                 </div>
                 <div className="SellerName">
                     <h5 style={{color:"whitesmoke","font-size":"30px"}}>{username} </h5>

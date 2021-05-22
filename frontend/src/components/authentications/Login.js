@@ -24,7 +24,7 @@ function Login(){
             password
         }
 
-        const  url = "http://localhost:9000/user/seller-login";
+        const  url = "http://192.168.8.166:8280/user/seller-login";
         axios.post(url,user).then((response) =>{
 
             console.log(user);
@@ -61,7 +61,7 @@ function Login(){
             username,
             password
         }
-        const  url = "http://localhost:9000/user/buyer-login";
+        const  url = "http://192.168.8.166:8280/user/buyer-login";
         axios.post(url,auth).then((res) =>{
 
             if(res.data.status === 200){
