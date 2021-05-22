@@ -62,4 +62,34 @@
     <artifact name="create_location" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/create_location.xml</file>
     </artifact>
+    <artifact name="check_otp" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/check_otp.xml</file>
+    </artifact>
+    <artifact name="mobile_paymnt" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/mobile_paymnt.xml</file>
+    </artifact>
+    <artifact name="chec_otp_card" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/chec_otp_card.xml</file>
+    </artifact>
+    <artifact name="card_payment" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/card_payment.xml</file>
+    </artifact>
+    <artifact name="make_payment" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/make_payment.xml</file>
+    </artifact>
+    <artifact name="email_service" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/email_service.xml</file>
+    </artifact>
+    <artifact name="message_service" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/message_service.xml</file>
+    </artifact>
+    <artifact name="payment_API" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/payment_API.xml</file>
+    </artifact>
+    <artifact name="images" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/images.xml</file>
+    </artifact>
+    <artifact name="image" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/image.xml</file>
+    </artifact>
 </artifacts>

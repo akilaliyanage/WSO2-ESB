@@ -1,0 +1,131 @@
+!SESSION 2021-05-22 12:25:02.328 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:02.329
+!MESSAGE Could not bind a reference of component org.wso2.carbon.caching.impl.internal.CachingServiceComponent. The reference is: Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 0..1, target = null, bind = setClusteringAgent, unbind = unsetClusteringAgent]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:02.330
+!MESSAGE Could not bind a reference of component org.wso2.carbon.caching.impl.internal.CachingServiceComponent. The reference is: Reference[name = distributedMapProvider, interface = org.wso2.carbon.caching.impl.DistributedMapProvider, policy = dynamic, cardinality = 0..1, target = null, bind = setDistributedMapProvider, unbind = unsetDistributedMapProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:02.596
+!MESSAGE Could not bind a reference of component org.wso2.carbon.crypto.impl. The reference is: Reference[name = externalCryptoProvider, interface = org.wso2.carbon.crypto.api.ExternalCryptoProvider, policy = dynamic, cardinality = 0..n, target = null, bind = setExternalCryptoProvider, unbind = unsetExternalCryptoProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:02.597
+!MESSAGE Could not bind a reference of component org.wso2.carbon.crypto.impl. The reference is: Reference[name = internalCryptoProvider, interface = org.wso2.carbon.crypto.api.InternalCryptoProvider, policy = dynamic, cardinality = 0..n, target = null, bind = setInternalCryptoProvider, unbind = unsetInternalCryptoProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:02.597
+!MESSAGE Could not bind a reference of component org.wso2.carbon.crypto.impl. The reference is: Reference[name = keyResolver, interface = org.wso2.carbon.crypto.api.KeyResolver, policy = dynamic, cardinality = 0..n, target = null, bind = setKeyResolver, unbind = unsetKeyResolver]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:02.714
+!MESSAGE Could not bind a reference of component org.wso2.carbon.dataservices.google.tokengen.servlet.internal.GoogleTokenGenDSComponent. The reference is: Reference[name = hazelcast.instance.service, interface = com.hazelcast.core.HazelcastInstance, policy = dynamic, cardinality = 0..1, target = null, bind = setHazelcastInstance, unbind = unsetHazelcastInstance]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:02.761
+!MESSAGE Could not bind a reference of component org.wso2.carbon.deployment.synchronizer.subversion. The reference is: Reference[name = carbon.tomcat.service, interface = org.wso2.carbon.tomcat.api.CarbonTomcatService, policy = dynamic, cardinality = 0..1, target = null, bind = setCarbonTomcatService, unbind = unsetCarbonTomcatService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:03.152
+!MESSAGE Could not bind a reference of component eventProcessorManagementService.component. The reference is: Reference[name = configuration.contextService.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 0..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:03.153
+!MESSAGE Could not bind a reference of component eventProcessorManagementService.component. The reference is: Reference[name = hazelcast.instance.service, interface = com.hazelcast.core.HazelcastInstance, policy = dynamic, cardinality = 0..1, target = null, bind = setHazelcastInstance, unbind = unsetHazelcastInstance]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:03.218
+!MESSAGE Could not bind a reference of component eventStreamService.component. The reference is: Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 0..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:03.218
+!MESSAGE Could not bind a reference of component eventStreamService.component. The reference is: Reference[name = eventStreamListener.service, interface = org.wso2.carbon.event.stream.core.EventStreamListener, policy = dynamic, cardinality = 0..n, target = null, bind = setEventStreamListener, unbind = unsetEventStreamListener]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:03.243
+!MESSAGE Could not bind a reference of component output.Ui.AdapterService.component. The reference is: Reference[name = ui.event.adapter.externsion, interface = org.wso2.carbon.event.output.adapter.ui.UIOutputAuthorizationService, policy = dynamic, cardinality = 0..n, target = null, bind = setUIOutputAuthorizationService, unbind = unsetUIOutputAuthorizationService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:04.336
+!MESSAGE Could not bind a reference of component event.output.adapter.service. The reference is: Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 0..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:04.579
+!MESSAGE Could not bind a reference of component eventPublisherService.component. The reference is: Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 0..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:04.586
+!MESSAGE Could not bind a reference of component eventPublisherService.component. The reference is: Reference[name = registry.service, interface = org.wso2.carbon.registry.core.service.RegistryService, policy = dynamic, cardinality = 0..1, target = null, bind = setRegistryService, unbind = unsetRegistryService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:04.594
+!MESSAGE Could not bind a reference of component org.wso2.carbon.ndatasource. The reference is: Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 0..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:04.594
+!MESSAGE Could not bind a reference of component org.wso2.carbon.ndatasource. The reference is: Reference[name = external.crypto.service, interface = org.wso2.carbon.crypto.api.ExternalCryptoProvider, policy = dynamic, cardinality = 0..1, target = null, bind = setExternalCryptoProvider, unbind = unsetExternalCryptoProvider]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:04.595
+!MESSAGE Could not bind a reference of component org.wso2.carbon.ndatasource. The reference is: Reference[name = registry.service, interface = org.wso2.carbon.registry.core.service.RegistryService, policy = dynamic, cardinality = 0..1, target = null, bind = setRegistryService, unbind = unsetRegistryService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:04.928
+!MESSAGE Could not bind a reference of component org.wso2.carbon.ndatasource. The reference is: Reference[name = user.realmservice.default, interface = org.wso2.carbon.user.core.service.RealmService, policy = dynamic, cardinality = 0..1, target = null, bind = setRealmService, unbind = unsetRealmService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:05.288
+!MESSAGE Could not bind a reference of component org.wso2.carbon.tomcat.internal.CarbonTomcatServiceComponent. The reference is: Reference[name = sci, interface = javax.servlet.ServletContainerInitializer, policy = dynamic, cardinality = 0..n, target = null, bind = setServletContainerInitializer, unbind = unsetServletContainerInitializer]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:05.368
+!MESSAGE Could not bind a reference of component transactionmanager.component. The reference is: Reference[name = user.realmservice.default, interface = org.wso2.carbon.user.core.service.RealmService, policy = dynamic, cardinality = 0..1, target = null, bind = setRealmService, unbind = unsetRealmService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:06.411
+!MESSAGE Could not bind a reference of component registry.core.dscomponent. The reference is: Reference[name = CacheInvalidator, interface = org.wso2.carbon.caching.impl.CacheInvalidator, policy = dynamic, cardinality = 0..n, target = null, bind = setCacheInvalidatorService, unbind = unSetCacheInvalidatorService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:06.412
+!MESSAGE Could not bind a reference of component registry.core.dscomponent. The reference is: Reference[name = statistics.collector, interface = org.wso2.carbon.registry.core.statistics.StatisticsCollector, policy = dynamic, cardinality = 0..n, target = null, bind = setStatisticsCollector, unbind = unsetStatisticsCollector]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.221
+!MESSAGE Could not bind a reference of component org.wso2.carbon.registry.resource. The reference is: Reference[name = registry.download.service, interface = org.wso2.carbon.registry.resource.download.DownloadManagerService, policy = dynamic, cardinality = 0..1, target = null, bind = setDownloadManagerService, unbind = unsetDownloadManagerService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.222
+!MESSAGE Could not bind a reference of component org.wso2.carbon.registry.resource. The reference is: Reference[name = registry.notification.service, interface = org.wso2.carbon.registry.common.eventing.NotificationService, policy = dynamic, cardinality = 0..1, target = null, bind = setRegistryNotificationService, unbind = unsetRegistryNotificationService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.227
+!MESSAGE Could not bind a reference of component org.wso2.carbon.registry.server. The reference is: Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 0..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.231
+!MESSAGE Could not bind a reference of component org.wso2.carbon.registry.servlet. The reference is: Reference[name = registry.uddi, interface = org.wso2.carbon.registry.core.servlet.UDDIServlet, policy = dynamic, cardinality = 0..1, target = null, bind = setJUDDIRegistryServlet, unbind = unsetJUDDIRegistryServlet]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.592
+!MESSAGE Could not bind a reference of component org.wso2.carbon.user.core.listener. The reference is: Reference[name = authorization.manager.listener.service, interface = org.wso2.carbon.user.core.listener.AuthorizationManagerListener, policy = dynamic, cardinality = 0..n, target = null, bind = setAuthorizationManagerListenerService, unbind = unsetAuthorizationManagerListenerService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.592
+!MESSAGE Could not bind a reference of component org.wso2.carbon.user.core.listener. The reference is: Reference[name = claim.manager.listener.service, interface = org.wso2.carbon.user.core.listener.ClaimManagerListener, policy = dynamic, cardinality = 0..n, target = null, bind = setClaimManagerListenerService, unbind = unsetClaimManagerListenerService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.593
+!MESSAGE Could not bind a reference of component org.wso2.carbon.user.core.listener. The reference is: Reference[name = ldap.tenant.manager.listener.service, interface = org.wso2.carbon.user.core.tenant.LDAPTenantManager, policy = dynamic, cardinality = 0..n, target = null, bind = addLDAPTenantManager, unbind = removeLDAPTenantManager]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.593
+!MESSAGE Could not bind a reference of component org.wso2.carbon.user.core.listener. The reference is: Reference[name = user.management.error.event.listener.service, interface = org.wso2.carbon.user.core.listener.UserManagementErrorEventListener, policy = dynamic, cardinality = 0..n, target = null, bind = setUserManagementErrorEventListenerService, unbind = unsetUserManagementErrorEventListenerService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.593
+!MESSAGE Could not bind a reference of component org.wso2.carbon.user.core.listener. The reference is: Reference[name = user.operation.event.listener.service, interface = org.wso2.carbon.user.core.listener.UserOperationEventListener, policy = dynamic, cardinality = 0..n, target = null, bind = setUserOperationEventListenerService, unbind = unsetUserOperationEventListenerService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.594
+!MESSAGE Could not bind a reference of component org.wso2.carbon.user.core.listener. The reference is: Reference[name = user.store.manager.listener.service, interface = org.wso2.carbon.user.core.listener.UserStoreManagerListener, policy = dynamic, cardinality = 0..n, target = null, bind = setUserStoreManagerListenerService, unbind = unsetUserStoreManagerListenerService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.597
+!MESSAGE Could not bind a reference of component user.store.mgt.dscomponent. The reference is: Reference[name = claim.mgt.component, interface = org.wso2.carbon.user.core.claim.ClaimManagerFactory, policy = dynamic, cardinality = 0..1, target = null, bind = setClaimManagerFactory, unbind = unsetClaimManagerFactory]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.639
+!MESSAGE Could not bind a reference of component org.wso2.carbon.context.internal.CarbonContextDiscoveryServiceComponent. The reference is: Reference[name = discoveryService, interface = org.wso2.carbon.base.DiscoveryService, policy = dynamic, cardinality = 0..1, target = null, bind = setDiscoveryService, unbind = unsetDiscoveryService]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.665
+!MESSAGE Could not bind a reference of component carbon.core.dscomponent. The reference is: Reference[name = coordinatedActivity, interface = org.wso2.carbon.core.clustering.api.CoordinatedActivity, policy = dynamic, cardinality = 0..n, target = null, bind = addCoordinatedActivity, unbind = removeCoordinatedActivity]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.666
+!MESSAGE Could not bind a reference of component carbon.core.dscomponent. The reference is: Reference[name = serverRestartHandler, interface = org.wso2.carbon.core.ServerRestartHandler, policy = dynamic, cardinality = 0..n, target = null, bind = addServerRestartHandler, unbind = removeServerRestartHandler]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.666
+!MESSAGE Could not bind a reference of component carbon.core.dscomponent. The reference is: Reference[name = serverShutdownHandler, interface = org.wso2.carbon.core.ServerShutdownHandler, policy = dynamic, cardinality = 0..n, target = null, bind = addServerShutdownHandler, unbind = removeServerShutdownHandler]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.667
+!MESSAGE Could not bind a reference of component carbon.core.dscomponent. The reference is: Reference[name = serverStartupHandler, interface = org.wso2.carbon.core.ServerStartupHandler, policy = dynamic, cardinality = 0..n, target = null, bind = addServerStartupHandler, unbind = removeServerStartupHandler]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.667
+!MESSAGE Could not bind a reference of component carbon.core.dscomponent. The reference is: Reference[name = serverStartupObserver, interface = org.wso2.carbon.core.ServerStartupObserver, policy = dynamic, cardinality = 0..n, target = null, bind = addServerStartupObserver, unbind = removeServerStartupObserver]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.682
+!MESSAGE Could not bind a reference of component dataservices.component. The reference is: Reference[name = eventbrokerbuilder.component, interface = org.wso2.carbon.event.core.EventBroker, policy = dynamic, cardinality = 0..1, target = null, bind = setEventBroker, unbind = unsetEventBroker]
+
+!ENTRY org.eclipse.equinox.ds 1 0 2021-05-22 12:25:08.683
+!MESSAGE Could not bind a reference of component dataservices.component. The reference is: Reference[name = configuration.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 0..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]

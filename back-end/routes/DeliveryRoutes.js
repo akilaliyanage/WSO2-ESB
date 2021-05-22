@@ -1,8 +1,10 @@
 const express = require('express')
 const router = express.Router()
+require('dotenv/config')
 
 //importing models
 const DeliveryItem = require('../models/Delivery')
+var nodemailer = require('nodemailer');
 
 router.get('/',async (req,res) =>{
     try{
@@ -31,11 +33,34 @@ router.post('/',(req,res) =>{
 
     })
 
-    item.save().then(data =>{
+    item.save().then(data =>{  
         res.json(data)
     }).catch(err =>{
         res.json(err)
     })
+
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: process.env.EMAIL,
+          pass: process.env.PASS
+        }
+      });
+      
+      var mailOptions = {
+        from: process.env.EMAIL,
+        to: item.email,
+        subject: 'Delivery reciept',
+        text: 'Your order has ben places successfull on' + item.date +' Thank you for using our service.'
+      };
+      
+      transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+          console.log(error);
+        } else {
+          console.log('Email sent: ' + info.response);
+        }
+      });
 })
 
 router.get('/pending',async (req,res) =>{

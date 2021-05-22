@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/payment" name="payment_API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/mobile/authOtp">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="check_otp"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/mobilePayment/{mobileNo}">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="mobile_paymnt"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/card/authOtp">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="chec_otp_card"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/cardPayment/{cardNo}">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="card_payment"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="make_payment"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/email">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="email_service"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/sms">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="message_service"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
