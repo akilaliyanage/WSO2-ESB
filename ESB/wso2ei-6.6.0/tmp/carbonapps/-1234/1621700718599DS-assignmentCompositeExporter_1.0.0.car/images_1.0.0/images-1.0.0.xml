@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/images" name="images" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/{image}">
+        <inSequence>
+            <send>
+                <endpoint key="image"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

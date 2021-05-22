@@ -21,7 +21,15 @@ class MobilePaymentForm extends Component{
             OTPInput_Visibility : false,
             DisabledInputs: false,
             OTP: '',
-            OTPToken : ''
+            OTPToken : '',
+
+            itemCost: '',
+            deliveryCost : '',
+            buyerName: '',
+            buyerID : '' , 
+            fullAmmount : '',
+            city : '',
+            cart_id : ''
         }
     }
 
@@ -180,6 +188,30 @@ class MobilePaymentForm extends Component{
           });
        
       };
+
+      componentDidMount(){
+        console.log('cartitems : ' , window.localStorage.getItem("cartitems"))
+        //console.log('Seller Id : ' , window.localStorage.getItem("cartitems")[0]["sellerId"])
+        console.log('total item cost: ' , window.localStorage.getItem("total"))
+        console.log('delCost : ' , window.localStorage.getItem("delCost"))
+        console.log('buyer-name : ' , window.localStorage.getItem("buyer-name"))
+        console.log('buyer-id : ' , window.localStorage.getItem("buyer-id"))
+        console.log('City : ' , window.localStorage.getItem("city"))
+        
+        var iCost = JSON.parse(window.localStorage.getItem("total"));
+        var dCost = JSON.parse(window.localStorage.getItem("delCost"));
+        console.log('dCost : ' , dCost)
+        var finalAmmount = parseFloat(iCost) + parseFloat(this.state.deliveryCost)
+
+        this.setState({
+            itemCost: JSON.parse(window.localStorage.getItem("total")),
+            deliveryCost : JSON.parse(window.localStorage.getItem("delCost")),
+            buyerName: window.localStorage.getItem("buyer-name"),
+            buyerID : JSON.parse(window.localStorage.getItem("buyer-id")) , 
+            city : window.localStorage.getItem("city"), 
+            fullAmmount : (parseInt(window.localStorage.getItem("delCost")) + parseInt(window.localStorage.getItem("total"))).toFixed(2)
+        })
+    }
 
 
     render(){

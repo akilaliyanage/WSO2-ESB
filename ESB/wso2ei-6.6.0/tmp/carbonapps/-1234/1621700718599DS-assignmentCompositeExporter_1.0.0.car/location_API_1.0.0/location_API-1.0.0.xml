@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/locations" name="location_API" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="logged into the locations api"/>
+            </log>
+            <send>
+                <endpoint key="location_endpoints"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="create_location"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

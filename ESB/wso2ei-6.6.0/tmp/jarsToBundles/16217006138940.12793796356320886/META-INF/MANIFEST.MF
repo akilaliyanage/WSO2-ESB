@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: cors_filter_2.4
+Export-Package: com.thetransactioncompany.cors,com.thetransactioncompa
+ ny.cors.environment,com.thetransactioncompany.cors.autoreconf
+Bundle-Name: cors_filter_2.4
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .,cors-filter-2.4.jar
+Bundle-ManifestVersion: 2
+DynamicImport-Package: *
+

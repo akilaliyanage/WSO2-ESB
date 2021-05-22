@@ -478,3 +478,13 @@ TID: [-1234] [2021-05-22 20:25:38,327]  INFO {API_LOGGER.location_API} - message
 TID: [-1234] [2021-05-22 20:26:17,538]  INFO {API_LOGGER.delivery_API} - message = logged into the create-delivert api
 TID: [-1234] [2021-05-22 20:50:40,917]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
 TID: [-1234] [2021-05-22 20:54:12,307]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 21:55:21,618]  INFO {API_LOGGER.delivery_API} - Initializing API: delivery_API
+TID: [-1234] [2021-05-22 21:55:21,648]  INFO {API_LOGGER.images} - Initializing API: images
+TID: [-1234] [2021-05-22 21:55:21,659]  INFO {API_LOGGER.item-API} - Initializing API: item-API
+TID: [-1234] [2021-05-22 21:55:21,667]  INFO {API_LOGGER.location_API} - Initializing API: location_API
+TID: [-1234] [2021-05-22 21:55:21,675]  INFO {API_LOGGER.payment_API} - Initializing API: payment_API
+TID: [-1234] [2021-05-22 21:55:21,683]  INFO {API_LOGGER.user_API} - Initializing API: user_API
+TID: [-1234] [2021-05-22 21:55:21,690]  INFO {API_LOGGER.buyer_API} - Initializing API: buyer_API
+TID: [-1234] [2021-05-22 21:55:21,777]  INFO {API_LOGGER.test2} - Initializing API: test2
+TID: [-1234] [2021-05-22 21:55:21,823]  INFO {API_LOGGER.news} - Initializing API: news
+TID: [-1234] [2021-05-22 21:55:22,134]  INFO {API_LOGGER.HealthcareAPI} - Initializing API: HealthcareAPI
